@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sacred Botany — A Living Atlas of Ritual Plants</title>
+<meta name="description" content="An interactive, educational ethnobotanical atlas: identify ritual plants, understand traditional preparation, locate their native ranges, and explore the cultures and rituals that surround them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<style>
+  :root{
+    --bg:#0c100e; --bg2:#10160f; --panel:#141b15; --panel2:#182219;
+    --line:#243024; --line2:#2e3d2f;
+    --text:#e9ede8; --muted:#9fb0a2; --faint:#6f8072;
+    --gold:#d4a94e; --gold2:#e8c877; --green:#4f9d6f; --green2:#6fc393;
+    --danger:#d1604f; --dangerbg:#3a201c;
+    --radius:14px; --maxw:1180px;
+    --shadow:0 18px 50px -20px rgba(0,0,0,.7);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(79,157,111,.12), transparent 60%),
+      radial-gradient(900px 500px at 0% 0%, rgba(212,169,78,.08), transparent 55%),
+      var(--bg);
+    color:var(--text);
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif; font-weight:500; line-height:1.15; margin:0}
+  a{color:var(--gold2); text-decoration:none}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+
+  /* ---------- header ---------- */
+  header{padding:64px 0 30px; border-bottom:1px solid var(--line)}
+  .kicker{display:inline-flex; align-items:center; gap:8px; font-size:12px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--green2); font-weight:600; margin-bottom:16px}
+  .kicker::before{content:""; width:26px; height:1px; background:var(--green2); display:inline-block}
+  h1.title{font-size:clamp(38px,6vw,64px); letter-spacing:-.01em}
+  h1.title em{font-style:italic; color:var(--gold2)}
+  .lede{max-width:760px; color:var(--muted); font-size:clamp(15px,1.6vw,18px); margin:18px 0 0}
+  .meta-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:26px}
+  .chip{font-size:12.5px; color:var(--muted); border:1px solid var(--line2); background:var(--panel);
+    padding:7px 12px; border-radius:999px; display:inline-flex; gap:8px; align-items:center}
+  .chip b{color:var(--text); font-weight:600}
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block}
+
+  /* ---------- controls ---------- */
+  .controls{position:sticky; top:0; z-index:500; background:rgba(12,16,14,.82);
+    backdrop-filter:saturate(140%) blur(12px); border-bottom:1px solid var(--line); padding:14px 0}
+  .controls .wrap{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+  .search{flex:1; min-width:220px; position:relative}
+  .search input{width:100%; background:var(--panel); border:1px solid var(--line2); color:var(--text);
+    padding:11px 14px 11px 40px; border-radius:10px; font-size:14.5px; outline:none; transition:.2s}
+  .search input:focus{border-color:var(--green); box-shadow:0 0 0 3px rgba(79,157,111,.18)}
+  .search svg{position:absolute; left:12px; top:50%; transform:translateY(-50%); opacity:.5}
+  .seg{display:flex; gap:6px; flex-wrap:wrap}
+  .seg button{background:transparent; border:1px solid var(--line2); color:var(--muted);
+    padding:8px 13px; border-radius:999px; font-size:13px; cursor:pointer; transition:.18s; font-family:inherit}
+  .seg button:hover{color:var(--text); border-color:var(--faint)}
+  .seg button.active{background:var(--gold); border-color:var(--gold); color:#1a1305; font-weight:600}
+
+  /* ---------- sections ---------- */
+  section{padding:56px 0}
+  .sec-head{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:26px; flex-wrap:wrap}
+  .sec-head h2{font-size:clamp(26px,3.4vw,38px)}
+  .sec-head p{color:var(--muted); margin:6px 0 0; max-width:560px; font-size:14.5px}
+  .count{color:var(--faint); font-size:13px; white-space:nowrap}
+
+  /* ---------- map ---------- */
+  #map{height:460px; width:100%; border-radius:var(--radius); border:1px solid var(--line2);
+    background:var(--panel); box-shadow:var(--shadow); z-index:1}
+  .leaflet-container{font-family:'Inter',sans-serif}
+  .legend{display:flex; flex-wrap:wrap; gap:14px; margin-top:14px; color:var(--muted); font-size:13px}
+  .legend span{display:inline-flex; align-items:center; gap:7px}
+  .legend i{width:11px;height:11px;border-radius:50%;display:inline-block}
+
+  /* ---------- grid ---------- */
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:20px}
+  .card{background:linear-gradient(180deg,var(--panel),var(--bg2)); border:1px solid var(--line);
+    border-radius:var(--radius); overflow:hidden; cursor:pointer; transition:.25s; position:relative}
+  .card:hover{transform:translateY(-4px); border-color:var(--line2); box-shadow:var(--shadow)}
+  .card .thumb{position:relative; aspect-ratio:16/10; overflow:hidden; background:#0a0d0b}
+  .card .thumb img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s ease}
+  .card:hover .thumb img{transform:scale(1.05)}
+  .card .tag{position:absolute; top:12px; left:12px; background:rgba(10,14,12,.72); backdrop-filter:blur(6px);
+    border:1px solid var(--line2); color:var(--gold2); font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+    padding:5px 10px; border-radius:999px; font-weight:600}
+  .card .body{padding:18px 18px 20px}
+  .card h3{font-size:22px; margin-bottom:3px}
+  .card .sci{color:var(--green2); font-style:italic; font-size:13.5px; margin-bottom:12px}
+  .card .desc{color:var(--muted); font-size:14px}
+  .card .foot{display:flex; justify-content:space-between; align-items:center; margin-top:16px; padding-top:14px; border-top:1px solid var(--line)}
+  .card .regions{color:var(--faint); font-size:12.5px}
+  .card .go{color:var(--gold2); font-size:13px; font-weight:600; display:inline-flex; align-items:center; gap:6px}
+  .card .go svg{transition:transform .2s}
+  .card:hover .go svg{transform:translateX(3px)}
+  .empty{grid-column:1/-1; text-align:center; color:var(--faint); padding:60px 0; font-size:15px}
+
+  /* ---------- detail overlay ---------- */
+  .overlay{position:fixed; inset:0; z-index:1000; background:rgba(6,9,7,.72); backdrop-filter:blur(8px);
+    display:none; overflow-y:auto; padding:28px 0}
+  .overlay.open{display:block}
+  .sheet{max-width:1000px; margin:0 auto; background:var(--bg2); border:1px solid var(--line2);
+    border-radius:18px; overflow:hidden; box-shadow:0 40px 120px -30px rgba(0,0,0,.9)}
+  .sheet-hero{position:relative; height:320px; overflow:hidden; background:#0a0d0b}
+  .sheet-hero img{width:100%; height:100%; object-fit:cover; display:block}
+  .sheet-hero .grad{position:absolute; inset:0; background:linear-gradient(180deg,transparent 30%,rgba(10,13,11,.92))}
+  .sheet-hero .txt{position:absolute; left:0; right:0; bottom:0; padding:26px 30px}
+  .sheet-hero .txt .tag{background:rgba(10,14,12,.72); border:1px solid var(--line2); color:var(--gold2);
+    font-size:11px; letter-spacing:.08em; text-transform:uppercase; padding:5px 11px; border-radius:999px; font-weight:600; display:inline-block; margin-bottom:12px}
+  .sheet-hero .txt h2{font-size:clamp(30px,5vw,46px)}
+  .sheet-hero .txt .sci{color:var(--green2); font-style:italic; font-size:15px; margin-top:4px}
+  .close{position:absolute; top:16px; right:16px; z-index:5; width:40px; height:40px; border-radius:50%;
+    background:rgba(10,14,12,.7); border:1px solid var(--line2); color:var(--text); font-size:20px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; backdrop-filter:blur(6px); transition:.2s}
+  .close:hover{background:var(--danger); color:#fff}
+  .sheet-body{padding:30px}
+  .facts{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:1px; background:var(--line);
+    border:1px solid var(--line); border-radius:12px; overflow:hidden; margin-bottom:30px}
+  .facts div{background:var(--panel); padding:14px 16px}
+  .facts .k{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); margin-bottom:5px}
+  .facts .v{font-size:14.5px; color:var(--text)}
+  .block{margin-bottom:34px}
+  .block > h4{font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold2);
+    display:flex; align-items:center; gap:10px; margin-bottom:16px}
+  .block > h4 .n{width:24px;height:24px;border-radius:50%; background:rgba(212,169,78,.14); border:1px solid rgba(212,169,78,.4);
+    color:var(--gold2); font-family:'Inter',sans-serif; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center}
+  .block p{color:var(--muted); font-size:15px; margin:0 0 12px}
+  ul.clean{list-style:none; padding:0; margin:0; display:grid; gap:9px}
+  ul.clean li{position:relative; padding-left:24px; color:var(--text); font-size:14.5px}
+  ul.clean li::before{content:""; position:absolute; left:4px; top:9px; width:7px; height:7px; border-radius:2px;
+    background:var(--green); transform:rotate(45deg)}
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+  @media(max-width:720px){.two{grid-template-columns:1fr}}
+  .box{border:1px solid var(--line2); border-radius:12px; padding:16px 18px; background:var(--panel)}
+  .box h5{margin:0 0 10px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
+  .warn{border-color:rgba(209,96,79,.5); background:var(--dangerbg)}
+  .warn h5{color:#e79587}
+  .warn ul.clean li::before{background:var(--danger)}
+  .pillrow{display:flex; flex-wrap:wrap; gap:8px}
+  .pill{font-size:12.5px; border:1px solid var(--line2); background:var(--panel); color:var(--muted);
+    padding:6px 11px; border-radius:999px}
+  .pill.g{color:var(--gold2); border-color:rgba(212,169,78,.4)}
+  .steps{counter-reset:step; display:grid; gap:10px}
+  .steps li{counter-increment:step; padding-left:38px; position:relative; color:var(--text); font-size:14.5px}
+  .steps li::before{content:counter(step); position:absolute; left:0; top:0; width:26px; height:26px; border-radius:50%;
+    background:rgba(79,157,111,.16); border:1px solid rgba(79,157,111,.5); color:var(--green2);
+    font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center}
+  .note{font-size:13.5px; color:var(--faint); border-left:2px solid var(--gold); padding-left:12px; margin-top:14px}
+  .credit{font-size:11.5px; color:var(--faint); margin-top:8px}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line); padding:40px 0 60px; color:var(--faint); font-size:13.5px}
+  footer .wrap{display:grid; gap:14px}
+  footer b{color:var(--muted)}
+  .disc{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; color:var(--muted); font-size:13.5px}
+
+  @media(max-width:640px){
+    header{padding:44px 0 24px}
+    section{padding:42px 0}
+    #map{height:360px}
+    .sheet-body{padding:22px}
+    .sheet-hero{height:240px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="kicker">Ethnobotany · Living Atlas</span>
+    <h1 class="title">Sacred <em>Botany</em></h1>
+    <p class="lede">An interactive field atlas of the world's most significant ritual and visionary plants — how to identify them, how they have traditionally been prepared, where they grow, and the cultures and ceremonies they belong to.</p>
+    <div class="meta-row">
+      <span class="chip"><span class="dot"></span><b>9</b> species profiled</span>
+      <span class="chip"><b>6</b> continents</span>
+      <span class="chip"><b>4</b> dimensions each</span>
+      <span class="chip">Photos · <b>Wikimedia Commons</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="search" placeholder="Search by plant, culture, region, or compound…" autocomplete="off">
+    </div>
+    <div class="seg" id="seg">
+      <button data-c="all" class="active">All</button>
+      <button data-c="South America">South America</button>
+      <button data-c="North America">North America</button>
+      <button data-c="Africa">Africa</button>
+      <button data-c="Oceania">Oceania</button>
+      <button data-c="Boreal">Boreal</button>
+      <button data-c="Global">Global</button>
+    </div>
+  </div>
+</div>
+
+<section id="map-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>Native Ranges</h2>
+        <p>Where each plant is indigenous. Tap a marker to open its full profile.</p>
+      </div>
+      <span class="count" id="mapcount"></span>
+    </div>
+    <div id="map"></div>
+    <div class="legend">
+      <span><i style="background:#d4a94e"></i> Native range marker</span>
+      <span><i style="background:#4f9d6f"></i> Plant / cactus / vine</span>
+      <span><i style="background:#d1604f"></i> Fungus (not a plant)</span>
+      <span style="margin-left:auto">Map tiles © OpenStreetMap contributors · © CARTO</span>
+    </div>
+  </div>
+</section>
+
+<section id="grid-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>The Plants</h2>
+        <p>Each profile covers identification, traditional preparation, native location, and the cultures &amp; rituals it belongs to.</p>
+      </div>
+      <span class="count" id="gridcount"></span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="disc"><b>Educational &amp; cultural reference.</b> This atlas documents ethnobotanical and anthropological knowledge for learning, research, and cultural appreciation. It is not medical, legal, or safety advice. The legality of these plants varies widely by country, state, and context; many are controlled substances. Traditional use has historically occurred within specific cultural, ceremonial, and guided settings. Do not self-administer without understanding the substantial risks, and always respect the Indigenous communities and living traditions these plants come from.</div>
+    <div>Photos: <b>Wikimedia Commons</b> (freely licensed). Map data: <b>OpenStreetMap</b>, <b>CARTO</b>. Compiled as a living ethnobotanical reference.</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay">
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+/* ============================== DATA ============================== */
+const PLANTS = [
+{
+  id:"ayahuasca", name:"Ayahuasca", sci:"Banisteriopsis caapi + Psychotria viridis",
+  family:"Malpighiaceae + Rubiaceae", form:"Woody vine + shrub", continent:"South America",
+  regions:["Peru","Brazil","Colombia","Ecuador","Bolivia"], coords:[-3.4653,-62.2159],
+  habitat:"Tropical rainforest understory and riverbanks of the Amazon basin",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Banisteriopsis_caapi_flower.jpg/1280px-Banisteriopsis_caapi_flower.jpg",
+  alt:"Banisteriopsis caapi vine in flower",
+  parts:"Vine stems and leaves (caapi) combined with chopped chacruna leaves",
+  compounds:["DMT (dimethyltryptamine)","Harmine & harmaline (MAO inhibitors)"],
+  id_features:[
+    "Banisteriopsis caapi is a fast-growing, woody climbing vine that can reach 20 m+, with glossy, heart-shaped (cordate) leaves.",
+    "It bears small, pale green-to-white, five-petalled, star-like flowers in loose clusters, followed by small round red fruit.",
+    "Its partner, Psychotria viridis (chacruna), is an upright 1–3 m shrub with oval, pointed, glossy leaves and clusters of small red berries.",
+    "In the field, the brew is defined by the pairing — the vine alone is not the active plant."
+  ],
+  lookalikes:[
+    "Many Amazonian vines share the cordate, glossy leaves; the climbing habit plus pale star-flower clusters is the key combination.",
+    "Psychotria has close Rubiaceae relatives — local shamans distinguish chacruna by leaf shape, growth form, and the red berry clusters.",
+    "Wild plants are often protected and culturally restricted; identification and harvest are traditionally done with a local practitioner."
+  ],
+  prep:{
+    summary:"A decoction that pairs two plants: the MAO-inhibitor vine makes the DMT of the chacruna leaf orally active.",
+    steps:[
+      "A length of caapi vine (roughly 2–3 m) is cut and chopped.",
+      "It is boiled in water for several hours, reducing to an amber-green liquid that releases the MAO inhibitors.",
+      "Chopped chacruna leaves are added and simmered briefly to release DMT.",
+      "The brew is traditionally consumed on an empty stomach, within a guided ceremonial context and after preparation (fasting, intention)."
+    ],
+    note:"The pairing is essential — the MAO inhibitors prevent DMT being broken down in the gut, which is why this combination is the classic 'ayahuasca' preparation."
+  },
+  culture:{
+    cultures:["Shipibo-Conibo","Asháninka","Tukanoan & Jivaroan (Shuar) peoples","Santo Daime & UDV (União do Vegetal)","Many other Amazonian nations"],
+    ritual:"Taken in a ceremonial circle (a 'palo') led by a curandero, pajé or ayahuasquero. The experience is framed by sacred song (icaros), prayer, fasting and intention-setting, and is understood as a relationship — the plant is often addressed as a teacher or 'grandmother' (Nana / Ayahuasca).",
+    context:"Used for healing, spiritual vision, guidance, and community ceremony across the Amazon, and within two syncretic religions that centre on the plant."
+  },
+  legality:"Ritual use is tolerated in Peru and Brazil; DMT is a controlled substance in many other jurisdictions.",
+  safety:"MAO interactions (avoid tyramine-rich foods and many medications), strong emotional and physical response, and not suitable for everyone. Traditionally taken only with guidance."
+},
+{
+  id:"peyote", name:"Peyote", sci:"Lophophora williamsii",
+  family:"Cactaceae", form:"Spineless button cactus", continent:"North America",
+  regions:["Chihuahua, Mexico","Texas, USA","Sonoran & Chihuahuan deserts"], coords:[29.7,-104.0],
+  habitat:"Arid calcareous (limestone) plains and dry grassland",
+  image:"https://upload.wikimedia.org/wikipedia/commons/2/29/Lophophora_williamsii_Bl%C3%BCte.JPG",
+  alt:"Peyote cactus in flower",
+  parts:"The whole 'button' (crown) of the cactus",
+  compounds:["Mescaline","Other phenylethylamine alkaloids"],
+  id_features:[
+    "A small, spineless, button-shaped cactus growing to about 10 cm tall, pale to bluish-green.",
+    "It has shallow ribs (5–12) and grows in low, spreading clumps; the crown is covered in tiny woolly areoles rather than spines.",
+    "Small white-to-pink flowers open at the top, followed by a red, flattened fruit.",
+    "Extremely slow-growing — roughly 1 cm per year — which makes wild populations fragile."
+  ],
+  lookalikes:[
+    "Distinguish from other small cacti by the spineless, button form and the woolly (not spiny) crown.",
+    "Harvesting wild peyote is regulated in most ranges; it is a slow-growing, culturally protected species.",
+    "In ceremonial use the plant is supplied by and for the community — it is not a 'forage' plant."
+  ],
+  prep:{
+    summary:"Traditionally taken as the raw or dried cactus button, not as an isolated extract.",
+    steps:[
+      "The button is separated from the base of the cactus.",
+      "It is chewed raw (bitter, usually taken with food to ease nausea), or.",
+      "It is dried and ground into a powder for use.",
+      "In the Native American Church the button is chewed during the sacred ceremony."
+    ],
+    note:"Traditional use is the whole plant; mescaline as a synthetic compound is a different, industrial product."
+  },
+  culture:{
+    cultures:["Wixárika (Huichol) of Mexico","The Native American Church (inter-tribal)","Historically the Comanche and other southern Plains nations"],
+    ritual:"For the Wixárika, peyote is central to the 'Elyakuk' — a multi-day vision quest of fasting, prayer and peyote-taking to receive divine imagery. In the Native American Church the 'sacred fire' ceremony takes peyote as a sacrament alongside prayer, song, and the sharing of bread and water.",
+    context:"One of the most sacred plants of North America, with use spanning millennia and a protected religious tradition."
+  },
+  legality:"Schedule I (US) with a recognised religious exemption for the Native American Church; regulated in Mexico for Wixárika use.",
+  safety:"Dehydration, nausea, and stimulant (sympathomimetic) cardiovascular effects. Legally restricted in most places."
+},
+{
+  id:"san_pedro", name:"San Pedro", sci:"Echinopsis peruviana (syn. E. pachanoi)",
+  family:"Cactaceae", form:"Columnar cactus", continent:"South America",
+  regions:["Peru","Bolivia","Chile","Ecuador","Northern Argentina"], coords:[-13.53,-71.97],
+  habitat:"Arid to semi-arid Andean highlands, often near rivers",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flores_de_Echinopsis_peruviana_en_el_templo_Chav%C3%ADn_de_Hu%C3%A1ntar_04.jpg/1280px-Flores_de_Echinopsis_peruviana_en_el_templo_Chav%C3%ADn_de_Hu%C3%A1ntar_04.jpg",
+  alt:"Echinopsis peruviana (San Pedro) flowers at the Chavín temple",
+  parts:"The fleshy cactus column (peeled and boiled)",
+  compounds:["Mescaline","Other phenylethylamine alkaloids"],
+  id_features:[
+    "A tall, columnar cactus reaching 2–4 m, bluish-green, with thick vertical ribs.",
+    "Prominent white spines along the rib margins and large, fragrant white-to-pink flowers that open at night.",
+    "Grows upright and sometimes branches; easily cultivated and often found in home gardens across the Andes.",
+    "The large nocturnal bloom is a reliable field mark."
+  ],
+  lookalikes:[
+    "Distinguish from other columnar cacti (Echinopsis, Eriocactus) by the thick ribs, large flowers, and upright habit.",
+    "Long cultivated in the Andes; commonly grown rather than gathered wild.",
+    "Culturally it is a distinct Andean plant — separate from the North American peyote."
+  ],
+  prep:{
+    summary:"The cactus is peeled and boiled to extract mescaline into a drinkable decoction.",
+    steps:[
+      "The column is cut and the outer skin removed.",
+      "The flesh is chopped and boiled in water until reduced.",
+      "The liquid (locally 'aguada' or 'jagua') is strained and drunk.",
+      "Traditionally sometimes combined with other local plants within ceremony."
+    ],
+    note:"Boiling is what makes the alkaloids available; the result is a milder, longer-acting mescaline preparation than raw peyote."
+  },
+  culture:{
+    cultures:["Andean Indigenous communities","Shipibo-Conibo & Uru traditions","Contemporary Andean 'yatiri' healers"],
+    ritual:"Used in healing and vision ceremonies across the Andes as a milder alternative to ayahuasca, taken within a guided ritual with music, prayer and intention-setting.",
+    context:"A cornerstone of Andean visionary tradition, with a history of cultivation stretching back through pre-Columbian cultures."
+  },
+  legality:"Mescaline is controlled in many countries; ritual use is tolerated in parts of Peru.",
+  safety:"Nausea/vomiting and dehydration are common; stimulant cardiovascular effects. Legally restricted in most places."
+},
+{
+  id:"iboga", name:"Iboga", sci:"Tabernanthe iboga",
+  family:"Apocynaceae", form:"Large shrub / small tree", continent:"Africa",
+  regions:["Gabon","Congo","Cameroon","Equatorial Guinea"], coords:[-0.42,11.5],
+  habitat:"Central African tropical rainforest",
+  image:"https://upload.wikimedia.org/wikipedia/commons/2/2e/Iboga.jpg",
+  alt:"Tabernanthe iboga (iboga) in the rainforest",
+  parts:"The roots and root bark",
+  compounds:["Ibogaine","20+ indole alkaloids"],
+  id_features:[
+    "A large shrub or small tree up to about 5 m tall with glossy, dark-green, opposite leaves.",
+    "Small white-to-pale-purple flowers in leaf-armpit (axillary) clusters.",
+    "Produces small red-to-purple fruit; the plant exudes a milky latex like other Apocynaceae.",
+    "The active alkaloids concentrate in the roots and root bark — the part traditionally harvested."
+  ],
+  lookalikes:[
+    "Distinguish from other Apocynaceae by leaf arrangement, the axillary flower clusters, and the fruit.",
+    "A slow-growing rainforest tree under conservation pressure; the root, not the leaf, is the medicine.",
+    "Harvest and use are traditionally led by Bwiti practitioners."
+  ],
+  prep:{
+    summary:"The roots are dried, ground, and brewed into a strong, bitter decoction.",
+    steps:[
+      "The roots and root bark are harvested from the tree.",
+      "They are dried and pounded into a coarse powder.",
+      "The powder is boiled into a concentrated, intensely bitter tea.",
+      "In Bwiti it is taken as a strong decoction, in increasing amounts across an initiation."
+    ],
+    note:"Ibogaine was later investigated as a tool for addiction recovery — but it carries serious cardiac risk and is only ever used with medical/ritual oversight."
+  },
+  culture:{
+    cultures:["Bwiti religion of Gabon","Fang & Baka peoples","Central African rainforest traditions"],
+    ritual:"Central to the Bwiti 'Nganga' initiation — a multi-day rite in which iboga is taken in escalating doses to undergo spiritual initiation, healing, and communion with ancestors. The Bwiti faith blends Indigenous and later influences into a structured religious path.",
+    context:"One of the most potent and sacred plants of Central Africa, with a long ceremonial history."
+  },
+  legality:"Ibogaine is unapproved and regulated; the Gabonese Bwiti tradition is culturally protected.",
+  safety:"Serious cardiac risk (QT prolongation) and dangerous drug interactions. Never used without professional/ritual supervision."
+},
+{
+  id:"kanna", name:"Kanna", sci:"Sceletium tortuosum",
+  family:"Aizoaceae", form:"Twisted succulent", continent:"Africa",
+  regions:["Western Cape, South Africa","Lesotho"], coords:[-33.92,18.42],
+  habitat:"Arid, sandy, coastal fynbos and heathland",
+  image:"https://upload.wikimedia.org/wikipedia/commons/b/be/Sceletium_tortuosum_01102003_Afrique_du_sud_2.JPG",
+  alt:"Sceletium tortuosum (kanna) succulent",
+  parts:"The fleshy leaves",
+  compounds:["Mesembrine","Mesembrenone"],
+  id_features:[
+    "A low, mat-forming succulent with thick, fleshy, distinctly twisted green leaves — 'tortuosum' means 'twisted'.",
+    "Small white-to-pink, star-shaped flowers.",
+    "Ground-hugging and drought-tolerant, native to the Cape region.",
+    "The leaves are the part traditionally used."
+  ],
+  lookalikes:[
+    "Distinguish from other Aizoaceae succulents by the characteristically twisted, fleshy leaves.",
+    "A familiar Cape plant, harvested for its leaves rather than its flowers.",
+    "Mild compared with most visionary plants — more of a psychoactive stimulant/sedative."
+  ],
+  prep:{
+    summary:"The leaves are chewed, smoked, or brewed as an infusion.",
+    steps:[
+      "The fleshy leaves are gathered and dried.",
+      "They are chewed directly, or.",
+      "Smoked, or.",
+      "Steeped into a tea/infusion."
+    ],
+    note:"Historically used to ease hunger, thirst and fatigue — a mild psychoactive rather than a strong visionary."
+  },
+  culture:{
+    cultures:["Khoi and San (Khoisan) peoples of southern Africa"],
+    ritual:"Used within Khoi and San ritual and healing, and as an everyday psychoactive to relieve hunger, thirst and tiredness.",
+    context:"An Indigenous psychoactive of the Cape, now the basis of modern nootropic products."
+  },
+  legality:"Legal in South Africa; regulated as a controlled substance in some countries.",
+  safety:"Mild; can be sedating — caution with driving or machinery."
+},
+{
+  id:"kava", name:"Kava", sci:"Piper methysticum",
+  family:"Piperaceae", form:"Aromatic shrub", continent:"Oceania",
+  regions:["Fiji","Vanuatu","Tonga","Samoa","Hawai'i","Across Melanesia & Micronesia"], coords:[-17.8,178.0],
+  habitat:"Tropical, moist lowlands near water",
+  image:"https://upload.wikimedia.org/wikipedia/commons/8/83/Starr_040318-0058_Piper_methysticum.jpg",
+  alt:"Piper methysticum (kava) shrub",
+  parts:"The rhizome / root",
+  compounds:["Kavalactones"],
+  id_features:[
+    "A 1–2 m shrub with glossy, dark-green, heart-shaped leaves.",
+    "Small, inconspicuous flower clusters (it rarely flowers outside its native range).",
+    "Strongly aromatic stems, leaves and — above all — the rhizome.",
+    "The pungent, aromatic root is the part that is prepared and shared."
+  ],
+  lookalikes:[
+    "Distinguish from other peppery Pipers by the strongly aromatic rhizome.",
+    "A cultivated crop across the Pacific; the root, not the leaf, is the medicine.",
+    "One of the most widely shared ritual substances on Earth."
+  ],
+  prep:{
+    summary:"The root is grated and kneaded with water into a shared, earthy brown drink.",
+    steps:[
+      "The rhizome is cut and grated or pounded.",
+      "It is placed in a bowl and mixed with water.",
+      "The pulp is kneaded by hand (or through a strainer) to release the kavalactones.",
+      "The resulting liquid is sipped from a shared bowl (tanoa / yago), passed around the circle."
+    ],
+    note:"Preparation is itself a social act — the kneading and sharing are part of the ceremony."
+  },
+  culture:{
+    cultures:["Fijian ('yaqona')","Tongan ('kava')","Samoan","Hawaiian ('kava')","Many Melanesian & Micronesian peoples"],
+    ritual:"Central to Pacific social and ceremonial life: welcoming guests, honouring chiefs, settling disputes, and religious observance. The bowl is passed in a set order; taking kava is a mark of respect, kinship and community.",
+    context:"A unifying cultural institution of the Pacific — a 'liquid of ceremony'."
+  },
+  legality:"A legal traditional beverage in most of the Pacific and widely elsewhere.",
+  safety:"Generally mild; heavy long-term use has been linked to liver strain — avoid combining with alcohol."
+},
+{
+  id:"fly_agaric", name:"Fly Agaric", sci:"Amanita muscaria",
+  family:"Amanitaceae (fungus — not a plant)", form:"Bolete-type mushroom", continent:"Boreal",
+  regions:["Siberia, Russia","Scandinavia","Northern Europe","Boreal N. America"], coords:[61.0,73.0],
+  habitat:"Boreal coniferous forest, in symbiosis with pine & spruce",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Fliegenpilz_fly_agaric_Amanita_muscaria.JPG/1280px-Fliegenpilz_fly_agaric_Amanita_muscaria.JPG",
+  alt:"Amanita muscaria (fly agaric) — red cap with white spots",
+  parts:"The cap (dried or brewed)",
+  compounds:["Muscimol","Ibotenic acid"],
+  id_features:[
+    "A bright red cap marked with white spots (warts) — one of the most iconic mushrooms on Earth.",
+    "A white stem, a white ring (annulus), and a white bulbous base (volva).",
+    "Grows in the boreal forest, associated with conifers.",
+    "The white spots are remnants of the universal veil and are a key field mark."
+  ],
+  lookalikes:[
+    "WARNING — the Amanita genus also contains deadly species (e.g. the green-capped death cap). Do not rely on a photo.",
+    "The red cap plus white spots is the classic mark, but look-alikes exist and individual potency varies enormously.",
+    "Because of the lethal relatives, this is a 'never forage without an expert' species."
+  ],
+  prep:{
+    summary:"Traditionally dried (which converts ibotenic acid to muscimol), then brewed or eaten.",
+    steps:[
+      "The cap is collected and dried — drying shifts the chemistry toward muscimol.",
+      "It is brewed into a tea, or.",
+      "Eaten directly in traditional use.",
+      "Siberian shamans are recorded taking a 'fly agaric tea' to enter trance."
+    ],
+    note:"Potency varies widely between specimens and preparations; this is a high-risk species."
+  },
+  culture:{
+    cultures:["Siberian shamanic peoples (Ket, Evenki & other Turkic/Mongolic groups)","The Sámi of Scandinavia"],
+    ritual:"Used by shamans to enter trance and 'journey' — for healing, divination and communion with the spirit world. A classic shamanic entheogen of the northern forest.",
+    context:"Deeply embedded in northern shamanic and folklore traditions."
+  },
+  legality:"Not a controlled substance in many places, but use is strongly discouraged.",
+  safety:"DANGEROUS — confused with lethal Amanita species, high individual variability, and nausea/confusion. Not recommended without expert guidance."
+},
+{
+  id:"psilocybe", name:"Psilocybin Mushroom", sci:"Psilocybe cubensis (and related species)",
+  family:"Hymenogastraceae (fungus — not a plant)", form:"Small brown mushroom", continent:"Global",
+  regions:["Mexico (Teotihuacán, Mazatec)","The Americas","Caribbean","Wet regions worldwide"], coords:[19.69,-98.85],
+  habitat:"Grassland, manure-rich soil, and tropical forests",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Psilocybe_Cubensis_Imire_%28Psilocybe_Cubensis_Zimbabwe%29_9.jpg/1280px-Psilocybe_Cubensis_Imire_%28Psilocybe_Cubensis_Zimbabwe%29_9.jpg",
+  alt:"Psilocybe cubensis (psilocybin) mushrooms",
+  parts:"The whole fruiting body (dried or fresh)",
+  compounds:["Psilocybin","Psilocin"],
+  id_features:[
+    "A small-to-medium brown cap, conical to convex, over a pale stem.",
+    "Often 'blues' (turns blue) when bruised — a classic but not guaranteed sign of psilocybin.",
+    "A brown spore print and a preference for dung-rich or grassy substrate.",
+    "Grows in flushes, often after rain, on manure or decaying organic matter."
+  ],
+  lookalikes:[
+    "WARNING — multiple deadly look-alikes exist, including Galerina marginata (a small, similar, lethal mushroom).",
+    "Bluing is not a reliable ID on its own; spore print, habitat and substrate all matter.",
+    "This is a 'never forage without an expert' species — misidentification can be fatal."
+  ],
+  prep:{
+    summary:"Traditionally dried and eaten, or brewed as a tea; taken in ceremony.",
+    steps:[
+      "The mushrooms are collected and air-dried (drying stabilises psilocybin).",
+      "They are eaten, ground, or brewed into a tea.",
+      "In Mesoamerican tradition they are taken within a guided ceremony.",
+      "In the modern era they are used in supervised therapeutic settings."
+    ],
+    note:"Psilocybin converts to the active psilocin in the body; the effect is a classic serotonergic psychedelic."
+  },
+  culture:{
+    cultures:["The Mazatec people (the María Sabina tradition)","The Totonac of Teotihuacán","Contemporary global therapeutic & ceremonial movements"],
+    ritual:"Among the Mazatec, a 'curandera' leads vision ceremonies with psilocybin mushrooms — a tradition brought to wider attention by María Sabina. The Totonac are linked to the ancient mushroom pilgrimage to Teotihuacán. Today psilocybin is also in clinical trials for depression and other conditions.",
+    context:"One of the oldest documented entheogens, with a Mesoamerican ceremonial root and a modern renaissance in therapy."
+  },
+  legality:"Illegal in most countries; decriminalised in some US cities/states; active medical trials ongoing.",
+  safety:"DANGEROUS — lethal look-alikes in the wild; strong emotional response; not for those with a personal/family history of psychosis. Use only in safe, informed settings."
+},
+{
+  id:"jurema", name:"Jurema (Santa Maria)", sci:"Anadenanthera peregrina / A. colubrina",
+  family:"Fabaceae (Mimosoideae)", form:"Small tree", continent:"South America",
+  regions:["Northeast Brazil","Coastal Venezuela","Peru"], coords:[-7.0,-35.0],
+  habitat:"Tropical dry forest and coastal areas",
+  image:"https://upload.wikimedia.org/wikipedia/commons/5/5b/Anadenanthera_peregrina.jpg",
+  alt:"Anadenanthera peregrina (jurema) tree",
+  parts:"The bark and wood (brewed)",
+  compounds:["DMT","Other indole alkaloids"],
+  id_features:[
+    "A small tree to about 10 m with feathery, two-pinnate (bipinnate) leaves.",
+    "Small yellow-to-white flower clusters.",
+    "Distinctive heart-shaped, helicopter-like seed pods (samaras) — a key field mark.",
+    "Common in the dry coastal forests of northeastern Brazil."
+  ],
+  lookalikes:[
+    "Distinguish from other Mimosaceae (acacias) by the helicopter-shaped samaras.",
+    "A culturally specific plant of the Afro-Brazilian 'Jurema' tradition.",
+    "Like other DMT-bearing plants, it is traditionally used with MAO-inhibitor companions."
+  ],
+  prep:{
+    summary:"The bark is boiled into a visionary tea, often in a combined preparation.",
+    steps:[
+      "The bark and wood are collected and dried.",
+      "They are boiled into a strong, bitter tea ('jurema').",
+      "Traditionally combined with MAO-inhibitor plants to make DMT orally active.",
+      "Taken within the Jurema ceremonial context."
+    ],
+    note:"A DMT-bearing 'caapi-like' brew of the Brazilian northeast, distinct from Amazonian ayahuasca."
+  },
+  culture:{
+    cultures:["Afro-Brazilian 'Jurema' religious tradition","Umbanda & related syncretic faiths","Tupi-Guarani peoples"],
+    ritual:"Central to the Afro-Brazilian Jurema ceremonies — a visionary brew taken in ritual for healing, spiritual work and communion, blending Indigenous and African-rooted traditions.",
+    context:"A sacred tree of the Brazilian northeast with a living religious tradition of its own."
+  },
+  legality:"DMT is controlled; ritual use is culturally tolerated in Brazil.",
+  safety:"MAO interactions and strong emotional response; traditionally taken with guidance."
+}
+];
+
+/* ============================== HELPERS ============================== */
+const $ = (s,el=document)=>el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isFungus = p => /fungus/.test(p.family);
+const cardTag = p => isFungus(p) ? "Fungus" : (p.form || "Plant");
+
+/* ============================== GRID ============================== */
+const grid = $("#grid");
+function renderGrid(list){
+  grid.innerHTML = list.length ? list.map(p=>`
+    <article class="card" data-id="${p.id}" tabindex="0" role="button" aria-label="Open ${esc(p.name)}">
+      <div class="thumb">
+        <img loading="lazy" src="${p.image}" alt="${esc(p.alt)}"
+             onerror="this.style.display='none'">
+        <span class="tag">${esc(cardTag(p))}</span>
+      </div>
+      <div class="body">
+        <h3>${esc(p.name)}</h3>
+        <div class="sci">${esc(p.sci)}</div>
+        <p class="desc">${esc(p.prep.summary)}</p>
+        <div class="foot">
+          <span class="regions">${esc(p.regions[0])}${p.regions.length>1?` +${p.regions.length-1}`:""}</span>
+          <span class="go">Profile
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </div>
+    </article>`).join("") :
+    `<div class="empty">No plants match your search. Try a different term or continent.</div>`;
+  $("#gridcount").textContent = `${list.length} of ${PLANTS.length} species`;
+}
+
+/* ============================== MAP ============================== */
+const map = L.map('map',{scrollWheelZoom:false, worldCopyJump:true}).setView([12,10],2);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+  attribution:'© OpenStreetMap contributors © CARTO', subdomains:'abcd', maxZoom:19
+}).addTo(map);
+const markers = [];
+PLANTS.forEach(p=>{
+  const m = L.circleMarker(p.coords,{
+    radius:9, color:isFungus(p)?"#d1604f":"#4f9d6f",
+    weight:2, fillColor:isFungus(p)?"#d1604f":"#d4a94e", fillOpacity:.85
+  }).addTo(map);
+  m.bindTooltip(`${p.name} — ${p.regions[0]}`, {direction:"top", offset:[0,-8]});
+  m.on("click",()=>openDetail(p.id,true));
+  markers.push(m);
+});
+$("#mapcount").textContent = `${PLANTS.length} native ranges`;
+
+function flyTo(p){
+  map.flyTo(p.coords,5,{duration:1.1});
+  const mk = markers.find(m=>m._latlng && Math.abs(m._latlng.lat-p.coords[0])<0.01 && Math.abs(m._latlng.lng-p.coords[1])<0.01);
+  if(mk) mk.openTooltip();
+}
+
+/* ============================== DETAIL ============================== */
+const overlay = $("#overlay"), sheet = $("#sheet");
+function openDetail(id, fromMap){
+  const p = PLANTS.find(x=>x.id===id); if(!p) return;
+  const fungus = isFungus(p);
+  sheet.innerHTML = `
+    <div class="sheet-hero">
+      <img src="${p.image}" alt="${esc(p.alt)}" onerror="this.style.display='none'">
+      <div class="grad"></div>
+      <button class="close" id="close" aria-label="Close">&times;</button>
+      <div class="txt">
+        <span class="tag">${esc(cardTag(p))} · ${esc(p.continent)}</span>
+        <h2>${esc(p.name)}</h2>
+        <div class="sci">${esc(p.sci)} · ${esc(p.family)}</div>
+      </div>
+    </div>
+    <div class="sheet-body">
+
+      <div class="facts">
+        <div><div class="k">Native range</div><div class="v">${esc(p.regions.join(", "))}</div></div>
+        <div><div class="k">Habitat</div><div class="v">${esc(p.habitat)}</div></div>
+        <div><div class="k">Parts used</div><div class="v">${esc(p.parts)}</div></div>
+        <div><div class="k">Active compounds</div><div class="v">${esc(p.compounds.join(", "))}</div></div>
+      </div>
+
+      <div class="block">
+        <h4><span class="n">1</span> How to Identify</h4>
+        <div class="two">
+          <div class="box">
+            <h5>Key field marks</h5>
+            <ul class="clean">${p.id_features.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>
+          </div>
+          <div class="box warn">
+            <h5>Look-alikes &amp; cautions</h5>
+            <ul class="clean">${p.lookalikes.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>
+          </div>
+        </div>
+        <div class="note">Field identification of ${fungus?"fungi":"plants"} can be hazardous — several species here have toxic or lethal relatives. This is cultural reference, not a foraging guide.</div>
+      </div>
+
+      <div class="block">
+        <h4><span class="n">2</span> Traditional Preparation</h4>
+        <p>${esc(p.prep.summary)}</p>
+        <ol class="steps">${p.prep.steps.map(s=>`<li>${esc(s)}</li>`).join("")}</ol>
+        <div class="pillrow" style="margin-top:16px">
+          ${p.compounds.map(c=>`<span class="pill g">${esc(c)}</span>`).join("")}
+          <span class="pill">Part: ${esc(p.parts)}</span>
+        </div>
+        <div class="note">${esc(p.prep.note)}</div>
+      </div>
+
+      <div class="block">
+        <h4><span class="n">3</span> Where It Grows</h4>
+        <div class="two">
+          <div class="box">
+            <h5>Native regions</h5>
+            <div class="pillrow">${p.regions.map(r=>`<span class="pill">${esc(r)}</span>`).join("")}</div>
+          </div>
+          <div class="box">
+            <h5>Habitat &amp; ecology</h5>
+            <p style="margin:0">${esc(p.habitat)}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <h4><span class="n">4</span> Culture &amp; Ritual</h4>
+        <div class="box" style="margin-bottom:14px">
+          <h5>Associated cultures</h5>
+          <div class="pillrow">${p.culture.cultures.map(c=>`<span class="pill g">${esc(c)}</span>`).join("")}</div>
+        </div>
+        <p style="margin-top:16px"><b style="color:var(--text)">The ritual.</b> ${esc(p.culture.ritual)}</p>
+        <p><b style="color:var(--text)">Context.</b> ${esc(p.culture.context)}</p>
+      </div>
+
+      <div class="block">
+        <div class="two">
+          <div class="box"><h5>Legality</h5><p style="margin:0">${esc(p.legality)}</p></div>
+          <div class="box warn"><h5>Safety</h5><p style="margin:0">${esc(p.safety)}</p></div>
+        </div>
+        <div class="credit">Photograph: Wikimedia Commons (freely licensed). Compiled as an educational ethnobotanical reference — not medical, legal, or foraging advice.</div>
+      </div>
+
+    </div>`;
+  overlay.classList.add("open");
+  document.body.style.overflow="hidden";
+  overlay.scrollTop = 0;
+  $("#close").addEventListener("click",closeDetail);
+  if(fromMap) document.getElementById("map-sec").scrollIntoView({behavior:"smooth"});
+}
+function closeDetail(){
+  overlay.classList.remove("open");
+  document.body.style.overflow="";
+}
+overlay.addEventListener("click",e=>{ if(e.target===overlay) closeDetail(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeDetail(); });
+
+/* grid click */
+grid.addEventListener("click",e=>{
+  const card = e.target.closest(".card"); if(!card) return;
+  const p = PLANTS.find(x=>x.id===card.dataset.id);
+  openDetail(card.dataset.id,false);
+  if(p) flyTo(p);
+});
+grid.addEventListener("keydown",e=>{
+  if(e.key==="Enter"||e.key===" "){
+    const card=e.target.closest(".card"); if(card){e.preventDefault();card.click();}
+  }
+});
+
+/* ============================== FILTER ============================== */
+let continent="all";
+const q = $("#q");
+function applyFilter(){
+  const term = q.value.trim().toLowerCase();
+  const list = PLANTS.filter(p=>{
+    if(continent!=="all" && p.continent!==continent) return false;
+    if(!term) return true;
+    const hay = [p.name,p.sci,p.family,p.continent,p.parts,
+      p.regions.join(" "), p.compounds.join(" "), p.culture.cultures.join(" "),
+      p.culture.ritual, p.habitat].join(" ").toLowerCase();
+    return hay.includes(term);
+  });
+  renderGrid(list);
+}
+$("#seg").addEventListener("click",e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  continent = b.dataset.c;
+  [...e.currentTarget.children].forEach(x=>x.classList.toggle("active",x===b));
+  applyFilter();
+});
+q.addEventListener("input",applyFilter);
+
+renderGrid(PLANTS);
+</script>
+</body>
+</html>
