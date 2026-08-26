@@ -176,9 +176,9 @@
     <h1 class="title">Sacred <em>Botany</em></h1>
     <p class="lede">An interactive field atlas of the world's most significant ritual and visionary plants — how to identify them, how they have traditionally been prepared, where they grow, and the cultures and ceremonies they belong to.</p>
     <div class="meta-row">
-      <span class="chip"><span class="dot"></span><b>9</b> species profiled</span>
-      <span class="chip"><b>6</b> continents</span>
-      <span class="chip"><b>4</b> dimensions each</span>
+      <span class="chip"><span class="dot"></span><b>17</b> species profiled</span>
+      <span class="chip"><b>7</b> continents</span>
+      <span class="chip"><b>5</b> dimensions each</span>
       <span class="chip">Photos · <b>Wikimedia Commons</b></span>
     </div>
   </div>
@@ -194,6 +194,7 @@
       <button data-c="all" class="active">All</button>
       <button data-c="South America">South America</button>
       <button data-c="North America">North America</button>
+      <button data-c="Asia">Asia</button>
       <button data-c="Africa">Africa</button>
       <button data-c="Oceania">Oceania</button>
       <button data-c="Boreal">Boreal</button>
@@ -258,6 +259,7 @@ const PLANTS = [
   alt:"Banisteriopsis caapi vine in flower",
   parts:"Vine stems and leaves (caapi) combined with chopped chacruna leaves",
   compounds:["DMT (dimethyltryptamine)","Harmine & harmaline (MAO inhibitors)"],
+  pharmacology:"DMT is a potent 5-HT2A serotonin receptor agonist — the 'classic psychedelic' target. Harmine and harmaline are MAO-A inhibitors: they produce no vision themselves, but block the breakdown of DMT in gut and brain, which is what makes orally taken DMT active for hours.",
   id_features:[
     "Banisteriopsis caapi is a fast-growing, woody climbing vine that can reach 20 m+, with glossy, heart-shaped (cordate) leaves.",
     "It bears small, pale green-to-white, five-petalled, star-like flowers in loose clusters, followed by small round red fruit.",
@@ -296,6 +298,7 @@ const PLANTS = [
   alt:"Peyote cactus in flower",
   parts:"The whole 'button' (crown) of the cactus",
   compounds:["Mescaline","Other phenylethylamine alkaloids"],
+  pharmacology:"Mescaline is a 5-HT2A serotonin receptor agonist — the same target as psilocin and LSD — which is why the experience is a 'classic psychedelic' rich in imagery, colour and symbolic content.",
   id_features:[
     "A small, spineless, button-shaped cactus growing to about 10 cm tall, pale to bluish-green.",
     "It has shallow ribs (5–12) and grows in low, spreading clumps; the crown is covered in tiny woolly areoles rather than spines.",
@@ -334,6 +337,7 @@ const PLANTS = [
   alt:"Echinopsis peruviana (San Pedro) flowers at the Chavín temple",
   parts:"The fleshy cactus column (peeled and boiled)",
   compounds:["Mescaline","Other phenylethylamine alkaloids"],
+  pharmacology:"Mescaline is a 5-HT2A serotonin receptor agonist, identical in mechanism to peyote — the cactus is simply the largest natural source of the compound.",
   id_features:[
     "A tall, columnar cactus reaching 2–4 m, bluish-green, with thick vertical ribs.",
     "Prominent white spines along the rib margins and large, fragrant white-to-pink flowers that open at night.",
@@ -372,6 +376,7 @@ const PLANTS = [
   alt:"Tabernanthe iboga (iboga) in the rainforest",
   parts:"The roots and root bark",
   compounds:["Ibogaine","20+ indole alkaloids"],
+  pharmacology:"Ibogaine is a multi-target indole alkaloid: it modulates NMDA glutamate receptors, sigma receptors and 5-HT2A serotonin receptors, producing a long (1–2 day), non-visual, deeply introspective state — and it is the only plant known to reliably suppress opioid withdrawal without agonising opioid receptors.",
   id_features:[
     "A large shrub or small tree up to about 5 m tall with glossy, dark-green, opposite leaves.",
     "Small white-to-pale-purple flowers in leaf-armpit (axillary) clusters.",
@@ -410,6 +415,7 @@ const PLANTS = [
   alt:"Sceletium tortuosum (kanna) succulent",
   parts:"The fleshy leaves",
   compounds:["Mesembrine","Mesembrenone"],
+  pharmacology:"Mesembrine is a serotonin reuptake inhibitor (SERT) and a PDE4 inhibitor — a mild anxiolytic, mood-lifting profile, which is why it has been investigated as a natural antidepressant.",
   id_features:[
     "A low, mat-forming succulent with thick, fleshy, distinctly twisted green leaves — 'tortuosum' means 'twisted'.",
     "Small white-to-pink, star-shaped flowers.",
@@ -448,6 +454,7 @@ const PLANTS = [
   alt:"Piper methysticum (kava) shrub",
   parts:"The rhizome / root",
   compounds:["Kavalactones"],
+  pharmacology:"Kavalactones act on GABA-A receptors (the same target as benzodiazepines) and modulate calcium channels — producing sedation, anxiolysis and muscle relaxation, without classic 'psychedelic' visuals.",
   id_features:[
     "A 1–2 m shrub with glossy, dark-green, heart-shaped leaves.",
     "Small, inconspicuous flower clusters (it rarely flowers outside its native range).",
@@ -486,6 +493,7 @@ const PLANTS = [
   alt:"Amanita muscaria (fly agaric) — red cap with white spots",
   parts:"The cap (dried or brewed)",
   compounds:["Muscimol","Ibotenic acid"],
+  pharmacology:"A rare non-serotonergic 'psychedelic': ibotenic acid is a glutamate (NMDA) agonist that decarboxylates in the body to muscimol, a potent GABA-A receptor agonist. The experience is more dissociative and 'out-of-body' than a classic 5-HT2A trip.",
   id_features:[
     "A bright red cap marked with white spots (warts) — one of the most iconic mushrooms on Earth.",
     "A white stem, a white ring (annulus), and a white bulbous base (volva).",
@@ -524,6 +532,7 @@ const PLANTS = [
   alt:"Psilocybe cubensis (psilocybin) mushrooms",
   parts:"The whole fruiting body (dried or fresh)",
   compounds:["Psilocybin","Psilocin"],
+  pharmacology:"Psilocybin decarboxylates in the body to psilocin, a potent 5-HT2A serotonin receptor agonist — the reference molecule for the 'classic psychedelic' pathway.",
   id_features:[
     "A small-to-medium brown cap, conical to convex, over a pale stem.",
     "Often 'blues' (turns blue) when bruised — a classic but not guaranteed sign of psilocybin.",
@@ -562,6 +571,7 @@ const PLANTS = [
   alt:"Anadenanthera peregrina (jurema) tree",
   parts:"The bark and wood (brewed)",
   compounds:["DMT","Other indole alkaloids"],
+  pharmacology:"DMT is a 5-HT2A serotonin receptor agonist; in the jurema brew it is paired with MAO inhibitors, so the effect is similar in character to ayahuasca — a long, structured, visual and emotional journey.",
   id_features:[
     "A small tree to about 10 m with feathery, two-pinnate (bipinnate) leaves.",
     "Small yellow-to-white flower clusters.",
@@ -590,7 +600,312 @@ const PLANTS = [
   },
   legality:"DMT is controlled; ritual use is culturally tolerated in Brazil.",
   safety:"MAO interactions and strong emotional response; traditionally taken with guidance."
+},
+{
+  id:"ololiuqui", name:"Ololiuqui", sci:"Rivea corymbosa (syn. Turbina corymbosa)",
+  family:"Convolvulaceae", form:"Twining vine, daisy-like flowers", continent:"North America",
+  regions:["Northern Mexico (Tamaulipas, Veracruz, San Luis Potosí)","Sonoran desert scrub"], coords:[21.0,-98.0],
+  habitat:"Sandy, seasonally dry lowlands, scrubland and desert margins",
+  image:"https://upload.wikimedia.org/wikipedia/commons/6/6c/Rivea_corymbosa_1838.jpg",
+  alt:"Rivea corymbosa (ololiuqui) vine with daisy-like flower",
+  parts:"The small black seeds",
+  compounds:["LSA (lysergic acid amide)","Ergoline alkaloids"],
+  pharmacology:"LSA is a close relative of LSD — in the body it is converted to lysergic acid and acts as a 5-HT2A serotonin receptor agonist, producing a classic psychedelic profile similar to psilocybin, but shorter and milder.",
+  id_features:[
+    "A twining annual vine with narrow, lance-shaped, hairy leaves.",
+    "Small white, daisy-like flowers with a yellow centre, opening for one day.",
+    "The seeds are the active part — tiny, round, black, and easy to mistake for other seeds."
+  ],
+  lookalikes:[
+    "The vine resembles other Convolvulaceae (morning glories) — the small white daisy-flower with a yellow eye is the key mark.",
+    "The seeds are visually similar to seeds of other desert plants; dosing by seed count is imprecise, so potency varies.",
+    "A culturally restricted plant of the Wixárika — traditionally gathered with permission and in season."
+  ],
+  prep:{
+    summary:"The seeds are chewed or swallowed, often as part of a combined peyote ritual.",
+    steps:[
+      "Seeds are collected from the dried seed heads after the flowers fall.",
+      "They are counted and swallowed or chewed on an empty stomach.",
+      "In Wixárika ceremony it is taken alongside peyote in the 'tobira' ritual.",
+      "Effects appear within about an hour and last several hours."
+    ],
+    note:"A 'seed count' preparation — potency varies between seed batches, unlike a measured brew."
+  },
+  culture:{
+    cultures:["Wixárika (Huichol) people of Nayarit/Jalisco, Mexico","Purépecha communities"],
+    ritual:"A sacred plant of the Wixárika peyote ceremony ('tobira'), taken together with peyote and framed by prayer, song and a long, structured ritual journey. It is understood as a plant of the gods within the peyote complex.",
+    context:"One of the few Mesoamerican plants that act through the ergoline/5-HT2A pathway — a 'psilocybin-like' plant of the desert."
+  },
+  legality:"LSA is a Schedule I controlled substance in the US and controlled in most Western jurisdictions; in Mexico the plant is culturally protected and restricted.",
+  safety:"Dose is hard to standardise by seed count; nausea is common; LSA is a controlled substance in most countries."
+},
+{
+  id:"salvia_divinorum", name:"Salvia Divinorum", sci:"Salvia divinorum",
+  family:"Lamiaceae (mint family)", form:"Herbaceous perennial", continent:"North America",
+  regions:["Oaxaca, Mexico (Sierra de Santa María)","Cloud-forest slopes of southern Mexico"], coords:[16.5,-97.5],
+  habitat:"Humid cloud-forest understory and stream banks",
+  image:"https://upload.wikimedia.org/wikipedia/commons/8/82/Salvia_divinorum_-_Herba_de_Maria.jpg",
+  alt:"Salvia divinorum plant (Herba de María)",
+  parts:"Fresh leaves (juice taken sublingually, or chewed)",
+  compounds:["Salvinorin A"],
+  pharmacology:"Salvinorin A is a naturally occurring kappa-opioid receptor agonist — a rare mechanism among psychoactive plants, which usually act on serotonin or dopamine. It does not touch the 5-HT2A system at all, which is why its effects feel 'unreal' rather than 'psychedelic'.",
+  id_features:[
+    "A tall (up to 2 m), square-stemmed, hairy plant with large, heart-shaped, wrinkled (bullate) leaves.",
+    "Small white-to-pale-purple flowers in loose terminal clusters.",
+    "The leaves exude a faintly aromatic oil when crushed."
+  ],
+  lookalikes:[
+    "Resembles other tall Salvias (e.g. garden sages) — the bullate leaf texture and cloud-forest habitat are the key marks.",
+    "Extremely potent: a single fresh leaf, or a drop of its juice, can produce a full experience — dosing is the main hazard.",
+    "A protected, culturally specific plant of the Zapotec highlands of Oaxaca."
+  ],
+  prep:{
+    summary:"A drop of fresh leaf juice on the tongue — the classic Zapotec 'sublingual' method.",
+    steps:[
+      "A fresh leaf is crushed and the juice placed on the tongue or on a small wooden applicator.",
+      "It is held under the tongue for 30–60 seconds, then swallowed.",
+      "Alternatively the leaf is chewed and swallowed.",
+      "Effects begin within 5 minutes and last only 5–15 minutes — intense but brief."
+    ],
+    note:"The shortest-acting classical entheogen: powerful, fast, and over quickly — which is why it is dosed with a drop, not a pinch."
+  },
+  culture:{
+    cultures:["Zapotec people of Oaxaca, Mexico","Mazatec communities"],
+    ritual:"Known locally as 'Herba de María'. Used in a divination and healing tradition: taken to see spirits, diagnose illness and receive guidance in dreams. The experience is described as a journey through vivid, often frightening, non-human landscapes.",
+    context:"The most potent classical plant entheogen known — and the only major one acting on opioid rather than serotonin receptors."
+  },
+  legality:"Salvinorin A is a Schedule I substance in the US and controlled in many countries; in Mexico the wild plant is culturally protected.",
+  safety:"Very high potency with imprecise dosing; intense perceptual distortion, dissociation and nausea; not recommended without experienced guidance."
+},
+{
+  id:"betel_nut", name:"Betel Nut", sci:"Areca catechu",
+  family:"Arecaceae (palms)", form:"Palm tree", continent:"Asia",
+  regions:["Southeast Asia (Malaysia, Indonesia, Philippines)","South Asia (India, Sri Lanka, Bangladesh)","Pacific Islands (introduced)"], coords:[5.0,100.0],
+  habitat:"Tropical lowland forest and cultivated groves",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Areca_Palm_Seeds_Forming_Coorg_Feb24_A7C_09499.jpg/1280px-Areca_Palm_Seeds_Forming_Coorg_Feb24_A7C_09499.jpg",
+  alt:"Areca palm seed cluster (betel nuts)",
+  parts:"The nut (seed), traditionally wrapped with betel leaf and lime",
+  compounds:["Arecoline (tropane alkaloid)","Arecaidine, guvacoline"],
+  pharmacology:"Arecoline is a cholinergic agonist — it stimulates muscarinic and nicotinic acetylcholine receptors, the same receptor family targeted by scopolamine, but producing stimulation and mild euphoria rather than delirium.",
+  id_features:[
+    "A slender palm with a ringed, unbranched trunk and pinnate (feather-like) leaves.",
+    "The 'nut' is a round, reddish-brown seed — not a true nut — that turns orange-red as it ripens.",
+    "Grown in dense cultivated groves across the tropics."
+  ],
+  lookalikes:[
+    "The seeds resemble other palm fruits — the classic 'paan' combination (seed + betel leaf + lime) is the cultural marker.",
+    "Often confused with 'betel leaf' (Piper betle) — the leaf alone is aromatic but not the psychoactive part; the seed is.",
+    "Widely cultivated, so wild vs. planted is rarely an issue."
+  ],
+  prep:{
+    summary:"The seed is wrapped in betel leaf with lime and chewed slowly — the 'paan'.",
+    steps:[
+      "A slice of the areca nut is placed on a betel leaf.",
+      "A pinch of slaked lime is added (the lime frees the arecoline).",
+      "The leaf is rolled and chewed slowly, the juice spit out periodically.",
+      "The warm, stimulating effect builds over minutes and lasts an hour or more."
+    ],
+    note:"The lime is essential — it raises the pH and releases the alkaloid. Without it the nut is largely inert."
+  },
+  culture:{
+    cultures:["Hindustani, Tamil, Malay, Javanese, Filipino & many other Asian peoples","Wedding and hospitality rites across South & Southeast Asia"],
+    ritual:"Among the most widely consumed psychoactive plants on Earth. Central to hospitality, weddings, prayer and social bonding across South and Southeast Asia — offering paan is a gesture of welcome and respect.",
+    context:"A cholinergic stimulant — the everyday 'social' plant of the tropics, with a 5,000-year history of cultivation."
+  },
+  legality:"Legal in most of Asia but heavily regulated (banned in Singapore, restricted in parts of Malaysia) for health reasons.",
+  safety:"Long-term chewing causes oral submucous fibrosis and is a leading cause of oral cancer; also tooth staining and dependence. One of the most harmful legal plant products in the world."
+},
+{
+  id:"opium_poppy", name:"Opium Poppy", sci:"Papaver somniferum",
+  family:"Papaveraceae", form:"Biennial herb", continent:"Asia",
+  regions:["The 'Poppy Belt' (Afghanistan, Iran, Turkey)","Mediterranean basin (ancient heartland)","Cultivated worldwide"], coords:[34.5,65.8],
+  habitat:"Cultivated fields; open, dry slopes",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Papaver_somniferum_flowers.jpg/1280px-Papaver_somniferum_flowers.jpg",
+  alt:"Papaver somniferum poppies in flower",
+  parts:"The unripe seed-pod latex (opium)",
+  compounds:["Morphine","Codeine","Thebaine"],
+  pharmacology:"Morphine and codeine are mu-opioid receptor agonists — they activate the brain's endogenous pain-relief and reward system. This is the most pharmacologically well-characterised psychoactive plant, with a written history spanning roughly 5,000 years.",
+  id_features:[
+    "Pale blue-green, waxy, glabrous (hairless) leaves with smooth, lobed margins.",
+    "Large, four-petalled flowers in white, pink, purple or yellow.",
+    "A distinctive rounded seed-pod (the 'poppy head') that remains after the petals fall — the source of the latex."
+  ],
+  lookalikes:[
+    "The red corn poppy (P. rhoeas) is ornamental and contains little opioid alkaloid — the smooth waxy foliage and large seed-pod distinguish the opium poppy.",
+    "Several ornamental Papaver species exist; only P. somniferum is the classic opium plant.",
+    "A strictly cultivated crop — wild populations are rare and usually controlled."
+  ],
+  prep:{
+    summary:"Latex is scored from unripe seed-pods, dried into opium, and further processed.",
+    steps:[
+      "Unripe seed-pods are scored with a blade to weep a milky latex.",
+      "The latex is collected and dried into a dark resin ('opium').",
+      "Historically it was boiled, diluted and drunk, or smoked.",
+      "In medicine it is purified into morphine, codeine and thebaine."
+    ],
+    note:"The most tightly controlled preparation in the world — a thin line between the oldest medicine and the most dangerous drug."
+  },
+  culture:{
+    cultures:["Sumerian, Egyptian & Greek civilisations (ancient uses)","Traditional Chinese, Ayurvedic & Islamic-Golden-Age medicine","The 'Poppy Belt' farming communities of Afghanistan"],
+    ritual:"One of the oldest cultivated psychoactive plants on record. In Greek myth the poppy was the flower of Morpheus, god of dreams; it was used in temple rites, medicine and as a sedative from antiquity through the medieval world.",
+    context:"The archetype of the 'dual-use' plant — foundational to modern analgesic medicine and to the world's most serious opioid epidemics."
+  },
+  legality:"Strictly controlled under the 1961 UN Single Convention on Narcotic Drugs; cultivation is illegal in most countries with narrow medical exceptions.",
+  safety:"High addiction potential and lethal overdose risk (respiratory depression). One of the most dangerous substances known to humans."
+},
+{
+  id:"kratom", name:"Kratom", sci:"Mitragyna speciosa",
+  family:"Rubiaceae", form:"Evergreen tree", continent:"Asia",
+  regions:["Thailand","Malaysia","Indonesia","Myanmar","The Philippines"], coords:[15.0,101.0],
+  habitat:"Tropical rainforest, often in the understory; also widely planted",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Mitragyna_speciosa111.JPG/1280px-Mitragyna_speciosa111.JPG",
+  alt:"Mitragyna speciosa (kratom) tree",
+  parts:"The leaves (chewed, brewed as tea, or ground to powder)",
+  compounds:["Mitragynine","7-hydroxymitragynine (7-OH)"],
+  pharmacology:"A unique dual-action opioid system: mitragynine is a partial mu-opioid agonist and kappa-antagonist (stimulating at low dose, sedating at high dose), while 7-hydroxymitragynine is a potent full mu-agonist. Unlike other opioid plants it does not engage all three opioid receptor types equally.",
+  id_features:[
+    "An evergreen tree to about 15 m with opposite, glossy, dark-green, oval leaves.",
+    "Small pinkish-red flowers in loose panicles.",
+    "The leaf is the active part — sold fresh, dried, or as a fine green/red/brown powder."
+  ],
+  lookalikes:[
+    "Other Rubiaceae (e.g. coffee, gardenias) have opposite leaves — the large, leathery, obovate leaf and tree habit distinguish it.",
+    "Powder is sold under many names ('green vein', 'red vein', 'maeng da') — the chemistry varies by leaf age and drying, not by species.",
+    "A protected, culturally embedded tree of Southeast Asia."
+  ],
+  prep:{
+    summary:"Fresh leaves are chewed, or brewed into a strong tea; powder is mixed into drinks.",
+    steps:[
+      "Fresh leaves are chewed directly, or steeped hot into a dark tea.",
+      "Dried leaves or powder are dissolved in warm water and drunk.",
+      "Low doses produce stimulation; higher doses produce sedation and analgesia.",
+      "Traditionally taken to sustain labour, resist fatigue, or manage withdrawal from other opioids."
+    ],
+    note:"A dose-dependent 'biphasic' plant — the same leaf is a stimulant or a sedative depending on how much is taken."
+  },
+  culture:{
+    cultures:["Thai labourers, truck drivers & rubber tappers","Burmese and Malay communities","Indonesian (Sumatran) communities"],
+    ritual:"Chewed by manual workers across Southeast Asia for centuries to resist fatigue and to blunt the effects of other opioids. A working plant — taken at the start of a long day, not in ceremony.",
+    context:"A natural opioid-alkaloid plant with a genuinely stimulant profile at low dose — one of the most unusual pharmacologies in ethnobotany."
+  },
+  legality:"Legal in much of Southeast Asia (banned in a few countries; Thailand's 1943 ban was later repealed); unapproved as a drug in the US and restricted in several EU states.",
+  safety:"Dependence and opioid-like (but milder) withdrawal; possible hepatotoxicity at high chronic doses; seizures reported at extreme doses."
+},
+{
+  id:"blue_lotus", name:"Blue Lotus", sci:"Nymphaea caerulea (syn. N. nouchali var. caerulea)",
+  family:"Nymphaeaceae", form:"Aquatic perennial", continent:"Africa",
+  regions:["Nile Valley, Egypt","North Africa & the Eastern Mediterranean","Naturalised in waterways worldwide"], coords:[25.7,32.6],
+  habitat:"Slow-flowing rivers, lakes and ponds",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Nymphaea_caerulea_Flower.JPG/3840px-Nymphaea_caerulea_Flower.JPG",
+  alt:"Blue lotus (Nymphaea caerulea) flower",
+  parts:"Fresh or dried flowers, petals and seeds",
+  compounds:["Apomorphine","Nuciferine","N-nornuciferine"],
+  pharmacology:"A dopamine-active profile: apomorphine directly agonises D1/D2 dopamine receptors (the same target used medicinally in Parkinson's disease), while nuciferine has mild 5-HT2A activity — a gentle oneirogen and relaxant rather than a strong classic psychedelic.",
+  id_features:[
+    "A floating-leaved water plant with rounded, notched leaves on long petioles.",
+    "Large, pale-blue-to-violet flowers with a yellow centre, opening in the morning and closing by midday.",
+    "The flower is borne above the water on a single thick stalk."
+  ],
+  lookalikes:[
+    "The white Egyptian water-lily (N. alba) and the Asian lotus (Nelumbo nucifera) are different genera — the blue flower colour and single large bloom are the key marks.",
+    "Several 'lotus' names are used loosely; only Nymphaea caerulea is the classic blue lotus of the Nile.",
+    "An abundant, easy-to-grow water plant — rarely confused in cultivation."
+  ],
+  prep:{
+    summary:"Flowers are brewed as a tea or taken raw — an evening relaxant and dream herb.",
+    steps:[
+      "Fresh or dried flowers are steeped in hot water for a few minutes.",
+      "The tea is drunk in the evening, often before sleep.",
+      "Petal juice or seeds may be taken directly in small amounts.",
+      "Effects are mild: relaxation, warmth, and more vivid dreams."
+    ],
+    note:"A 'soft' entheogen — the effect is subtle and dose-dependent, more of a mood and dream modifier than a vision-producing one."
+  },
+  culture:{
+    cultures:["Ancient Egyptian temple & funerary tradition","Modern neo-pagan and 'lotus tea' communities"],
+    ritual:"The most sacred flower of ancient Egypt — a symbol of the sun, rebirth and creation. Depicted held by the gods, used in temple offerings, and placed in tombs. Its morning-open/moon-close cycle made it an emblem of the daily death and renewal of the sun.",
+    context:"A dopamine-active oneirogen — the gentlest 'sacred' plant in this atlas, and the most iconic symbol of a civilisation."
+  },
+  legality:"Legal in most jurisdictions; widely sold as a tea, incense and ornamental plant.",
+  safety:"Generally mild; occasional nausea at high doses. Potency is low and variable between flowers."
+},
+{
+  id:"dream_herb", name:"Dream Herb", sci:"Calea zacatechichi",
+  family:"Lamiaceae (formerly Verbenaceae)", form:"Small shrub", continent:"North America",
+  regions:["Oaxaca & Puebla, Mexico","Central Mexican highlands"], coords:[17.0,-98.2],
+  habitat:"Dry scrub and forest edges in the highlands",
+  image:"https://upload.wikimedia.org/wikipedia/en/c/c2/Calea_ternifolia.JPG",
+  alt:"Calea species flower and foliage (dream herb)",
+  parts:"Leaves and flowers (brewed as tea)",
+  compounds:["Germacranolides (sesquiterpenes)","Volatile aromatic oils"],
+  pharmacology:"The germacranolides act at the GABA-A benzodiazepine site — the same receptor target as benzodiazepine drugs — producing relaxation, reduced anxiety and the characteristic intense-dream effect without deep sedation.",
+  id_features:[
+    "A small shrub with opposite, wrinkled, aromatic leaves.",
+    "Small, tubular white flowers in a terminal cluster.",
+    "The leaves give off a soft herbal scent when crushed."
+  ],
+  lookalikes:[
+    "Several Calea species grow in the same region (e.g. C. ternifolia) — the aromatic, wrinkled foliage is the shared mark.",
+    "Not closely related to other 'sacred' Caleas; the Mexican highland species is the classic dream herb.",
+    "A modest, easily overlooked shrub — the effect, not the appearance, is what made it famous."
+  ],
+  prep:{
+    summary:"Leaves are brewed into an evening tea for vivid, meaningful dreams.",
+    steps:[
+      "A handful of fresh or dried leaves is steeped in hot water.",
+      "The tea is drunk in the evening, an hour or two before sleep.",
+      "Effects are a general calm followed by unusually vivid, often 'narrative' dreams.",
+      "Traditionally taken for divination and guidance rather than recreation."
+    ],
+    note:"A GABAergic oneirogen — it works on the same receptor as modern anxiolytics, which is why the effect is calm rather than visionary."
+  },
+  culture:{
+    cultures:["Zapotec & other Oaxacan communities","Mazatec healers"],
+    ritual:"Used by Oaxacan healers as a 'dream herb' for divination: the drinker sleeps and reads the next day's events, or receives guidance, in the dreams. The dreams are treated as messages, not as hallucination.",
+    context:"One of the clearest natural examples of a GABA-targeting oneirogen — a 'benzodiazepine plant' with a centuries-old divinatory use."
+  },
+  legality:"Legal in Mexico; sold as a tea and dried herb in most markets.",
+  safety:"Mild; the main 'risk' is dream intensity and sleep disruption. Avoid combining with other sedatives or alcohol."
+},
+{
+  id:"dream_root", name:"African Dream Root", sci:"Silene capensis (syn. Silene undulata)",
+  family:"Caryophyllaceae", form:"Perennial herb", continent:"Africa",
+  regions:["South Africa (Eastern Cape, KwaZulu-Natal)","Eswatini","Mozambique (Zulu & Xhosa lands)"], coords:[-31.5,30.0],
+  habitat:"Coastal and inland scrubland",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Silene_capensis_%28flowering%29.jpg/1280px-Silene_capensis_%28flowering%29.jpg",
+  alt:"Silene capensis (African dream root) in flower",
+  parts:"The root (dried, brewed or smoked)",
+  compounds:["Saponins","Minor alkaloids"],
+  pharmacology:"The saponins have a mild nervous-system effect — traditionally used as an evening relaxant and oneirogen that produces vivid, sometimes prophetic dreams. The exact receptor profile is less characterised than GABAergic herbs, and the effect is much gentler.",
+  id_features:[
+    "A low, spreading perennial with narrow, wavy (undulate) grey-green leaves — the source of the name 'undulata'.",
+    "Small white-to-pink flowers in an open cyme.",
+    "The woody root is the active part, harvested from established plants."
+  ],
+  lookalikes:[
+    "Other Silene species in southern Africa are similar — the wavy leaf margin and coastal scrub habitat are the key marks.",
+    "The root is easily confused with other medicinal roots in the bush — traditional preparers know the plant by sight and scent.",
+    "A bush-managed plant, usually gathered with permission from established stands."
+  ],
+  prep:{
+    summary:"The dried root is brewed as a tea or smoked, taken in the evening for dreams.",
+    steps:[
+      "The root is harvested, dried and cut into small pieces.",
+      "It is steeped as a tea, or the dried root is smoked.",
+      "Taken in the evening to induce vivid, often prophetic dreams.",
+      "Used by Zulu and Xhosa diviners for guidance and diagnosis."
+    ],
+    note:"A saponin-based oneirogen — the 'dream root' of the Zulu and Xhosa, gentler than Calea but with a long divinatory tradition."
+  },
+  culture:{
+    cultures:["Zulu & Xhosa healers (sangomas)","Southern African divination tradition"],
+    ritual:"Central to Zulu and Xhosa divination: the sangoma takes the root before sleep and reads the dreams for the client's questions — illness, loss, or guidance. The dream is the oracle.",
+    context:"One of the most respected oneirogens of southern Africa — a plant whose entire reputation rests on the quality of the dream it produces."
+  },
+  legality:"Legal in South Africa and widely sold as a tea and diviner's herb.",
+  safety:"Generally mild; quality and root age matter. Traditional caution against use in pregnancy."
 }
+
 ];
 
 /* ============================== HELPERS ============================== */
@@ -699,8 +1014,18 @@ function openDetail(id, fromMap){
         <div class="note">${esc(p.prep.note)}</div>
       </div>
 
+      ${p.pharmacology ? `
       <div class="block">
-        <h4><span class="n">3</span> Where It Grows</h4>
+        <h4><span class="n">3</span> Pharmacology — How It Works</h4>
+        <div class="box">
+          <h5>Receptor targets</h5>
+          <p style="margin:0">${esc(p.pharmacology)}</p>
+        </div>
+        <div class="note">Receptor pharmacology from the research literature — a general description of mechanism, not a dosing or safety guide.</div>
+      </div>` : ""}
+
+      <div class="block">
+        <h4><span class="n">4</span> Where It Grows</h4>
         <div class="two">
           <div class="box">
             <h5>Native regions</h5>
@@ -714,7 +1039,7 @@ function openDetail(id, fromMap){
       </div>
 
       <div class="block">
-        <h4><span class="n">4</span> Culture &amp; Ritual</h4>
+        <h4><span class="n">5</span> Culture &amp; Ritual</h4>
         <div class="box" style="margin-bottom:14px">
           <h5>Associated cultures</h5>
           <div class="pillrow">${p.culture.cultures.map(c=>`<span class="pill g">${esc(c)}</span>`).join("")}</div>
@@ -767,7 +1092,7 @@ function applyFilter(){
     if(continent!=="all" && p.continent!==continent) return false;
     if(!term) return true;
     const hay = [p.name,p.sci,p.family,p.continent,p.parts,
-      p.regions.join(" "), p.compounds.join(" "), p.culture.cultures.join(" "),
+      p.regions.join(" "), p.compounds.join(" "), (p.pharmacology||""), p.culture.cultures.join(" "),
       p.culture.ritual, p.habitat].join(" ").toLowerCase();
     return hay.includes(term);
   });
