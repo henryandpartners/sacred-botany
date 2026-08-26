@@ -176,7 +176,7 @@
     <h1 class="title">Sacred <em>Botany</em></h1>
     <p class="lede">An interactive field atlas of the world's most significant ritual and visionary plants — how to identify them, how they have traditionally been prepared, where they grow, and the cultures and ceremonies they belong to.</p>
     <div class="meta-row">
-      <span class="chip"><span class="dot"></span><b>17</b> species profiled</span>
+      <span class="chip"><span class="dot"></span><b>29</b> species profiled</span>
       <span class="chip"><b>7</b> continents</span>
       <span class="chip"><b>5</b> dimensions each</span>
       <span class="chip">Photos · <b>Wikimedia Commons</b></span>
@@ -906,6 +906,475 @@ const PLANTS = [
   safety:"Generally mild; quality and root age matter. Traditional caution against use in pregnancy."
 }
 
+,
+{
+  id:"cannabis", name:"Cannabis", sci:"Cannabis sativa",
+  family:"Cannabaceae", form:"Annual or perennial herb", continent:"Asia",
+  regions:["Central Asia (Mongolia, China — origin)","The Himalayas","Global (cultivated since antiquity)"], coords:[42,95],
+  habitat:"Open, disturbed ground, fields and roadsides; a highly adaptable crop",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Cannabis_sativa_2.jpg/1280px-Cannabis_sativa_2.jpg",
+  alt:"Cannabis sativa plant in flower",
+  parts:"Dried resinous flowering tops, leaves, and seeds",
+  compounds:["THC (\u03949-tetrahydrocannabinol)","CBD (cannabidiol)","Other cannabinoids and terpenes"],
+  pharmacology:"Cannabinoids act on the endocannabinoid system — a target family entirely separate from serotonin or opioids. THC is a partial agonist at CB1 (brain) and CB2 receptors, giving euphoria, altered time-sense and sensory change, while CBD is non-intoxicating and modulates anxiety and inflammation.",
+  id_features:[
+    "Palmate leaves with 5–7 sharply serrated leaflets radiating from one point.",
+    "Dioecious or monoecious; the resinous (pistillate) plant is the one traditionally used.",
+    "A strong, distinctive green-resinous aroma when crushed.",
+    "Cultivated in an enormous range of forms — the 'sativa' and 'indica' types are landraces, not separate species."
+  ],
+  lookalikes:[
+    "Hemp and marijuana are the same species (C. sativa) — they differ in THC content, not in identity.",
+    "Do not confuse with knotweed or other toothed-leaf weeds; the leaflet number and resin are the keys.",
+    "Potency varies wildly by landrace and preparation, so 'a little' is not a reliable measure."
+  ],
+  prep:{
+    summary:"Used smoked, vaped, eaten, or infused — the route changes onset and character.",
+    steps:[
+      "The dried flowering tops are smoked in a pipe or rolled, or vaped.",
+      "They are steeped into butter, oil or milk (bhang) and eaten or drunk.",
+      "Seeds and hemp are used for fibre, oil and food without psychoactivity.",
+      "In South Asian ritual, bhang is a thick, spiced drink taken at festivals."
+    ],
+    note:"Cannabinoid effects are dose- and route-dependent; edibles act slower but longer."
+  },
+  culture:{
+    cultures:["Hindu South Asia (bhang, ganja)","Central and East Asian fibre and medicine traditions","Global folk and counterculture use"],
+    ritual:"Sacred to Hinduism — offered to Shiva and taken as the drink bhang during Holi and Chaitra festivals. One of the oldest continuously cultivated psychoactive plants, used for fibre, medicine and ritual for some 10,000 years.",
+    context:"The most widely used psychoactive plant on Earth, ranging from sacred offering to industrial crop."
+  },
+  legality:"Varies enormously — legal or medical in many countries, a controlled substance in others; the same plant spans sacred, medicinal and illicit status.",
+  safety:"Dependence, impaired driving, and risk to the developing brain (under ~25). Heavy use can cause cannabinoid hyperemesis."
+},
+{
+  id:"coca", name:"Coca", sci:"Erythroxylum coca",
+  family:"Erythroxylaceae", form:"Evergreen shrub or small tree", continent:"South America",
+  regions:["The Andes (Peru, Bolivia, Colombia, Ecuador)","The upper Amazon basin"], coords:[-13.5,-72],
+  habitat:"Montane and sub-montane forest, cultivated up to about 2,500 m",
+  image:"https://upload.wikimedia.org/wikipedia/commons/c/c7/Erythroxylum_novogranatense_var._Novogranatense_%28retouched%29.jpg",
+  alt:"Coca leaves and fruit (Erythroxylum)",
+  parts:"The leaves (chewed with chalk, or brewed as tea)",
+  compounds:["Cocaine (tropane alkaloid)","Cocaineline, cuskohine"],
+  pharmacology:"Cocaine blocks the re-uptake of dopamine, serotonin and noradrenaline — the only natural substance known to inhibit all three monoamine transporters — producing intense stimulation, euphoria and suppression of appetite and fatigue.",
+  id_features:[
+    "Opposite, glossy, dark-green oblong leaves with a slightly wavy margin.",
+    "Small white-to-pink flowers, followed by a red drupe (stone fruit).",
+    "The leaf has a faint bitter, astringent taste and a characteristic smell when chewed.",
+    "Grows as a dense shrub or a small tree in the Andean belt."
+  ],
+  lookalikes:[
+    "Other Erythroxylum species exist — some (like E. novogranatense) are very close; only certain Andean types carry meaningful cocaine.",
+    "Do not confuse with coffee (similar leaf) — the arrangement and fruit differ.",
+    "The psychoactive effect comes from the leaf; the extracted alkaloid is a different, concentrated substance."
+  ],
+  prep:{
+    summary:"Traditionally the leaf is chewed with a base, or brewed as a mild tea.",
+    steps:[
+      "A small bundle of leaves is wrapped with a little lime (alkali) and chewed slowly — 'coca'.",
+      "The saliva-alkali paste (the 'palo') is collected at the cheek and re-chewed to extend the effect.",
+      "Or the leaves are steeped hot as coca tea (mate de coca) to relieve altitude sickness.",
+      "The raw leaf is a gentle stimulant, far below the potency of the isolated alkaloid."
+    ],
+    note:"Chewing or tea is traditional Andean use; cocaine is an industrial extract and a different substance entirely."
+  },
+  culture:{
+    cultures:["Quechua and Aymara Andean peoples","Bolivian and Peruvian national tradition"],
+    ritual:"Sacred to the Andes for millennia — the 'mother coca' is central to offerings (despachos), divination, diplomacy, healing and altitude. In Bolivia coca-chewing remains a legal, daily cultural practice protected in the constitution.",
+    context:"A plant that is simultaneously a national symbol, a ritual sacrament, and the source of the world's most controlled stimulant."
+  },
+  legality:"Coca leaf is legal for traditional and medical use in Bolivia and Peru; the isolated alkaloid (cocaine) is a controlled substance almost everywhere.",
+  safety:"The raw leaf is a mild stimulant. Extracted cocaine carries a high risk of dependence and serious cardiovascular danger."
+},
+{
+  id:"khat", name:"Khat", sci:"Catha edulis",
+  family:"Rutaceae", form:"Evergreen shrub or small tree", continent:"Africa",
+  regions:["The Horn of Africa (Yemen, Somalia, Ethiopia, Kenya)","Oman and the Arabian Peninsula"], coords:[15.5,44],
+  habitat:"Semi-arid lowlands and cultivated fields in the dry belt",
+  image:"https://upload.wikimedia.org/wikipedia/commons/5/56/Catha_edulis.jpg",
+  alt:"Catha edulis (khat) leaves",
+  parts:"The fresh leaves and young shoots (chewed)",
+  compounds:["Cathinone","Cathine"],
+  pharmacology:"Cathinone is an amphetamine-like sympathomimetic — it raises the release of dopamine and noradrenaline, giving stimulation, talkativeness and euphoria with a fast onset and short duration, which is why the leaves are chewed repeatedly.",
+  id_features:[
+    "Opposite, glossy, oval to lance-shaped leaves with a smooth margin.",
+    "Small clusters of white or pale-pink flowers; a hard, woody fruit.",
+    "The leaf has a citrus-like (Rutaceae) aroma and a bitter, astringent taste.",
+    "Only the fresh leaf is effective — it wilts and loses potency within a day."
+  ],
+  lookalikes:[
+    "Leaves resemble other Rutaceae (citrus, rue) — the bitter taste and the shrub habit are clues.",
+    "Dried or day-old khat is much weaker; freshness is the whole point.",
+    "Not related to the cannabis or coffee families despite the similar stimulant role."
+  ],
+  prep:{
+    summary:"A fresh bundle of leaves and shoots is chewed for one to three hours.",
+    steps:[
+      "A small bunch of fresh leaves is placed in the mouth and chewed.",
+      "The alkaloids are released into saliva over an hour or two; the stimulant fades and is renewed by chewing more.",
+      "It is taken socially, in groups, often with tea and conversation.",
+      "The effect is alertness and sociability rather than a visual or altered state."
+    ],
+    note:"Khat is a social stimulant, not a hallucinogen — the experience is talkativeness and energy."
+  },
+  culture:{
+    cultures:["Somali and Yemeni cultures","Ethiopian and Kenyan communities","Omani and broader Arabian Peninsula use"],
+    ritual:"Central to social life across the Horn of Africa and the Arabian Peninsula — 'the leaf' is the focus of gatherings, ceremonies, courtship and business. Historically a stimulant for travellers and soldiers in the dry belt.",
+    context:"One of the world's most widely chewed plants, with a social role comparable to coffee or alcohol in its home regions."
+  },
+  legality:"Legal in most of its native range; cathinone is a controlled substance in many Western countries.",
+  safety:"Dependence, anxiety, insomnia and cardiovascular strain. A recognised social and health issue in some communities."
+},
+{
+  id:"tobacco", name:"Tobacco", sci:"Nicotiana tabacum",
+  family:"Solanaceae", form:"Annual herb", continent:"North America",
+  regions:["Mesoamerica (origin)","South America","Global (cultivated since contact)"], coords:[19,-96],
+  habitat:"Cultivated fields; warm, open ground",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ripe_tobacco_leaf_3037.JPG/1280px-Ripe_tobacco_leaf_3037.JPG",
+  alt:"A ripe tobacco leaf",
+  parts:"The cured leaves (smoked, chewed, or taken as snuff)",
+  compounds:["Nicotine (a pyridine alkaloid)","Minor minor nicotianamines"],
+  pharmacology:"Nicotine is an agonist at nicotinic acetylcholine receptors — the same receptor family targeted by salvia's salvinorin — producing arousal, alertness and mild euphoria, and also triggering the release of dopamine and acetylcholine.",
+  id_features:[
+    "Large, broad, wavy, sticky green leaves on a tall, branched stem.",
+    "A large open panicle of tubular white or pale-pink flowers.",
+    "The leaf is the largest and most prominent part — easily recognised by size and stickiness.",
+    "Grows fast in warm, open ground and is easily cultivated."
+  ],
+  lookalikes:[
+    "Other Nicotiana species (some ornamental) — the cultivated N. tabacum is the large-leafed type.",
+    "Do not confuse with other large-leafed nightshades; the flower shape and leaf stickiness are keys.",
+    "The 'sacred' ceremonial tobacco is the same plant as common cigarette tobacco."
+  ],
+  prep:{
+    summary:"The leaf is cured, then smoked, chewed, or snuffed; also burned as an offering.",
+    steps:[
+      "Green leaves are cured by air, fire or sun until dry and brown.",
+      "They are rolled into cigarettes, packed into a pipe, or taken as a chew or a snuff.",
+      "In Indigenous ceremony, tobacco is burned and the smoke offered, or a pinch placed on the ground.",
+      "The effect is a mild, quick stimulant followed by relaxation."
+    ],
+    note:"Ceremonial tobacco use is a small, deliberate offering — very different in scale and intent from heavy commercial use."
+  },
+  culture:{
+    cultures:["Many Indigenous nations of the Americas","Global (after European contact)"],
+    ritual:"One of the most ritually significant plants of the Americas — the 'sacred herb'. Central to prayer, diplomacy, healing and gift-giving in many Indigenous nations; a pinch of tobacco is an offering to the spirits and to the earth.",
+    context:"The most widely used psychoactive substance in the world today, with a deep ceremonial history that now sits alongside a major public-health crisis."
+  },
+  legality:"Legal but heavily taxed and regulated; a leading cause of preventable death worldwide.",
+  safety:"Highly addictive; a major driver of cancer, heart and lung disease."
+},
+{
+  id:"mandrake", name:"Mandrake", sci:"Mandragora officinarum",
+  family:"Solanaceae", form:"Perennial herb with a forked root", continent:"Asia",
+  regions:["The Mediterranean basin","The Middle East","Southern Europe (introduced)"], coords:[34,36],
+  habitat:"Arid, stony slopes and scrub",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Mandragora_officinarum_002.JPG/1280px-Mandragora_officinarum_002.JPG",
+  alt:"Mandragora officinarum (mandrake) plant",
+  parts:"The root (the 'mandrake'), the orange-red fruit, and the leaves",
+  compounds:["Atropine","Scopolamine, hyoscyamine (tropane alkaloids)"],
+  pharmacology:"Tropane alkaloids are muscarinic acetylcholine antagonists — they block acetylcholine, producing delirium, hallucination, sedation and analgesia. A classic 'anticholinergic' hallucinogen, mechanistically unrelated to the serotonergic psychedelics.",
+  id_features:[
+    "A large, forked, often humanoid taproot — the source of its long history in magic and medicine.",
+    "A whorl of yellow, star-shaped flowers with a purple-veined centre.",
+    "A bright orange-red berry, glossy and conspicuous.",
+    "A clump of large, lobed, blue-green leaves."
+  ],
+  lookalikes:[
+    "The root is often mistaken for ginseng (Panax) — but the mandrake's berries and star-flowers are different.",
+    "The orange-red berries are highly toxic — a key danger, not a food.",
+    "Do not dig or handle casually; even the root and berries carry the tropane alkaloids."
+  ],
+  prep:{
+    summary:"Historically the root was dried, cut and smoked or brewed — the safe-to-lethal margin is narrow.",
+    steps:[
+      "The root is dug, dried and cut into pieces.",
+      "A small amount is smoked or steeped as a decoction.",
+      "The dose is critical — a little is sedative and analgesic, a bit more is deliriant, more is dangerous.",
+      "Traditionally used as a powerful analgesic and anesthetic in ancient medicine."
+    ],
+    note:"Mandrake is a toxic plant, not a recreational one — the margin to lethal anticholinergic poisoning is small."
+  },
+  culture:{
+    cultures:["Ancient Mediterranean and Greek medicine","Medieval European folk and magical tradition","Middle Eastern folk use"],
+    ritual:"Famed across the ancient world as a magical and medicinal plant — the 'mandrake' of fertility, protection and the fairy world. The legend of the 'screaming mandrake' (uprooted with a deadly cry) comes from its potent, dangerous nature.",
+    context:"One of the most famous 'wonder-roots' in human history, straddling medicine, magic and poison."
+  },
+  legality:"A toxic plant, controlled or restricted in many countries; not a legal recreational substance.",
+  safety:"Highly toxic — a small overdose can be fatal (anticholinergic poisoning: fast heart, delirium, dry hot skin, dilated pupils, coma). Not for casual use."
+},
+{
+  id:"mugwort", name:"Mugwort", sci:"Artemisia vulgaris",
+  family:"Asteraceae", form:"Perennial herb", continent:"Asia",
+  regions:["East Asia (China, Japan)","Europe (introduced)","North America (introduced)"], coords:[35,105],
+  habitat:"Moist, disturbed ground, ditches and field edges",
+  image:"https://upload.wikimedia.org/wikipedia/commons/6/6f/ArtemisiaVulgaris.jpg",
+  alt:"Artemisia vulgaris (mugwort) in flower",
+  parts:"The leaves (burned as moxa, brewed as tea, or used in dream ritual)",
+  compounds:["Thujone","Camazulene, cineole (volatile oils)"],
+  pharmacology:"The volatile oils (notably thujone) act on GABA and glutamate systems — in the small doses used in moxibustion the effect is warming and topical, while taken mugwort can give mild euphoria and vivid dreams. Thujone is the same GABA-modulating compound implicated in the absinthe legend.",
+  id_features:[
+    "Tall, feathery, silver-green leaves with a strong, distinctive herbal aroma.",
+    "Small yellow flower heads clustered in a large, open panicle.",
+    "Grows to over a metre in damp, disturbed ground.",
+    "The leaf is deeply lobed and soft, almost fern-like."
+  ],
+  lookalikes:[
+    "Other Artemisia species (wormwood, tarragon) are close — mugwort is the tall, feathery, common one.",
+    "Do not confuse the edible tarragon (Artemisia dracunculus) with mugwort; the leaf shape differs.",
+    "The strong aroma when crushed is a reliable field clue."
+  ],
+  prep:{
+    summary:"Dried leaves are rolled into moxa and burned, or brewed as a 'dream herb'.",
+    steps:[
+      "Dried leaves are compressed into small cones (moxa) and burned over the skin — moxibustion.",
+      "Or the leaves are steeped as a tea, or a small amount is burned and inhaled for its aroma.",
+      "In European folk practice, a bundle is placed under the pillow to induce vivid, 'true' dreams.",
+      "The effect is mild — warmth, relaxation and dream enhancement, not a strong high."
+    ],
+    note:"Mugwort is a gentle nervine and dream-herb; it is not a potent hallucinogen."
+  },
+  culture:{
+    cultures:["Chinese medicine (moxibustion)","European folk and magical tradition","Shamanic and intuitive practice"],
+    ritual:"A cornerstone of traditional Chinese medicine — moxibustion (burning mugwort over acupuncture points) is one of its oldest practices. In European folk magic it is a dream and scrying herb, associated with the moon, intuition and protection.",
+    context:"A bridge plant between East Asian medicine and European folk magic, used for warmth, healing and dreams."
+  },
+  legality:"Legal; sold as a tea and as moxa.",
+  safety:"Generally safe in traditional use; thujone is toxic in large amounts. Avoid in pregnancy."
+},
+{
+  id:"damiana", name:"Damiana", sci:"Turnera diffusa",
+  family:"Passifloraceae", form:"Woody shrub", continent:"North America",
+  regions:["Mexico","The American Southwest (Arizona, New Mexico)"], coords:[23,-102],
+  habitat:"Semi-desert scrub and thorn forest",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Turnera_diffusa_var._aphrodisiaca_002.JPG/1280px-Turnera_diffusa_var._aphrodisiaca_002.JPG",
+  alt:"Turnera diffusa (damiana) leaves",
+  parts:"The leaves (steeped as tea, or smoked)",
+  compounds:["Esters (including methyl salicylate)","Alkaloids"],
+  pharmacology:"The esters and alkaloids give a mild, warm, euphoriant and traditionally aphrodisiac effect — the mechanism is not fully characterised, but it is far gentler than a true hallucinogen and acts more as a mood-lift and relaxant.",
+  id_features:[
+    "A low, sprawling shrub with small, narrow, glossy, dark-green leaves.",
+    "Small, pale-yellow flowers (a Passifloraceae).",
+    "The leaf has a sweet, vanilla- to mint-like aroma when dried.",
+    "Grows in dry, thorny scrub of the Mexican and Sonoran deserts."
+  ],
+  lookalikes:[
+    "Leaves resemble other small-leaved desert shrubs — the sweet aroma is the key.",
+    "Do not confuse with the unrelated 'damiana' of trade, which is usually this same species.",
+    "The effect is mild and pleasant, not intoxicating."
+  ],
+  prep:{
+    summary:"Dried leaves are steeped as a tea or smoked in a pipe.",
+    steps:[
+      "A few dried leaves are steeped in hot water as a fragrant tea.",
+      "Or the dried leaf is smoked gently in a pipe.",
+      "The effect is a mild relaxation and warming euphoria, traditionally taken as an aphrodisiac.",
+      "It is gentle and slow-acting — not a strong psychoactive."
+    ],
+    note:"Damiana is a mild, pleasant nervine and folk aphrodisiac, not a potent drug."
+  },
+  culture:{
+    cultures:["Mexican folk tradition","Indigenous peoples of the Sonoran desert (e.g. Tohono O'odham)"],
+    ritual:"Used across Mexican and Southwestern folk practice as a gentle relaxant, a digestive and a traditional aphrodisiac — 'the leaf of pleasure'. Now a popular, widely sold herbal tea.",
+    context:"A mild, widely loved folk plant that straddles medicine, pleasure and everyday herbalism."
+  },
+  legality:"Legal; sold as an herbal tea and a mild smoking herb.",
+  safety:"Mild; nausea in heavy use. Avoid in pregnancy."
+},
+{
+  id:"harmala", name:"Syrian Rue", sci:"Peganum harmala",
+  family:"Zygophyllaceae", form:"Perennial herb", continent:"Asia",
+  regions:["The Middle East (Iran, Iraq, Turkey)","Central Asia","The Caucasus"], coords:[35,51],
+  habitat:"Arid, stony, open ground",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Peganum_harmala_kz02.jpg/1280px-Peganum_harmala_kz02.jpg",
+  alt:"Peganum harmala (Syrian rue) plant",
+  parts:"The seeds (steeped as tea), the leaves, and the smoke",
+  compounds:["Harmine","Harmaline (beta-carboline alkaloids)"],
+  pharmacology:"Harmine and harmaline are MAO-A inhibitors — the same MAO-inhibitor chemistry as the ayahuasca vine Banisteriopsis — and are weak 5-HT2A modulators. They can make oral DMT active and are themselves mildly sedating, anxiolytic and, at higher dose, hallucinogenic.",
+  id_features:[
+    "A spreading perennial with a large, umbrella-like cluster of small white flowers.",
+    "A large, star- or wheel-shaped seed pod — very distinctive.",
+    "Small, divided, blue-green leaves.",
+    "Grows in dry, stony, open ground of the Middle East and Central Asia."
+  ],
+  lookalikes:[
+    "The star-shaped seed pod is the key identifier — hard to mistake once seen.",
+    "Do not confuse with other Zygophyllaceae; the pod and the white flower-umbrella are the clues.",
+    "The psychoactive part is the seed/alkaloid, not the leaf."
+  ],
+  prep:{
+    summary:"Seeds are steeped as a tea or smoked; traditionally used to 'open' the body to DMT.",
+    steps:[
+      "A few seeds are steeped in hot water as a bitter tea.",
+      "Or the plant is burned and the smoke inhaled.",
+      "In the 'harmala' tradition the MAO-inhibitor is taken first to make oral DMT active.",
+      "The effect is sedation, relaxation and, at higher dose, mild hallucination."
+    ],
+    note:"Harmala is an MAO inhibitor — it has serious food and drug interactions and is not a casual herb."
+  },
+  culture:{
+    cultures:["Middle Eastern and Central Asian folk and shamanic practice","Sufi and alchemical traditions"],
+    ritual:"Used across the Middle East and Central Asia for centuries in shamanic and Sufi practice, and in alchemy and folk medicine as a sedative, an anti-parasitic and a 'gate' to other entheogens. A key plant of the harmala/MAOI tradition.",
+    context:"A serious, potent MAO-inhibitor plant with a long shamanic and alchemical history — powerful, not a gentle herb."
+  },
+  legality:"The seed is grey-area in many countries; the alkaloids are controlled in some jurisdictions.",
+  safety:"MAOI interactions (with food and medicines), nausea at higher dose. Not for casual use — a potent, long-acting substance."
+},
+{
+  id:"ephedra", name:"Ephedra", sci:"Ephedra sinica",
+  family:"Ephedraceae", form:"Woody shrub (stem-like)", continent:"Asia",
+  regions:["Arid China and Mongolia","Central Asia"], coords:[40,105],
+  habitat:"Arid steppe, sandy desert and dry slopes",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Ephedra_sinica_alexlomas.jpg/1280px-Ephedra_sinica_alexlomas.jpg",
+  alt:"Ephedra sinica (ma huang) stem",
+  parts:"The green, jointed stems (the 'needles' are stems, not leaves)",
+  compounds:["Ephedrine","Pseudoephedrine (phenylethylamine alkaloids)"],
+  pharmacology:"Ephedrine and pseudoephedrine are indirect sympathomimetics — they trigger the release of noradrenaline (and some dopamine), producing stimulation, raised heart rate, bronchodilation and appetite suppression. A powerful stimulant, not a hallucinogen.",
+  id_features:[
+    "A leafless shrub whose 'needles' are actually jointed, green, stem-like branches.",
+    "Very hardy, growing in dry, sandy, open ground.",
+    "No true broad leaves — the whole plant looks like a tangle of green joints.",
+    "A small, inconspicuous plant in its desert habitat."
+  ],
+  lookalikes:[
+    "Can be mistaken for a true conifer or a juniper — but it has no real leaves and no resinous cones.",
+    "The jointed, whip-like stems are the key.",
+    "Do not forage from the wild; the alkaloid content is what matters, and it is a strong stimulant."
+  ],
+  prep:{
+    summary:"The stems are steeped as a decoction ('ma huang') or taken as an extract.",
+    steps:[
+      "The green stems are boiled as a strong tea or decoction.",
+      "In traditional Chinese medicine it is 'ma huang' — used to break a fever, open the lungs and 'release the exterior'.",
+      "The effect is a strong physical stimulation — warmth, raised pulse, alertness.",
+      "It is a stimulant and decongestant, not an altered-state plant."
+    ],
+    note:"Ephedra is a potent stimulant — the reason ephedrine was banned from many supplements."
+  },
+  culture:{
+    cultures:["Traditional Chinese medicine (ma huang)","Mongolian and Central Asian folk medicine"],
+    ritual:"A cornerstone of traditional Chinese medicine for over two thousand years — used for fever, asthma, and to 'release the exterior' in colds. A historical stimulant and decongestant with a long medicinal, rather than ritual, role.",
+    context:"One of the most famous stimulant herbs in world medicine, now restricted because of cardiovascular risk."
+  },
+  legality:"The plant is legal in some places; ephedrine is banned as a dietary supplement in many countries (e.g. the US).",
+  safety:"A powerful stimulant — cardiovascular risk (fast heart, high blood pressure). Banned in sport; not for casual use."
+},
+{
+  id:"bissap", name:"Bissap", sci:"Hibiscus sabdariffa",
+  family:"Malvaceae", form:"Annual herb", continent:"Africa",
+  regions:["West and East Africa (the Sudan region)","The Middle East","The Caribbean (introduced)"], coords:[15,32],
+  habitat:"Tropical, cultivated in warm, moist ground",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Hibiscus_Sabdariffa_calyxes.jpg/1280px-Hibiscus_Sabdariffa_calyxes.jpg",
+  alt:"Hibiscus sabdariffa (bissap) calyces",
+  parts:"The red, fleshy calyx (the 'flower' part around the seed capsule)",
+  compounds:["Cyanidin (anthocyanin)","Mucilage, hibiscgnus A"],
+  pharmacology:"The psychoactivity is mild — the anthocyanins and other constituents carry weak serotonergic and antioxidant activity, and the traditional effect of a strong 'bissap' brew is a pleasant, wine-like mildness and a gentle tonic effect rather than a true hallucination.",
+  id_features:[
+    "A large, red, fleshy calyx that surrounds the seed capsule — this is the part used.",
+    "Five-petaled flowers (the calyx swells after flowering into the red 'bissap').",
+    "A tall, branched annual with deeply lobed leaves.",
+    "The dried red calyces brew a deep crimson, tart liquid."
+  ],
+  lookalikes:[
+    "Do not confuse with the ornamental Hibiscus rosa-sinensis — the calyx is not used there.",
+    "The red calyx (not the petal) is the identifiable part.",
+    "The brew is tart and wine-like, more a drink than a drug."
+  ],
+  prep:{
+    summary:"Dried red calyces are brewed as a strong, tart, wine-like drink (bissap).",
+    steps:[
+      "Dried red calyces are steeped in water (often sweetened) to make a deep-crimson, tart drink.",
+      "The brew is taken cold or warm as a refreshment and a tonic.",
+      "Sometimes the drink is lightly fermented into a mild 'bissap wine'.",
+      "The effect is gentle — a pleasant, slightly intoxicating warmth, not a strong high."
+    ],
+    note:"Bissap is as much a culinary and tonic plant as a psychoactive one — the 'high' is mild and wine-like."
+  },
+  culture:{
+    cultures:["West African (Sudan-region) tradition","Middle Eastern and North African use","Caribbean (as hibiscus)"],
+    ritual:"A staple of West African and Middle Eastern food and ritual — a traditional 'wine' and tonic associated with protection, vitality and celebration. One of the region's most everyday 'sacred' beverages.",
+    context:"A deeply everyday plant that is both a beloved drink and a gentle traditional tonic."
+  },
+  legality:"Legal; a widely sold herbal tea and food ingredient.",
+  safety:"Mild; can lower blood pressure. Avoid in pregnancy."
+},
+{
+  id:"jujube", name:"Indian Jujube", sci:"Ziziphus mauritiana",
+  family:"Rhamnaceae", form:"Small tree or shrub", continent:"Asia",
+  regions:["The Indian subcontinent","Southeast Asia","The Middle East"], coords:[20,78],
+  habitat:"Arid to semi-arid ground, cultivated and on roadsides",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Indian_jujube_%28fruit%29.jpg/1280px-Indian_jujube_%28fruit%29.jpg",
+  alt:"Indian jujube (Ziziphus mauritiana) fruit",
+  parts:"The fruit and the root bark (in Ayurvedic medicine)",
+  compounds:["Saponins","Spinosin (a flavonoid)"],
+  pharmacology:"A gentle sedative and nervine — the saponins and flavonoids (especially spinosin) carry a mild GABA-modulating, anxiolytic effect, producing calm and better sleep. A sedative, not a hallucinogen.",
+  id_features:[
+    "A small, thorny tree or large shrub.",
+    "Small, yellowish-green flowers; a reddish-brown, oval fruit (the 'jujube').",
+    "Small, glossy, dark-green leaves.",
+    "The fruit is sweet and chewy, eaten fresh or dried."
+  ],
+  lookalikes:[
+    "Similar to the Chinese jujube (Ziziphus jujuba) — the fruit shape and the thorns are the clues.",
+    "Do not confuse with a true date palm; it is a small thorny tree, not a palm.",
+    "The sedative part is the root bark and the fruit, not a potent drug."
+  ],
+  prep:{
+    summary:"The fruit is eaten fresh or dried; the root bark is decocted as a sedative.",
+    steps:[
+      "The ripe fruit is eaten fresh or dried as a snack.",
+      "The root bark is boiled as an Ayurvedic decoction for calm and sleep.",
+      "The effect is a gentle relaxation and improved rest, not a strong psychoactive state.",
+      "It is used as a mild sedative and a general tonic."
+    ],
+    note:"Indian jujube is a mild nervine and sleep-aid, not a potent entheogen."
+  },
+  culture:{
+    cultures:["Ayurvedic medicine (India)","Southeast Asian folk use"],
+    ritual:"A long-standing sedative and nervine in Ayurvedic medicine — used for anxiety, insomnia and as a general tonic. The fruit is an everyday snack and the root a classical calming medicine.",
+    context:"A gentle, everyday plant that is both a food and a traditional calming medicine."
+  },
+  legality:"Legal; sold as a fruit and an herbal medicine.",
+  safety:"Mild; avoid in pregnancy."
+},
+{
+  id:"wormwood", name:"Wormwood", sci:"Artemisia absinthium",
+  family:"Asteraceae", form:"Perennial herb", continent:"Asia",
+  regions:["The Mediterranean basin","Europe (naturalised)"], coords:[43,5],
+  habitat:"Dry, open, disturbed ground and roadsides",
+  image:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Artemisia_absinthium_P1210748.jpg/1280px-Artemisia_absinthium_P1210748.jpg",
+  alt:"Artemisia absinthium (wormwood) plant",
+  parts:"The leaves (in absinthe, in tinctures, and as moxa)",
+  compounds:["Thujone","Camphor, cineole (volatile oils)"],
+  pharmacology:"Thujone is a GABA-A modulator (and, in large dose, a glutamate agonist) — the compound behind the 'absinthe madness' myth, though at traditional doses the real effect is a mild stimulant and bitter tonic. It is a bitter digestive and a nervine, not a true psychedelic.",
+  id_features:[
+    "Silvery, feathery, strongly aromatic leaves.",
+    "A tall, much-branched plant with small yellow flower heads.",
+    "A more silvery, bitter, camphor-like scent than mugwort.",
+    "Grows in dry, open, disturbed ground."
+  ],
+  lookalikes:[
+    "Very similar to mugwort (Artemisia vulgaris) — they are close relatives and both used as moxa; wormwood is more silvery and more bitter.",
+    "Do not confuse with tarragon (Artemisia dracunculus); the leaf shape differs.",
+    "The strong camphor-bitter aroma is a reliable clue."
+  ],
+  prep:{
+    summary:"The leaf is steeped into alcohol (absinthe), into bitters, or burned as moxa.",
+    steps:[
+      "Dried leaves are infused into strong alcohol to make absinthe ('the green fairy').",
+      "Or used in herbal bitters and digestive tinctures.",
+      "The leaf can be burned as a moxa, as with mugwort.",
+      "The effect is a bitter stimulant and a gentle nervine — the 'hallucinogenic' reputation is largely myth."
+    ],
+    note:"Wormwood's psychoactivity is mild and bitter; the 'absinthe hallucination' is a cultural legend, not a reliable effect."
+  },
+  culture:{
+    cultures:["European (French and Central European) absinthe tradition","European herbal and folk medicine"],
+    ritual:"The basis of absinthe in European history — a beloved and feared 'green fairy'. A classic bitter digestive in herbal medicine and a traditional moxa. Associated in folklore with witches' brews and protection.",
+    context:"A famous bitter plant that straddles cuisine, medicine and legend, with a much-mythologised psychoactive reputation."
+  },
+  legality:"Legal as a food and herb; absinthe is now legal in many countries with thujone limits.",
+  safety:"Thujone is toxic in large amounts. Avoid in pregnancy and in children."
+}
 ];
 
 /* ============================== HELPERS ============================== */
