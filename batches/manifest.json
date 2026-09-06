@@ -1,0 +1,79 @@
+[
+ {
+  "batch": 1,
+  "file": "/Users/henry/sacred-botany/batches/in_01.json",
+  "n": 24,
+  "n_img": 24,
+  "out": "/Users/henry/sacred-botany/batches/out_01.js"
+ },
+ {
+  "batch": 2,
+  "file": "/Users/henry/sacred-botany/batches/in_02.json",
+  "n": 24,
+  "n_img": 22,
+  "out": "/Users/henry/sacred-botany/batches/out_02.js"
+ },
+ {
+  "batch": 3,
+  "file": "/Users/henry/sacred-botany/batches/in_03.json",
+  "n": 24,
+  "n_img": 23,
+  "out": "/Users/henry/sacred-botany/batches/out_03.js"
+ },
+ {
+  "batch": 4,
+  "file": "/Users/henry/sacred-botany/batches/in_04.json",
+  "n": 24,
+  "n_img": 22,
+  "out": "/Users/henry/sacred-botany/batches/out_04.js"
+ },
+ {
+  "batch": 5,
+  "file": "/Users/henry/sacred-botany/batches/in_05.json",
+  "n": 24,
+  "n_img": 22,
+  "out": "/Users/henry/sacred-botany/batches/out_05.js"
+ },
+ {
+  "batch": 6,
+  "file": "/Users/henry/sacred-botany/batches/in_06.json",
+  "n": 24,
+  "n_img": 13,
+  "out": "/Users/henry/sacred-botany/batches/out_06.js"
+ },
+ {
+  "batch": 7,
+  "file": "/Users/henry/sacred-botany/batches/in_07.json",
+  "n": 24,
+  "n_img": 17,
+  "out": "/Users/henry/sacred-botany/batches/out_07.js"
+ },
+ {
+  "batch": 8,
+  "file": "/Users/henry/sacred-botany/batches/in_08.json",
+  "n": 24,
+  "n_img": 16,
+  "out": "/Users/henry/sacred-botany/batches/out_08.js"
+ },
+ {
+  "batch": 9,
+  "file": "/Users/henry/sacred-botany/batches/in_09.json",
+  "n": 24,
+  "n_img": 15,
+  "out": "/Users/henry/sacred-botany/batches/out_09.js"
+ },
+ {
+  "batch": 10,
+  "file": "/Users/henry/sacred-botany/batches/in_10.json",
+  "n": 24,
+  "n_img": 16,
+  "out": "/Users/henry/sacred-botany/batches/out_10.js"
+ },
+ {
+  "batch": 11,
+  "file": "/Users/henry/sacred-botany/batches/in_11.json",
+  "n": 14,
+  "n_img": 9,
+  "out": "/Users/henry/sacred-botany/batches/out_11.js"
+ }
+]

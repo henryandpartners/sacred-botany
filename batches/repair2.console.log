@@ -1,0 +1,15 @@
+10:32:42 REGEN Delosperma ecklonis: OK 246s id=delosperma_ecklonis
+10:32:55 REGEN Delosperma esterhuyseniae: OK 259s id=delosperma_esterhuyseniae
+10:37:08 REGEN Delosperma hallii: OK 266s id=delosperma_hallii
+10:39:38 REGEN Delosperma harazianum: OK 403s id=delosperma_harazianum
+10:42:28 REGEN Mandarin orange: OK 320s id=mandarin_orange
+10:42:28 PHASE 1 DONE: all 5 entries in store
+10:42:28 PHASE 2 DONE: batch 01 rebuilt (24 entries)
+10:42:28 PHASE 3 DONE: batch 06 rebuilt (23 entries, Mescaline molecule dropped)
+10:42:28 batch 04 Anadenanthera colubrina var: id anadenanthera_colubrina -> anadenanthera_colubrina_var
+10:42:28 batch 04 Lespedeza bicolor var: id lespedeza_bicolor -> lespedeza_bicolor_var
+10:42:28 PHASE 4 DONE: batch 04 ids fixed (2)
+10:42:28 PHASE 5: batch 03 compounds patched (6)
+10:42:28 PHASE 5: batch 04 compounds patched (2)
+10:42:28 PHASE 5: batch 09 Tetrapterys image set (genus photo)
+10:42:28 ALL REPAIR PHASES COMPLETE

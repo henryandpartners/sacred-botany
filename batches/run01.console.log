@@ -1,0 +1,24 @@
+14:57:04 START 1 batches, 24 plants, model=qwen/qwen3.8-27b, notink=True, maxtok=4000
+14:57:04 batch 01: 24 items, 0 done, 24 todo
+15:03:16 batch 01 [1/24] Delosperma cooperi: OK 372s id=delosperma_cooperi
+15:56:06 batch 01 [2/24] Delosperma ecklonis: FAILED (empty content (finish=length, usage={'prompt_tokens': 1656, 'completion_tokens': 4000, 'total_tokens': 5656, 'completion)
+16:21:41 batch 01 [3/24] Delosperma esterhuyseniae: FAILED (parse: Unterminated string starting at: line 25 column 19 (char 912))
+16:39:44 batch 01 [4/24] Delosperma hallii: FAILED (empty content (finish=length, usage={'prompt_tokens': 1677, 'completion_tokens': 4000, 'total_tokens': 5677, 'completion)
+17:01:25 batch 01 [5/24] Delosperma harazianum: FAILED (empty content (finish=length, usage={'prompt_tokens': 1658, 'completion_tokens': 4000, 'total_tokens': 5658, 'completion)
+17:23:36 batch 01 [6/24] Delosperma hirtum: FAILED (parse: Unterminated string starting at: line 38 column 16 (char 1660))
+17:43:44 batch 01 [7/24] Delosperma lydenbergense: FAILED (empty content (finish=length, usage={'prompt_tokens': 1671, 'completion_tokens': 4000, 'total_tokens': 5671, 'completion)
+18:04:46 batch 01 [8/24] Delosperma nubigenum: FAILED (empty content (finish=length, usage={'prompt_tokens': 1646, 'completion_tokens': 4000, 'total_tokens': 5646, 'completion)
+18:25:37 batch 01 [9/24] Delosperma pageanum: FAILED (empty content (finish=length, usage={'prompt_tokens': 1681, 'completion_tokens': 4000, 'total_tokens': 5681, 'completion)
+18:47:11 batch 01 [10/24] Delosperma pergamentaceum: FAILED (empty content (finish=length, usage={'prompt_tokens': 1645, 'completion_tokens': 4000, 'total_tokens': 5645, 'completion)
+19:06:13 batch 01 [11/24] Delosperma tradescantioides: FAILED (parse: Expecting property name enclosed in double quotes: line 5 column 44 (char 147))
+19:27:21 batch 01 [12/24] Prestonia amazonica: FAILED (empty content (finish=length, usage={'prompt_tokens': 1614, 'completion_tokens': 4000, 'total_tokens': 5614, 'completion)
+19:41:00 batch 01 [13/24] Voacanga africana: OK 817s id=voacanga_africana
+20:05:24 batch 01 [14/24] Erythroxylum pungens: FAILED (empty content (finish=length, usage={'prompt_tokens': 1668, 'completion_tokens': 4000, 'total_tokens': 5668, 'completion)
+20:27:14 batch 01 [15/24] Acaciella angustissima: FAILED (empty content (finish=length, usage={'prompt_tokens': 1679, 'completion_tokens': 4000, 'total_tokens': 5679, 'completion)
+20:47:49 batch 01 [16/24] Vachellia aroma: FAILED (empty content (finish=length, usage={'prompt_tokens': 1627, 'completion_tokens': 4000, 'total_tokens': 5627, 'completion)
+21:07:18 batch 01 [17/24] Acacia auriculiformis: OK 1167s id=acacia_auriculiformis
+21:27:41 batch 01 [18/24] Acacia baileyana: FAILED (empty content (finish=length, usage={'prompt_tokens': 1668, 'completion_tokens': 4000, 'total_tokens': 5668, 'completion)
+21:53:16 batch 01 [19/24] Acacia beauverdiana: FAILED (empty content (finish=length, usage={'prompt_tokens': 1649, 'completion_tokens': 4000, 'total_tokens': 5649, 'completion)
+22:07:14 batch 01 [20/24] Senegalia berlandieri: OK 836s id=senegalia_berlandieri
+22:13:43 batch 01 [21/24] Vachellia caven: OK 389s id=vachellia_caven
+22:36:51 batch 01 [22/24] Acacia colei: FAILED (empty content (finish=length, usage={'prompt_tokens': 1656, 'completion_tokens': 4000, 'total_tokens': 5656, 'completion)

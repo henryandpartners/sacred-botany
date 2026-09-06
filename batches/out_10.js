@@ -1,0 +1,1387 @@
+[
+ {
+  "id": "passiflora_quadrangularis",
+  "name": "Maracuj\u00e1",
+  "sci": "Passiflora quadrangularis",
+  "family": "Passifloraceae",
+  "form": "Vine with large, three-lobed leaves and a large, edible fruit",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Argentina",
+   "Paraguay",
+   "Bolivia",
+   "Uruguay"
+  ],
+  "coords": [
+   -15.7942,
+   -47.8822
+  ],
+  "habitat": "Tropical and subtropical forests, often climbing trees or fences",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Passiflora_%C3%97_decaisneana_2.JPG/1280px-Passiflora_%C3%97_decaisneana_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Passiflora quadrangularis vine with large leaves and fruit",
+  "parts": "Fruit (pulp and seeds), leaves",
+  "compounds": [
+   "harman"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which are monoamine oxidase inhibitors (MAOIs); the fruit is primarily consumed for its sweet, aromatic pulp, while the leaves are traditionally used in teas for mild sedative effects, though the psychoactive potential is generally low compared to other Passiflora species.",
+  "id_features": [
+   "Large, glossy, three-lobed leaves.",
+   "Large, oval or pear-shaped fruit with a smooth, green-to-purple skin.",
+   "Vigorous climbing vine with tendrils.",
+   "Sweet, aromatic pulp containing numerous black seeds."
+  ],
+  "lookalikes": [
+   "Distinguish from other Passiflora species by the very large size of the fruit and leaves.",
+   "Often confused with other passion fruits (e.g., P. edulis) but is significantly larger.",
+   "The vine habit and leaf shape are characteristic of the genus."
+  ],
+  "prep": {
+   "summary": "The fruit is harvested when ripe and the pulp is scooped out for direct consumption or juice.",
+   "steps": [
+    "Harvest the fruit when it is fully ripe (yellow to purple).",
+    "Cut the fruit in half and scoop out the pulp and seeds.",
+    "Consume the pulp directly or blend it with water and sugar to make juice.",
+    "Leaves can be dried and steeped in hot water for a mild tea."
+   ],
+   "note": "The fruit is a common fresh fruit in South America; the leaf tea is a traditional folk remedy."
+  },
+  "culture": {
+   "cultures": [
+    "Brazilian",
+    "Argentine",
+    "Paraguayan",
+    "Indigenous South American peoples"
+   ],
+   "ritual": "Primarily a culinary staple; the fruit is eaten fresh or used in juices and desserts. Leaf teas are used in folk medicine for relaxation and sleep.",
+   "context": "A major agricultural crop in South America, valued for its sweet, aromatic fruit."
+  },
+  "legality": "Legal as a food crop and traditional plant; status varies by jurisdiction regarding specific preparations; check local law.",
+  "safety": "Contains MAOIs; avoid combining with tyramine-rich foods or other MAOIs; consult a qualified professional before medicinal use."
+ },
+ {
+  "id": "passiflora_ruberosa",
+  "name": "Passion Flower",
+  "sci": "Passiflora ruberosa",
+  "family": "Passifloraceae",
+  "form": "Vine with showy, complex flowers",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Argentina",
+   "Paraguay",
+   "Uruguay"
+  ],
+  "coords": [
+   -23.55,
+   -46.63
+  ],
+  "habitat": "Tropical and subtropical scrublands and forest edges",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Passiflora_caerulea_STEREO_%28R-L%29_2019-06-27.jpg/1280px-Passiflora_caerulea_STEREO_%28R-L%29_2019-06-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Passiflora caerulea vine with characteristic blue and white flower",
+  "parts": "Dried leaves and flowers",
+  "compounds": [
+   "harman"
+  ],
+  "pharmacology": "Contains beta-carbolines like harman, which are weak monoamine oxidase inhibitors (MAOIs) and may contribute to anxiolytic and sedative effects, though the primary clinical use is for calming and sleep support.",
+  "id_features": [
+   "Vining habit with tendrils for climbing.",
+   "Leaves are typically three-lobed.",
+   "Flowers are large and intricate, featuring a prominent corona of filaments.",
+   "Fruit is a yellow or orange berry."
+  ],
+  "lookalikes": [
+   "Many Passiflora species look similar; identification often requires close examination of flower structure and leaf shape.",
+   "Distinguish from other vines by the specific arrangement of the floral corona and the presence of nectaries.",
+   "Some species have toxic fruits, so correct identification is critical."
+  ],
+  "prep": {
+   "summary": "The dried leaves and flowers are steeped in hot water to make a calming tea.",
+   "steps": [
+    "Harvest leaves and flowers from a correctly identified plant.",
+    "Air-dry the plant material in a shaded, well-ventilated area.",
+    "Place a small amount of dried material in a cup.",
+    "Pour hot (not boiling) water over the material and steep for 10-15 minutes."
+   ],
+   "note": "Ensure the plant is correctly identified to avoid toxic lookalikes."
+  },
+  "culture": {
+   "cultures": [
+    "Brazilian traditional medicine",
+    "South American herbalism"
+   ],
+   "ritual": "Used in traditional folk medicine to treat anxiety, insomnia, and nervous tension.",
+   "context": "A common herbal remedy in South America for promoting relaxation and sleep."
+  },
+  "legality": "Legal as a herbal tea in most jurisdictions, but status varies by jurisdiction; check local law.",
+  "safety": "Contains MAOIs; consult a qualified professional before use, especially if taking other medications, and avoid combining with tyramine-rich foods."
+ },
+ {
+  "id": "passiflora_subpeltata",
+  "name": "Passionflower",
+  "sci": "Passiflora subpeltata",
+  "family": "Passifloraceae",
+  "form": "Woody vine with large, lobed leaves and showy flowers",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Argentina",
+   "Paraguay",
+   "Uruguay",
+   "Bolivia"
+  ],
+  "coords": [
+   -23.55,
+   -46.63
+  ],
+  "habitat": "Tropical and subtropical forests, scrublands, and riverbanks",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Passiflora_subpeltata_1DS-II_3-9828.jpg/1280px-Passiflora_subpeltata_1DS-II_3-9828.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Passiflora subpeltata vine with characteristic leaves and flower",
+  "parts": "Leaves and aerial parts",
+  "compounds": [
+   "harman"
+  ],
+  "pharmacology": "Contains beta-carbolines like harman, which have weak monoamine oxidase inhibitor (MAOI) activity, alongside flavonoids and alkaloids that may contribute to mild anxiolytic or sedative effects, though clinical evidence for specific therapeutic outcomes is limited.",
+  "id_features": [
+   "Vine with large, three-lobed leaves that are often glossy and dark green.",
+   "Flowers are large and showy, typically white or pale yellow with a purple center.",
+   "Produces small, round, yellowish-orange berries.",
+   "Stems are often covered in fine hairs or prickles."
+  ],
+  "lookalikes": [
+   "Distinguish from other Passiflora species by the specific leaf shape and flower coloration.",
+   "Can be confused with other tropical vines, but the unique passionflower structure is distinctive.",
+   "Few common lookalikes in its native range that share the same chemical profile."
+  ],
+  "prep": {
+   "summary": "The leaves are typically dried and brewed into a tea.",
+   "steps": [
+    "Harvest fresh leaves from the vine.",
+    "Dry the leaves in a shaded, well-ventilated area.",
+    "Crush or chop the dried leaves.",
+    "Steep the leaves in hot water for 10-15 minutes to make a tea."
+   ],
+   "note": "Traditionally used as a calming beverage, often consumed in the evening."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous South American peoples",
+    "Brazilian folk medicine"
+   ],
+   "ritual": "Used in traditional folk medicine for anxiety, insomnia, and general nervous tension.",
+   "context": "A common plant in South American herbalism, valued for its calming properties."
+  },
+  "legality": "Legal in most jurisdictions as a traditional herb, but status varies by jurisdiction; check local law.",
+  "safety": "Contains MAOIs; consult a qualified professional before use, especially if taking other medications, and avoid combining with tyramine-rich foods or other MAOIs."
+ },
+ {
+  "id": "passiflora_warmingii",
+  "name": "Passionflower",
+  "sci": "Passiflora warmingii",
+  "family": "Passifloraceae",
+  "form": "Woody vine with large, lobed leaves and showy flowers",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Argentina",
+   "Paraguay",
+   "Uruguay"
+  ],
+  "coords": [
+   -23.5,
+   -46.6
+  ],
+  "habitat": "Tropical and subtropical woodlands and scrublands",
+  "image": "",
+  "alt": "Passiflora warmingii vine",
+  "parts": "Leaves and flowers",
+  "compounds": [
+   "harman"
+  ],
+  "pharmacology": "Contains beta-carboline alkaloids such as harman, which may act as monoamine oxidase inhibitors (MAOIs), though the clinical evidence for its specific psychoactive or therapeutic effects is limited and less studied than other passionflower species.",
+  "id_features": [
+   "Vining habit with tendrils for climbing.",
+   "Large, three-lobed leaves with a glossy texture.",
+   "Distinctive flowers with a prominent corona of filaments.",
+   "Often found in mixed forests or along riverbanks."
+  ],
+  "lookalikes": [
+   "Distinguish from other Passiflora species by specific leaf shape and flower structure.",
+   "Can be confused with other tropical vines in the same habitat.",
+   "Flower morphology is the primary identifier within the genus."
+  ],
+  "prep": {
+   "summary": "Leaves and flowers are typically dried and prepared as a tea or infusion.",
+   "steps": [
+    "Harvest fresh leaves and flowers.",
+    "Dry the plant material thoroughly in a shaded, well-ventilated area.",
+    "Crush or chop the dried material.",
+    "Steep in hot water to create an infusion."
+   ],
+   "note": "Preparation is generally simple, focusing on extracting the alkaloids and other compounds into the liquid."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous South American peoples",
+    "Traditional herbalists"
+   ],
+   "ritual": "Used in traditional medicine for various ailments, including anxiety and sleep disorders, though specific ceremonial uses are less documented than for other plants.",
+   "context": "Part of the rich biodiversity of South American flora used in local ethnobotany."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of plants containing beta-carbolines.",
+  "safety": "Contains MAOIs; consult a qualified professional before use, especially if taking other medications, as interactions can be serious."
+ },
+ {
+  "id": "calligonum_minimum",
+  "name": "Calligonum minimum",
+  "sci": "Calligonum minimum",
+  "family": "Polygonaceae",
+  "form": "Small perennial shrub",
+  "continent": "Asia",
+  "regions": [
+   "Central Asia",
+   "Middle East",
+   "Mediterranean",
+   "North Africa"
+  ],
+  "coords": [
+   35.0,
+   55.0
+  ],
+  "habitat": "Arid and semi-arid regions, often in sandy or rocky soils",
+  "image": "",
+  "alt": "Calligonum minimum shrub",
+  "parts": "Whole plant",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids with potential psychoactive properties, though specific pharmacological effects and clinical evidence for this species are limited.",
+  "id_features": [
+   "Small, low-growing shrub with woody stems.",
+   "Leaves are often reduced or scale-like.",
+   "Flowers are small and inconspicuous.",
+   "Adapted to dry, harsh environments."
+  ],
+  "lookalikes": [
+   "Other species in the genus Calligonum.",
+   "Distinctive due to its small size and specific habitat preferences."
+  ],
+  "prep": {
+   "summary": "Preparation methods are not well-documented and may vary by region.",
+   "steps": [
+    "Harvest the whole plant.",
+    "Dry the plant material.",
+    "Prepare as a tea or infusion."
+   ],
+   "note": "Use with caution due to limited safety data."
+  },
+  "culture": {
+   "cultures": [
+    "Traditional medicine in Central Asia",
+    "Folk practices in the Middle East"
+   ],
+   "ritual": "Used in traditional remedies and possibly in local rituals.",
+   "context": "Part of the ethnobotanical heritage of arid regions."
+  },
+  "legality": "Status varies by jurisdiction; check local law.",
+  "safety": "Consult a qualified professional; limited safety data available."
+ },
+ {
+  "id": "leptactinia_densiflora",
+  "name": "Leptactinia densiflora",
+  "sci": "Leptactinia densiflora",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody shrub or small tree",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Bolivia",
+   "Paraguay",
+   "Argentina"
+  ],
+  "coords": [
+   -20.0,
+   -55.0
+  ],
+  "habitat": "Tropical and subtropical moist broadleaf forests and gallery forests",
+  "image": "",
+  "alt": "Leptactinia densiflora shrub",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "tetrahydroharmine",
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as tetrahydroharmine, which are monoamine oxidase inhibitors (MAOIs); this class of compounds is known to inhibit the breakdown of monoamines, but specific clinical efficacy or safety profiles for this species are not well-documented in modern literature.",
+  "id_features": [
+   "Woody shrub or small tree with opposite leaves.",
+   "Leaves are typically elliptic to ovate with entire margins.",
+   "Flowers are small, often white or pale yellow, arranged in dense clusters (cymes).",
+   "Bark is often grayish-brown and may be slightly rough."
+  ],
+  "lookalikes": [
+   "Can be confused with other Rubiaceae shrubs in the same habitat, such as species of Psychotria or Mitragyna.",
+   "Distinguishable by the specific arrangement of its dense flower clusters and leaf shape.",
+   "Lack of prominent stipules or specific leaf venation patterns helps differentiate it from lookalikes."
+  ],
+  "prep": {
+   "summary": "Traditionally, the bark or leaves may be prepared as a decoction or infusion, though specific traditional recipes are not widely standardized in public literature.",
+   "steps": [
+    "Harvest small branches or bark strips from the shrub.",
+    "Dry the material thoroughly in a shaded, well-ventilated area.",
+    "Crush or chop the dried bark/leaves into smaller pieces.",
+    "Simmer the material in water to create a decoction, or steep in hot water for an infusion."
+   ],
+   "note": "Due to the presence of MAOIs, preparation and consumption should be approached with extreme caution and only under the guidance of someone knowledgeable about the plant's specific properties and risks."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous peoples of the Atlantic Forest region",
+    "Traditional healers in Brazil and neighboring countries"
+   ],
+   "ritual": "Use in specific traditional healing practices or ceremonial contexts is limited and not widely documented in mainstream ethnobotanical records compared to more famous MAOI plants like Banisteriopsis caapi.",
+   "context": "A lesser-known species in the Rubiaceae family with potential ethnobotanical significance in local traditional medicine systems."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of plants containing beta-carbolines.",
+  "safety": "Contains MAOIs which can cause dangerous hypertensive crises if combined with tyramine-rich foods or other serotonergic drugs; consult a qualified professional before use."
+ },
+ {
+  "id": "ophiorrhiza_japonica",
+  "name": "Japanese Ophiorrhiza",
+  "sci": "Ophiorrhiza japonica",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Perennial herb with square stems and opposite leaves",
+  "continent": "Asia",
+  "regions": [
+   "Japan",
+   "China",
+   "Korea",
+   "Ryukyu Islands"
+  ],
+  "coords": [
+   36.2,
+   138.25
+  ],
+  "habitat": "Moist, shaded slopes and rocky areas in temperate forests",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Ophiorrhiza_japonica1.jpg/1280px-Ophiorrhiza_japonica1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Ophiorrhiza japonica (Japanese Ophiorrhiza) herb",
+  "parts": "Whole plant, particularly the root and stem",
+  "compounds": [
+   "harman",
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which are structurally related to MAO inhibitors, though the specific pharmacological profile of O. japonica is less extensively characterized than other beta-carboline-rich plants.",
+  "id_features": [
+   "Square stems typical of the Rubiaceae family.",
+   "Opposite, simple leaves with entire margins.",
+   "Small, tubular flowers, often white or pale pink, in axillary clusters.",
+   "Grows in moist, shaded understory environments."
+  ],
+  "lookalikes": [
+   "Can be confused with other Rubiaceae herbs like Galium species, but O. japonica has distinct square stems and specific flower morphology.",
+   "Distinguish from other Ophiorrhiza species by leaf shape and habitat preference."
+  ],
+  "prep": {
+   "summary": "Traditionally prepared as a decoction or infusion of the dried plant material.",
+   "steps": [
+    "Harvest the whole plant and dry it in a shaded, well-ventilated area.",
+    "Crush or chop the dried material to increase surface area.",
+    "Steep the material in hot water or simmer it briefly to create a decoction.",
+    "Strain the liquid and consume the resulting tea."
+   ],
+   "note": "Preparation methods vary by regional tradition; specific dosages are not standardized."
+  },
+  "culture": {
+   "cultures": [
+    "Japanese traditional medicine",
+    "Korean herbal traditions"
+   ],
+   "ritual": "Used in traditional herbal remedies for various ailments, often as part of broader medicinal preparations.",
+   "context": "Valued in East Asian traditional medicine for its potential therapeutic properties."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of wild-harvested plants.",
+  "safety": "Consult a qualified professional before use; beta-carbolines can have significant pharmacological effects and potential interactions."
+ },
+ {
+  "id": "pauridiantha_callicarpoides",
+  "name": "Pauridiantha callicarpoides",
+  "sci": "Pauridiantha callicarpoides",
+  "family": "Lamiaceae (Mint family)",
+  "form": "Woody shrub",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Argentina",
+   "Paraguay",
+   "Bolivia"
+  ],
+  "coords": [
+   -25.0,
+   -50.0
+  ],
+  "habitat": "Subtropical forests and scrublands",
+  "image": "",
+  "alt": "Pauridiantha callicarpoides shrub",
+  "parts": "Leaves and bark",
+  "compounds": [
+   "harman",
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which are monoamine oxidase inhibitors (MAOIs) that can potentiate the effects of other psychoactive compounds; however, the plant itself is not a primary psychoactive source and is rarely used for this purpose.",
+  "id_features": [
+   "A woody shrub with opposite, lanceolate leaves.",
+   "Small, tubular flowers often in whorls.",
+   "Bark is typically grayish-brown.",
+   "Leaves have a faint aromatic scent."
+  ],
+  "lookalikes": [
+   "Can be confused with other Lamiaceae shrubs in the region.",
+   "Distinctive due to its woody habit and specific leaf arrangement.",
+   "Few common lookalikes with significant psychoactive properties."
+  ],
+  "prep": {
+   "summary": "Rarely prepared for psychoactive use; if used, leaves or bark are typically dried and brewed as a tea.",
+   "steps": [
+    "Harvest leaves or small twigs.",
+    "Dry the material in a shaded, well-ventilated area.",
+    "Brew a small amount in hot water for a short duration.",
+    "Strain and consume in small quantities if used for traditional purposes."
+   ],
+   "note": "Due to the presence of MAOIs, it is generally not recommended for recreational use without professional guidance."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous groups of the Atlantic Forest",
+    "Traditional healers in Brazil"
+   ],
+   "ritual": "Occasionally used in traditional medicine for respiratory or digestive ailments, but not a central ceremonial psychoactive.",
+   "context": "A minor component of local ethnobotany, valued more for its medicinal properties than its psychoactive potential."
+  },
+  "legality": "Legal in most jurisdictions as a wild plant, but status varies by jurisdiction; check local law regarding the possession of MAO-containing plants.",
+  "safety": "Contains MAOIs which can interact dangerously with many medications and foods; consult a qualified professional before use."
+ },
+ {
+  "id": "pauridiantha_dewevrei",
+  "name": "Pauridiantha dewevrei",
+  "sci": "Pauridiantha dewevrei",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody shrub or small tree",
+  "continent": "Africa",
+  "regions": [
+   "Cameroon",
+   "Gabon",
+   "Congo",
+   "Central African Republic"
+  ],
+  "coords": [
+   1.5,
+   14.0
+  ],
+  "habitat": "Tropical rainforest understory",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Pauridiantha_floribunda_%28Rubiaceae%29_from_the_Dja_Faunal_Reserve.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Pauridiantha dewevrei shrub in tropical forest",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "harman",
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which are MAO-A inhibitors; however, specific pharmacological effects and safety profiles for this species are not well-documented in modern clinical literature.",
+  "id_features": [
+   "Woody shrub or small tree found in tropical rainforests.",
+   "Leaves are typically opposite and simple.",
+   "Bark is used in traditional preparations.",
+   "Native to Central African rainforests."
+  ],
+  "lookalikes": [
+   "Distinguish from other Rubiaceae by specific leaf arrangement and bark texture.",
+   "Few common lookalikes in its specific native habitat.",
+   "Identification often requires botanical expertise due to similar species in the family."
+  ],
+  "prep": {
+   "summary": "Traditional preparation involves processing the bark or leaves, often as a decoction or infusion.",
+   "steps": [
+    "Collect bark or leaves from the plant.",
+    "Dry the material if necessary.",
+    "Prepare a decoction by boiling the plant material in water.",
+    "Strain the liquid for consumption or topical application."
+   ],
+   "note": "Preparation methods vary by local tradition and intended use."
+  },
+  "culture": {
+   "cultures": [
+    "Local Central African communities"
+   ],
+   "ritual": "Used in traditional medicine and possibly in ceremonial contexts by indigenous groups in Central Africa.",
+   "context": "Part of the traditional ethnobotanical knowledge of the region."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of plants containing beta-carbolines.",
+  "safety": "Consult a qualified professional before use; beta-carbolines can have significant pharmacological effects and potential interactions."
+ },
+ {
+  "id": "pauridiantha_lyalli",
+  "name": "Lyall's Pauridiantha",
+  "sci": "Pauridiantha lyalli",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody shrub or small tree",
+  "continent": "Africa",
+  "regions": [
+   "Cameroon",
+   "Gabon",
+   "Congo (Brazzaville)",
+   "Congo (Kinshasa)"
+  ],
+  "coords": [
+   1.5,
+   13.5
+  ],
+  "habitat": "Tropical rainforests and gallery forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Pauridiantha_floribunda_%28Rubiaceae%29_from_the_Dja_Faunal_Reserve.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Pauridiantha species in a tropical forest setting",
+  "parts": "Bark and root",
+  "compounds": [
+   "Harman"
+  ],
+  "pharmacology": "Contains beta-carboline alkaloids such as harman, which are structurally related to MAO inhibitors; however, specific pharmacological data for this species is limited compared to other beta-carbolines.",
+  "id_features": [
+   "Woody shrub or small tree with opposite leaves.",
+   "Leaves are typically elliptic to ovate with entire margins.",
+   "Flowers are small, often white or cream, arranged in clusters.",
+   "Bark is often rough or fissured on mature stems."
+  ],
+  "lookalikes": [
+   "Distinguish from other Rubiaceae by specific leaf venation and flower structure.",
+   "Often confused with other Pauridiantha species in the field without detailed botanical analysis.",
+   "Distinctive bark texture helps separate it from smooth-barked forest trees."
+  ],
+  "prep": {
+   "summary": "The bark or roots are typically processed into a decoction or chewed, though specific traditional preparations vary by local group.",
+   "steps": [
+    "Bark or root material is collected and dried.",
+    "The material is chopped or powdered.",
+    "It is boiled in water to create a decoction, or mixed with other ingredients.",
+    "The resulting preparation is consumed orally."
+   ],
+   "note": "Preparation methods are often closely guarded traditional knowledge and may vary significantly between ethnic groups."
+  },
+  "culture": {
+   "cultures": [
+    "Local Bantu-speaking peoples of Central Africa"
+   ],
+   "ritual": "Used in traditional medicine and potentially in ceremonial contexts, though specific ritual details are less documented than for more widespread psychoactive plants.",
+   "context": "Part of the rich ethnobotanical heritage of Central African rainforests."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of wild-harvested plants containing beta-carbolines.",
+  "safety": "Contains beta-carboline alkaloids which can have psychoactive and physiological effects; consult a qualified professional before use due to potential toxicity and interactions."
+ },
+ {
+  "id": "pauridiantha_viridiflora",
+  "name": "Pauridiantha viridiflora",
+  "sci": "Pauridiantha viridiflora",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody shrub or small tree",
+  "continent": "Africa",
+  "regions": [
+   "Cameroon",
+   "Gabon",
+   "Equatorial Guinea",
+   "Congo"
+  ],
+  "coords": [
+   1.5,
+   11.5
+  ],
+  "habitat": "Tropical rainforests and gallery forests of Central Africa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Pauridiantha_floribunda_%28Rubiaceae%29_from_the_Dja_Faunal_Reserve.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Pauridiantha viridiflora (Rubiaceae) in the Dja Faunal Reserve",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "harman",
+   "Beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which are structurally related to MAO inhibitors and may interact with monoamine neurotransmitters, though the specific pharmacological profile of this species in humans is not well-documented.",
+  "id_features": [
+   "Woody shrub or small tree with opposite, simple leaves.",
+   "Flowers are typically small and greenish or white.",
+   "Native to the dense rainforests of the Congo Basin.",
+   "Bark is often used in traditional preparations."
+  ],
+  "lookalikes": [
+   "Distinguish from other Rubiaceae by specific leaf arrangement and flower structure.",
+   "Often confused with other Pauridiantha species in the wild.",
+   "Requires botanical expertise to distinguish from similar forest shrubs."
+  ],
+  "prep": {
+   "summary": "Traditional preparations typically involve decoctions of the bark or leaves.",
+   "steps": [
+    "Collect bark or leaves from the plant.",
+    "Dry the material thoroughly.",
+    "Boil the dried material in water to create a decoction.",
+    "Strain the liquid for consumption or topical application."
+   ],
+   "note": "Preparation methods vary by local tradition and intended use."
+  },
+  "culture": {
+   "cultures": [
+    "Local Central African communities"
+   ],
+   "ritual": "Used in traditional medicine and potentially in ceremonial contexts, though specific ritual details are less widely documented than for other psychoactive plants.",
+   "context": "Part of the rich ethnobotanical heritage of Central Africa."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of plants containing beta-carbolines.",
+  "safety": "Consult a qualified professional before use; beta-carbolines can have significant pharmacological effects and potential interactions with other substances."
+ },
+ {
+  "id": "simira_klugei",
+  "name": "Simira klugei",
+  "sci": "Simira klugei",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody shrub or small tree",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Bolivia",
+   "Paraguay",
+   "Argentina"
+  ],
+  "coords": [
+   -20.0,
+   -58.0
+  ],
+  "habitat": "Tropical and subtropical moist broadleaf forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Simira_salvadorensis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Simira klugei shrub",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "harman",
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which are structurally related to MAO inhibitors; however, specific pharmacological data for this species is limited compared to other members of the Rubiaceae family.",
+  "id_features": [
+   "Small tree or large shrub with smooth, greyish bark.",
+   "Opposite, simple leaves with prominent venation.",
+   "Small, tubular flowers, often yellowish or greenish.",
+   "Native to the Atlantic Forest and Cerrado regions."
+  ],
+  "lookalikes": [
+   "Visually similar to other Rubiaceae shrubs in the same habitat.",
+   "Distinguishable by specific leaf arrangement and flower morphology.",
+   "Often confused with other Simira species in the field."
+  ],
+  "prep": {
+   "summary": "Traditionally prepared as a decoction or infusion of the bark or leaves.",
+   "steps": [
+    "Collect small branches or bark from the shrub.",
+    "Chop the material into small pieces.",
+    "Boil the pieces in water for a short period to extract compounds.",
+    "Strain the liquid and allow it to cool before consumption."
+   ],
+   "note": "Preparation methods vary by local tradition and intended use."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous peoples of South America",
+    "Traditional healers in Brazil and Bolivia"
+   ],
+   "ritual": "Used in traditional medicine for various ailments, sometimes in ceremonial contexts.",
+   "context": "Part of the rich ethnobotanical heritage of South American forests."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of plants containing beta-carbolines.",
+  "safety": "Contains beta-carbolines which can have pharmacological effects; consult a qualified professional before use, especially if taking other medications."
+ },
+ {
+  "id": "simira_rubra",
+  "name": "Simira rubra",
+  "sci": "Simira rubra",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody shrub",
+  "continent": "South America",
+  "regions": [
+   "Peru",
+   "Bolivia",
+   "Ecuador",
+   "Brazil",
+   "Colombia"
+  ],
+  "coords": [
+   -13.53,
+   -71.97
+  ],
+  "habitat": "Tropical and subtropical moist broadleaf forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Simira_salvadorensis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Simira rubra shrub",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "harman",
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which are MAO-A inhibitors and can act as psychoactive agents or potentiators, though specific clinical data for this species is limited.",
+  "id_features": [
+   "A woody shrub with opposite, simple leaves.",
+   "Leaves are typically lanceolate to elliptic with entire margins.",
+   "Produces small, yellowish flowers in axillary clusters.",
+   "Bark is often rough and brownish."
+  ],
+  "lookalikes": [
+   "Distinguish from other Rubiaceae by specific leaf venation and flower structure.",
+   "Often confused with other Simira species in the field.",
+   "Requires botanical expertise to distinguish from similar shrubs in the madder family."
+  ],
+  "prep": {
+   "summary": "The bark or leaves are typically prepared as a decoction or infusion.",
+   "steps": [
+    "Collect small pieces of bark or dried leaves.",
+    "Boil the material in water for a short period to extract compounds.",
+    "Strain the liquid to remove plant matter.",
+    "Consume the resulting tea or decoction."
+   ],
+   "note": "Preparation methods vary by region and intended use, often traditional or medicinal."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous Andean peoples",
+    "Amazonian communities"
+   ],
+   "ritual": "Used in traditional medicine for various ailments and occasionally in shamanic practices.",
+   "context": "A plant of local significance in South American traditional pharmacopoeia."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of psychoactive plants.",
+  "safety": "Contains MAO-inhibiting compounds; consult a qualified professional before use, especially if taking other medications."
+ },
+ {
+  "id": "borreria_verticillata",
+  "name": "Borreria verticillata",
+  "sci": "Borreria verticillata",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Herbaceous shrub with whorled leaves",
+  "continent": "Global",
+  "regions": [
+   "Brazil",
+   "India",
+   "Australia",
+   "Africa",
+   "Southeast Asia"
+  ],
+  "coords": [
+   -15.78,
+   -47.93
+  ],
+  "habitat": "Tropical and subtropical open areas, roadsides, and disturbed ground",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Borreria_verticillata_%287554464476%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Borreria verticillata plant with whorled leaves",
+  "parts": "Whole plant",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids that can interact with monoamine oxidase (MAO) and other neurotransmitter systems, though specific pharmacological effects of this species are not well-documented in modern clinical literature.",
+  "id_features": [
+   "Leaves arranged in whorls of 3-5 around the stem.",
+   "Small, white or pale pink flowers with four petals.",
+   "Stems often square in cross-section.",
+   "Grows as a low, sprawling herb or small shrub."
+  ],
+  "lookalikes": [
+   "Can be confused with other Rubiaceae species like Galium (bedstraw) or Sida (sida), but distinguished by the specific whorl arrangement and flower structure.",
+   "Often mistaken for common weeds in tropical regions; identification requires close examination of leaf venation and flower parts."
+  ],
+  "prep": {
+   "summary": "Traditionally prepared as a decoction or infusion of the dried or fresh plant material.",
+   "steps": [
+    "Harvest the whole plant, focusing on leaves and stems.",
+    "Dry the material in a shaded, well-ventilated area.",
+    "Crush or chop the dried plant material.",
+    "Steep in hot water or simmer briefly to create a tea."
+   ],
+   "note": "Preparation methods vary by local tradition; specific dosages are not standardized."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous Brazilian groups",
+    "Traditional healers in Southeast Asia",
+    "Folk medicine practitioners in Africa"
+   ],
+   "ritual": "Used in folk remedies for various ailments, sometimes incorporated into spiritual cleansing or protection rituals in certain tropical communities.",
+   "context": "A common medicinal herb in traditional systems across the tropics, valued for its accessibility and perceived therapeutic properties."
+  },
+  "legality": "Generally legal as a plant, but status varies by jurisdiction; check local law regarding the possession or use of psychoactive or medicinal herbs.",
+  "safety": "Limited safety data; beta-carbolines can have significant pharmacological effects. Consult a qualified professional before use, especially if taking other medications."
+ },
+ {
+  "id": "nauclea_diderrichii",
+  "name": "Gangamamba",
+  "sci": "Nauclea diderrichii",
+  "family": "Rubiaceae",
+  "form": "Small to medium-sized evergreen tree",
+  "continent": "Africa",
+  "regions": [
+   "Congo Basin",
+   "Cameroon",
+   "Gabon",
+   "Equatorial Guinea",
+   "Angola"
+  ],
+  "coords": [
+   -1.5,
+   14.5
+  ],
+  "habitat": "Dense tropical rainforests and riverine forests",
+  "image": "",
+  "alt": "Nauclea diderrichii (Gangamamba) tree",
+  "parts": "Bark and root bark",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids that can inhibit monoamine oxidase (MAO) and interact with serotonin and dopamine systems, though specific clinical pharmacological data for this species is limited.",
+  "id_features": [
+   "Smooth, greyish bark on young trunks.",
+   "Opposite, simple leaves with prominent veins.",
+   "Small, greenish-white flowers in dense clusters.",
+   "Fruits are small, round, and turn from green to yellow or orange."
+  ],
+  "lookalikes": [
+   "Distinguish from other Rubiaceae by the specific bark texture and leaf arrangement.",
+   "Often confused with other Nauclea species in the field, requiring botanical expertise for precise identification."
+  ],
+  "prep": {
+   "summary": "The bark is typically dried and prepared as a decoction or chewed.",
+   "steps": [
+    "Bark is harvested from the tree.",
+    "It is dried in the shade.",
+    "The dried bark is boiled in water to create a decoction.",
+    "Alternatively, small pieces may be chewed directly."
+   ],
+   "note": "Preparation is often part of traditional healing or spiritual rituals."
+  },
+  "culture": {
+   "cultures": [
+    "Bantu-speaking peoples of Central Africa",
+    "Traditional healers (Nganga)"
+   ],
+   "ritual": "Used in traditional medicine for various ailments and in spiritual ceremonies to invoke protection or healing.",
+   "context": "A significant plant in the ethnobotany of the Congo Basin."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the harvest and use of protected forest species.",
+  "safety": "Contains beta-carbolines which can have psychoactive or toxic effects; consult a qualified professional before use."
+ },
+ {
+  "id": "pauridiantha_yalli",
+  "name": "Yag\u00e9",
+  "sci": "Pauridiantha yalli",
+  "family": "Rubiaceae",
+  "form": "Woody vine",
+  "continent": "South America",
+  "regions": [
+   "Colombia",
+   "Ecuador",
+   "Peru",
+   "Venezuela",
+   "Brazil"
+  ],
+  "coords": [
+   -1.5,
+   -77.5
+  ],
+  "habitat": "Tropical rainforest understory",
+  "image": "",
+  "alt": "Pauridiantha yalli vine",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "neta-carbolines"
+  ],
+  "pharmacology": "The plant contains beta-carbolines, such as harmine and harmaline, which act as monoamine oxidase inhibitors (MAOIs). These compounds are traditionally combined with a DMT-containing plant to facilitate the absorption of the psychoactive alkaloid.",
+  "id_features": [
+   "A woody climbing vine with smooth, light-brown bark.",
+   "Leaves are opposite, elliptic, and entire.",
+   "Flowers are small, white, and tubular.",
+   "Fruits are small, round, and turn from green to red."
+  ],
+  "lookalikes": [
+   "Often confused with other Rubiaceae vines in the forest.",
+   "Distinguished from other yag\u00e9 vines by specific leaf and bark characteristics known to practitioners.",
+   "Requires expert identification to avoid toxic lookalikes."
+  ],
+  "prep": {
+   "summary": "The bark and leaves are boiled with a DMT-containing plant to create a decoction.",
+   "steps": [
+    "The bark and leaves of Pauridiantha yalli are collected and dried.",
+    "They are boiled in water for several hours to extract the beta-carbolines.",
+    "A DMT-containing plant, such as Chaytonia verbena, is added to the decoction.",
+    "The mixture is boiled further and then strained."
+   ],
+   "note": "The preparation is a sacred act, often accompanied by prayers and songs."
+  },
+  "culture": {
+   "cultures": [
+    "Shipibo-Conibo",
+    "Kawishka",
+    "Cof\u00e1n",
+    "Siona"
+   ],
+   "ritual": "Used in shamanic ceremonies for healing, spiritual guidance, and community bonding. The brew is taken under the guidance of a shaman (yag\u00e9 medicine man).",
+   "context": "A central element of the spiritual and medical traditions of the Amazonian peoples."
+  },
+  "legality": "Status varies by jurisdiction; check local law. It is illegal in many countries, including the United States, due to the presence of beta-carbolines.",
+  "safety": "Contains MAOIs, which can interact dangerously with many medications and foods. Consult a qualified professional before use. Not recommended for individuals with certain medical conditions."
+ },
+ {
+  "id": "pavetta_lanceolata",
+  "name": "Pavetta lanceolata",
+  "sci": "Pavetta lanceolata",
+  "family": "Rubiaceae",
+  "form": "Shrub or small tree",
+  "continent": "Africa",
+  "regions": [
+   "Cameroon",
+   "Gabon",
+   "Congo",
+   "Angola",
+   "Uganda"
+  ],
+  "coords": [
+   0.3,
+   11.5
+  ],
+  "habitat": "Tropical rainforests and forest edges",
+  "image": "",
+  "alt": "Pavetta lanceolata shrub",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids that can interact with monoamine oxidase (MAO) and other neurotransmitter pathways, though specific pharmacological effects of this species are not well-documented in modern clinical literature.",
+  "id_features": [
+   "Leaves are lanceolate (lance-shaped) with prominent veins.",
+   "Flowers are small, white or cream-colored, and arranged in clusters.",
+   "Bark is often rough and grayish-brown.",
+   "Grows as a dense shrub or small tree in humid environments."
+  ],
+  "lookalikes": [
+   "Can be confused with other Pavetta species in the Rubiaceae family.",
+   "Distinguish by the specific lanceolate leaf shape and flower cluster structure.",
+   "Often found in similar habitats to other tropical Rubiaceae shrubs."
+  ],
+  "prep": {
+   "summary": "Traditionally, the bark or leaves may be prepared as a decoction or infusion.",
+   "steps": [
+    "Collect bark or leaves from the plant.",
+    "Dry the material thoroughly.",
+    "Boil the dried material in water to create a decoction.",
+    "Strain the liquid and consume or use as directed by traditional practitioners."
+   ],
+   "note": "Preparation methods vary by local tradition and intended use."
+  },
+  "culture": {
+   "cultures": [
+    "Central African peoples",
+    "Local traditional healers"
+   ],
+   "ritual": "Used in traditional medicine for various ailments and potentially in ceremonial contexts, though specific ritual details are less widely documented than for other psychoactive plants.",
+   "context": "Part of the rich ethnobotanical heritage of Central Africa."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of wild plants containing beta-carbolines.",
+  "safety": "Consult a qualified professional before use; beta-carbolines can have significant physiological effects and potential interactions with other substances."
+ },
+ {
+  "id": "uncaria_attenuata",
+  "name": "Ayahuasca Vine",
+  "sci": "Uncaria attenuata",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody climbing vine with hooked thorns",
+  "continent": "South America",
+  "regions": [
+   "Peru",
+   "Brazil",
+   "Colombia",
+   "Ecuador",
+   "Bolivia"
+  ],
+  "coords": [
+   -12.0,
+   -77.0
+  ],
+  "habitat": "Tropical rainforest understory and riverbanks",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Uncaria_rhynchophylla_kagikzr01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Uncaria attenuata (Ayahuasca vine) with hooked thorns",
+  "parts": "The bark and leaves of the vine",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Uncaria attenuata contains beta-carbolines (such as harmine and harmaline) which act as monoamine oxidase inhibitors (MAOIs). These compounds do not produce hallucinations on their own but are essential for metabolizing the DMT found in the co-administered Banisteriopsis caapi, allowing it to cross the blood-brain barrier.",
+  "id_features": [
+   "A vigorous woody vine with prominent, hooked thorns along the stem.",
+   "Leaves are opposite, elliptic, and often have a slightly hairy or rough texture.",
+   "Flowers are small, white or cream-colored, and grow in clusters.",
+   "The bark is fibrous and can be stripped from the stem."
+  ],
+  "lookalikes": [
+   "Distinguish from other Uncaria species by the specific shape of the thorns and leaf venation.",
+   "Often confused with Banisteriopsis caapi, but U. attenuata is a thorny vine while B. caapi is a smooth, non-thorny vine.",
+   "Several other Uncaria species are used in traditional medicine, but U. attenuata is the most common ayahuasca source."
+  ],
+  "prep": {
+   "summary": "The bark and leaves are boiled with Banisteriopsis caapi to create a decoction.",
+   "steps": [
+    "The vine is harvested and the bark is stripped or the leaves are collected.",
+    "The material is combined with Banisteriopsis caapi stems and leaves.",
+    "The mixture is boiled in water for several hours to extract the alkaloids.",
+    "The liquid is strained and allowed to cool before consumption."
+   ],
+   "note": "The preparation is a sacred process, often accompanied by prayers, songs, and dietary restrictions (dieta) by the practitioner."
+  },
+  "culture": {
+   "cultures": [
+    "Shipibo-Conibo",
+    "Yagua",
+    "Kawishka",
+    "Ash\u00e1ninka",
+    "Various Amazonian peoples"
+   ],
+   "ritual": "Used in shamanic ceremonies for healing, spiritual guidance, and community bonding. The brew is consumed in a controlled setting under the guidance of a shaman (curandero or pai).",
+   "context": "A central element of Amazonian spiritual and medicinal traditions, used for centuries for both physical and psychological healing."
+  },
+  "legality": "Status varies by jurisdiction; check local law. It is illegal in many countries due to its MAOI properties and association with DMT, though traditional use is protected in some regions.",
+  "safety": "Potent MAOI; requires strict dietary restrictions to avoid hypertensive crisis. Consult a qualified professional before use, especially if taking other medications."
+ },
+ {
+  "id": "uncaria_canescens",
+  "name": "Chacruna",
+  "sci": "Uncaria canescens",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody vine with thorny stems",
+  "continent": "South America",
+  "regions": [
+   "Peru",
+   "Bolivia",
+   "Brazil",
+   "Ecuador",
+   "Colombia"
+  ],
+  "coords": [
+   -12.0,
+   -77.0
+  ],
+  "habitat": "Tropical and subtropical moist broadleaf forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Uncaria_rhynchophylla_kagikzr01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Uncaria canescens (Chacruna) vine",
+  "parts": "Leaves and stems",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harmine and harmaline, which act as monoamine oxidase inhibitors (MAOIs). These compounds are traditionally used to facilitate the metabolism of tryptamines found in other plants, such as Banisteriopsis caapi.",
+  "id_features": [
+   "A woody, climbing vine with sharp, hooked thorns.",
+   "Leaves are opposite, elliptic, and often have a slightly hairy texture.",
+   "Flowers are small, white, and tubular.",
+   "The bark is rough and brownish-grey."
+  ],
+  "lookalikes": [
+   "Other species of Uncaria, such as U. tomentosa or U. guianensis, are often used interchangeably or in combination.",
+   "Distinguish from other Rubiaceae vines by the specific arrangement of thorns and leaf shape.",
+   "Often confused with Banisteriopsis caapi (Ayahuasca vine) in casual contexts, but they are distinct species with different roles."
+  ],
+  "prep": {
+   "summary": "The leaves and stems are dried and brewed into a tea or decoction.",
+   "steps": [
+    "Harvest the leaves and young stems of the vine.",
+    "Dry the plant material thoroughly in a shaded, well-ventilated area.",
+    "Place the dried material in a pot of water.",
+    "Simmer for 15\u201330 minutes to extract the beta-carbolines.",
+    "Strain the liquid and consume the resulting tea."
+   ],
+   "note": "Traditionally, this is often prepared as a 'chacruna' tea, which is a key component in the Ayahuasca brew."
+  },
+  "culture": {
+   "cultures": [
+    "Amazonian indigenous peoples",
+    "Peruvian shamans",
+    "Bolivian healers"
+   ],
+   "ritual": "Used as a foundational ingredient in the preparation of Ayahuasca, a sacred brew used for spiritual healing, divination, and ceremony.",
+   "context": "A vital component of Amazonian shamanic traditions, providing the MAO inhibition necessary for the psychoactive effects of the ayahuasca vine."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of MAO-inhibiting plants.",
+  "safety": "Contains potent MAO inhibitors; consult a qualified professional before use, especially if taking other medications, as dangerous interactions can occur."
+ },
+ {
+  "id": "uncaria_orientalis",
+  "name": "Uncaria orientalis",
+  "sci": "Uncaria orientalis",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody climbing vine with hooked thorns",
+  "continent": "Asia",
+  "regions": [
+   "India",
+   "Nepal",
+   "Myanmar",
+   "Thailand",
+   "Vietnam"
+  ],
+  "coords": [
+   22.5,
+   88.3
+  ],
+  "habitat": "Tropical and subtropical moist forests, often in hilly or mountainous regions",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Uncaria_rhynchophylla_kagikzr01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Uncaria orientalis vine with characteristic hooked thorns",
+  "parts": "Bark and roots",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids that can inhibit monoamine oxidase (MAO) enzymes, potentially affecting the metabolism of neurotransmitters like serotonin and dopamine.",
+  "id_features": [
+   "A vigorous woody vine with prominent, curved, hook-like thorns.",
+   "Leaves are opposite, simple, and often have a slightly rough texture.",
+   "Flowers are small, greenish-white, and arranged in dense clusters.",
+   "The bark is fibrous and often used for cordage or traditional preparations."
+  ],
+  "lookalikes": [
+   "Distinguish from other Uncaria species by the specific shape of the thorns and leaf venation.",
+   "Can be confused with other thorny Rubiaceae vines in the wild, but the hooked thorns are a key identifier.",
+   "Often grouped with Uncaria tomentosa (Cat's Claw) in traditional contexts, though they are distinct species."
+  ],
+  "prep": {
+   "summary": "The bark or roots are typically dried and prepared as a decoction or infusion.",
+   "steps": [
+    "Harvest the bark or roots and allow them to dry thoroughly.",
+    "Chop or grind the dried material into smaller pieces.",
+    "Simmer the material in water for a specified period to extract the compounds.",
+    "Strain the liquid and consume as a tea or tincture."
+   ],
+   "note": "Preparation methods vary by region and traditional practice; dosage is not standardized."
+  },
+  "culture": {
+   "cultures": [
+    "Various indigenous groups in Southeast Asia",
+    "Traditional healers in the Himalayan region"
+   ],
+   "ritual": "Used in traditional medicine for various ailments, including digestive issues and inflammation, often as part of broader herbal remedies.",
+   "context": "A component of traditional pharmacopoeias in parts of South and Southeast Asia."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of wild-harvested plants.",
+  "safety": "Consult a qualified professional before use, as beta-carbolines can interact with medications, particularly those affecting serotonin levels."
+ },
+ {
+  "id": "araliopsis_tabouensis",
+  "name": "Tabou",
+  "sci": "Araliopsis tabouensis",
+  "family": "Araliaceae",
+  "form": "Small tree",
+  "continent": "Africa",
+  "regions": [
+   "Gabon",
+   "Congo",
+   "Cameroon",
+   "Equatorial Guinea"
+  ],
+  "coords": [
+   -0.5,
+   11.5
+  ],
+  "habitat": "Tropical rainforest",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Vepris_lanceolata_-_White_Ironwood_Tree_-_South_Africa_22.jpg/1280px-Vepris_lanceolata_-_White_Ironwood_Tree_-_South_Africa_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Vepris lanceolata (White Ironwood) tree",
+  "parts": "Bark",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids that can act on GABA-A receptors and monoamine oxidase (MAO), potentially producing sedative or psychoactive effects, though specific clinical data for this species is limited.",
+  "id_features": [
+   "Small to medium-sized tree with a straight trunk.",
+   "Leaves are typically pinnate or compound.",
+   "Bark is often used for traditional preparations.",
+   "Native to the dense forests of Central Africa."
+  ],
+  "lookalikes": [
+   "Distinguish from other Araliaceae by specific leaf arrangement and bark texture.",
+   "Often confused with other Central African trees used in traditional medicine.",
+   "Requires botanical expertise for definitive identification in the field."
+  ],
+  "prep": {
+   "summary": "The bark is harvested and prepared into a decoction or infusion.",
+   "steps": [
+    "Bark is stripped from the tree or branches.",
+    "The bark is dried and then chopped or powdered.",
+    "The material is boiled in water to create a decoction.",
+    "The liquid is strained and consumed."
+   ],
+   "note": "Preparation is often part of traditional healing or spiritual rituals."
+  },
+  "culture": {
+   "cultures": [
+    "Bantu-speaking peoples of Central Africa",
+    "Traditional healers (Nganga)"
+   ],
+   "ritual": "Used in traditional ceremonies for healing, divination, or spiritual protection.",
+   "context": "A significant plant in the ethnobotany of Central Africa, valued for its medicinal and ritual properties."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the harvest and use of native flora.",
+  "safety": "Contains beta-carbolines which can have significant pharmacological effects; consult a qualified professional before use."
+ },
+ {
+  "id": "flindersia_laevicarpa",
+  "name": "Smooth-fruited Flindersia",
+  "sci": "Flindersia laevicarpa",
+  "family": "Rutaceae (Citrus family)",
+  "form": "Small to medium-sized evergreen tree",
+  "continent": "Oceania",
+  "regions": [
+   "Queensland, Australia"
+  ],
+  "coords": [
+   -23.7,
+   151.2
+  ],
+  "habitat": "Subtropical rainforests and wet sclerophyll forests of eastern Australia",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flindersia_pimenteliana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Flindersia species tree in a forest setting",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids that can interact with monoamine oxidase (MAO) and other neurotransmitter systems, though specific pharmacological data for this species is limited.",
+  "id_features": [
+   "Evergreen tree with glossy, dark green, pinnate leaves.",
+   "Smooth, greyish bark on mature trunks.",
+   "Small, yellowish flowers in clusters.",
+   "Fruits are smooth, winged capsules (hence 'laevicarpa')."
+  ],
+  "lookalikes": [
+   "Other Flindersia species, which vary in fruit texture and leaf shape.",
+   "Some Melicoccus or Citrus relatives in the Rutaceae family, but Flindersia is distinct in its winged fruit structure."
+  ],
+  "prep": {
+   "summary": "Traditionally, the bark or leaves may be prepared as a decoction or chewed, though specific traditional protocols are not widely documented in modern literature.",
+   "steps": [
+    "Bark or leaves are collected from the tree.",
+    "Material is dried or used fresh.",
+    "If prepared as a tea, it is steeped in hot water.",
+    "If chewed, small amounts are masticated and swallowed."
+   ],
+   "note": "Use is rare and primarily historical or ethnobotanical; modern preparation is not standardized."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous Australian peoples of Queensland"
+   ],
+   "ritual": "Limited documentation exists; some Rutaceae species were used for medicinal or ceremonial purposes, but specific rituals for F. laevicarpa are not well-recorded.",
+   "context": "Part of the broader ethnobotanical heritage of Australian rainforests."
+  },
+  "legality": "Legal to possess in most jurisdictions, but harvesting from protected areas may be restricted; check local law.",
+  "safety": "Beta-carbolines can have significant pharmacological effects; consult a qualified professional before use, especially if taking MAO inhibitors or other psychoactive substances."
+ },
+ {
+  "id": "xanthoxylum_rhetsa",
+  "name": "Kava",
+  "sci": "Xanthoxylum rhetsa",
+  "family": "Rutaceae (Citrus family)",
+  "form": "Spiny shrub or small tree",
+  "continent": "Asia",
+  "regions": [
+   "India",
+   "Nepal",
+   "Myanmar",
+   "Thailand",
+   "Indonesia"
+  ],
+  "coords": [
+   20.5937,
+   78.9629
+  ],
+  "habitat": "Tropical and subtropical forests, often near streams or in disturbed areas",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Starr_060325-6755_Zanthoxylum_kauaense.jpg/1280px-Starr_060325-6755_Zanthoxylum_kauaense.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Xanthoxylum rhetsa (Kava) branch with spines and leaves",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harmine and harmaline, which act as reversible inhibitors of monoamine oxidase A (MAO-A), leading to increased levels of serotonin, dopamine, and norepinephrine in the brain.",
+  "id_features": [
+   "Distinctive sharp, curved spines on stems and petioles.",
+   "Pinnate leaves with glossy, dark green leaflets.",
+   "Small, yellowish-green flowers in clusters.",
+   "Fruits are small, round, and turn black when ripe."
+  ],
+  "lookalikes": [
+   "Distinguish from other Zanthoxylum species by the specific spine arrangement and leaflet shape.",
+   "Do not confuse with Piper methysticum (Pacific Kava), which is a different plant in a different family.",
+   "Some species may resemble citrus plants due to the Rutaceae family, but the spines are a key differentiator."
+  ],
+  "prep": {
+   "summary": "The bark or leaves are typically dried and brewed into a tea or decoction.",
+   "steps": [
+    "Harvest the bark or leaves and allow them to dry thoroughly.",
+    "Crush or chop the dried material to increase surface area.",
+    "Steep the material in hot water for several minutes to extract the alkaloids.",
+    "Strain the liquid and consume the resulting tea."
+   ],
+   "note": "Preparation is often done in small quantities due to the potent nature of the alkaloids."
+  },
+  "culture": {
+   "cultures": [
+    "Tibetan ('Kava')",
+    "Nepalese",
+    "Indian (Himalayan regions)"
+   ],
+   "ritual": "Used in traditional medicine and spiritual practices to enhance meditation, alleviate pain, and treat various ailments. It is often consumed in small doses during religious observances or by healers.",
+   "context": "A significant plant in Himalayan traditional medicine, valued for its psychoactive and therapeutic properties."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of beta-carbolines.",
+  "safety": "Can cause nausea, dizziness, and interactions with other medications, particularly MAO inhibitors; consult a qualified professional before use."
+ },
+ {
+  "id": "chrysophyllum_lacourtianum",
+  "name": "Gambeya",
+  "sci": "Chrysophyllum lacourtianum",
+  "family": "Sapotaceae (Gum family)",
+  "form": "Medium-sized evergreen tree with glossy leaves and yellow fruit",
+  "continent": "Africa",
+  "regions": [
+   "Cameroon",
+   "Gabon",
+   "Congo",
+   "Angola",
+   "DRC"
+  ],
+  "coords": [
+   0.0,
+   15.0
+  ],
+  "habitat": "Dense tropical rainforests and gallery forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Collection_de_bois_de_la_Xyloth%C3%A8que_du_Cirad._Bois_de_l%27Atlas_des_bois_tropicaux._Chrysophyllum_africanum_Baker_%28Syn._Gambeya_africana%29%2C_Chrysophyllum_lacourtianum_De_Wild._%28Syn._Gambeya_lacourtiana%29..._-_btv1b101052152_%281_of_2%29.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Wood specimen of Chrysophyllum lacourtianum (Gambeya)",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "norharman",
+   "beta-carboline alkaloids"
+  ],
+  "pharmacology": "Contains beta-carboline alkaloids such as norharman, which are structurally related to MAO inhibitors, though specific pharmacological effects in humans are not well-documented in modern clinical literature.",
+  "id_features": [
+   "Evergreen tree reaching 20-30 meters in height.",
+   "Leaves are glossy, dark green, and elliptic.",
+   "Produces small, yellow, berry-like fruits.",
+   "Bark is typically greyish-brown and rough."
+  ],
+  "lookalikes": [
+   "Chrysophyllum africanum (Gambeya africana), a close relative with similar wood and foliage.",
+   "Other Sapotaceae trees in the same region may share leaf shape but differ in fruit and bark texture."
+  ],
+  "prep": {
+   "summary": "Bark or leaves are traditionally processed into decoctions or infusions.",
+   "steps": [
+    "Bark is stripped from branches or leaves are harvested.",
+    "The material is dried in the shade.",
+    "It is chopped or powdered for easier extraction.",
+    "Water is boiled with the material to create a tea or decoction."
+   ],
+   "note": "Traditional preparation varies by local community and intended use."
+  },
+  "culture": {
+   "cultures": [
+    "Bantu-speaking peoples of Central Africa",
+    "Local forest communities"
+   ],
+   "ritual": "Used in traditional medicine for various ailments and potentially in local spiritual practices.",
+   "context": "A valued resource in the biodiversity-rich forests of Central Africa."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the harvesting and trade of wild plants.",
+  "safety": "Consult a qualified professional before use; beta-carboline alkaloids can have significant physiological effects and potential interactions."
+ }
+]

@@ -1,0 +1,1407 @@
+[
+ {
+  "id": "acacia_penninervis",
+  "name": "Acacia penninervis",
+  "sci": "Acacia penninervis",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small tree or shrub with pinnate leaves",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Zimbabwe",
+   "Mozambique",
+   "Botswana",
+   "Namibia"
+  ],
+  "coords": [
+   -25.0,
+   30.0
+  ],
+  "habitat": "Dry savanna, thicket, and rocky slopes",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Acacia_penninervis_1.jpg/1280px-Acacia_penninervis_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia penninervis (small tree with pinnate leaves)",
+  "parts": "Bark, leaves, and roots",
+  "compounds": [
+   "Psychoactive"
+  ],
+  "pharmacology": "Ethnobotanical reports suggest psychoactive properties, but specific active compounds and mechanisms are not well-characterized in modern pharmacological literature.",
+  "id_features": [
+   "Small tree or shrub, typically 1\u20135 m tall.",
+   "Pinnate leaves with numerous small leaflets.",
+   "Yellow, spherical flower heads.",
+   "Thorny branches in some populations."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by leaflet size and flower structure.",
+   "Similar to Acacia tortilis in general form but differs in leaflet arrangement."
+  ],
+  "prep": {
+   "summary": "Traditional preparations often involve chewing or infusing bark and leaves.",
+   "steps": [
+    "Bark or leaves are harvested from the tree.",
+    "Material is dried or used fresh.",
+    "Chewed directly or boiled in water to make a tea.",
+    "Consumed for traditional or ritual purposes."
+   ],
+   "note": "Preparation methods vary by local tradition; safety is not established."
+  },
+  "culture": {
+   "cultures": [
+    "San (Khoisan)",
+    "Zulu",
+    "Shona"
+   ],
+   "ritual": "Used in traditional healing and possibly in ritual contexts for altered states.",
+   "context": "Part of indigenous ethnobotanical knowledge in Southern Africa."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding possession and use of psychoactive plants.",
+  "safety": "Limited safety data; consult a qualified professional before use. Potential for toxicity or adverse reactions is unknown."
+ },
+ {
+  "id": "acacia_phlebophylla",
+  "name": "Acacia phlebophylla",
+  "sci": "Acacia phlebophylla",
+  "family": "Fabaceae (Mimosoideae)",
+  "form": "Small tree or shrub",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Bolivia",
+   "Paraguay",
+   "Argentina"
+  ],
+  "coords": [
+   -20.0,
+   -58.0
+  ],
+  "habitat": "Dry forests and savannas (Cerrado and Chaco)",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Acacia_phlebophylla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Acacia phlebophylla tree",
+  "parts": "Leaves",
+  "compounds": [
+   "0.3% DMT in leaf",
+   "NMT"
+  ],
+  "pharmacology": "Contains N,N-dimethyltryptamine (DMT), a potent psychedelic tryptamine, and N-methyltryptamine (NMT). While the chemical presence is documented, the specific pharmacokinetics and traditional efficacy of this species compared to other DMT-containing plants are less extensively studied in modern clinical literature.",
+  "id_features": [
+   "Bipinnate leaves with small, oval leaflets.",
+   "Yellow, fluffy flower heads typical of the genus Acacia.",
+   "Often found in dry, open landscapes.",
+   "Bark is typically greyish-brown."
+  ],
+  "lookalikes": [
+   "Resembles other Acacia species native to South America, such as Acacia polyphylla.",
+   "Distinguishable by specific leaflet shape and flower structure, but requires botanical expertise to differentiate from similar mimosas."
+  ],
+  "prep": {
+   "summary": "The leaves are typically dried and prepared as a tea or infusion.",
+   "steps": [
+    "Harvest the leaves from the plant.",
+    "Dry the leaves thoroughly to preserve alkaloid content.",
+    "Steep the dried leaves in hot water to create an infusion.",
+    "Strain the liquid for consumption."
+   ],
+   "note": "Preparation methods can vary by region and tradition; the potency of DMT in teas is often lower than in smoked preparations."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous peoples of the Chaco region",
+    "Traditional healers in South America"
+   ],
+   "ritual": "Used in shamanic or healing contexts for spiritual vision and introspection, often as part of broader plant medicine traditions in the region.",
+   "context": "Part of the rich biodiversity of psychoactive plants in South American dry forests."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of DMT-containing plants.",
+  "safety": "DMT is a potent psychoactive substance; consult a qualified professional before use. Potential for adverse psychological reactions and interactions with other substances."
+ },
+ {
+  "id": "acacia_podalyriifolia",
+  "name": "DMT Acacia",
+  "sci": "Acacia podalyriifolia",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small tree or large shrub with pinnate leaves and yellow flowers",
+  "continent": "Oceania",
+  "regions": [
+   "Western Australia",
+   "Northern Territory",
+   "South Australia"
+  ],
+  "coords": [
+   -25.0,
+   120.0
+  ],
+  "habitat": "Arid and semi-arid inland regions, often on sandy or clay soils",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/1280px-088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia podalyriifolia tree",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "Tryptamine",
+   "DMT (claimed, unverified)",
+   "Phenethylamine"
+  ],
+  "pharmacology": "While popularly cited as a source of DMT, scientific verification is lacking; standard extraction methods have failed to isolate significant alkaloids from this species, suggesting any psychoactive content is negligible or non-existent.",
+  "id_features": [
+   "Small tree or shrub reaching 1-5 meters in height.",
+   "Bipinnate leaves with small, oval leaflets.",
+   "Yellow, fluffy flower heads typical of Acacia species.",
+   "Smooth, greyish bark on young stems."
+  ],
+  "lookalikes": [
+   "Resembles other Australian Acacia species such as Acacia aneura or Acacia kempeana.",
+   "Distinguishable by specific leaflet shape and flower structure, but requires botanical expertise to confirm species.",
+   "Often confused with other 'DMT acacias' in online forums, but most lack verified alkaloid content."
+  ],
+  "prep": {
+   "summary": "Traditional preparation involves chewing or boiling bark and leaves, though efficacy is unproven.",
+   "steps": [
+    "Collect fresh bark or leaves from the tree.",
+    "Chew the material directly or boil it in water to create a decoction.",
+    "Consume the resulting liquid or chewed pulp."
+   ],
+   "note": "Given the lack of verified DMT content, this preparation is unlikely to produce significant psychoactive effects."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous Australian peoples (traditional use)",
+    "Modern ethnobotanical enthusiasts"
+   ],
+   "ritual": "Historically used by some Indigenous groups for medicinal or ceremonial purposes, though specific rituals are not widely documented in public literature.",
+   "context": "Part of the broader Australian bush medicine tradition, but its psychoactive reputation is largely modern and unverified."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding possession of plants containing tryptamines or DMT.",
+  "safety": "Consult a qualified professional before use; potential for allergic reactions or unknown toxic effects due to lack of comprehensive safety data."
+ },
+ {
+  "id": "senegalia_polyacantha",
+  "name": "Acacia polyacantha",
+  "sci": "Senegalia polyacantha",
+  "family": "Fabaceae (Legume family)",
+  "form": "Thorny shrub or small tree",
+  "continent": "Africa",
+  "regions": [
+   "Namibia",
+   "South Africa",
+   "Botswana",
+   "Zimbabwe",
+   "Mozambique"
+  ],
+  "coords": [
+   -22.5,
+   24.0
+  ],
+  "habitat": "Arid and semi-arid savannas, scrublands, and dry riverbeds",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Senegalia_sp_2.jpg/1280px-Senegalia_sp_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Senegalia polyacantha (Acacia polyacantha) thorny shrub",
+  "parts": "Leaves, bark, and pods",
+  "compounds": [
+   "DMT in leaf and other tryptamines in leaf, bark; ssp. campylacantha, Less than 0.2% DMT in leaf, NMT; DMT and other tryptamines in leaf, bark"
+  ],
+  "pharmacology": "Contains N,N-dimethyltryptamine (DMT) and other tryptamines, which are psychoactive indole alkaloids. While the presence of these compounds is documented, the specific pharmacological profile and traditional psychoactive use of this species are less extensively studied than other DMT-containing plants.",
+  "id_features": [
+   "Dense, thorny shrub or small tree with paired, sharp spines.",
+   "Bipinnate leaves with small, oval leaflets.",
+   "Yellow, fluffy flower heads (typical of Acacia/Senegalia).",
+   "Flat, brown pods that curve slightly."
+  ],
+  "lookalikes": [
+   "Resembles other thorny Acacia/Senegalia species in arid regions.",
+   "Distinguished by the specific arrangement of spines and leaflet size.",
+   "Often confused with Vachellia species, which are closely related."
+  ],
+  "prep": {
+   "summary": "Traditionally, parts of the plant may be prepared as a decoction or chewed, though specific psychoactive preparations are not widely standardized.",
+   "steps": [
+    "Leaves or bark are harvested from the shrub.",
+    "Material is dried or used fresh.",
+    "It may be boiled in water to create a tea or decoction.",
+    "Alternatively, small amounts of leaves or bark may be chewed."
+   ],
+   "note": "Preparation methods vary by local tradition and are not as codified as for other psychoactive plants."
+  },
+  "culture": {
+   "cultures": [
+    "San people",
+    "Khoikhoi",
+    "Various Bantu-speaking groups in Southern Africa"
+   ],
+   "ritual": "Used in traditional medicine for various ailments; specific ritualistic psychoactive use is less documented than for other African plants.",
+   "context": "A common plant in the landscape, valued for its wood, thorns (for fencing), and traditional medicinal properties."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of DMT-containing plants.",
+  "safety": "Consult a qualified professional before use; DMT is a potent psychoactive substance with potential for adverse reactions, and the plant may contain other unknown compounds."
+ },
+ {
+  "id": "senegalia_rigidula",
+  "name": "Rigid Acacia",
+  "sci": "Senegalia rigidula",
+  "family": "Fabaceae (Mimosoideae)",
+  "form": "Small thorny tree or shrub with pinnate leaves",
+  "continent": "Africa",
+  "regions": [
+   "Namibia",
+   "South Africa",
+   "Botswana",
+   "Zambia",
+   "Zimbabwe"
+  ],
+  "coords": [
+   -22.5,
+   17.0
+  ],
+  "habitat": "Arid and semi-arid savannas, often on sandy or rocky soils",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Senegalia_sp_3.jpg/1280px-Senegalia_sp_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Senegalia rigidula (Rigid Acacia) tree",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "Phenethylamine",
+   "Tryptamine",
+   "Tyramine",
+   "\u03b2-Methylphenethylamine"
+  ],
+  "pharmacology": "Contains trace amounts of monoamine compounds such as phenethylamine and tryptamine, which are common in many plant species but are present in concentrations too low to produce significant psychoactive effects in humans.",
+  "id_features": [
+   "Dense, thorny shrub or small tree with rigid branches.",
+   "Bipinnate leaves with small, oval leaflets.",
+   "Yellow, fluffy flower heads typical of the Mimosoideae subfamily.",
+   "Prominent, sharp thorns at the base of the leaf stalks."
+  ],
+  "lookalikes": [
+   "Distinguish from other Senegalia species by the specific shape of the thorns and leaflets.",
+   "Often confused with Vachellia species, but Senegalia rigidula typically has a more rigid, upright growth habit.",
+   "Few lookalikes in its specific arid habitat, but requires botanical expertise to distinguish from other thorny acacias."
+  ],
+  "prep": {
+   "summary": "Traditionally, the bark or leaves may be brewed into a tea or used in poultices, though it is not a primary psychoactive preparation.",
+   "steps": [
+    "Bark or leaves are collected from the tree.",
+    "The material is dried or used fresh.",
+    "It is boiled in water to create a decoction.",
+    "The liquid is strained and consumed or applied topically."
+   ],
+   "note": "Use is primarily medicinal or for livestock, not for ritual intoxication."
+  },
+  "culture": {
+   "cultures": [
+    "San (Kung)",
+    "Herero",
+    "Nama"
+   ],
+   "ritual": "Used in traditional medicine for treating various ailments, including skin conditions and digestive issues, rather than for ceremonial intoxication.",
+   "context": "A common resource in the arid landscapes of Southern Africa, valued for its hardiness and medicinal properties."
+  },
+  "legality": "Legal as a plant species; no specific restrictions on possession or use in most jurisdictions, but check local law regarding wild plant harvesting.",
+  "safety": "Contains thorns that can cause injury; consult a qualified professional before consuming any plant material, as some acacias contain tannins or other compounds that may be irritating."
+ },
+ {
+  "id": "acacia_sassa",
+  "name": "Sassa",
+  "sci": "Acacia sassa",
+  "family": "Fabaceae (Mimosoideae)",
+  "form": "Small tree or large shrub",
+  "continent": "Africa",
+  "regions": [
+   "Tanzania",
+   "Kenya",
+   "Uganda",
+   "Rwanda",
+   "Burundi"
+  ],
+  "coords": [
+   -6.7924,
+   39.2083
+  ],
+  "habitat": "Tropical forests and forest edges in East Africa",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Albizia_adianthifolia_1DS-II_1042.jpg/1280px-Albizia_adianthifolia_1DS-II_1042.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia sassa tree",
+  "parts": "Bark",
+  "compounds": [
+   "Psychoactive"
+  ],
+  "pharmacology": "The bark is traditionally used for its psychoactive properties, often described as inducing a state of euphoria or altered consciousness, though the specific active compounds and precise pharmacological mechanisms are not fully characterized in modern scientific literature.",
+  "id_features": [
+   "Bipinnate leaves with small, oval leaflets.",
+   "Yellow, fluffy flower heads typical of the Mimosoideae subfamily.",
+   "Smooth to slightly rough greyish bark.",
+   "Often found in mixed tropical forests."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by specific leaflet size and flower structure.",
+   "Can be confused with Albizia species, which also have bipinnate leaves and fluffy flowers.",
+   "Local knowledge is often required to distinguish it from other psychoactive trees in the region."
+  ],
+  "prep": {
+   "summary": "The bark is typically chewed or prepared as a decoction.",
+   "steps": [
+    "Bark is stripped from the tree.",
+    "It may be dried or used fresh.",
+    "The bark is chewed directly or boiled in water to make a tea.",
+    "The preparation is consumed for its psychoactive effects."
+   ],
+   "note": "Usage is often restricted to specific traditional or ritual contexts."
+  },
+  "culture": {
+   "cultures": [
+    "Various East African ethnic groups"
+   ],
+   "ritual": "Used in traditional ceremonies, divination, or for recreational purposes in some communities.",
+   "context": "A traditional psychoactive plant with cultural significance in East Africa."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of psychoactive plant materials.",
+  "safety": "Consult a qualified professional before use; potential for unknown toxicities or interactions due to limited modern pharmacological data."
+ },
+ {
+  "id": "vachellia_schaffneri",
+  "name": "Schaffner's Acacia",
+  "sci": "Vachellia schaffneri",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small thorny tree or large shrub",
+  "continent": "North America",
+  "regions": [
+   "Mexico",
+   "Arizona",
+   "New Mexico",
+   "Texas"
+  ],
+  "coords": [
+   31.5,
+   -110.5
+  ],
+  "habitat": "Arid desert scrublands and rocky slopes",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Acacia-schaffneri-seed-pods.jpg/1280px-Acacia-schaffneri-seed-pods.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Vachellia schaffneri seed pods",
+  "parts": "Seeds",
+  "compounds": [
+   "\u03b2-methyl-phenethylamine",
+   "Phenethylamine"
+  ],
+  "pharmacology": "Contains trace amounts of \u03b2-methyl-phenethylamine, a weak monoamine oxidase inhibitor (MAOI) and mild stimulant, but the plant is not a potent psychoactive agent and is primarily used for its nutritional value.",
+  "id_features": [
+   "Small, dense tree or shrub with paired, sharp thorns.",
+   "Small, bright yellow flowers in dense clusters.",
+   "Flat, brown seed pods that are relatively short and broad.",
+   "Leaves are bipinnate with many small, oval leaflets."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacias by the specific shape of the thorns and the short, broad seed pods.",
+   "Often confused with Vachellia caven, but S. schaffneri is more common in the Sonoran Desert.",
+   "Distinctive in its native range due to its specific thorn arrangement and pod morphology."
+  ],
+  "prep": {
+   "summary": "The seeds are typically roasted and ground into a flour or eaten whole as a snack.",
+   "steps": [
+    "Harvest the mature, brown seed pods.",
+    "Remove the seeds from the pods and clean them.",
+    "Roast the seeds in a dry pan until they are fragrant and slightly browned.",
+    "Grind the roasted seeds into a fine flour or eat them as a nut-like snack."
+   ],
+   "note": "The seeds are a traditional food source, valued for their protein and fat content rather than psychoactive effects."
+  },
+  "culture": {
+   "cultures": [
+    "O'odham (Pima)",
+    "Tohono O'odham",
+    "Yaqui",
+    "Seri (Comcaac)"
+   ],
+   "ritual": "Primarily a subsistence plant; seeds are gathered for food and used in traditional recipes. It is not typically used in ceremonial contexts for psychoactive purposes.",
+   "context": "An important food source in the Sonoran Desert, providing nutrition in an arid environment."
+  },
+  "legality": "Legal to harvest and consume in most jurisdictions, but check local regulations regarding wild plant harvesting.",
+  "safety": "Generally safe when prepared as food; consult a qualified professional if considering use for any other purpose."
+ },
+ {
+  "id": "senegalia_senegal",
+  "name": "Gum Acacia",
+  "sci": "Senegalia senegal",
+  "family": "Fabaceae (Legume family)",
+  "form": "Thorny shrub or small tree",
+  "continent": "Africa",
+  "regions": [
+   "Senegal",
+   "Mali",
+   "Niger",
+   "Sudan",
+   "Ethiopia"
+  ],
+  "coords": [
+   14.5,
+   -14.5
+  ],
+  "habitat": "Dry savanna and semi-arid scrubland",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Senegalia_senegal_kz04.jpg/1280px-Senegalia_senegal_kz04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Senegalia senegal (Gum Acacia) tree with thorny branches",
+  "parts": "Gum exudate, bark, leaves",
+  "compounds": [
+   "Less than 0.1% DMT in leaf",
+   "NMT",
+   "other tryptamines",
+   "DMT in plant",
+   "DMT in bark"
+  ],
+  "pharmacology": "While trace amounts of DMT and NMT have been detected in the bark and leaves, the plant is not a primary source for psychoactive use due to low concentrations and the presence of tannins. Its primary pharmacological relevance is the high concentration of acacia gum, a polysaccharide used as a stabilizer and emulsifier.",
+  "id_features": [
+   "Dense, thorny shrub or small tree with a rounded crown.",
+   "Feathery, bipinnate leaves with small, oval leaflets.",
+   "Yellow, fluffy flower clusters.",
+   "Produces a clear, hard gum exudate from the bark."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by the specific shape of the thorns and the high yield of gum.",
+   "Often confused with Vachellia species, but Senegalia senegal is the primary source of commercial gum arabic.",
+   "The thorny structure and leaf arrangement are typical of the subfamily Mimosoideae."
+  ],
+  "prep": {
+   "summary": "The gum is harvested from the bark and processed into a powder or syrup, while the bark is rarely prepared for ingestion due to tannin content.",
+   "steps": [
+    "Incisions are made in the bark to allow the gum to exude.",
+    "The hardened gum is scraped off the tree.",
+    "The gum is cleaned, dried, and ground into a fine powder.",
+    "The powder is dissolved in water to create a syrup or solution."
+   ],
+   "note": "Preparation is primarily industrial or culinary for the gum; the bark is not traditionally prepared as a psychoactive brew."
+  },
+  "culture": {
+   "cultures": [
+    "West African peoples",
+    "Sudanese communities",
+    "Global food industry"
+   ],
+   "ritual": "The gum is used in traditional foods and as a binding agent in various crafts and traditional medicines, though not typically in psychoactive rituals.",
+   "context": "A vital economic crop for many African nations, providing income through the export of gum arabic."
+  },
+  "legality": "Legal as a food ingredient and industrial additive; status varies by jurisdiction regarding the possession of plant material containing trace DMT; check local law.",
+  "safety": "Generally safe as a food additive; high tannin content in the bark may cause gastrointestinal irritation; consult a qualified professional before ingesting plant parts."
+ },
+ {
+  "id": "vachellia_seyal",
+  "name": "Syal",
+  "sci": "Vachellia seyal",
+  "family": "Fabaceae (Legume family)",
+  "form": "Thorny tree or shrub",
+  "continent": "Africa",
+  "regions": [
+   "Sudan",
+   "Ethiopia",
+   "Somalia",
+   "Kenya",
+   "South Africa",
+   "Namibia"
+  ],
+  "coords": [
+   15.5,
+   32.5
+  ],
+  "habitat": "Arid and semi-arid savannas, dry riverbeds, and thorn scrublands",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acacia_in_Ein_Khadra_Desert_Oasis_00_%2887%29.jpg/1280px-Acacia_in_Ein_Khadra_Desert_Oasis_00_%2887%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Vachellia seyal tree in a dry landscape",
+  "parts": "Leaves, bark, and gum",
+  "compounds": [
+   "DMT (N,N-Dimethyltryptamine)",
+   "Tannins",
+   "Gum arabic"
+  ],
+  "pharmacology": "The leaves contain N,N-dimethyltryptamine (DMT), a potent tryptamine, though the concentration is generally low (1\u20137% in ether extracts) and the plant is not a primary source for isolation. The bark and gum are rich in tannins and polysaccharides, which have traditional uses for astringency and wound healing.",
+  "id_features": [
+   "Dense, thorny canopy with small, bipinnate leaves.",
+   "Bark is often greyish-brown and deeply fissured.",
+   "Produces small, yellowish-green flowers in dense heads.",
+   "Known for exuding a hard, reddish-brown gum (gum arabic).",
+   "Thorns are paired and straight, often 2\u20135 cm long."
+  ],
+  "lookalikes": [
+   "Vachellia tortilis (Umbrella Thorn): Distinguishable by its more open, umbrella-like crown and different leaflet arrangement.",
+   "Vachellia nilotica (Gum Acacia): Often has larger, more prominent thorns and a different bark texture.",
+   "Caesalpinia species: Some share the thorny habit but differ in leaf structure and flower color."
+  ],
+  "prep": {
+   "summary": "The leaves are traditionally dried and brewed into a tea, or the gum is collected for use as a binder or food additive.",
+   "steps": [
+    "Leaves are harvested and dried in the shade to preserve volatile compounds.",
+    "Dried leaves are steeped in hot water to create a tea.",
+    "Gum is collected from natural exudations on the bark or from incisions.",
+    "The gum is cleaned and dried for use in traditional preparations."
+   ],
+   "note": "While DMT is present, the plant is primarily used for its gum and bark in traditional African medicine and food preservation rather than for psychoactive purposes."
+  },
+  "culture": {
+   "cultures": [
+    "Sudanese",
+    "Ethiopian",
+    "Somali",
+    "Maasai",
+    "San"
+   ],
+   "ritual": "The gum is used in traditional food preparations and as a binder in various crafts. The bark and leaves are used in folk medicine for treating skin conditions and digestive issues.",
+   "context": "A vital resource in arid regions, providing food, medicine, and material for traditional crafts."
+  },
+  "legality": "The plant is legal in most jurisdictions, but the isolation of DMT is controlled under drug laws in many countries.",
+  "safety": "The bark and leaves contain tannins which can cause gastrointestinal upset if consumed in large quantities. DMT is a controlled substance in many regions; consult a qualified professional before use."
+ },
+ {
+  "id": "vachellia_sieberiana",
+  "name": "Black Wattle",
+  "sci": "Vachellia sieberiana",
+  "family": "Fabaceae (Legume family)",
+  "form": "Thorny tree or shrub",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Zimbabwe",
+   "Botswana",
+   "Namibia",
+   "Mozambique"
+  ],
+  "coords": [
+   -25.7,
+   28.2
+  ],
+  "habitat": "Dry savannas, bushveld, and rocky hillsides",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pretoria_Voortrekker_Monument_Vachellia_sieberiana_next_to_the_chapel.jpg/1280px-Pretoria_Voortrekker_Monument_Vachellia_sieberiana_next_to_the_chapel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Vachellia sieberiana tree in a park setting",
+  "parts": "Leaves",
+  "compounds": [
+   "DMT, in the leaf"
+  ],
+  "pharmacology": "The leaves contain N,N-dimethyltryptamine (DMT), a potent tryptamine, but the plant also contains monoamine oxidase inhibitors (MAOIs) that prevent DMT from being broken down, allowing it to be active when ingested. This combination makes the plant a source of a potent psychoactive substance, though it is rarely used in isolation due to the presence of other bitter and potentially toxic compounds.",
+  "id_features": [
+   "Dense, dark green, bipinnate leaves.",
+   "Prominent, sharp, paired thorns at the base of the leaf stalks.",
+   "Yellow, cylindrical flower spikes.",
+   "Flat, dark brown seed pods."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by the specific thorn structure and leaf shape.",
+   "Often confused with Vachellia karroo, but the latter has different thorn and leaf characteristics.",
+   "The presence of DMT is a unique chemical identifier compared to most other wattle species."
+  ],
+  "prep": {
+   "summary": "The leaves are typically dried and brewed into a tea or decoction.",
+   "steps": [
+    "Harvest the leaves from the tree.",
+    "Dry the leaves in a shaded, well-ventilated area.",
+    "Crush or grind the dried leaves.",
+    "Steep the material in hot water to create a decoction."
+   ],
+   "note": "The taste is extremely bitter and unpleasant; it is often mixed with other herbs to mask the flavor."
+  },
+  "culture": {
+   "cultures": [
+    "San (Bushman) peoples",
+    "Khoikhoi",
+    "Various Bantu-speaking groups in Southern Africa"
+   ],
+   "ritual": "Used in traditional medicine and shamanic practices for its psychoactive and medicinal properties, particularly for treating ailments and inducing altered states of consciousness.",
+   "context": "A significant plant in the ethnobotany of Southern Africa, valued for its diverse traditional uses."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of DMT-containing plants.",
+  "safety": "Contains DMT and MAOIs; consult a qualified professional before use due to potential interactions and toxicity."
+ },
+ {
+  "id": "acacia_simplex",
+  "name": "Acacia simplex",
+  "sci": "Acacia simplex",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small tree or large shrub with pinnate leaves",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Argentina",
+   "Paraguay",
+   "Bolivia",
+   "Uruguay"
+  ],
+  "coords": [
+   -25.0,
+   -55.0
+  ],
+  "habitat": "Tropical and subtropical dry forests, scrublands, and riverbanks",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Acacia_simplex%2C_leaves.jpg/1280px-Acacia_simplex%2C_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia simplex leaves",
+  "parts": "Bark, leaves, and stems",
+  "compounds": [
+   "DMT",
+   "NMT",
+   "MMT"
+  ],
+  "pharmacology": "Contains dimethyltryptamine (DMT) and N-methyltryptamine (NMT), which are serotonergic agonists; however, the pharmacological profile of this specific species is less documented than other DMT-containing plants, and its use is primarily traditional.",
+  "id_features": [
+   "Small tree or shrub, typically 2-5 meters tall.",
+   "Pinnate leaves with numerous small, oval leaflets.",
+   "Yellow, fluffy flower heads.",
+   "Bark is often rough and grayish-brown."
+  ],
+  "lookalikes": [
+   "Resembles other Acacia species, but identification requires botanical expertise.",
+   "Distinctive yellow flower heads help distinguish it from some similar shrubs.",
+   "Leaflet arrangement and size are key differentiators."
+  ],
+  "prep": {
+   "summary": "Traditionally, the bark or leaves may be prepared as a decoction or infusion.",
+   "steps": [
+    "Bark or leaves are collected and dried.",
+    "The material is boiled in water to create a decoction.",
+    "The liquid is strained and consumed."
+   ],
+   "note": "Preparation methods vary by region and tradition; safety and dosage are not well-established."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous peoples of South America"
+   ],
+   "ritual": "Used in traditional ceremonies and for medicinal purposes by some indigenous groups.",
+   "context": "Part of the rich ethnobotanical heritage of South America."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of DMT-containing plants.",
+  "safety": "Consult a qualified professional before use; DMT is a potent psychoactive compound with potential risks, and the safety profile of Acacia simplex specifically is not well-studied."
+ },
+ {
+  "id": "vachellia_tortilis",
+  "name": "Umbrella Thorn Acacia",
+  "sci": "Vachellia tortilis",
+  "family": "Fabaceae (Legume family)",
+  "form": "Thorny, umbrella-shaped tree",
+  "continent": "Africa",
+  "regions": [
+   "Kenya",
+   "Tanzania",
+   "Ethiopia",
+   "Somalia",
+   "Sudan",
+   "South Africa"
+  ],
+  "coords": [
+   -2.65,
+   37.27
+  ],
+  "habitat": "Arid and semi-arid savannas, scrublands, and rocky hillsides",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Acacia_%28Vachellia_tortilis%29%2C_parque_nacional_de_Amboseli%2C_Kenia%2C_2024-05-22%2C_DD_98.jpg/1280px-Acacia_%28Vachellia_tortilis%29%2C_parque_nacional_de_Amboseli%2C_Kenia%2C_2024-05-22%2C_DD_98.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Vachellia tortilis (Umbrella Thorn Acacia) in Amboseli National Park, Kenya",
+  "parts": "Bark, leaves, and pods",
+  "compounds": [
+   "DMT",
+   "NMT",
+   "and other tryptamines"
+  ],
+  "pharmacology": "The presence of tryptamines such as DMT and NMT in the bark and leaves suggests potential psychoactive properties, though the specific pharmacological effects and safety profile in humans are not well-documented in modern clinical literature.",
+  "id_features": [
+   "Distinctive umbrella-shaped crown with a dense canopy.",
+   "Trunk and branches covered in sharp, straight thorns.",
+   "Small, bipinnate leaves that are dark green.",
+   "Flowers are small, yellow, and clustered in dense heads.",
+   "Pods are flat, brown, and contain a sweet pulp."
+  ],
+  "lookalikes": [
+   "Distinguish from Vachellia nilotica by the more open, umbrella-like crown and straighter thorns.",
+   "Distinguish from Acacia senegal by the presence of large, straight thorns and the specific leaf structure.",
+   "Often confused with other thorny acacias in arid regions, but the umbrella shape is a key identifier."
+  ],
+  "prep": {
+   "summary": "Traditional preparation often involves boiling the bark or leaves to create a decoction.",
+   "steps": [
+    "Collect small pieces of bark or leaves.",
+    "Wash the plant material thoroughly.",
+    "Boil the material in water for a specific duration to extract compounds.",
+    "Strain the liquid and allow it to cool before consumption."
+   ],
+   "note": "Preparation methods vary by region and tradition; the psychoactive potential is not widely standardized or studied."
+  },
+  "culture": {
+   "cultures": [
+    "Maasai",
+    "Kikuyu",
+    "Various pastoralist communities in East Africa"
+   ],
+   "ritual": "Used in traditional medicine for various ailments and occasionally in spiritual or healing ceremonies.",
+   "context": "A vital resource in arid landscapes, providing shade, fodder, and traditional medicinal compounds."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of psychoactive plant materials.",
+  "safety": "Consult a qualified professional before use; the bark and leaves may contain toxic compounds, and the psychoactive effects are not well-understood."
+ },
+ {
+  "id": "acacia_vestita",
+  "name": "Acacia vestita",
+  "sci": "Acacia vestita",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small tree or shrub with pinnate leaves and yellow flowers",
+  "continent": "Oceania",
+  "regions": [
+   "Western Australia",
+   "Northern Territory",
+   "South Australia"
+  ],
+  "coords": [
+   -25.0,
+   125.0
+  ],
+  "habitat": "Arid and semi-arid inland regions, often on sandy or clay soils",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Acacia_vestita.jpg/1280px-Acacia_vestita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia vestita (Hairy Wattle) tree",
+  "parts": "Leaf and stem",
+  "compounds": [
+   "Tryptamine"
+  ],
+  "pharmacology": "Contains trace amounts of tryptamine, but the total alkaloid content is extremely low (less than 0.02%), making it pharmacologically insignificant for psychoactive purposes.",
+  "id_features": [
+   "Small tree or shrub, typically 1-3 meters tall.",
+   "Leaves are pinnate with numerous small, hairy leaflets.",
+   "Flowers are yellow and arranged in dense heads.",
+   "Bark is often rough and greyish-brown."
+  ],
+  "lookalikes": [
+   "Other Acacia species with pinnate leaves, such as Acacia aneura.",
+   "Distinguishable by the specific hairiness of the leaflets and flower structure.",
+   "Few lookalikes in its specific arid habitat."
+  ],
+  "prep": {
+   "summary": "Not traditionally prepared for consumption or ritual use due to lack of significant psychoactive or medicinal properties.",
+   "steps": [
+    "No standard preparation method exists for human consumption.",
+    "The plant is primarily used for ecological purposes such as soil stabilization."
+   ],
+   "note": "Not a traditional medicine or ceremonial plant."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous Australian peoples (general ecological use)"
+   ],
+   "ritual": "Not used in specific rituals; valued for its role in maintaining arid ecosystems.",
+   "context": "An important component of the Australian outback flora, contributing to biodiversity and soil health."
+  },
+  "legality": "Legal as a native plant; no specific restrictions on possession or use.",
+  "safety": "Generally non-toxic, but ingestion of any plant material should be approached with caution; consult a qualified professional for any intended use."
+ },
+ {
+  "id": "acacia_victoriae",
+  "name": "Victorian Wattle",
+  "sci": "Acacia victoriae",
+  "family": "Fabaceae (Legume family)",
+  "form": "Thorny shrub or small tree",
+  "continent": "Africa",
+  "regions": [
+   "Sudan",
+   "South Sudan",
+   "Eritrea",
+   "Ethiopia",
+   "Somalia"
+  ],
+  "coords": [
+   15.5,
+   36.5
+  ],
+  "habitat": "Arid and semi-arid savannas, dry riverbeds, and rocky hillsides",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Acacia_victoriae_habit.jpg/1280px-Acacia_victoriae_habit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia victoriae (Victorian Wattle) shrub in arid habitat",
+  "parts": "Bark (specifically the inner bark)",
+  "compounds": [
+   "tryptamines",
+   "5-MeO-alkyltryptamine"
+  ],
+  "pharmacology": "The bark contains 5-methoxy-N,N-dimethyltryptamine (5-MeO-DMT), a potent serotonergic hallucinogen. While the pharmacological effects are well-documented in laboratory settings, human clinical data is limited to traditional use and anecdotal reports.",
+  "id_features": [
+   "A thorny shrub or small tree, typically 1-4 meters tall.",
+   "Leaves are pinnate with small, oval leaflets.",
+   "Produces small, yellow, spherical flower heads.",
+   "The bark is greyish-brown and often peeling."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by the specific chemical profile of the bark (5-MeO-DMT) rather than visual traits alone.",
+   "Visually similar to other thorny Acacia species in the Horn of Africa, requiring chemical testing for definitive identification.",
+   "Often confused with Acacia senegal or Acacia nilotica, which lack the specific tryptamine content."
+  ],
+  "prep": {
+   "summary": "The inner bark is dried and ground into a powder for inhalation.",
+   "steps": [
+    "The inner bark is carefully stripped from the branches.",
+    "The bark is dried in the shade to preserve the active compounds.",
+    "The dried bark is ground into a fine powder using a mortar and pestle.",
+    "The powder is typically inhaled (snorted) in small doses."
+   ],
+   "note": "Preparation is traditionally done by local practitioners; the potency of 5-MeO-DMT is extremely high, requiring precise dosing."
+  },
+  "culture": {
+   "cultures": [
+    "Nuer",
+    "Dinka",
+    "Shilluk",
+    "Other Nilotic peoples of the Sudan"
+   ],
+   "ritual": "Used in traditional healing and spiritual ceremonies, often by 'witch doctors' or healers to induce visions, communicate with spirits, or diagnose illnesses.",
+   "context": "A sacred plant in the Nilotic cultures of the Upper Nile region, integral to traditional medicine and spiritual practices."
+  },
+  "legality": "Status varies by jurisdiction; check local law. In many countries, it is controlled due to the presence of 5-MeO-DMT, a Schedule I substance in the US and similar classifications elsewhere.",
+  "safety": "Highly potent hallucinogen; can cause intense visual and auditory hallucinations, nausea, and cardiovascular effects. Consult a qualified professional before use; not recommended for individuals with a history of psychosis or cardiovascular disease."
+ },
+ {
+  "id": "acacia_dealbata",
+  "name": "Silver Wattle",
+  "sci": "Acacia dealbata",
+  "family": "Fabaceae (Mimosoideae)",
+  "form": "Fast-growing tree with feathery, silver-green foliage",
+  "continent": "Oceania",
+  "regions": [
+   "Tasmania",
+   "Victoria",
+   "South Australia"
+  ],
+  "coords": [
+   -42.0,
+   147.0
+  ],
+  "habitat": "Cool temperate forests and open woodlands",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Acacia_dealbata_%2837540484220%29.jpg/1280px-Acacia_dealbata_%2837540484220%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia dealbata (Silver Wattle) tree with yellow flowers",
+  "parts": "Flowers, bark, and leaves",
+  "compounds": [
+   "Tannins",
+   "Flavonoids",
+   "Phenolic compounds"
+  ],
+  "pharmacology": "Traditional use focuses on the astringent properties of the bark and leaves, which are rich in tannins and phenolics. Modern pharmacological evidence for specific therapeutic effects is limited, and it is not a primary subject of clinical research.",
+  "id_features": [
+   "Distinctive silvery-blue or grey-green foliage.",
+   "Bright yellow, spherical flower heads in spring.",
+   "Fast-growing, often reaching 10-15 meters in height.",
+   "Feathery, bipinnate leaves that give a soft, airy appearance."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacias by the unique silvery color of the leaves.",
+   "Flowers are similar to other wattles but the foliage is a key identifier.",
+   "Often confused with Acacia baileyana, which has similar silver foliage but different flower structure."
+  ],
+  "prep": {
+   "summary": "The bark or leaves are typically dried and used to make a tea or decoction.",
+   "steps": [
+    "Harvest small pieces of bark or leaves.",
+    "Dry the material thoroughly in a cool, dark place.",
+    "Steep the dried material in hot water to create a tea.",
+    "Strain the liquid before consumption."
+   ],
+   "note": "Preparation is generally for topical or mild internal use in traditional contexts."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous Australian peoples",
+    "European settlers in Australia"
+   ],
+   "ritual": "Used in traditional medicine for various ailments, and later adopted by settlers for its ornamental and medicinal properties.",
+   "context": "A significant tree in Australian horticulture and traditional medicine."
+  },
+  "legality": "Legal to grow and use in most jurisdictions; status varies by jurisdiction; check local law.",
+  "safety": "Consult a qualified professional before use; tannin-rich plants can cause gastrointestinal irritation if consumed in excess."
+ },
+ {
+  "id": "acacia_mearnsii",
+  "name": "Black Wattle",
+  "sci": "Acacia mearnsii",
+  "family": "Fabaceae (Mimosoideae)",
+  "form": "Fast-growing tree with pinnate leaves and yellow flower heads",
+  "continent": "Oceania",
+  "regions": [
+   "Tasmania",
+   "Victoria",
+   "New South Wales",
+   "South Australia"
+  ],
+  "coords": [
+   -41.2866,
+   146.9271
+  ],
+  "habitat": "Temperate forests and open woodlands, often on well-drained soils",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/1280px-088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia mearnsii (Black Wattle) tree",
+  "parts": "Bark",
+  "compounds": [
+   "Tannins",
+   "Catechins"
+  ],
+  "pharmacology": "The bark is rich in condensed tannins (catechins), which have astringent and antimicrobial properties. While used traditionally for wound healing and diarrhea, modern pharmacological evidence for specific clinical efficacy is limited and primarily based on traditional use and in-vitro studies.",
+  "id_features": [
+   "Fast-growing tree reaching 15-25 m in height.",
+   "Pinnate leaves with numerous small leaflets.",
+   "Yellow, spherical flower heads.",
+   "Bark is dark brown to blackish, often fissured.",
+   "Pods are flat, leathery, and contain black seeds."
+  ],
+  "lookalikes": [
+   "Similar to other Acacia species, but distinguished by its rapid growth and specific bark texture.",
+   "Flowers are similar to other wattle species, but the leaf structure and bark color help differentiate it.",
+   "Often confused with Acacia melanoxylon (Blackwood) in some regions, but Black Wattle grows faster and has different leaflet arrangement."
+  ],
+  "prep": {
+   "summary": "The bark is harvested, dried, and boiled to extract tannins for traditional remedies.",
+   "steps": [
+    "Harvest bark from mature trees, ensuring the tree is not killed.",
+    "Strip the inner bark and dry it in the shade.",
+    "Boil the dried bark in water for 15-30 minutes.",
+    "Strain the liquid to obtain a brown, astringent decoction."
+   ],
+   "note": "Traditional preparation is for external use or mild internal astringency; internal use should be approached with caution due to tannin content."
+  },
+  "culture": {
+   "cultures": [
+    "Aboriginal Australian (various groups)",
+    "European settlers (for tanning and timber)"
+   ],
+   "ritual": "Used by Aboriginal peoples for medicinal purposes, particularly for skin ailments and as a wash. European settlers utilized it extensively for tanning leather and as a source of timber.",
+   "context": "A significant economic and ecological species in Australia, known for its rapid growth and tannin-rich bark."
+  },
+  "legality": "Legal to harvest in many regions, but regulations vary by jurisdiction; check local law regarding bark harvesting and tree protection.",
+  "safety": "High tannin content can cause gastrointestinal irritation if consumed in large quantities. Consult a qualified professional before internal use, especially for pregnant women or those with kidney issues."
+ },
+ {
+  "id": "acacia_drummondii",
+  "name": "Drummond's Wattle",
+  "sci": "Acacia drummondii",
+  "family": "Fabaceae (Mimosoideae)",
+  "form": "Small tree or shrub with pinnate leaves and yellow flower heads",
+  "continent": "Oceania",
+  "regions": [
+   "Western Australia"
+  ],
+  "coords": [
+   -31.95,
+   115.86
+  ],
+  "habitat": "Sandy soils and heathlands of the south-western Australian region",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/1280px-088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia drummondii (Drummond's Wattle) tree",
+  "parts": "Bark, leaves, and seed pods",
+  "compounds": [
+   "No psychoactive compounds documented"
+  ],
+  "pharmacology": "While many Acacia species contain tannins and flavonoids with traditional medicinal applications, specific pharmacological data for Acacia drummondii is limited and it is not a primary subject of modern clinical research.",
+  "id_features": [
+   "Small tree or shrub reaching 1-5 meters in height.",
+   "Pinnate leaves with numerous small, oval leaflets.",
+   "Distinctive yellow, spherical flower heads.",
+   "Smooth, grey to brown bark."
+  ],
+  "lookalikes": [
+   "Similar to other Acacia species in the south-west of Australia, such as Acacia rostrata.",
+   "Distinguished by its specific leaflet shape and flower head structure."
+  ],
+  "prep": {
+   "summary": "Parts of the plant are traditionally processed for medicinal or material use.",
+   "steps": [
+    "Bark or leaves are harvested from the tree.",
+    "Material is dried or prepared according to traditional methods.",
+    "Used in decoctions or as a topical application."
+   ],
+   "note": "Preparation methods are rooted in Indigenous Australian traditional knowledge."
+  },
+  "culture": {
+   "cultures": [
+    "Noongar people (Western Australia)"
+   ],
+   "ritual": "Used in traditional medicine and as a source of materials for various cultural practices.",
+   "context": "An important part of the local flora and traditional ecological knowledge in Western Australia."
+  },
+  "legality": "Legal to possess and use in its native range; status varies by jurisdiction for commercial trade; check local law.",
+  "safety": "Consult a qualified professional before use; potential for allergic reactions or toxicity is not fully characterized."
+ },
+ {
+  "id": "acacia_elata",
+  "name": "Acacia elata",
+  "sci": "Acacia elata",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small tree or shrub with pinnate leaves and yellow flowers",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Namibia",
+   "Botswana",
+   "Zimbabwe",
+   "Mozambique"
+  ],
+  "coords": [
+   -25.0,
+   25.0
+  ],
+  "habitat": "Dry savannas, bushveld, and rocky slopes",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/1280px-088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia elata tree in a savanna landscape",
+  "parts": "Bark, leaves, and pods",
+  "compounds": [
+   "No psychoactive compounds documented"
+  ],
+  "pharmacology": "Ethnobotanical use suggests anti-inflammatory and analgesic properties, but modern pharmacological evidence is limited and specific active compounds are not well-characterized in the literature.",
+  "id_features": [
+   "Small tree or shrub, typically 2-5 meters tall.",
+   "Pinnate leaves with numerous small leaflets.",
+   "Yellow, spherical flower heads.",
+   "Bark is often rough and greyish-brown."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by leaflet size and flower color.",
+   "Often confused with Acacia karroo or Acacia nilotica in the field.",
+   "Look for the specific habitat and bark texture to differentiate."
+  ],
+  "prep": {
+   "summary": "Bark or leaves are typically boiled to create a decoction for traditional use.",
+   "steps": [
+    "Collect small pieces of bark or fresh leaves.",
+    "Wash the material thoroughly.",
+    "Boil in water for 10-15 minutes.",
+    "Strain the liquid and allow it to cool before use."
+   ],
+   "note": "Traditional preparations vary by region and specific ailment being treated."
+  },
+  "culture": {
+   "cultures": [
+    "San",
+    "Khoisan",
+    "Various Bantu-speaking groups in Southern Africa"
+   ],
+   "ritual": "Used in traditional medicine for treating pain, inflammation, and skin conditions; sometimes used in spiritual cleansing rituals.",
+   "context": "A common resource in the bushveld, valued for its medicinal properties in indigenous healing practices."
+  },
+  "legality": "Legal to harvest in many areas, but status varies by jurisdiction; check local law regarding protected species or private land.",
+  "safety": "Consult a qualified professional before use; potential for allergic reactions or interactions with other medications is not fully documented."
+ },
+ {
+  "id": "acacia_leprosa",
+  "name": "Leprous Acacia",
+  "sci": "Acacia leprosa",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small thorny tree or shrub",
+  "continent": "Africa",
+  "regions": [
+   "Ethiopia",
+   "Kenya",
+   "Somalia",
+   "South Sudan",
+   "Eritrea"
+  ],
+  "coords": [
+   9.0,
+   42.0
+  ],
+  "habitat": "Arid and semi-arid savannas, rocky hills, and dry riverbanks",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Acacia_leprosa1.jpg/1280px-Acacia_leprosa1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia leprosa (Leprous Acacia) tree",
+  "parts": "Bark, leaves, and pods",
+  "compounds": [
+   "No psychoactive compounds documented"
+  ],
+  "pharmacology": "Ethnobotanical use is widespread, but modern pharmacological evidence is limited; traditional preparations are used for various ailments, but specific mechanisms and efficacy are not well-established in clinical literature.",
+  "id_features": [
+   "Dense, dark green foliage with small, pinnate leaves.",
+   "Prominent, sharp thorns on the branches.",
+   "Flowers are small, yellow, and clustered.",
+   "Pods are flat, dark, and often twisted or coiled."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by the specific shape of the pods and the density of the thorns.",
+   "Often confused with Acacia tortilis, but A. leprosa typically has a more compact, bushy growth habit.",
+   "The bark texture and leaf arrangement can help differentiate it from similar thorny acacias."
+  ],
+  "prep": {
+   "summary": "Parts of the plant are typically dried and prepared as decoctions or powders for traditional use.",
+   "steps": [
+    "Bark or leaves are harvested and dried in the shade.",
+    "The dried material is ground into a powder or chopped for boiling.",
+    "A decoction is made by boiling the material in water.",
+    "The liquid is strained and consumed or applied topically as per traditional practice."
+   ],
+   "note": "Preparation methods vary significantly by region and specific ailment being treated."
+  },
+  "culture": {
+   "cultures": [
+    "Ethiopian pastoralists",
+    "Kenyan communities",
+    "Somali traditional healers"
+   ],
+   "ritual": "Used in traditional medicine to treat ailments such as malaria, fever, and skin conditions; also used in some cultural practices for protection or purification.",
+   "context": "A significant resource in arid regions of East Africa, valued for its medicinal properties and resilience."
+  },
+  "legality": "Generally legal as a wild plant, but harvesting may be regulated in protected areas; status varies by jurisdiction; check local law.",
+  "safety": "Contains thorns and potentially toxic compounds; consult a qualified professional before use, as internal use may have side effects."
+ },
+ {
+  "id": "acacia_linearis",
+  "name": "Wattle",
+  "sci": "Acacia linearis",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small tree or shrub with narrow, linear phyllodes",
+  "continent": "Oceania",
+  "regions": [
+   "Western Australia",
+   "South Australia",
+   "Northern Territory"
+  ],
+  "coords": [
+   -31.95,
+   115.86
+  ],
+  "habitat": "Dry sclerophyll forests and open woodlands",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Acacia_hippuroides_%2814596159989%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Acacia linearis (wattle) branch with narrow leaves and yellow flowers",
+  "parts": "Bark, leaves, and seeds",
+  "compounds": [
+   "No psychoactive compounds documented"
+  ],
+  "pharmacology": "Traditional use is primarily for wound healing and skin conditions; modern pharmacological evidence is limited to general tannin and flavonoid properties common to the genus.",
+  "id_features": [
+   "Narrow, linear phyllodes (leaf-like structures) that are often drooping.",
+   "Bright yellow, spherical flower heads typical of wattles.",
+   "Bark is often rough and grey-brown.",
+   "Grows as a small tree or large shrub in arid to semi-arid regions."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by the very narrow, linear phyllodes.",
+   "Similar to Acacia verticillata but with different leaf arrangement and habitat.",
+   "Flowers are similar to many other yellow-flowered wattles."
+  ],
+  "prep": {
+   "summary": "Bark or leaves are typically prepared as a decoction or poultice for external use.",
+   "steps": [
+    "Collect small pieces of bark or fresh leaves.",
+    "Boil the material in water to create a decoction.",
+    "Apply the liquid to skin or use as a wash.",
+    "Alternatively, crush fresh leaves into a poultice for direct application."
+   ],
+   "note": "Preparation is generally for external application; internal use is less common and requires caution."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous Australian peoples (various groups in WA and SA)"
+   ],
+   "ritual": "Used in traditional medicine for treating wounds, sores, and skin irritations; knowledge is passed down through oral tradition.",
+   "context": "Part of the broader bush tucker and medicinal plant knowledge of Aboriginal Australians."
+  },
+  "legality": "Legal to harvest in small quantities for personal use in most Australian jurisdictions, but check local regulations regarding protected areas.",
+  "safety": "Generally considered safe for external use; consult a qualified professional before internal use or if pregnant/nursing."
+ },
+ {
+  "id": "acacia_pycnantha",
+  "name": "Golden Wattle",
+  "sci": "Acacia pycnantha",
+  "family": "Fabaceae (Legume family)",
+  "form": "Small tree or shrub with dense, golden-yellow flower clusters",
+  "continent": "Oceania",
+  "regions": [
+   "New South Wales",
+   "Victoria",
+   "South Australia",
+   "Queensland",
+   "Tasmania"
+  ],
+  "coords": [
+   -33.8688,
+   151.2093
+  ],
+  "habitat": "Dry sclerophyll forests and open woodlands on sandy or loamy soils",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Acacia_pycnantha_Golden_Wattle.jpg/1280px-Acacia_pycnantha_Golden_Wattle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia pycnantha (Golden Wattle) in bloom",
+  "parts": "Flowers, leaves (phyllodes), and bark",
+  "compounds": [
+   "Tannins",
+   "Flavonoids",
+   "Saponins"
+  ],
+  "pharmacology": "Traditional uses focus on the bark and leaves for treating skin conditions and wounds, likely due to the presence of tannins and anti-inflammatory flavonoids; however, modern clinical evidence for specific therapeutic efficacy is limited.",
+  "id_features": [
+   "Distinctive golden-yellow, spherical flower clusters that bloom in late winter to early spring.",
+   "Lance-shaped, green phyllodes (modified leaf stalks) that are often slightly curved.",
+   "Smooth, greyish-brown bark on young stems, becoming rougher with age.",
+   "Grows as a small tree or large shrub, typically 2\u20136 meters tall."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by the specific shape of the phyllodes and the timing of the golden blooms.",
+   "Similar to Acacia melanoxylon (Blackwood) but the latter has darker, more rigid phyllodes and less vibrant flowers.",
+   "Distinctive enough in its native range that confusion with non-native species is rare."
+  ],
+  "prep": {
+   "summary": "The bark or leaves are typically prepared as a decoction or poultice for topical use.",
+   "steps": [
+    "Collect small pieces of bark or a handful of leaves.",
+    "Boil the material in water for 10\u201315 minutes to create a decoction.",
+    "Allow the liquid to cool before applying to the skin or using as a wash.",
+    "Alternatively, crush fresh leaves into a paste for a poultice."
+   ],
+   "note": "Preparation is primarily for external use; internal consumption is not standard practice due to limited safety data."
+  },
+  "culture": {
+   "cultures": [
+    "Aboriginal Australians",
+    "Australian national culture"
+   ],
+   "ritual": "The Golden Wattle is the national floral emblem of Australia, symbolizing unity and identity. Indigenous groups have used the plant for practical and medicinal purposes for millennia.",
+   "context": "A symbol of Australian national pride and a significant resource in traditional ecological knowledge."
+  },
+  "legality": "Legal to harvest in small quantities for personal use in most Australian states, but commercial harvesting may require permits; status varies by jurisdiction; check local law.",
+  "safety": "Generally considered safe for external use, but internal consumption should be avoided without professional guidance due to potential tannin toxicity; consult a qualified professional."
+ },
+ {
+  "id": "acacia_retinodes",
+  "name": "Silver Wattle",
+  "sci": "Acacia retinodes",
+  "family": "Fabaceae (Mimosoideae)",
+  "form": "Small tree or shrub with silvery, needle-like phyllodes",
+  "continent": "Oceania",
+  "regions": [
+   "Western Australia",
+   "South Australia",
+   "Victoria",
+   "New South Wales"
+  ],
+  "coords": [
+   -33.8688,
+   151.2093
+  ],
+  "habitat": "Dry sclerophyll forests, heathlands, and coastal dunes",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Acacia_retinodes_%28Fabaceae%29%2C_acacia_plateada_I.jpg/1280px-Acacia_retinodes_%28Fabaceae%29%2C_acacia_plateada_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia retinodes (Silver Wattle) with silvery foliage",
+  "parts": "Bark, leaves (phyllodes), and seeds",
+  "compounds": [
+   "Tannins",
+   "Saponins",
+   "Flavonoids"
+  ],
+  "pharmacology": "Traditional uses suggest anti-inflammatory and antimicrobial properties, but modern pharmacological evidence is limited and specific clinical trials are lacking.",
+  "id_features": [
+   "Distinctive silvery-grey, needle-like phyllodes (leaf-like stems).",
+   "Produces bright yellow, spherical flower heads in spring.",
+   "Bark is often rough and grey-brown.",
+   "Grows as a small tree or large shrub, typically 2\u20135 meters tall."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by the unique silvery, needle-like phyllodes.",
+   "Unlike many wattles, it lacks the typical flat or coiled leaflets.",
+   "Flowers are similar to other Acacias but the foliage is a key identifier."
+  ],
+  "prep": {
+   "summary": "Parts of the plant are traditionally prepared as infusions or poultices.",
+   "steps": [
+    "Bark or leaves are harvested and dried.",
+    "The dried material is steeped in hot water to create a tea.",
+    "Alternatively, fresh leaves or bark may be crushed into a poultice for topical application."
+   ],
+   "note": "Preparation is primarily traditional and medicinal; it is not a common culinary or ceremonial beverage."
+  },
+  "culture": {
+   "cultures": [
+    "Aboriginal Australians (various groups in WA, SA, VIC)"
+   ],
+   "ritual": "Used in traditional medicine for treating skin conditions, wounds, and as a general tonic.",
+   "context": "A significant plant in the traditional ecological knowledge of Indigenous Australians."
+  },
+  "legality": "Legal to possess and use in most jurisdictions, but harvesting from the wild may be restricted; check local law.",
+  "safety": "Consult a qualified professional before use; tannins can cause gastrointestinal irritation if consumed in large amounts."
+ },
+ {
+  "id": "acacia_saligna",
+  "name": "Golden Wattle",
+  "sci": "Acacia saligna",
+  "family": "Fabaceae (Legume family)",
+  "form": "Fast-growing tree with feathery foliage and bright yellow flowers",
+  "continent": "Oceania",
+  "regions": [
+   "Western Australia",
+   "South Australia",
+   "Victoria",
+   "New South Wales"
+  ],
+  "coords": [
+   -33.8688,
+   151.2093
+  ],
+  "habitat": "Native to the southern and western coastal regions of Australia; now a widespread invasive species in the Mediterranean climate zones of the Northern Hemisphere.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Acacia_April_2015-3.jpg/1280px-Acacia_April_2015-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia saligna (Golden Wattle) tree with yellow flowers",
+  "parts": "Bark, leaves, and flowers (primarily for traditional and ecological purposes)",
+  "compounds": [
+   "No psychoactive compounds documented"
+  ],
+  "pharmacology": "While some Acacia species contain tannins and saponins, Acacia saligna is not a primary medicinal plant; its ecological impact as an invasive species is its most significant modern characteristic.",
+  "id_features": [
+   "Feathery, bipinnate leaves that are bright green.",
+   "Dense, spherical clusters of bright yellow flowers.",
+   "Fast-growing habit, often reaching 10-15 meters in height.",
+   "Smooth, greyish bark on young stems."
+  ],
+  "lookalikes": [
+   "Acacia dealbata (Mimosa): Similar flowers but has a more shrubby habit and different leaf structure.",
+   "Acacia baileyana (Cowboy Wattle): Has silvery-green foliage and a more weeping habit.",
+   "Acacia pycnantha (Golden Wattle): The national flower of Australia, but has a different leaf shape and flower arrangement."
+  ],
+  "prep": {
+   "summary": "Not typically prepared for consumption; managed as an ornamental or invasive species.",
+   "steps": [
+    "Identify the plant by its feathery leaves and yellow flower clusters.",
+    "Monitor for invasive spread in non-native regions.",
+    "Manage through pruning or removal if it is causing ecological harm."
+   ],
+   "note": "In many regions, it is considered a weed due to its aggressive growth and allelopathic properties."
+  },
+  "culture": {
+   "cultures": [
+    "Australian Aboriginal peoples (limited traditional use)",
+    "European settlers (ornamental planting)"
+   ],
+   "ritual": "Not a primary ceremonial plant; used historically for its timber and as a windbreak.",
+   "context": "A symbol of the dual nature of botanical introduction: ornamental beauty versus ecological disruption."
+  },
+  "legality": "Legal in its native Australia; regulated or banned in many other countries due to its invasive status.",
+  "safety": "Generally non-toxic to humans, but its aggressive growth can displace native vegetation and reduce biodiversity."
+ },
+ {
+  "id": "acacia_stricta",
+  "name": "Acacia stricta",
+  "sci": "Acacia stricta",
+  "family": "Fabaceae (Mimosoideae)",
+  "form": "Small tree or shrub with pinnate leaves",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Namibia",
+   "Botswana",
+   "Zimbabwe",
+   "Mozambique"
+  ],
+  "coords": [
+   -29.0,
+   24.0
+  ],
+  "habitat": "Dry savanna, scrubland, and rocky slopes",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Acacia_stricta.jpg/1280px-Acacia_stricta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Acacia stricta tree",
+  "parts": "Bark, leaves, and pods",
+  "compounds": [
+   "No psychoactive compounds documented"
+  ],
+  "pharmacology": "Ethnobotanical use is documented, but specific pharmacological mechanisms and clinical evidence for Acacia stricta are limited and not well-characterized in modern medical literature.",
+  "id_features": [
+   "Small tree or shrub, typically 1-5 meters tall.",
+   "Pinnate leaves with numerous small leaflets.",
+   "Yellow, spherical flower heads.",
+   "Long, slender, curved pods."
+  ],
+  "lookalikes": [
+   "Distinguish from other Acacia species by the specific leaflet arrangement and pod shape.",
+   "Often confused with Acacia tortilis or Acacia nilotica in the field.",
+   "Flower color and pod curvature are key differentiators."
+  ],
+  "prep": {
+   "summary": "Traditional preparations typically involve decoctions of the bark or leaves.",
+   "steps": [
+    "Bark or leaves are collected and dried.",
+    "The material is chopped or crushed.",
+    "It is boiled in water to create a decoction.",
+    "The liquid is strained and consumed."
+   ],
+   "note": "Preparation methods vary by local tradition and intended use."
+  },
+  "culture": {
+   "cultures": [
+    "San",
+    "Khoisan",
+    "Various Bantu-speaking groups"
+   ],
+   "ritual": "Used in traditional medicine for various ailments and sometimes in ritual contexts.",
+   "context": "Part of the traditional pharmacopoeia of Southern and Eastern Africa."
+  },
+  "legality": "Legal to possess and use in most regions; status varies by jurisdiction; check local law.",
+  "safety": "Consult a qualified professional before use; potential for toxicity or interactions is not fully established."
+ }
+]

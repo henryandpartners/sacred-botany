@@ -1,0 +1,287 @@
+{
+ "Delosperma ecklonis": {
+  "id": "delosperma_ecklonis",
+  "name": "Ecklon's Delosperma",
+  "sci": "Delosperma ecklonis",
+  "family": "Aizoaceae (Mesembs)",
+  "form": "Succulent groundcover",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Namibia",
+   "Botswana"
+  ],
+  "coords": [
+   -33.9,
+   18.4
+  ],
+  "habitat": "Arid and semi-arid rocky slopes and coastal dunes",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Delosperma_ecklonis_pm.jpg/1280px-Delosperma_ecklonis_pm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Delosperma ecklonis succulent plant",
+  "parts": "Whole plant (leaves and stems)",
+  "compounds": [
+   "DMT"
+  ],
+  "pharmacology": "The plant contains N,N-dimethyltryptamine (DMT), a potent tryptamine that acts on serotonin receptors, though its specific pharmacological profile in this species is less extensively documented than in other DMT-containing plants.",
+  "id_features": [
+   "Low-growing, mat-forming succulent with fleshy, triangular leaves.",
+   "Produces small, daisy-like flowers that are typically yellow or orange.",
+   "Leaves are often covered in fine, white hairs or scales.",
+   "Grows in dense clumps on rocky or sandy soil."
+  ],
+  "lookalikes": [
+   "Resembles other Delosperma species, but is distinguished by its specific leaf shape and flower color.",
+   "Can be confused with other succulent groundcovers in the Aizoaceae family.",
+   "Distinctive due to its specific succulent morphology and arid habitat."
+  ],
+  "prep": {
+   "summary": "The plant is typically dried and prepared as a tea or infusion.",
+   "steps": [
+    "Harvest the leaves and stems of the plant.",
+    "Dry the plant material thoroughly in a cool, dark place.",
+    "Crush or grind the dried material into a powder.",
+    "Steep the powder in hot water to create a tea."
+   ],
+   "note": "Preparation is often done for traditional or medicinal purposes, with caution advised due to the presence of DMT."
+  },
+  "culture": {
+   "cultures": [
+    "San (Bushmen)",
+    "Khoikhoi"
+   ],
+   "ritual": "Used in traditional healing practices and rituals by indigenous peoples of southern Africa.",
+   "context": "A plant of cultural significance in the arid regions of southern Africa, valued for its medicinal properties."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of DMT-containing plants.",
+  "safety": "Contains DMT, which can have psychoactive effects; consult a qualified professional before use, especially if pregnant, nursing, or taking other medications."
+ },
+ "Delosperma esterhuyseniae": {
+  "id": "delosperma_esterhuyseniae",
+  "name": "Delosperma esterhuyseniae",
+  "sci": "Delosperma esterhuyseniae",
+  "family": "Aizoaceae (Mesembs)",
+  "form": "Succulent groundcover",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Namibia"
+  ],
+  "coords": [
+   -33.9,
+   18.4
+  ],
+  "habitat": "Arid, rocky slopes and coastal dunes",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/%28MHNT%29_Delosperma_cooperi_-_Flower.jpg/1280px-%28MHNT%29_Delosperma_cooperi_-_Flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Delosperma esterhuyseniae flower",
+  "parts": "Whole plant",
+  "compounds": [
+   "DMT"
+  ],
+  "pharmacology": "The plant contains N,N-dimethyltryptamine (DMT), a potent tryptamine that acts on serotonin receptors, though its specific pharmacological profile in this species is less documented than in other DMT-containing plants.",
+  "id_features": [
+   "Low-growing, mat-forming succulent with fleshy, cylindrical leaves.",
+   "Produces bright yellow, daisy-like flowers with numerous petals.",
+   "Leaves are often translucent or semi-transparent when backlit.",
+   "Grows in dense, sprawling mats on rocky or sandy soil."
+  ],
+  "lookalikes": [
+   "Other Delosperma species, such as D. cooperi, which have similar succulent leaves and flower structures.",
+   "Distinguishable by specific leaf shape and flower color intensity, which vary among Delosperma species.",
+   "Not to be confused with non-succulent groundcovers, as its fleshy, water-storing leaves are a key identifier."
+  ],
+  "prep": {
+   "summary": "The plant is typically dried and prepared as a tea or infusion.",
+   "steps": [
+    "Harvest the whole plant, including leaves and stems.",
+    "Air-dry the plant material in a shaded, well-ventilated area.",
+    "Crush or grind the dried material into a coarse powder.",
+    "Steep the powder in hot water to create an infusion."
+   ],
+   "note": "Preparation is often done for traditional or ceremonial purposes, with specific methods varying by cultural context."
+  },
+  "culture": {
+   "cultures": [
+    "San (Khoisan) peoples",
+    "Other indigenous groups in southern Africa"
+   ],
+   "ritual": "Used in traditional healing and spiritual ceremonies, often as part of broader plant-based rituals.",
+   "context": "Part of the rich ethnobotanical heritage of southern Africa, where many plants are used for their psychoactive or medicinal properties."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of DMT-containing plants.",
+  "safety": "Consult a qualified professional before use; DMT is a potent psychoactive compound and may interact with other substances or medical conditions."
+ },
+ "Delosperma hallii": {
+  "id": "delosperma_hallii",
+  "name": "Hall's Delosperma",
+  "sci": "Delosperma hallii",
+  "family": "Aizoaceae (Ice plant family)",
+  "form": "Succulent perennial herb",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Namibia",
+   "Botswana"
+  ],
+  "coords": [
+   -29.0,
+   24.0
+  ],
+  "habitat": "Arid and semi-arid rocky slopes and gravel plains",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/%28MHNT%29_Delosperma_cooperi_-_Flower.jpg/1280px-%28MHNT%29_Delosperma_cooperi_-_Flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Delosperma hallii succulent plant with flower",
+  "parts": "Whole plant (dried)",
+  "compounds": [
+   "5-MeO-DMT"
+  ],
+  "pharmacology": "Contains 5-MeO-DMT, a potent tryptamine derivative that acts on serotonin receptors, producing rapid and intense psychoactive effects; however, specific pharmacological data for this species is limited compared to other 5-MeO-DMT sources.",
+  "id_features": [
+   "Low-growing, mat-forming succulent with fleshy, cylindrical or triangular leaves.",
+   "Produces bright yellow, daisy-like flowers with numerous petals.",
+   "Leaves are often arranged in opposite pairs along the stem.",
+   "Adapted to dry environments with a thick cuticle to reduce water loss."
+  ],
+  "lookalikes": [
+   "Resembles other Delosperma species, such as D. cooperi, which is also a common ornamental succulent.",
+   "Can be confused with other Aizoaceae family members like Ruschia or Lampranthus.",
+   "Distinguished by specific leaf shape and flower coloration, which can vary by subspecies."
+  ],
+  "prep": {
+   "summary": "The plant is typically dried and prepared as a tea or infusion.",
+   "steps": [
+    "Harvest the whole plant and dry it thoroughly in a shaded, well-ventilated area.",
+    "Crush or grind the dried material into a coarse powder.",
+    "Steep the powder in hot water to create a tea, or use the dried leaves directly.",
+    "Consume the infusion, noting that the effects are rapid and intense."
+   ],
+   "note": "Preparation is often done in a controlled setting due to the potent nature of the alkaloids."
+  },
+  "culture": {
+   "cultures": [
+    "San (Khoisan) peoples",
+    "Local South African communities"
+   ],
+   "ritual": "Used in traditional healing and spiritual ceremonies, often by San shamans, to induce altered states of consciousness for divination or healing.",
+   "context": "A significant plant in the ethnobotany of southern Africa, valued for its psychoactive properties in ritual contexts."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of 5-MeO-DMT containing plants.",
+  "safety": "Potent psychoactive effects; consult a qualified professional before use, especially if taking other medications or with pre-existing health conditions."
+ },
+ "Delosperma harazianum": {
+  "id": "delosperma_harazianum",
+  "name": "Delosperma harazianum",
+  "sci": "Delosperma harazianum",
+  "family": "Aizoaceae (Mesembs)",
+  "form": "Succulent perennial herb",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Lesotho",
+   "Eswatini"
+  ],
+  "coords": [
+   -29.5,
+   28.2
+  ],
+  "habitat": "Rocky slopes and grasslands in the Eastern Cape and Free State",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Delosperma_harazianum-IMG_1611.jpg/1280px-Delosperma_harazianum-IMG_1611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Delosperma harazianum succulent plant",
+  "parts": "Whole plant (leaves and stems)",
+  "compounds": [
+   "DMT",
+   "5-MeO-DMT"
+  ],
+  "pharmacology": "Contains N,N-dimethyltryptamine (DMT) and 5-methoxy-DMT, which act as agonists at serotonin receptors, producing rapid-acting psychedelic effects. The presence of these compounds is documented, but the specific potency and pharmacokinetics in humans are less characterized than in other tryptamine-containing plants.",
+  "id_features": [
+   "Low-growing, mat-forming succulent with fleshy, triangular leaves.",
+   "Produces small, daisy-like flowers, typically yellow or orange.",
+   "Native to rocky, arid environments in southern Africa.",
+   "Leaves are thick and store water, typical of the Aizoaceae family."
+  ],
+  "lookalikes": [
+   "Other Delosperma species, which are visually similar but may lack psychoactive compounds.",
+   "Similar succulents in the Aizoaceae family, such as Carpobrotus (Hottentot fig), which are non-psychoactive.",
+   "Distinctive due to its specific geographic range and succulent morphology."
+  ],
+  "prep": {
+   "summary": "The plant is typically dried and prepared as a tea or infusion.",
+   "steps": [
+    "Harvest the leaves and stems of the plant.",
+    "Air-dry the plant material in a shaded, well-ventilated area.",
+    "Grind the dried material into a coarse powder.",
+    "Steep the powder in hot water to create an infusion."
+   ],
+   "note": "Preparation methods are not widely standardized, and the psychoactive effects are potent and rapid."
+  },
+  "culture": {
+   "cultures": [
+    "San (Bushman) peoples",
+    "Khoikhoi"
+   ],
+   "ritual": "Used in traditional healing and spiritual ceremonies, often by San shamans, to induce altered states of consciousness for divination or healing.",
+   "context": "Part of the rich ethnobotanical heritage of southern Africa, where various plants are used for their psychoactive properties in ritual contexts."
+  },
+  "legality": "Status varies by jurisdiction; check local law. In many countries, DMT is a controlled substance, making the possession or use of plants containing it illegal.",
+  "safety": "Psychoactive effects can be intense; consult a qualified professional before use. Potential for adverse reactions, especially in individuals with certain medical conditions or when combined with other substances."
+ },
+ "Mandarin orange": {
+  "id": "mandarin_orange",
+  "name": "Mandarin orange",
+  "sci": "Mandarin orange",
+  "family": "Rutaceae (Citrus family)",
+  "form": "Evergreen tree with fragrant leaves and segmented citrus fruit",
+  "continent": "Asia",
+  "regions": [
+   "China",
+   "Vietnam",
+   "Japan",
+   "India",
+   "Mediterranean region"
+  ],
+  "coords": [
+   30.0,
+   114.0
+  ],
+  "habitat": "Temperate to subtropical orchards and gardens",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Mandarin_Oranges_%28Citrus_Reticulata%29.jpg/1280px-Mandarin_Oranges_%28Citrus_Reticulata%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Mandarin orange (Citrus reticulata) fruit",
+  "parts": "Fruit, peel, and leaf",
+  "compounds": [
+   "traces of N-methylated tryptamine derivative in leaf"
+  ],
+  "pharmacology": "Primarily a nutritional food source rich in vitamin C and flavonoids; while trace psychoactive compounds have been detected in the leaves, there is no clinical evidence supporting the use of mandarin orange as a psychoactive or therapeutic agent.",
+  "id_features": [
+   "Small, round to oval fruit with loose, easily peeled skin.",
+   "Bright orange color and sweet, slightly acidic flavor.",
+   "Evergreen tree with glossy, dark green leaves.",
+   "Fragrant white flowers with five petals."
+  ],
+  "lookalikes": [
+   "Distinguish from common oranges by the looser, thinner peel and smaller size.",
+   "Distinguish from tangerines by the flatter shape and more distinct segments.",
+   "Distinguish from clementines by the slightly larger size and more pronounced acidity."
+  ],
+  "prep": {
+   "summary": "The fruit is typically eaten fresh, with the peel removed by hand.",
+   "steps": [
+    "Select ripe, firm fruit with a bright orange color.",
+    "Peel the skin by hand, removing the white pith if desired.",
+    "Separate the segments and eat fresh.",
+    "The peel can be dried for use in teas or as a spice."
+   ],
+   "note": "The fruit is a common part of festive meals and gift-giving traditions in many Asian cultures."
+  },
+  "culture": {
+   "cultures": [
+    "Chinese",
+    "Japanese",
+    "Vietnamese",
+    "Korean",
+    "Mediterranean"
+   ],
+   "ritual": "A symbol of good luck, prosperity, and wealth, often given as a gift during the Lunar New Year and other festive occasions.",
+   "context": "A culturally significant fruit representing abundance and family unity in East and Southeast Asian traditions."
+  },
+  "legality": "A legal and widely cultivated food crop in most jurisdictions.",
+  "safety": "Generally safe for consumption; individuals with citrus allergies should exercise caution."
+ }
+}

@@ -1,0 +1,6 @@
+09:45:52 REPAIR Delosperma ecklonis: OK 238s
+09:46:07 REPAIR Delosperma esterhuyseniae: OK 253s
+09:49:25 REPAIR Delosperma harazianum: OK 198s
+09:49:29 REPAIR Delosperma hallii: OK 217s
+10:00:16 REPAIR Mandarin orange: FAIL 651s (sci-mismatch)
+10:00:16 FATAL: repair failed for Mandarin orange: sci-mismatch
