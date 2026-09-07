@@ -166,6 +166,69 @@
     .sheet-body{padding:22px}
     .sheet-hero{height:240px}
   }
+
+  /* ---------- garden ---------- */
+  #garden-sec .garden-tools{display:flex; flex-wrap:wrap; gap:14px; align-items:center;
+    background:linear-gradient(180deg,var(--panel),var(--bg2)); border:1px solid var(--line);
+    border-radius:var(--radius); padding:14px 16px; margin-bottom:18px}
+  .gt-label{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--faint); font-weight:600}
+  .months{display:flex; gap:5px}
+  .months button{width:34px; height:34px; border-radius:9px; border:1px solid var(--line2);
+    background:transparent; color:var(--muted); font-size:12.5px; font-weight:600; cursor:pointer;
+    transition:.15s; font-family:inherit; padding:0}
+  .months button:hover{color:var(--text); border-color:var(--faint)}
+  .months button.active{background:var(--green); border-color:var(--green); color:#07130b}
+  .months button.all.active{background:var(--gold); border-color:var(--gold); color:#1a1305}
+  .hemi{display:flex; gap:6px}
+  .hemi button{background:transparent; border:1px solid var(--line2); color:var(--muted);
+    padding:8px 13px; border-radius:999px; font-size:13px; cursor:pointer; transition:.18s; font-family:inherit}
+  .hemi button.active{background:var(--green2); border-color:var(--green2); color:#0a1810; font-weight:700}
+  .season-note{font-size:12.5px; color:var(--faint); margin-left:auto}
+  .garden-scroll{overflow-x:auto; border-radius:var(--radius); border:1px solid var(--line2);
+    background:#0a0d0b; box-shadow:var(--shadow)}
+  .garden-scroll svg{display:block; min-width:960px; width:100%; height:auto}
+  .gplant{cursor:pointer}
+  .gplant .glyph{transition:transform .18s ease; transform-box:fill-box; transform-origin:center bottom}
+  .gplant:hover .glyph{transform:scale(1.14)}
+  .gplant.dim{opacity:.28}
+  .gplant.sel .halo{opacity:.9}
+  .gplant .halo{opacity:0; transition:.2s}
+  .gplant.sel .gname{fill:var(--gold2); font-weight:700}
+  #ginfo{background:linear-gradient(180deg,var(--panel2),var(--bg2)); border:1px solid var(--line2);
+    border-radius:var(--radius); padding:22px 24px; margin-top:18px; display:none}
+  #ginfo.open{display:block}
+  .gi-head{display:flex; align-items:flex-start; gap:16px; flex-wrap:wrap}
+  .gi-head h3{font-size:24px}
+  .gi-head .sci{color:var(--muted); font-size:13.5px; font-style:italic}
+  .gi-zone{margin-left:auto; text-align:right}
+  .gi-zone .k{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+  .gi-zone .v{color:var(--green2); font-weight:600; font-size:14px}
+  .gi-facts{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:18px 0}
+  .gi-facts .k{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:3px}
+  .gi-facts .v{font-size:13.5px; color:var(--text)}
+  .cal{display:flex; gap:4px; margin:8px 0 4px; flex-wrap:wrap}
+  .cal span{flex:1; min-width:34px; text-align:center; font-size:11px; font-weight:600;
+    padding:7px 0; border-radius:7px; border:1px solid var(--line2); color:var(--faint); background:var(--panel)}
+  .cal span.on{background:var(--gold); border-color:var(--gold); color:#1a1305}
+  .gi-part{display:flex; gap:12px; align-items:flex-start; margin-top:14px;
+    background:rgba(79,157,111,.07); border:1px solid rgba(79,157,111,.25); border-radius:10px; padding:14px 16px}
+  .gi-part .pk{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--green2); white-space:nowrap; font-weight:700}
+  .gi-note{color:var(--muted); font-size:13.5px; margin:12px 0 0}
+  .gi-actions{margin-top:16px}
+  .gi-actions button{background:var(--gold); color:#1a1305; border:none; font-weight:600;
+    padding:10px 18px; border-radius:9px; cursor:pointer; font-size:13.5px; font-family:inherit}
+  .gi-actions button:hover{background:var(--gold2)}
+  .gmob{display:none}
+  @media(max-width:720px){ .season-note{display:none} }
+
+  /* detail-sheet harvest calendar (shared with garden info) */
+  .sheet-body .cal{max-width:480px}
+
+
+  .gplant .gname{fill:#9fb0a2; font-size:9.5px; font-family:'Inter',sans-serif; pointer-events:none}
+  .gplant.on .halo{opacity:.95}
+  .months button{width:38px}
+
 </style>
 </head>
 <body>
@@ -219,6 +282,39 @@
       <span><i style="background:#d1604f"></i> Fungus (not a plant)</span>
       <span style="margin-left:auto">Map tiles © OpenStreetMap contributors · © CARTO</span>
     </div>
+  </div>
+</section>
+
+
+<section id="garden-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>The Living Garden</h2>
+        <p>Every plant of the atlas, planted by the climate it needs — from humid rainforest beds to desert gravel. Pick a month to see what is in its harvest season, tap a plant for its climate, habitat, harvest window and the part traditionally gathered.</p>
+      </div>
+      <span class="count" id="gardencount"></span>
+    </div>
+
+    <div class="garden-tools">
+      <div>
+        <div class="gt-label" style="margin-bottom:7px">Harvest month</div>
+        <div class="months" id="gmonths"></div>
+      </div>
+      <div>
+        <div class="gt-label" style="margin-bottom:7px">Season view</div>
+        <div class="hemi">
+          <button id="hemiN" class="active" title="Show seasons as they fall in each plant's native hemisphere">Native</button>
+          <button id="hemiS" title="Flip the calendar as the same months fall in the southern hemisphere">S. Hemisphere</button>
+        </div>
+      </div>
+      <div class="season-note" id="gnote"></div>
+    </div>
+
+    <div class="garden-scroll"><svg id="gardensvg" viewBox="0 0 1200 810" role="img"
+      aria-label="Stylized garden cross-section: six climate beds with all ritual plants planted by habitat"></svg></div>
+
+    <div id="ginfo" aria-live="polite"></div>
   </div>
 </section>
 
@@ -1505,6 +1601,26 @@ function openDetail(id, fromMap){
             <p style="margin:0">${esc(p.habitat)}</p>
           </div>
         </div>
+        ${CLIMATE[p.id] ? `
+        <div class="two" style="margin-top:14px">
+          <div class="box">
+            <h5>Climate</h5>
+            <p style="margin:0 0 8px">${esc(CLIMATE[p.id].climate)}</p>
+            <div class="pillrow">
+              <span class="pill">🌡 ${esc(CLIMATE[p.id].temp)}</span>
+              <span class="pill">🌧 ${esc(CLIMATE[p.id].rain)}</span>
+              <span class="pill">⛰ ${esc(CLIMATE[p.id].alt)}</span>
+            </div>
+            <p style="margin:10px 0 0;color:var(--muted);font-size:13px">Garden bed: <b style="color:var(--green2)">${ZONES[CLIMATE[p.id].bed].name}</b></p>
+          </div>
+          <div class="box">
+            <h5>Harvest — when &amp; which part</h5>
+            <p style="margin:0 0 4px"><b style="color:var(--gold2)">${esc(CLIMATE[p.id].window)}</b></p>
+            <div class="cal" style="max-width:480px">${MN.map((n,i)=>`<span class="${CLIMATE[p.id].months.includes(i+1)?"on":""}">${ML[i]}</span>`).join("")}</div>
+            <div class="gi-part" style="margin-top:8px"><span class="pk">Part gathered</span><span>${esc(CLIMATE[p.id].part)}</span></div>
+            <p class="gi-note">${esc(CLIMATE[p.id].hnote)}</p>
+          </div>
+        </div>` : ""}
       </div>
 
       <div class="block">
@@ -1576,6 +1692,288 @@ $("#seg").addEventListener("click",e=>{
 q.addEventListener("input",applyFilter);
 
 renderGrid(PLANTS);
+
+/* ============================== LIVING GARDEN ============================== */
+const ZONES = [
+  {name:"Tropical Rainforest",      kop:"Af · ever-wet, no dry season",        rain:"2,500–4,000 mm/yr", color:"#173220", accent:"#4f9d6f"},
+  {name:"Seasonal Tropics",         kop:"Aw / As · summer-rain, winter-dry",   rain:"600–1,500 mm/yr",   color:"#2b3c1d", accent:"#9fae4e"},
+  {name:"Cloud-Forest Highlands",   kop:"Cwb · misty mid-altitude slopes",     rain:"1,000–2,000 mm/yr", color:"#1b3126", accent:"#6fc393"},
+  {name:"Temperate & Boreal",       kop:"Cfb / Dfc · cold winters",            rain:"500–1,200 mm/yr",   color:"#243a2c", accent:"#5d8f6b"},
+  {name:"Mediterranean & Steppe",   kop:"Csa / BSk · dry summers",             rain:"300–700 mm/yr",     color:"#3d3f22", accent:"#c9b45a"},
+  {name:"Desert & Karoo",           kop:"BWh / BWk · arid",                    rain:"50–350 mm/yr",      color:"#48402a", accent:"#d4a94e"}
+];
+
+const CLIMATE = {
+  ayahuasca:{bed:0, climate:"Af — hot, ever-wet equatorial rainforest", temp:"23–32 °C, no true winter", rain:"2,500–4,000 mm/yr", alt:"100–400 m", hemi:"E", months:[1,2,3,4,5,6,7,8,9,10,11,12],
+    window:"Year-round; vine cut from mature 3+ year growth", part:"Mature caapi vine stems + chacruna leaves",
+    hnote:"Only a length of vine is taken so the plant regrows; chacruna is picked leaf-by-leaf from shrubs tended in garden plots."},
+  peyote:{bed:5, climate:"BWh — hot Chihuahuan desert on limestone", temp:"0–40 °C, freezing winter nights", rain:"150–350 mm/yr", alt:"1,200–1,600 m", hemi:"N", months:[5,6,7,8,9],
+    window:"Late spring–early autumn (May–Sep), after summer rains swell the buttons", part:"The crown ('button') — sliced horizontally above ground",
+    hnote:"Traditional regenerative harvest slices the crown off and leaves the root to regrow over many years; the species is slow and strictly protected."},
+  san_pedro:{bed:5, climate:"BWk — dry Andean valleys with cold nights", temp:"5–30 °C, cold nights year-round", rain:"200–500 mm/yr", alt:"2,000–3,000 m", hemi:"S", months:[11,12,1,2],
+    window:"Andean summer (Nov–Feb), after winter dormancy", part:"Columnar stem sections",
+    hnote:"Cuttings are taken from mature columns; the plant keeps growing from the cut."},
+  iboga:{bed:0, climate:"Af — equatorial Gabonese rainforest", temp:"23–32 °C", rain:"1,800–2,800 mm/yr", alt:"0–600 m", hemi:"E", months:[6,7,8,9],
+    window:"Dry season (Jun–Sep), when alkaloid-rich root bark strips freely", part:"Root bark of mature shrubs",
+    hnote:"Roots are partially dug, bark stripped and the root reburied so the shrub survives — the species is under heavy conservation pressure."},
+  kanna:{bed:5, climate:"BSk/BWk — semi-arid succulent Karoo", temp:"5–38 °C", rain:"100–300 mm/yr", alt:"300–900 m", hemi:"S", months:[9,10,11],
+    window:"Spring flowering in the Karoo (Sep–Nov)", part:"Leaves and succulent stems",
+    hnote:"Herders traditionally walk after rain, twisting off the juicy leaves to dry in the shade."},
+  kava:{bed:0, climate:"Af — humid tropical Pacific islands", temp:"20–32 °C", rain:"2,000–4,000 mm/yr", alt:"0–500 m", hemi:"S", months:[1,2,3,4,5,6,7,8,9,10,11,12],
+    window:"Any month once the stool reaches 3–5 years", part:"Lateral roots and lower stem ('waka' and 'lawena')",
+    hnote:"The crown is lifted whole at harvest and the tops are replanted as new cuttings."},
+  fly_agaric:{bed:3, climate:"Dfc — boreal forest under birch and pine", temp:"−20–25 °C", rain:"400–800 mm/yr", alt:"0–1,200 m", hemi:"N", months:[8,9,10],
+    window:"Late summer–autumn fruiting (Aug–Oct)", part:"Caps, traditionally dried",
+    hnote:"Fruiting bodies are picked as they emerge; slow drying converts ibotenic acid into the more potent muscimol."},
+  psilocybe:{bed:2, climate:"Cwb — subtropical highland meadows and woods", temp:"10–26 °C", rain:"800–1,500 mm/yr", alt:"1,500–2,200 m", hemi:"N", months:[6,7,8,9],
+    window:"Rainy-season fruiting (Jun–Sep)", part:"Whole fruiting bodies",
+    hnote:"Picked after rain at maturity; Mazatec curanderas traditionally dried and stored them in pairs."},
+  jurema:{bed:1, climate:"As — caatinga: hot, seasonally dry thorn forest", temp:"18–38 °C", rain:"400–800 mm/yr (summer rains)", alt:"300–800 m", hemi:"S", months:[5,6,7,8,9,10],
+    window:"Dry season (May–Oct), when the bark strips freely", part:"Root bark of mature shrubs",
+    hnote:"Bark is taken in strips so the root survives, and gathered close to the moment of ceremony."},
+  ololiuqui:{bed:1, climate:"Aw — tropical dry forest and milpa margins", temp:"12–32 °C", rain:"600–1,200 mm/yr", alt:"1,000–1,800 m", hemi:"N", months:[10,11,12],
+    window:"End of the rainy season (Oct–Dec) as seed capsules dry", part:"Seeds",
+    hnote:"Seed capsules are gathered from the twining vines after the flowers fall."},
+  salvia_divinorum:{bed:2, climate:"Cwb — humid, shaded cloud-forest ravines", temp:"8–26 °C", rain:"1,500–3,000 mm/yr", alt:"300–1,800 m", hemi:"N", months:[1,2,3,4,5,6,7,8,9,10,11,12],
+    window:"Grown in the rainy season (Jun–Oct); leaves picked year-round from tended stands", part:"Fresh leaves",
+    hnote:"The plant rarely sets seed and survives only under human care, kept in hidden ravine plots by Mazatec curanderos."},
+  betel_nut:{bed:1, climate:"Am — tropical monsoon with heavy summer rains", temp:"16–36 °C", rain:"1,500–3,500 mm/yr", alt:"0–600 m", hemi:"N", months:[1,2,3,4,5,6,7,8,9,10,11,12],
+    window:"Year-round; clusters gathered as they ripen (peak after the monsoon)", part:"The mature seed (nut)",
+    hnote:"Ripe orange fruit clusters are harvested by climbing the palm or with cutting poles."},
+  opium_poppy:{bed:4, climate:"Csa — Mediterranean: cool wet winter, dry summer", temp:"0–30 °C", rain:"400–700 mm/yr", alt:"500–1,600 m", hemi:"N", months:[3,4,5],
+    window:"Late spring (Mar–May), scored 1–2 weeks after the petals drop", part:"Latex of the unripe seed capsule",
+    hnote:"Capsules are scored in the afternoon and the oozed latex scraped off next morning — strictly illegal outside licensed pharmaceutical crops."},
+  kratom:{bed:0, climate:"Af — hot, humid lowland rainforest", temp:"22–35 °C", rain:"1,500–2,500 mm/yr", alt:"0–300 m", hemi:"E", months:[1,2,3,4,5,6,7,8,9,10,11,12],
+    window:"Year-round; leaves richest at the end of the dry season", part:"Mature leaves",
+    hnote:"Branches are stripped leaf-by-leaf or coppiced; trees reflush within weeks."},
+  blue_lotus:{bed:1, climate:"Aw/BSh — Nile wetlands, hot with a dry spring", temp:"12–38 °C", rain:"500–1,000 mm/yr", alt:"0–300 m", hemi:"N", months:[6,7,8,9],
+    window:"Summer bloom (Jun–Sep), gathered fully open at dawn", part:"Flowers and buds",
+    hnote:"The flowers open at sunrise and close by noon — they are picked at full open and sun-dried."},
+  dream_herb:{bed:1, climate:"Aw — tropical dry hillsides of Oaxaca", temp:"8–32 °C", rain:"800–1,400 mm/yr", alt:"500–1,600 m", hemi:"N", months:[10,11,12],
+    window:"After flowering, late in the rainy season (Oct–Dec)", part:"Dried leaves and flower clusters",
+    hnote:"Branches are cut and hung to dry; the intensely bitter leaf is used fresh or dried."},
+  dream_root:{bed:3, climate:"Cfb — South African grassland and riverbanks", temp:"4–30 °C", rain:"400–800 mm/yr", alt:"300–1,500 m", hemi:"S", months:[4,5,6,7,8],
+    window:"Autumn–winter (Apr–Aug in South Africa), after top growth dies back", part:"Woody root of established plants",
+    hnote:"Roots are dug from mature plants, washed and dried — taken as tea or smoked for lucid dreams."},
+  cannabis:{bed:3, climate:"BSk/DSc — continental steppe (origin); now worldwide", temp:"−10–32 °C", rain:"300–600 mm/yr", alt:"0–2,500 m", hemi:"N", months:[9,10],
+    window:"Early–mid autumn (Sep–Oct) as stigmas wither and resin peaks", part:"Resinous tips of unfertilised female flowers",
+    hnote:"Female flower tops are cut and shade-dried; pollen from male plants ruins the resin."},
+  coca:{bed:2, climate:"Cfb/Af — humid Andean cloud-forest slopes", temp:"10–28 °C", rain:"1,200–2,000 mm/yr", alt:"500–2,000 m", hemi:"S", months:[1,2,3,4,5,6,7,8,9,10,11,12],
+    window:"Year-round — 3–4 picks a year as leaves mature", part:"Leaves",
+    hnote:"Individual leaves are pinched off by hand at the stalk; a tended bush yields for decades."},
+  khat:{bed:2, climate:"Cwb/BSh — East African and Yemeni highlands", temp:"10–32 °C", rain:"400–900 mm/yr", alt:"1,400–2,500 m", hemi:"N", months:[1,2,3,4,5,6,7,8,9,10,11,12],
+    window:"Year-round; tenderest shoots just after the rains", part:"Young leaves and soft twig tips",
+    hnote:"Branch tips are picked in the early morning and must reach the chewer fresh within days."},
+  tobacco:{bed:3, climate:"Cfa — humid subtropical cropland", temp:"5–32 °C", rain:"600–1,100 mm/yr", alt:"0–1,000 m", hemi:"N", months:[8,9],
+    window:"Late summer (Aug–Sep), primed leaf-by-leaf as they yellow", part:"Leaves, picked bottom-up",
+    hnote:"Leaves ripen from the bottom up and are cured (air or flue) before use."},
+  mandrake:{bed:4, climate:"Csa — Mediterranean, dry stony hills", temp:"2–32 °C", rain:"300–600 mm/yr", alt:"0–800 m", hemi:"N", months:[10,11],
+    window:"Autumn (Oct–Nov), dug after the leaves wither", part:"The root",
+    hnote:"The root is lifted once top growth dies; its forked, human-like shape fed a whole body of harvest folklore."},
+  mugwort:{bed:3, climate:"Dfb/Cfb — temperate waysides and waste ground", temp:"−15–30 °C", rain:"500–900 mm/yr", alt:"0–1,500 m", hemi:"N", months:[7,8,9],
+    window:"Just before and during flowering (Jul–Sep)", part:"Leaves and flowering tops",
+    hnote:"Upper stems are cut at full aroma, before flowers fully open, and dried in bundles."},
+  damiana:{bed:5, climate:"BWh — arid Baja and Tex-Mex scrub", temp:"5–38 °C", rain:"200–450 mm/yr", alt:"0–1,200 m", hemi:"N", months:[6,7,8,9,10],
+    window:"Summer–autumn flowering (Jun–Oct)", part:"Aromatic leaves and flowers",
+    hnote:"Flowering tops are gathered and shade-dried; the leaf carries the aroma."},
+  harmala:{bed:4, climate:"BSk/BWk — arid steppe and roadsides", temp:"−5–38 °C", rain:"150–350 mm/yr", alt:"400–2,000 m", hemi:"N", months:[8,9],
+    window:"Late summer (Aug–Sep) as pods dry and split", part:"Seeds",
+    hnote:"Seed capsules are collected just before they shatter; plants are often cut and threshed."},
+  ephedra:{bed:4, climate:"BWk/BSk — cold arid steppe and high desert", temp:"−20–35 °C", rain:"100–300 mm/yr", alt:"1,000–3,000 m", hemi:"N", months:[8,9,10],
+    window:"Late summer–autumn (Aug–Oct) when alkaloids peak", part:"Green photosynthetic stems",
+    hnote:"Stems are cut above the woody base; the shrub resprouts in spring."},
+  bissap:{bed:1, climate:"Aw — West African savanna, wet summer", temp:"18–38 °C", rain:"600–1,200 mm/yr", alt:"0–600 m", hemi:"N", months:[10,11],
+    window:"End of the rains (Oct–Nov) as calyces thicken", part:"Fleshy red calyces",
+    hnote:"Calyces are picked by hand about a week after petal-fall and sun-dried for the deep red infusion."},
+  jujube:{bed:1, climate:"BSh — seasonally dry, winter-dormant plains", temp:"−5–40 °C", rain:"300–800 mm/yr", alt:"0–700 m", hemi:"N", months:[2,3,4],
+    window:"Late winter–spring (Feb–Apr) as fruits ripen yellow-red", part:"Ripe fruit",
+    hnote:"Fruits are shaken or hand-picked from the thorny canopy at full ripeness."},
+  wormwood:{bed:4, climate:"Csb/Dfb — temperate with dry summers", temp:"−10–30 °C", rain:"350–700 mm/yr", alt:"300–1,800 m", hemi:"N", months:[7,8],
+    window:"Midsummer, at full flower (Jul–Aug)", part:"Leaves and flowering tops",
+    hnote:"Upper flowering stems are cut at peak bloom and dried fast to keep the bitter essential oils."}
+};
+
+const GLYPH = {ayahuasca:"🌿", iboga:"🌳", kratom:"🍃", salvia_divinorum:"☘️", kava:"🪴",
+  betel_nut:"🌴", blue_lotus:"🪷", dream_herb:"🌼", ololiuqui:"🌸", jurema:"🌳", bissap:"🌺", jujube:"🫒",
+  coca:"🍃", khat:"🌿", psilocybe:"🍄",
+  cannabis:"🌱", tobacco:"🍃", mugwort:"🌾", fly_agaric:"🍄", dream_root:"🌷",
+  opium_poppy:"🌺", mandrake:"🥕", wormwood:"🌿", harmala:"🌰", ephedra:"🎋",
+  peyote:"🌵", san_pedro:"🌵", kanna:"🌼", damiana:"🌻"};
+const GSIZE = {ayahuasca:"herb", iboga:"tree", kratom:"shrub", salvia_divinorum:"herb", kava:"shrub",
+  betel_nut:"tree", blue_lotus:"herb", dream_herb:"herb", ololiuqui:"herb", jurema:"tree", bissap:"herb", jujube:"tree",
+  coca:"shrub", khat:"shrub", psilocybe:"fungus",
+  cannabis:"shrub", tobacco:"shrub", mugwort:"herb", fly_agaric:"fungus", dream_root:"herb",
+  opium_poppy:"herb", mandrake:"herb", wormwood:"herb", harmala:"herb", ephedra:"shrub",
+  peyote:"cactus", san_pedro:"cactus", kanna:"herb", damiana:"shrub"};
+const GPX = {tree:58, cactus:48, shrub:44, fungus:36, herb:34};
+
+const MN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const ML = ["J","F","M","A","M","J","J","A","S","O","N","D"];
+
+const gsvg = document.getElementById("gardensvg");
+const ginfo = document.getElementById("ginfo");
+let gmonth = 0, gview = "N";
+
+function inSeason(id, m){
+  const c = CLIMATE[id];
+  let mm = m;
+  if(gview === "S" && c.hemi === "N") mm = ((m + 5) % 12) + 1;   /* N-native season lands +6 months on a southern calendar */
+  else if(gview === "N" && c.hemi === "S" && false){}             /* native view: months are stored as they occur in-range */
+  return c.months.includes(m === 0 ? -1 : mm);
+}
+
+/* ---- terrain ---- */
+const GW = 1400, GH = 810;
+const zx = [0, 233.4, 466.8, 700.2, 933.6, 1167, 1400];
+const zc = zx.slice(0,6).map((v,i)=>(v+zx[i+1])/2);
+const gy = [585, 605, 552, 590, 602, 614];
+function sY(x){
+  if(x <= zc[0]) return gy[0];
+  for(let i=0;i<5;i++) if(x <= zc[i+1]) return gy[i] + (gy[i+1]-gy[i]) * (x-zc[i])/(zc[i+1]-zc[i]);
+  return gy[5];
+}
+
+function buildGarden(){
+  let s = `<defs>
+    <linearGradient id="gsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e0c"/><stop offset="1" stop-color="#16261b"/>
+    </linearGradient>
+    <linearGradient id="gsoil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d130f"/><stop offset="1" stop-color="#080b09"/>
+    </linearGradient>
+  </defs>`;
+  s += `<rect width="${GW}" height="${GH}" fill="url(#gsky)"/>`;
+  /* sun over the desert */
+  s += `<circle cx="1265" cy="120" r="40" fill="#e8c877" opacity=".9"/><circle cx="1265" cy="120" r="66" fill="#e8c877" opacity=".1"/>`;
+  /* rain clouds over the rainforest */
+  s += `<text x="70" y="150" font-size="42">🌧️</text><text x="165" y="205" font-size="34" opacity=".8">🌧️</text>`;
+  /* mist over highlands + mountains */
+  s += `<text x="470" y="170" font-size="38" opacity=".75">🌫️</text>`;
+  s += `<path d="M440,560 L560,400 L680,560 Z" fill="#223927"/><path d="M560,400 L596,443 L528,443 Z" fill="#dfe8e2" opacity=".75"/>`;
+  s += `<path d="M640,560 L730,455 L820,560 Z" fill="#1c3023"/><path d="M730,455 L755,485 L705,485 Z" fill="#dfe8e2" opacity=".6"/>`;
+  /* terrain */
+  for(let i=0;i<6;i++){
+    const x0 = Math.max(0, zx[i]-40), x1 = Math.min(GW, zx[i+1]+40);
+    s += `<path d="M${x0},${sY(x0)} L${x1},${sY(x1)} L${x1},${GH} L${x0},${GH} Z" fill="${ZONES[i].color}"/>`;
+    if(i>0) s += `<line x1="${zx[i]}" y1="${sY(zx[i])}" x2="${zx[i]}" y2="742" stroke="#0c100e" stroke-width="2" stroke-dasharray="3 6" opacity=".7"/>`;
+  }
+  s += `<rect y="742" width="${GW}" height="${GH-742}" fill="url(#gsoil)"/>`;
+  /* zone labels */
+  for(let i=0;i<6;i++){
+    const cx = zc[i];
+    s += `<text x="${cx}" y="762" text-anchor="middle" font-size="12.5" font-weight="700" fill="${ZONES[i].accent}" font-family="Inter,sans-serif" letter-spacing=".06em" style="text-transform:uppercase">${ZONES[i].name}</text>`;
+    s += `<text x="${cx}" y="779" text-anchor="middle" font-size="10.5" fill="#6f8072" font-family="Inter,sans-serif">${ZONES[i].kop}</text>`;
+    s += `<text x="${cx}" y="794" text-anchor="middle" font-size="10.5" fill="#6f8072" font-family="Inter,sans-serif">${ZONES[i].rain}</text>`;
+  }
+  /* plants: two rows per zone, larger behind */
+  const order = {tree:0, cactus:1, shrub:2, fungus:3, herb:4};
+  for(let i=0;i<6;i++){
+    const list = PLANTS.filter(p=>CLIMATE[p.id] && CLIMATE[p.id].bed === i)
+      .sort((a,b)=>order[GSIZE[a.id]] - order[GSIZE[b.id]]);
+    const back = list.filter((_,k)=>k % 2 === 0), front = list.filter((_,k)=>k % 2 === 1);
+    [[back,true],[front,false]].forEach(([row,isBack])=>{
+      row.forEach((p,k)=>{
+        const zw = zx[i+1]-zx[i], pad = 34;
+        const x = zx[i] + pad + (k+0.5)*(zw-2*pad)/row.length + ((k*53+i*29)%13-6);
+        const y = sY(x) - (isBack ? 58 : 4);
+        const size = GPX[GSIZE[p.id]] * (isBack ? 0.9 : 1);
+        const c = CLIMATE[p.id];
+        s += `<g class="gplant" data-id="${p.id}" data-months="${c.months.join(",")}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})">
+          <circle class="halo" cy="${(-size*0.42).toFixed(1)}" r="${(size*0.68).toFixed(1)}" fill="none" stroke="#d4a94e" stroke-width="2.5" stroke-dasharray="5 4"/>
+          <text class="glyph" y="0" font-size="${size.toFixed(0)}" text-anchor="middle">${GLYPH[p.id]}</text>
+          ${isBack ? "" : `<text class="gname" y="16" text-anchor="middle">${p.name.length>14 ? p.name.split(" ")[0] : p.name}</text>`}
+          <title>${p.name} — ${c.window}</title>
+          <circle cy="${(-size*0.42).toFixed(1)}" r="${(size*0.72).toFixed(1)}" fill="transparent"/>
+        </g>`;
+      });
+    });
+  }
+  gsvg.innerHTML = s;
+  gsvg.addEventListener("click", e=>{
+    const g = e.target.closest(".gplant"); if(!g) return;
+    gsvg.querySelectorAll(".gplant.sel").forEach(el=>el.classList.remove("sel"));
+    g.classList.add("sel");
+    showGInfo(g.dataset.id);
+  });
+}
+
+function showGInfo(id){
+  const p = PLANTS.find(x=>x.id===id), c = CLIMATE[id];
+  const z = ZONES[c.bed];
+  const cal = c.months.map(m=>`<span class="${inSeason(id,gmonth) && m===((gview==="S"&&c.hemi==="N")?((gmonth+5)%12)+1:gmonth) ? "on" : c.months.includes(m) ? "" : ""}">${MN[m-1]}</span>`);
+  const marks = new Set(c.months.map(m => (gview==="S" && c.hemi==="N") ? ((m+5)%12)+1 : m));
+  const cal2 = MN.map((n,i)=>`<span class="${marks.has(i+1)?"on":""}">${ML[i]}</span>`).join("");
+  ginfo.innerHTML = `
+    <div class="gi-head">
+      <div>
+        <h3>${esc(p.name)}</h3>
+        <div class="sci">${esc(p.sci)}</div>
+      </div>
+      <div class="gi-zone">
+        <div class="k">Garden bed</div>
+        <div class="v">${z.name}</div>
+      </div>
+    </div>
+    <div class="gi-facts">
+      <div><div class="k">Climate</div><div class="v">${esc(c.climate)}</div></div>
+      <div><div class="k">Temperature</div><div class="v">${esc(c.temp)}</div></div>
+      <div><div class="k">Rainfall</div><div class="v">${esc(c.rain)}</div></div>
+      <div><div class="k">Altitude</div><div class="v">${esc(c.alt)}</div></div>
+    </div>
+    <div><div class="k" style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:2px">Harvest calendar (${gview==="S"?"southern calendar":"native range"})</div>
+      <div class="cal" style="max-width:480px">${cal2}</div>
+    </div>
+    <div class="gi-part"><span class="pk">When to pick</span><span>${esc(c.window)}${c.hemi==="E"?" — no true season at the equator":(c.hemi==="S"?" (southern-hemisphere months)":" (northern-hemisphere months)")}</span></div>
+    <div class="gi-part" style="background:rgba(212,169,78,.06);border-color:rgba(212,169,78,.3)"><span class="pk" style="color:var(--gold2)">Which part</span><span>${esc(c.part)}</span></div>
+    <p class="gi-note">${esc(c.hnote)}</p>
+    <p class="gi-note" style="color:var(--faint)">Habitat: ${esc(p.habitat)}</p>
+    <div class="gi-actions"><button onclick="openDetail('${p.id}',false)">Open full profile</button></div>`;
+  ginfo.classList.add("open");
+  ginfo.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
+function updateGarden(){
+  let n = 0;
+  gsvg.querySelectorAll(".gplant").forEach(g=>{
+    g.classList.remove("on","dim");
+    if(gmonth){
+      if(inSeason(g.dataset.id, gmonth)){ g.classList.add("on"); n++; }
+      else g.classList.add("dim");
+    }
+  });
+  const note = document.getElementById("gnote");
+  if(gmonth){
+    note.textContent = `${n} of ${PLANTS.length} in harvest season · ${MN[gmonth-1]}${gview==="S" ? " (southern calendar)" : ""}`;
+  } else {
+    note.textContent = "Pick a month to highlight harvest windows";
+  }
+  if(ginfo.classList.contains("open")){
+    const sel = gsvg.querySelector(".gplant.sel");
+    if(sel) showGInfo(sel.dataset.id);
+  }
+}
+
+/* month buttons */
+(function(){
+  const holder = document.getElementById("gmonths");
+  const bAll = document.createElement("button");
+  bAll.textContent = "All"; bAll.className = "all active"; bAll.title = "Show every plant";
+  bAll.onclick = ()=>{ gmonth = 0; holder.querySelectorAll("button").forEach(x=>x.classList.remove("active")); bAll.classList.add("active"); updateGarden(); };
+  holder.appendChild(bAll);
+  MN.forEach((m,i)=>{
+    const b = document.createElement("button");
+    b.textContent = ML[i]; b.title = m;
+    b.onclick = ()=>{ gmonth = i+1; holder.querySelectorAll("button").forEach(x=>x.classList.remove("active")); b.classList.add("active"); updateGarden(); };
+    holder.appendChild(b);
+  });
+  const hN = document.getElementById("hemiN"), hS = document.getElementById("hemiS");
+  hN.onclick = ()=>{ gview = "N"; hN.classList.add("active"); hS.classList.remove("active"); updateGarden(); };
+  hS.onclick = ()=>{ gview = "S"; hS.classList.add("active"); hN.classList.remove("active"); updateGarden(); };
+})();
+
+buildGarden();
+updateGarden();
+document.getElementById("gardencount").textContent = `${PLANTS.length} plants · 6 climate beds`;
 </script>
 </body>
 </html>
