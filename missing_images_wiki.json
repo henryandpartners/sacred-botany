@@ -1,0 +1,191 @@
+[
+ {
+  "batch": "04",
+  "id": "mimosa_ophthalmocentra",
+  "sci": "Mimosa ophthalmocentra",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "05",
+  "id": "osteophloem_platyspermum",
+  "sci": "Osteophloem platyspermum",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "psychotria_expansa",
+  "sci": "Psychotria expansa",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "psychotria_rostrata",
+  "sci": "Psychotria rostrata",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "dutaillyea_drupacea",
+  "sci": "Dutaillyea drupacea",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "dutaillyea_oreophila",
+  "sci": "Dutaillyea oreophila",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "euodia_leptococca",
+  "sci": "Euodia leptococca",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "pilocarpus_organensis",
+  "sci": "Pilocarpus organensis",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "vepris_ampody",
+  "sci": "Vepris ampody",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "zanthoxylum_arborescens",
+  "sci": "Zanthoxylum arborescens",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "06",
+  "id": "zanthoxylum_procerum",
+  "sci": "Zanthoxylum procerum",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "08",
+  "id": "shepherdia_argentea",
+  "sci": "Shepherdia argentea",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "08",
+  "id": "shepherdia_pulchellum",
+  "sci": "Shepherdia pulchellum",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "08",
+  "id": "strychnos_melinoniana",
+  "sci": "Strychnos melinoniana",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "08",
+  "id": "banisteriopsis_argentia",
+  "sci": "Banisteriopsis argentia",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "09",
+  "id": "gymnacranthera_paniculata",
+  "sci": "Gymnacranthera paniculata",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "09",
+  "id": "passiflora_bryonoides",
+  "sci": "Passiflora bryonoides",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "10",
+  "id": "passiflora_warmingii",
+  "sci": "Passiflora warmingii",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "10",
+  "id": "calligonum_minimum",
+  "sci": "Calligonum minimum",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "10",
+  "id": "leptactinia_densiflora",
+  "sci": "Leptactinia densiflora",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "10",
+  "id": "pauridiantha_callicarpoides",
+  "sci": "Pauridiantha callicarpoides",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "10",
+  "id": "nauclea_diderrichii",
+  "sci": "Nauclea diderrichii",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "10",
+  "id": "pauridiantha_yalli",
+  "sci": "Pauridiantha yalli",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "10",
+  "id": "pavetta_lanceolata",
+  "sci": "Pavetta lanceolata",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "11",
+  "id": "ailanthus_malabarica",
+  "sci": "Ailanthus malabarica",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ailanthus_triphysa_RBG_Sydney.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Ailanthus triphysa"
+ },
+ {
+  "batch": "11",
+  "id": "picrasma_ailanthoides",
+  "sci": "Picrasma ailanthoides",
+  "image": null,
+  "title": null
+ },
+ {
+  "batch": "11",
+  "id": "peganum_nigellastrum",
+  "sci": "Peganum nigellastrum",
+  "image": null,
+  "title": null
+ }
+]

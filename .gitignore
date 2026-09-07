@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+resolve.log
+img_cache.json

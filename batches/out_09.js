@@ -194,7 +194,7 @@
    -77.0
   ],
   "habitat": "Tropical rainforests and cloud forests of the Amazon basin",
-  "image": "",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m38ee9af6576d04be895cfe5e8f4a55b1b",
   "alt": "Gymnacranthera paniculata vine",
   "parts": "Bark",
   "compounds": [

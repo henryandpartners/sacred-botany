@@ -1,0 +1,44 @@
+{
+ "dutaillyea_drupacea": {
+  "sci": "dutaillyea drupacea",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/355630872/original.jpeg",
+  "confidence": "med",
+  "source": "openverse_genus",
+  "candidate_title": "Dutaillyea amosensis"
+ },
+ "dutaillyea_oreophila": {
+  "sci": "dutaillyea oreophila",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/355630872/original.jpeg",
+  "confidence": "med",
+  "source": "openverse_genus",
+  "candidate_title": "Dutaillyea amosensis"
+ },
+ "pilocarpus_organensis": {
+  "sci": "pilocarpus organensis",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Pilocarpus_riedelianus_Engl._%2811133052134%29.jpg",
+  "confidence": "med",
+  "source": "openverse_genus",
+  "candidate_title": "Pilocarpus riedelianus Engl. (11133052134)"
+ },
+ "calligonum_minimum": {
+  "sci": "calligonum minimum",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Calligonum_aphyllum_100878787.jpg",
+  "confidence": "med",
+  "source": "openverse_genus",
+  "candidate_title": "Calligonum aphyllum 100878787"
+ },
+ "leptactinia_densiflora": {
+  "sci": "leptactinia densiflora",
+  "image": "https://bibdigital.rjb.csic.es/i/?IIIF=//2b/72/94/27/2b729427-e831-4082-9daf-1e1a48832019/iiif/P0540_Ser5_02_02_000142.tif/full/!1000,1000/0/default.jpg",
+  "confidence": "med",
+  "source": "openverse_genus",
+  "candidate_title": "Leptactinia baudoni"
+ },
+ "pauridiantha_yalli": {
+  "sci": "pauridiantha yalli",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Pauridiantha_floribunda_%28Rubiaceae%29_from_the_Dja_Faunal_Reserve.jpg",
+  "confidence": "med",
+  "source": "openverse_genus",
+  "candidate_title": "Pauridiantha floribunda (Rubiaceae) from the Dja Faunal Reserve"
+ }
+}

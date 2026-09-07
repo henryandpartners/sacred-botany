@@ -1,0 +1,86 @@
+{
+ "mimosa_ophthalmocentra": {
+  "sci": "mimosa ophthalmocentra",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/67123429/original.jpeg",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Mimosa ophthalmocentra"
+ },
+ "vepris_ampody": {
+  "sci": "vepris ampody",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/5711866/original.jpeg",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Vepris ampody"
+ },
+ "zanthoxylum_procerum": {
+  "sci": "zanthoxylum procerum",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3f9318ff838c84e5c9e996f8725fcbb10",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Zanthoxylum procerum Donn. Sm."
+ },
+ "zanthoxylum_arborescens": {
+  "sci": "zanthoxylum arborescens",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/5969138/original.jpeg",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Zanthoxylum arborescens"
+ },
+ "strychnos_melinoniana": {
+  "sci": "strychnos melinoniana",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m35e2a292e3d2e4a659195d3ce3ea5af7d",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Strychnos melinoniana Baill."
+ },
+ "gymnacranthera_paniculata": {
+  "sci": "gymnacranthera paniculata",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m38ee9af6576d04be895cfe5e8f4a55b1b",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Gymnacranthera paniculata (A. DC.) Warb. var. paniculata"
+ },
+ "passiflora_warmingii": {
+  "sci": "passiflora warmingii",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m348397af4eed14dd2b6d92669a2c8514a",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Passiflora warmingii subsp. chacoensis R.E. Fr."
+ },
+ "pauridiantha_callicarpoides": {
+  "sci": "pauridiantha callicarpoides",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/157523700/original.jpeg",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Pauridiantha callicarpoides"
+ },
+ "nauclea_diderrichii": {
+  "sci": "nauclea diderrichii",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Nauclea_diderrichii_%28De_Wild.%29_Merr._%28NMNH-00818851%29.jpg",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Nauclea diderrichii (De Wild.) Merr. (NMNH-00818851)"
+ },
+ "pavetta_lanceolata": {
+  "sci": "pavetta lanceolata",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Pavetta_lanceolata%2C_vrugte%2C_a%2C_Walter_Sisulu_NBT.jpg",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Pavetta lanceolata, vrugte, a, Walter Sisulu NBT"
+ },
+ "picrasma_ailanthoides": {
+  "sci": "picrasma ailanthoides",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m337128d02f436445990703d3ce135ec56",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Picrasma ailanthoides (Bunge) Planch."
+ },
+ "peganum_nigellastrum": {
+  "sci": "peganum nigellastrum",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/344227497/original.jpeg",
+  "confidence": "high",
+  "source": "openverse",
+  "candidate_title": "Peganum nigellastrum"
+ }
+}

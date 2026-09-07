@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Apply final30_patch.json into index.html + the matching batch source files."""
-import json, os, re
+import json, os, re, sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-patch = json.load(open(os.path.join(BASE, "final30_patch.json")))
+PATCHNAME = sys.argv[1] if len(sys.argv) > 1 else "final30_patch.json"
+patch = json.load(open(os.path.join(BASE, PATCHNAME)))
 if not patch:
     print("nothing to patch"); raise SystemExit(0)
 
@@ -38,7 +39,7 @@ for pid, info in patch.items():
             # determine key style (quoted or not) from im.group(0)
             keystyle = 'image:' if re.match(r'\s*image:', seg[im.start()]) else '"image":'
             html = (html[:m.end() + im.start()] + keystyle + '"' + img + '"'
-                    + html[m.end() + im.end()])
+                    + html[m.end() + im.end():])
             applied += 1
 open(htmlp, "w").write(html)
 print(f"index.html: applied {applied}/{len(patch)}")

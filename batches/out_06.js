@@ -477,7 +477,7 @@
    -58.0
   ],
   "habitat": "Tropical and subtropical moist broadleaf forests",
-  "image": "",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/355630872/original.jpeg",
   "alt": "Dutaillyea drupacea (small tree)",
   "parts": "Leaves",
   "compounds": [
@@ -532,7 +532,7 @@
    -71.9
   ],
   "habitat": "Cloud forests and high-altitude montane forests",
-  "image": "",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/355630872/original.jpeg",
   "alt": "Dutaillyea oreophila shrub in cloud forest",
   "parts": "Leaves",
   "compounds": [
@@ -760,7 +760,7 @@
    -40.0
   ],
   "habitat": "Tropical forests and scrublands",
-  "image": "",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Pilocarpus_riedelianus_Engl._%2811133052134%29.jpg",
   "alt": "Pilocarpus organensis (small tree or shrub)",
   "parts": "Leaves",
   "compounds": [
@@ -818,7 +818,7 @@
    46.8691
   ],
   "habitat": "Tropical and subtropical moist broadleaf forests",
-  "image": "",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/5711866/original.jpeg",
   "alt": "Vepris ampody tree",
   "parts": "Leaves and branches",
   "compounds": [
@@ -875,7 +875,7 @@
    -62.2159
   ],
   "habitat": "Tropical rainforests and gallery forests",
-  "image": "",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/5969138/original.jpeg",
   "alt": "Zanthoxylum arborescens (Kamb\u00f3) tree",
   "parts": "Bark (source of the sap/resin)",
   "compounds": [
@@ -931,7 +931,7 @@
    -109.0
   ],
   "habitat": "Semi-arid scrublands, rocky slopes, and canyon edges",
-  "image": "",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m3f9318ff838c84e5c9e996f8725fcbb10",
   "alt": "Zanthoxylum procerum (Chiricahua Pepper) shrub",
   "parts": "Leaves",
   "compounds": [

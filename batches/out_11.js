@@ -130,7 +130,7 @@
    -46.63
   ],
   "habitat": "Tropical and subtropical forests, often near riverbanks",
-  "image": "",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m337128d02f436445990703d3ce135ec56",
   "alt": "Picrasma ailanthoides tree",
   "parts": "Bark",
   "compounds": [
@@ -654,7 +654,7 @@
    69.2
   ],
   "habitat": "Dry, rocky slopes and open scrublands",
-  "image": "",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/344227497/original.jpeg",
   "alt": "Peganum nigellastrum (Black Seed) plant",
   "parts": "Seeds",
   "compounds": [

@@ -705,7 +705,7 @@
    -46.6
   ],
   "habitat": "Savanna, scrubland, and open woodlands",
-  "image": "",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/67123429/original.jpeg",
   "alt": "Mimosa ophthalmocentra (small tree/shrub)",
   "parts": "Roots (dried)",
   "compounds": [

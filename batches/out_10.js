@@ -192,7 +192,7 @@
    -46.6
   ],
   "habitat": "Tropical and subtropical woodlands and scrublands",
-  "image": "",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m348397af4eed14dd2b6d92669a2c8514a",
   "alt": "Passiflora warmingii vine",
   "parts": "Leaves and flowers",
   "compounds": [
@@ -249,7 +249,7 @@
    55.0
   ],
   "habitat": "Arid and semi-arid regions, often in sandy or rocky soils",
-  "image": "",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Calligonum_aphyllum_100878787.jpg",
   "alt": "Calligonum minimum shrub",
   "parts": "Whole plant",
   "compounds": [
@@ -304,7 +304,7 @@
    -55.0
   ],
   "habitat": "Tropical and subtropical moist broadleaf forests and gallery forests",
-  "image": "",
+  "image": "https://bibdigital.rjb.csic.es/i/?IIIF=//2b/72/94/27/2b729427-e831-4082-9daf-1e1a48832019/iiif/P0540_Ser5_02_02_000142.tif/full/!1000,1000/0/default.jpg",
   "alt": "Leptactinia densiflora shrub",
   "parts": "Bark and leaves",
   "compounds": [
@@ -419,7 +419,7 @@
    -50.0
   ],
   "habitat": "Subtropical forests and scrublands",
-  "image": "",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/157523700/original.jpeg",
   "alt": "Pauridiantha callicarpoides shrub",
   "parts": "Leaves and bark",
   "compounds": [
@@ -823,7 +823,7 @@
    14.5
   ],
   "habitat": "Dense tropical rainforests and riverine forests",
-  "image": "",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Nauclea_diderrichii_%28De_Wild.%29_Merr._%28NMNH-00818851%29.jpg",
   "alt": "Nauclea diderrichii (Gangamamba) tree",
   "parts": "Bark and root bark",
   "compounds": [
@@ -880,7 +880,7 @@
    -77.5
   ],
   "habitat": "Tropical rainforest understory",
-  "image": "",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Pauridiantha_floribunda_%28Rubiaceae%29_from_the_Dja_Faunal_Reserve.jpg",
   "alt": "Pauridiantha yalli vine",
   "parts": "Bark and leaves",
   "compounds": [
@@ -940,7 +940,7 @@
    11.5
   ],
   "habitat": "Tropical rainforests and forest edges",
-  "image": "",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Pavetta_lanceolata%2C_vrugte%2C_a%2C_Walter_Sisulu_NBT.jpg/1280px-Pavetta_lanceolata%2C_vrugte%2C_a%2C_Walter_Sisulu_NBT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "alt": "Pavetta lanceolata shrub",
   "parts": "Bark and leaves",
   "compounds": [

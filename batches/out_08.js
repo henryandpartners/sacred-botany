@@ -1,1411 +1,1411 @@
 [
-  {
-    "id": "elaegnus_angustifolia",
-    "name": "Russian Olive",
-    "sci": "Elaeagnus angustifolia",
-    "family": "Elaeagnaceae",
-    "form": "Hardy, thorny shrub or small tree with silvery leaves",
-    "continent": "Asia",
-    "regions": [
-      "Russia",
-      "Ukraine",
-      "Kazakhstan",
-      "Iran",
-      "Turkey",
-      "Central Asia"
-    ],
-    "coords": [
-      48.5,
-      44.5
-    ],
-    "habitat": "Dry, sandy, or rocky soils; often found in scrublands and riverbanks",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Elaeagnus_angustifolia_MHNT.BOT.2007.43.27.jpg/1280px-Elaeagnus_angustifolia_MHNT.BOT.2007.43.27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Elaeagnus angustifolia (Russian Olive) shrub",
-    "parts": "Leaves, bark, and fruit",
-    "compounds": [
-      "harman",
-      "etc"
-    ],
-    "pharmacology": "Contains beta-carbolines such as harman, which have been associated with psychoactive and anticholinesterase effects, though the clinical evidence for its use as a psychoactive or therapeutic agent is limited and not well-established in modern pharmacology.",
-    "id_features": [
-      "Leaves are lanceolate, silvery-white on the underside, and green on top.",
-      "Stems and branches are covered in sharp, prominent thorns.",
-      "Bark is grayish-brown and often peeling.",
-      "Produces small, yellowish, olive-like fruits with a sweet, slightly astringent taste."
-    ],
-    "lookalikes": [
-      "Distinguish from other Elaeagnus species by the narrow, lanceolate leaves and the presence of long, sharp thorns.",
-      "Do not confuse with true olives (Olea europaea), which have smooth, non-thorny branches and different leaf shapes.",
-      "The silvery underside of the leaves is a key identifier for the genus."
-    ],
-    "prep": {
-      "summary": "Traditionally, leaves or bark are brewed into a tea or infusion.",
-      "steps": [
-        "Harvest the leaves or small pieces of bark.",
-        "Dry the plant material thoroughly.",
-        "Steep the dried material in hot water to create an infusion.",
-        "Strain the liquid and consume as a tea."
-      ],
-      "note": "The plant is often used in traditional folk medicine, but the specific preparation methods can vary by region."
-    },
-    "culture": {
-      "cultures": [
-        "Central Asian",
-        "Caucasian",
-        "Eastern European"
-      ],
-      "ritual": "Used in traditional folk medicine for various ailments, including digestive issues and as a general tonic.",
-      "context": "A hardy plant valued for its ability to thrive in poor soils and its edible fruit."
-    },
-    "legality": "Legal in most jurisdictions as a wild plant or ornamental shrub; status varies by jurisdiction; check local law.",
-    "safety": "Contains beta-carbolines which may have psychoactive properties; consult a qualified professional before use, especially if taking other medications."
+ {
+  "id": "elaegnus_angustifolia",
+  "name": "Russian Olive",
+  "sci": "Elaeagnus angustifolia",
+  "family": "Elaeagnaceae",
+  "form": "Hardy, thorny shrub or small tree with silvery leaves",
+  "continent": "Asia",
+  "regions": [
+   "Russia",
+   "Ukraine",
+   "Kazakhstan",
+   "Iran",
+   "Turkey",
+   "Central Asia"
+  ],
+  "coords": [
+   48.5,
+   44.5
+  ],
+  "habitat": "Dry, sandy, or rocky soils; often found in scrublands and riverbanks",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Elaeagnus_angustifolia_MHNT.BOT.2007.43.27.jpg/1280px-Elaeagnus_angustifolia_MHNT.BOT.2007.43.27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Elaeagnus angustifolia (Russian Olive) shrub",
+  "parts": "Leaves, bark, and fruit",
+  "compounds": [
+   "harman",
+   "etc"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which have been associated with psychoactive and anticholinesterase effects, though the clinical evidence for its use as a psychoactive or therapeutic agent is limited and not well-established in modern pharmacology.",
+  "id_features": [
+   "Leaves are lanceolate, silvery-white on the underside, and green on top.",
+   "Stems and branches are covered in sharp, prominent thorns.",
+   "Bark is grayish-brown and often peeling.",
+   "Produces small, yellowish, olive-like fruits with a sweet, slightly astringent taste."
+  ],
+  "lookalikes": [
+   "Distinguish from other Elaeagnus species by the narrow, lanceolate leaves and the presence of long, sharp thorns.",
+   "Do not confuse with true olives (Olea europaea), which have smooth, non-thorny branches and different leaf shapes.",
+   "The silvery underside of the leaves is a key identifier for the genus."
+  ],
+  "prep": {
+   "summary": "Traditionally, leaves or bark are brewed into a tea or infusion.",
+   "steps": [
+    "Harvest the leaves or small pieces of bark.",
+    "Dry the plant material thoroughly.",
+    "Steep the dried material in hot water to create an infusion.",
+    "Strain the liquid and consume as a tea."
+   ],
+   "note": "The plant is often used in traditional folk medicine, but the specific preparation methods can vary by region."
   },
-  {
-    "id": "elaeagnus_commutata",
-    "name": "American Silverberry",
-    "sci": "Elaeagnus commutata",
-    "family": "Elaeagnaceae",
-    "form": "Deciduous shrub with silvery leaves and edible yellow berries",
-    "continent": "North America",
-    "regions": [
-      "Alaska",
-      "British Columbia",
-      "Washington",
-      "Oregon",
-      "Montana",
-      "Idaho"
-    ],
-    "coords": [
-      58.3,
-      -134.4
-    ],
-    "habitat": "Moist, sandy or gravelly soils in riparian zones, bogs, and open coniferous forests",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Elaeagnus_commutata_USDA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Elaeagnus commutata (American Silverberry) shrub",
-    "parts": "Berries (fruit)",
-    "compounds": [
-      "beta-carbolines"
-    ],
-    "pharmacology": "The berries contain beta-carbolines, a class of alkaloids that can be psychoactive in high concentrations, though the primary traditional use is as a food source rather than a potent psychoactive drug.",
-    "id_features": [
-      "Deciduous shrub with leaves that are green on top and silvery-white underneath.",
-      "Produces small, yellow, oval berries that are edible but often seedy.",
-      "Bark is brown and often peeling or flaky.",
-      "Commonly found in wet, boggy areas or along stream banks."
-    ],
-    "lookalikes": [
-      "Distinguish from other Elaeagnus species by the deciduous habit and specific berry shape.",
-      "Can be confused with other shrubs in wetlands, but the silvery leaf underside is distinctive.",
-      "Berries are distinctively yellow and oval, unlike the red berries of many other shrubs."
-    ],
-    "prep": {
-      "summary": "The berries are typically eaten fresh, dried, or processed into jams and jellies.",
-      "steps": [
-        "Harvest the yellow berries when they are fully ripe and soft.",
-        "Wash the berries to remove any dirt or debris.",
-        "Eat fresh, or dry them for long-term storage.",
-        "For jams, cook the berries with sugar and pectin, straining out the seeds if desired."
-      ],
-      "note": "The berries are a traditional food source for Indigenous peoples of the Pacific Northwest."
-    },
-    "culture": {
-      "cultures": [
-        "Tlingit",
-        "Haida",
-        "Tsimshian",
-        "Coast Salish"
-      ],
-      "ritual": "Primarily used as a food resource; berries were gathered and preserved for winter use.",
-      "context": "An important wild food in the Pacific Northwest, valued for its nutritional content and ease of harvesting."
-    },
-    "legality": "Legal to harvest in most jurisdictions, but check local regulations regarding wild plant harvesting.",
-    "safety": "Generally safe to eat in moderation; consult a qualified professional if using for medicinal purposes due to the presence of beta-carbolines."
+  "culture": {
+   "cultures": [
+    "Central Asian",
+    "Caucasian",
+    "Eastern European"
+   ],
+   "ritual": "Used in traditional folk medicine for various ailments, including digestive issues and as a general tonic.",
+   "context": "A hardy plant valued for its ability to thrive in poor soils and its edible fruit."
   },
-  {
-    "id": "elaegnus_hortensis",
-    "name": "Japanese Silverberry",
-    "sci": "Elaeagnus hortensis",
-    "family": "Elaeagnaceae",
-    "form": "Deciduous shrub with silvery leaves",
-    "continent": "Asia",
-    "regions": [
-      "Japan",
-      "Korea",
-      "China"
-    ],
-    "coords": [
-      36.2,
-      138.25
-    ],
-    "habitat": "Moist, shaded slopes and stream banks in temperate forests",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Elaeagnus_angustifolia_MHNT.BOT.2007.43.27.jpg/1280px-Elaeagnus_angustifolia_MHNT.BOT.2007.43.27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Elaeagnus hortensis (Japanese Silverberry) shrub",
-    "parts": "Bark, leaves, and fruit",
-    "compounds": [
-      "tetrahydroharman",
-      "etc"
-    ],
-    "pharmacology": "Contains beta-carbolines like tetrahydroharman, which may have mild psychoactive or anticholinergic properties, but clinical evidence for specific therapeutic effects is limited and largely anecdotal.",
-    "id_features": [
-      "Leaves are elliptic, dark green above, and densely covered with silvery scales below.",
-      "Bark is grayish-brown and often peeling in thin strips.",
-      "Flowers are small, tubular, and yellowish-white, appearing in spring.",
-      "Fruit is a small, oval drupe that is yellowish when ripe."
-    ],
-    "lookalikes": [
-      "Elaeagnus angustifolia (Russian Olive), which has narrower, more linear leaves.",
-      "Elaeagnus umbellata (Autumn Olive), which has more rounded leaves and a different fruit shape.",
-      "Distinctive silvery underside of leaves helps distinguish it from many other shrubs."
-    ],
-    "prep": {
-      "summary": "Traditionally, the bark or leaves may be prepared as a tea or decoction, though specific traditional preparations vary by region.",
-      "steps": [
-        "Harvest bark or leaves from mature plants.",
-        "Dry the material thoroughly in a shaded, well-ventilated area.",
-        "Crush or chop the dried material into small pieces.",
-        "Steep in hot water to prepare a tea or decoction."
-      ],
-      "note": "Preparation is often for local medicinal or ornamental purposes rather than widespread ritual use."
-    },
-    "culture": {
-      "cultures": [
-        "Japanese",
-        "Korean",
-        "Chinese"
-      ],
-      "ritual": "Primarily used in traditional medicine and as an ornamental plant in gardens; not central to major religious rituals.",
-      "context": "Valued for its hardiness, silvery foliage, and potential medicinal properties in East Asian traditional practices."
-    },
-    "legality": "Legal in most jurisdictions as an ornamental plant; status varies by jurisdiction; check local law regarding specific medicinal use.",
-    "safety": "Contains beta-carbolines which may have psychoactive effects; consult a qualified professional before use, especially if pregnant, nursing, or taking medications."
+  "legality": "Legal in most jurisdictions as a wild plant or ornamental shrub; status varies by jurisdiction; check local law.",
+  "safety": "Contains beta-carbolines which may have psychoactive properties; consult a qualified professional before use, especially if taking other medications."
+ },
+ {
+  "id": "elaeagnus_commutata",
+  "name": "American Silverberry",
+  "sci": "Elaeagnus commutata",
+  "family": "Elaeagnaceae",
+  "form": "Deciduous shrub with silvery leaves and edible yellow berries",
+  "continent": "North America",
+  "regions": [
+   "Alaska",
+   "British Columbia",
+   "Washington",
+   "Oregon",
+   "Montana",
+   "Idaho"
+  ],
+  "coords": [
+   58.3,
+   -134.4
+  ],
+  "habitat": "Moist, sandy or gravelly soils in riparian zones, bogs, and open coniferous forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Elaeagnus_commutata_USDA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Elaeagnus commutata (American Silverberry) shrub",
+  "parts": "Berries (fruit)",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "The berries contain beta-carbolines, a class of alkaloids that can be psychoactive in high concentrations, though the primary traditional use is as a food source rather than a potent psychoactive drug.",
+  "id_features": [
+   "Deciduous shrub with leaves that are green on top and silvery-white underneath.",
+   "Produces small, yellow, oval berries that are edible but often seedy.",
+   "Bark is brown and often peeling or flaky.",
+   "Commonly found in wet, boggy areas or along stream banks."
+  ],
+  "lookalikes": [
+   "Distinguish from other Elaeagnus species by the deciduous habit and specific berry shape.",
+   "Can be confused with other shrubs in wetlands, but the silvery leaf underside is distinctive.",
+   "Berries are distinctively yellow and oval, unlike the red berries of many other shrubs."
+  ],
+  "prep": {
+   "summary": "The berries are typically eaten fresh, dried, or processed into jams and jellies.",
+   "steps": [
+    "Harvest the yellow berries when they are fully ripe and soft.",
+    "Wash the berries to remove any dirt or debris.",
+    "Eat fresh, or dry them for long-term storage.",
+    "For jams, cook the berries with sugar and pectin, straining out the seeds if desired."
+   ],
+   "note": "The berries are a traditional food source for Indigenous peoples of the Pacific Northwest."
   },
-  {
-    "id": "elaegnus_orientalis",
-    "name": "Oriental Elaeagnus",
-    "sci": "Elaeagnus orientalis",
-    "family": "Elaeagnaceae",
-    "form": "Deciduous shrub with silvery leaves",
-    "continent": "Asia",
-    "regions": [
-      "China",
-      "Korea",
-      "Japan",
-      "Mongolia",
-      "Russia"
-    ],
-    "coords": [
-      39.9,
-      116.4
-    ],
-    "habitat": "Temperate forests, scrublands, and riverbanks",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Elaeagnus_angustifolia_branch.JPG/1280px-Elaeagnus_angustifolia_branch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Elaeagnus orientalis branch with silvery leaves",
-    "parts": "Leaves and bark",
-    "compounds": [
-      "tetrahydroharman"
-    ],
-    "pharmacology": "Contains tetrahydroharman, a beta-carboline alkaloid that acts as a monoamine oxidase inhibitor (MAOI), which can alter the metabolism of other substances and neurotransmitters.",
-    "id_features": [
-      "Deciduous shrub with small, oval leaves that are silvery-white on the underside.",
-      "Bark is often dark and fissured on older stems.",
-      "Produces small, yellowish, bell-shaped flowers in spring.",
-      "Fruits are small, oval, and yellowish when ripe."
-    ],
-    "lookalikes": [
-      "Elaeagnus angustifolia (Russian olive), which has narrower, more lanceolate leaves.",
-      "Elaeagnus umbellata (Autumn olive), which has larger, more rounded leaves and red fruits.",
-      "Distinctive silvery leaf undersides help distinguish it from many other temperate shrubs."
-    ],
-    "prep": {
-      "summary": "Traditionally prepared as a tea or infusion from dried leaves or bark.",
-      "steps": [
-        "Harvest leaves or bark and dry them in a cool, dark place.",
-        "Crush or chop the dried material to increase surface area.",
-        "Steep the material in hot water for several minutes to extract compounds.",
-        "Strain the liquid and consume as a tea."
-      ],
-      "note": "Due to MAOI activity, preparation and consumption should be approached with caution and awareness of potential interactions."
-    },
-    "culture": {
-      "cultures": [
-        "Traditional Chinese Medicine",
-        "Korean herbalism",
-        "Japanese folk medicine"
-      ],
-      "ritual": "Used in traditional herbal remedies for various ailments, often as part of complex formulas rather than standalone use.",
-      "context": "Valued for its medicinal properties in East Asian traditional medicine systems."
-    },
-    "legality": "Legal in most jurisdictions as a plant, but status varies by jurisdiction; check local law regarding specific preparations or alkaloid content.",
-    "safety": "Contains MAOI activity; consult a qualified professional before use, especially if taking other medications, as interactions can be serious."
+  "culture": {
+   "cultures": [
+    "Tlingit",
+    "Haida",
+    "Tsimshian",
+    "Coast Salish"
+   ],
+   "ritual": "Primarily used as a food resource; berries were gathered and preserved for winter use.",
+   "context": "An important wild food in the Pacific Northwest, valued for its nutritional content and ease of harvesting."
   },
-  {
-    "id": "elaegnus_spinosa",
-    "name": "Spiny Elaeagnus",
-    "sci": "Elaeagnus spinosa",
-    "family": "Elaeagnaceae",
-    "form": "Spiny shrub",
-    "continent": "Asia",
-    "regions": [
-      "India",
-      "Nepal",
-      "Pakistan",
-      "China",
-      "Sri Lanka"
-    ],
-    "coords": [
-      28.61,
-      77.21
-    ],
-    "habitat": "Dry, rocky hillsides and scrublands",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Elaeagnus_angustifolia_branch.JPG/1280px-Elaeagnus_angustifolia_branch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Elaeagnus spinosa (Spiny Elaeagnus) shrub",
-    "parts": "Bark",
-    "compounds": [
-      "tetrahydroharman"
-    ],
-    "pharmacology": "The bark contains tetrahydroharman, a beta-carboline alkaloid that acts as a monoamine oxidase inhibitor (MAOI), which can potentiate the effects of other psychoactive substances.",
-    "id_features": [
-      "A dense, spiny shrub with stiff, sharp thorns.",
-      "Leaves are silvery or grey-green on the underside.",
-      "Small, tubular, yellowish flowers.",
-      "Fruits are small, oval, and reddish-brown."
-    ],
-    "lookalikes": [
-      "Distinguish from other Elaeagnus species by the density of the spines and leaf shape.",
-      "Often confused with other thorny shrubs in dry habitats, but the silvery leaf underside is distinctive."
-    ],
-    "prep": {
-      "summary": "The bark is typically dried and brewed into a tea or decoction.",
-      "steps": [
-        "The bark is stripped from the branches and dried.",
-        "The dried bark is chopped or powdered.",
-        "It is boiled in water to create a decoction.",
-        "The liquid is strained and consumed."
-      ],
-      "note": "Traditionally used in some regions as a stimulant or to enhance the effects of other plants."
-    },
-    "culture": {
-      "cultures": [
-        "Himalayan communities",
-        "South Asian traditional medicine"
-      ],
-      "ritual": "Used in traditional folk medicine and occasionally in shamanic or ritual contexts to alter consciousness or as a stimulant.",
-      "context": "A plant of the dry, rugged landscapes of South and Central Asia, valued for its hardiness and medicinal properties."
-    },
-    "legality": "Status varies by jurisdiction; check local law regarding the possession of MAOIs and psychoactive plant materials.",
-    "safety": "Contains MAOIs; consult a qualified professional before use, especially if taking other medications or psychoactive substances, as interactions can be severe."
+  "legality": "Legal to harvest in most jurisdictions, but check local regulations regarding wild plant harvesting.",
+  "safety": "Generally safe to eat in moderation; consult a qualified professional if using for medicinal purposes due to the presence of beta-carbolines."
+ },
+ {
+  "id": "elaegnus_hortensis",
+  "name": "Japanese Silverberry",
+  "sci": "Elaeagnus hortensis",
+  "family": "Elaeagnaceae",
+  "form": "Deciduous shrub with silvery leaves",
+  "continent": "Asia",
+  "regions": [
+   "Japan",
+   "Korea",
+   "China"
+  ],
+  "coords": [
+   36.2,
+   138.25
+  ],
+  "habitat": "Moist, shaded slopes and stream banks in temperate forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Elaeagnus_angustifolia_MHNT.BOT.2007.43.27.jpg/1280px-Elaeagnus_angustifolia_MHNT.BOT.2007.43.27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Elaeagnus hortensis (Japanese Silverberry) shrub",
+  "parts": "Bark, leaves, and fruit",
+  "compounds": [
+   "tetrahydroharman",
+   "etc"
+  ],
+  "pharmacology": "Contains beta-carbolines like tetrahydroharman, which may have mild psychoactive or anticholinergic properties, but clinical evidence for specific therapeutic effects is limited and largely anecdotal.",
+  "id_features": [
+   "Leaves are elliptic, dark green above, and densely covered with silvery scales below.",
+   "Bark is grayish-brown and often peeling in thin strips.",
+   "Flowers are small, tubular, and yellowish-white, appearing in spring.",
+   "Fruit is a small, oval drupe that is yellowish when ripe."
+  ],
+  "lookalikes": [
+   "Elaeagnus angustifolia (Russian Olive), which has narrower, more linear leaves.",
+   "Elaeagnus umbellata (Autumn Olive), which has more rounded leaves and a different fruit shape.",
+   "Distinctive silvery underside of leaves helps distinguish it from many other shrubs."
+  ],
+  "prep": {
+   "summary": "Traditionally, the bark or leaves may be prepared as a tea or decoction, though specific traditional preparations vary by region.",
+   "steps": [
+    "Harvest bark or leaves from mature plants.",
+    "Dry the material thoroughly in a shaded, well-ventilated area.",
+    "Crush or chop the dried material into small pieces.",
+    "Steep in hot water to prepare a tea or decoction."
+   ],
+   "note": "Preparation is often for local medicinal or ornamental purposes rather than widespread ritual use."
   },
-  {
-    "id": "hippophae_rhamnoides",
-    "name": "Sea Buckthorn",
-    "sci": "Hippophae rhamnoides",
-    "family": "Elaeagnaceae",
-    "form": "Thorny shrub with silvery leaves and bright orange berries",
-    "continent": "Asia",
-    "regions": [
-      "Russia",
-      "Mongolia",
-      "China",
-      "Scandinavia",
-      "Central Asia"
-    ],
-    "coords": [
-      52.0,
-      90.0
-    ],
-    "habitat": "Cold-hardy, riparian zones, riverbanks, and coastal dunes",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/2020_year._Herbarium._Hippophae_rhamnoides._img-015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Hippophae rhamnoides (Sea Buckthorn) shrub with orange berries",
-    "parts": "Berries, leaves, and bark",
-    "compounds": [
-      "Harman",
-      "etc"
-    ],
-    "pharmacology": "Sea buckthorn is traditionally valued for its high content of vitamins and antioxidants, particularly in the berries. While the provided compound list includes harman, a beta-carboline alkaloid, the primary pharmacological interest in this species is usually directed toward its lipid profile and vitamin content rather than psychoactive alkaloids.",
-    "id_features": [
-      "Dense, thorny shrub with silvery-green, narrow leaves.",
-      "Clusters of small, bright orange to red berries.",
-      "Bark is typically reddish-brown and often peeling.",
-      "Leaves are covered in fine, silvery scales."
-    ],
-    "lookalikes": [
-      "Distinctive due to the combination of thorns, silvery leaves, and orange berries.",
-      "Can be confused with other Elaeagnaceae members like Olea europaea (Olive) in leaf shape, but the berries and thorns differ significantly."
-    ],
-    "prep": {
-      "summary": "Berries are typically processed into juice, oil, or dried for tea.",
-      "steps": [
-        "Berries are harvested and washed.",
-        "They are often frozen to make processing easier.",
-        "Juice is extracted or berries are dried for infusion.",
-        "Oil can be pressed from the seeds or pulp."
-      ],
-      "note": "The berries are very astringent and tart, often requiring sweetening or blending with other fruits."
-    },
-    "culture": {
-      "cultures": [
-        "Mongolian",
-        "Russian",
-        "Scandinavian",
-        "Chinese"
-      ],
-      "ritual": "Used in traditional medicine and as a food source in harsh climates; not typically a ceremonial psychoactive substance.",
-      "context": "A vital 'superfood' and ecological stabilizer in arid and cold regions."
-    },
-    "legality": "Legal as a food and traditional medicine in most jurisdictions; status varies by jurisdiction; check local law.",
-    "safety": "Generally safe in food amounts; consult a qualified professional for medicinal use, especially regarding potential interactions with medications."
+  "culture": {
+   "cultures": [
+    "Japanese",
+    "Korean",
+    "Chinese"
+   ],
+   "ritual": "Primarily used in traditional medicine and as an ornamental plant in gardens; not central to major religious rituals.",
+   "context": "Valued for its hardiness, silvery foliage, and potential medicinal properties in East Asian traditional practices."
   },
-  {
-    "id": "shepherdia_argentea",
-    "name": "Gooseberry",
-    "sci": "Shepherdia argentea",
-    "family": "Elaeagnaceae",
-    "form": "Thorny shrub with silvery leaves",
-    "continent": "North America",
-    "regions": [
-      "Alaska",
-      "British Columbia",
-      "Montana",
-      "Wyoming",
-      "Colorado"
-    ],
-    "coords": [
-      64.8,
-      -147.7
-    ],
-    "habitat": "Cold, dry, sandy or gravelly soils in tundra and subalpine zones",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/SilverBuffaloberry-SK..jpg",
-    "alt": "Shepherdia argentea (gooseberry) shrub",
-    "parts": "Fruit (berries)",
-    "compounds": [
-      "tetrahydroharmol"
-    ],
-    "pharmacology": "Tetrahydroharmol is a psychoactive alkaloid found in the fruit, though its potency and specific effects in humans are not well-documented in modern clinical literature.",
-    "id_features": [
-      "A dense, thorny shrub reaching 1-3 meters in height.",
-      "Leaves are lance-shaped, green above, and silvery-white below.",
-      "Produces small, yellow, bell-shaped flowers in early spring.",
-      "Bears orange to yellow, oval berries that are highly acidic."
-    ],
-    "lookalikes": [
-      "Distinctive silvery underside of leaves distinguishes it from other shrubs.",
-      "Often confused with hawthorn or other thorny shrubs, but the silver leaves are unique.",
-      "The fruit is distinctively orange-yellow and oval, unlike the red berries of many other shrubs."
-    ],
-    "prep": {
-      "summary": "The fruit is typically dried or processed into a fermented beverage.",
-      "steps": [
-        "Harvest the ripe orange-yellow berries from the shrub.",
-        "Dry the berries in the sun or a low-heat oven to concentrate flavors.",
-        "Crush or grind the dried berries to release the juice and pulp.",
-        "Ferment the mixture with water and a small amount of sugar to create a traditional wine or mead."
-      ],
-      "note": "Traditional preparation often involves fermentation to reduce the extreme acidity of the raw fruit."
-    },
-    "culture": {
-      "cultures": [
-        "Indigenous peoples of the Pacific Northwest",
-        "Alaska Natives",
-        "Montana and Wyoming tribes"
-      ],
-      "ritual": "Used in traditional ceremonies and as a source of food and medicine; the fermented beverage was shared in social and ritual contexts.",
-      "context": "A vital food source in harsh northern environments, valued for its high vitamin C content and unique flavor."
-    },
-    "legality": "Legal as a wild plant and food source; status varies by jurisdiction regarding specific psychoactive preparations; check local law.",
-    "safety": "Raw fruit is extremely acidic and can cause digestive upset; consult a qualified professional before consuming for medicinal or psychoactive purposes."
+  "legality": "Legal in most jurisdictions as an ornamental plant; status varies by jurisdiction; check local law regarding specific medicinal use.",
+  "safety": "Contains beta-carbolines which may have psychoactive effects; consult a qualified professional before use, especially if pregnant, nursing, or taking medications."
+ },
+ {
+  "id": "elaegnus_orientalis",
+  "name": "Oriental Elaeagnus",
+  "sci": "Elaeagnus orientalis",
+  "family": "Elaeagnaceae",
+  "form": "Deciduous shrub with silvery leaves",
+  "continent": "Asia",
+  "regions": [
+   "China",
+   "Korea",
+   "Japan",
+   "Mongolia",
+   "Russia"
+  ],
+  "coords": [
+   39.9,
+   116.4
+  ],
+  "habitat": "Temperate forests, scrublands, and riverbanks",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Elaeagnus_angustifolia_branch.JPG/1280px-Elaeagnus_angustifolia_branch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Elaeagnus orientalis branch with silvery leaves",
+  "parts": "Leaves and bark",
+  "compounds": [
+   "tetrahydroharman"
+  ],
+  "pharmacology": "Contains tetrahydroharman, a beta-carboline alkaloid that acts as a monoamine oxidase inhibitor (MAOI), which can alter the metabolism of other substances and neurotransmitters.",
+  "id_features": [
+   "Deciduous shrub with small, oval leaves that are silvery-white on the underside.",
+   "Bark is often dark and fissured on older stems.",
+   "Produces small, yellowish, bell-shaped flowers in spring.",
+   "Fruits are small, oval, and yellowish when ripe."
+  ],
+  "lookalikes": [
+   "Elaeagnus angustifolia (Russian olive), which has narrower, more lanceolate leaves.",
+   "Elaeagnus umbellata (Autumn olive), which has larger, more rounded leaves and red fruits.",
+   "Distinctive silvery leaf undersides help distinguish it from many other temperate shrubs."
+  ],
+  "prep": {
+   "summary": "Traditionally prepared as a tea or infusion from dried leaves or bark.",
+   "steps": [
+    "Harvest leaves or bark and dry them in a cool, dark place.",
+    "Crush or chop the dried material to increase surface area.",
+    "Steep the material in hot water for several minutes to extract compounds.",
+    "Strain the liquid and consume as a tea."
+   ],
+   "note": "Due to MAOI activity, preparation and consumption should be approached with caution and awareness of potential interactions."
   },
-  {
-    "id": "shepherdia_canadensis",
-    "name": "Silver Buffalo Berry",
-    "sci": "Shepherdia canadensis",
-    "family": "Elaeagnaceae (Oleaster family)",
-    "form": "Deciduous shrub with silvery foliage and yellow berries",
-    "continent": "North America",
-    "regions": [
-      "Alaska",
-      "Yukon",
-      "Northwest Territories",
-      "British Columbia",
-      "Alberta"
-    ],
-    "coords": [
-      64.2,
-      -149.5
-    ],
-    "habitat": "Cold, dry, rocky slopes and open tundra or boreal forest edges",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/SilverBuffaloberry-SK..jpg/1280px-SilverBuffaloberry-SK..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Silver Buffalo Berry shrub with yellow fruit",
-    "parts": "Fruit (berries)",
-    "compounds": [
-      "tetrahydroharmol"
-    ],
-    "pharmacology": "The fruit contains tetrahydroharmol, a compound that can induce a mild, short-lived euphoric state and altered perception when consumed in large quantities, though the evidence for its specific pharmacological profile is limited to traditional use and basic chemical analysis.",
-    "id_features": [
-      "A dense, multi-stemmed shrub reaching 1-2 meters in height.",
-      "Leaves are lance-shaped, dark green above, and distinctly silvery-white below.",
-      "Produces small, round, yellow to orange-yellow berries in late summer.",
-      "Bark is often reddish-brown and may have thorns or sharp spines."
-    ],
-    "lookalikes": [
-      "Distinguish from other Elaeagnaceae by the specific silver underside of the leaves and the yellow fruit color.",
-      "Often confused with other berry-producing shrubs in the boreal region, but the silvery foliage is a key identifier.",
-      "Few direct lookalikes in its specific habitat, but caution is advised with unknown berries."
-    ],
-    "prep": {
-      "summary": "The berries are typically eaten fresh or dried for later consumption.",
-      "steps": [
-        "Harvest the ripe yellow berries from the shrub.",
-        "Wash the berries to remove any debris.",
-        "Consume fresh for immediate effect or dry them in the sun or a low-heat oven.",
-        "Dried berries can be stored in a cool, dry place for long-term use."
-      ],
-      "note": "Consumption is traditionally done in moderation due to the psychoactive effects of tetrahydroharmol."
-    },
-    "culture": {
-      "cultures": [
-        "Dene (Tlingit)",
-        "Gwich'in",
-        "Yukon First Nations"
-      ],
-      "ritual": "Used in traditional ceremonies and as a food source, with the psychoactive effects sometimes sought for spiritual or recreational purposes.",
-      "context": "A significant part of the traditional diet and cultural practices of Indigenous peoples in the Yukon and northern Canada."
-    },
-    "legality": "Legal in most jurisdictions as a wild plant, but status varies by jurisdiction; check local law regarding foraging and possession.",
-    "safety": "Can cause mild euphoria and altered perception; consult a qualified professional before consumption, especially if taking other medications or if pregnant/nursing."
+  "culture": {
+   "cultures": [
+    "Traditional Chinese Medicine",
+    "Korean herbalism",
+    "Japanese folk medicine"
+   ],
+   "ritual": "Used in traditional herbal remedies for various ailments, often as part of complex formulas rather than standalone use.",
+   "context": "Valued for its medicinal properties in East Asian traditional medicine systems."
   },
-  {
-    "id": "festuca_arundinacea",
-    "name": "Tall Fescue",
-    "sci": "Festuca arundinacea",
-    "family": "Poaceae (Grass family)",
-    "form": "Perennial bunchgrass with dense, upright clumps",
-    "continent": "Global",
-    "regions": [
-      "Europe",
-      "North America",
-      "South America",
-      "Australia",
-      "New Zealand"
-    ],
-    "coords": [
-      48.8566,
-      2.3522
-    ],
-    "habitat": "Moist meadows, pastures, and roadsides; widely cultivated for turf and forage",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Illustration_Festuca_ovina0.jpg/1280px-Illustration_Festuca_ovina0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Illustration of Festuca ovina (a related fescue species)",
-    "parts": "Whole plant (leaves and seed heads)",
-    "compounds": [
-      "Harman",
-      "etc"
-    ],
-    "pharmacology": "Certain endophyte-infected fescues contain ergot alkaloids (such as harman) that can cause vasoconstriction and neurotoxicity in livestock; human ingestion is not a traditional or recommended practice and can lead to poisoning.",
-    "id_features": [
-      "Forms dense, upright clumps (bunchgrass habit) rather than spreading via rhizomes.",
-      "Leaves are long, narrow, and often have a prominent white midrib.",
-      "Flower heads (panicles) are open and airy with small spikelets.",
-      "Grows in large, uniform stands in pastures and lawns."
-    ],
-    "lookalikes": [
-      "Distinguish from smooth brome (Bromus inermis) by its clumping growth habit and leaf texture.",
-      "Distinguish from other fescues (e.g., fine fescue) by its larger size and coarser leaves.",
-      "Often confused with various meadow grasses, but the dense bunching is a key identifier."
-    ],
-    "prep": {
-      "summary": "There is no standard preparation for human consumption; it is primarily used as animal forage or turf.",
-      "steps": [
-        "Harvested as hay or silage for livestock (with caution regarding endophyte levels).",
-        "Sown as seed for establishing permanent pastures or high-quality turf.",
-        "Maintained through mowing and fertilization in agricultural settings."
-      ],
-      "note": "Consumption by humans is not advised due to potential ergot alkaloid toxicity."
-    },
-    "culture": {
-      "cultures": [
-        "Agricultural communities worldwide",
-        "Landscape design professionals"
-      ],
-      "ritual": "Not used in ritual or ceremonial contexts; its role is strictly utilitarian in agriculture and horticulture.",
-      "context": "A cornerstone of modern pasture management and turfgrass industry, valued for its drought tolerance and wear resistance."
-    },
-    "legality": "Legal as a forage crop and turfgrass; regulated as a plant species in some contexts due to its invasive potential in certain ecosystems.",
-    "safety": "Toxic to livestock if infected with toxic endophytes (ergotism); humans should avoid ingestion due to potential neurotoxicity and vasoconstriction."
+  "legality": "Legal in most jurisdictions as a plant, but status varies by jurisdiction; check local law regarding specific preparations or alkaloid content.",
+  "safety": "Contains MAOI activity; consult a qualified professional before use, especially if taking other medications, as interactions can be serious."
+ },
+ {
+  "id": "elaegnus_spinosa",
+  "name": "Spiny Elaeagnus",
+  "sci": "Elaeagnus spinosa",
+  "family": "Elaeagnaceae",
+  "form": "Spiny shrub",
+  "continent": "Asia",
+  "regions": [
+   "India",
+   "Nepal",
+   "Pakistan",
+   "China",
+   "Sri Lanka"
+  ],
+  "coords": [
+   28.61,
+   77.21
+  ],
+  "habitat": "Dry, rocky hillsides and scrublands",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Elaeagnus_angustifolia_branch.JPG/1280px-Elaeagnus_angustifolia_branch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Elaeagnus spinosa (Spiny Elaeagnus) shrub",
+  "parts": "Bark",
+  "compounds": [
+   "tetrahydroharman"
+  ],
+  "pharmacology": "The bark contains tetrahydroharman, a beta-carboline alkaloid that acts as a monoamine oxidase inhibitor (MAOI), which can potentiate the effects of other psychoactive substances.",
+  "id_features": [
+   "A dense, spiny shrub with stiff, sharp thorns.",
+   "Leaves are silvery or grey-green on the underside.",
+   "Small, tubular, yellowish flowers.",
+   "Fruits are small, oval, and reddish-brown."
+  ],
+  "lookalikes": [
+   "Distinguish from other Elaeagnus species by the density of the spines and leaf shape.",
+   "Often confused with other thorny shrubs in dry habitats, but the silvery leaf underside is distinctive."
+  ],
+  "prep": {
+   "summary": "The bark is typically dried and brewed into a tea or decoction.",
+   "steps": [
+    "The bark is stripped from the branches and dried.",
+    "The dried bark is chopped or powdered.",
+    "It is boiled in water to create a decoction.",
+    "The liquid is strained and consumed."
+   ],
+   "note": "Traditionally used in some regions as a stimulant or to enhance the effects of other plants."
   },
-  {
-    "id": "lolium_perenne",
-    "name": "Perennial Ryegrass",
-    "sci": "Lolium perenne",
-    "family": "Poaceae (Grass family)",
-    "form": "Clumping perennial grass",
-    "continent": "Global",
-    "regions": [
-      "Europe",
-      "North America",
-      "Australia",
-      "New Zealand",
-      "South America"
-    ],
-    "coords": [
-      51.5,
-      -0.1
-    ],
-    "habitat": "Moist meadows, pastures, and lawns in temperate regions",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Starr_001026-9002_Lolium_perenne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Lolium perenne (perennial ryegrass) growing in a field",
-    "parts": "Whole plant (grass)",
-    "compounds": [
-      "(perennial ryegrass)",
-      "harman",
-      "etc"
-    ],
-    "pharmacology": "Perennial ryegrass is a common forage crop and lawn grass; while it contains trace alkaloids like harman, it is not a primary source for psychoactive use and has no established clinical pharmacological profile.",
-    "id_features": [
-      "Clumping perennial grass with a dense root system.",
-      "Blades are long, flat, and bright green.",
-      "Produces a dense, cylindrical spike of flowers.",
-      "Often found in mixed pastures or maintained lawns."
-    ],
-    "lookalikes": [
-      "Distinguish from annual ryegrass (Lolium multiflorum) by its perennial growth habit and clumping nature.",
-      "Similar to other cool-season grasses like fescue or bluegrass, but ryegrass has a distinct spike structure.",
-      "Often confused with various weeds in lawns, but it is a cultivated forage species."
-    ],
-    "prep": {
-      "summary": "Primarily used as animal feed or for turf maintenance rather than human preparation.",
-      "steps": [
-        "Grown in fields for hay or silage.",
-        "Sown as seed for establishing pastures or lawns.",
-        "Harvested as dried hay for livestock."
-      ],
-      "note": "It is a staple agricultural crop, not a traditional medicinal or ritual plant."
-    },
-    "culture": {
-      "cultures": [
-        "European agricultural traditions",
-        "North American ranching",
-        "Global turf management"
-      ],
-      "ritual": "No specific ritual use; it is a fundamental component of modern agriculture and landscape design.",
-      "context": "A critical food source for livestock and a standard component of recreational and sports turf."
-    },
-    "legality": "Legal and widely cultivated as a forage and turf grass in most jurisdictions.",
-    "safety": "Generally safe for human contact and consumption in small amounts, but not intended for human dietary use; consult a professional for agricultural or veterinary advice."
+  "culture": {
+   "cultures": [
+    "Himalayan communities",
+    "South Asian traditional medicine"
+   ],
+   "ritual": "Used in traditional folk medicine and occasionally in shamanic or ritual contexts to alter consciousness or as a stimulant.",
+   "context": "A plant of the dry, rugged landscapes of South and Central Asia, valued for its hardiness and medicinal properties."
   },
-  {
-    "id": "burkea_africana",
-    "name": "Burkea",
-    "sci": "Burkea africana",
-    "family": "Bignoniaceae",
-    "form": "Small deciduous tree",
-    "continent": "Africa",
-    "regions": [
-      "South Africa",
-      "Zimbabwe",
-      "Mozambique",
-      "Botswana",
-      "Namibia"
-    ],
-    "coords": [
-      -25.0,
-      30.0
-    ],
-    "habitat": "Dry savanna and bushveld",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Burkea_africana00.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Burkea africana tree",
-    "parts": "Bark",
-    "compounds": [
-      "harman"
-    ],
-    "pharmacology": "The bark contains beta-carboline alkaloids such as harman, which are structurally related to MAO inhibitors, though the specific pharmacological profile and potency of the bark extract remain poorly characterized in modern clinical literature.",
-    "id_features": [
-      "A small, often multi-stemmed tree with a dense, rounded crown.",
-      "Leaves are pinnate with 3\u20135 leaflets.",
-      "Flowers are large, yellow, and trumpet-shaped.",
-      "Bark is greyish-brown and relatively smooth."
-    ],
-    "lookalikes": [
-      "Distinguish from other Bignoniaceae by the specific leaflet arrangement and flower color.",
-      "Often found in similar habitats to other savanna trees, but the bark is the primary identifier for traditional use."
-    ],
-    "prep": {
-      "summary": "The bark is stripped, dried, and boiled to create a decoction.",
-      "steps": [
-        "Bark is stripped from the tree and allowed to dry.",
-        "The dried bark is chopped or crushed.",
-        "It is boiled in water to extract the alkaloids.",
-        "The resulting liquid is consumed as a tea or decoction."
-      ],
-      "note": "Preparation is often part of traditional healing or ritual practices in Southern Africa."
-    },
-    "culture": {
-      "cultures": [
-        "Zulu",
-        "Xhosa",
-        "Shona"
-      ],
-      "ritual": "Used in traditional medicine and sometimes in spiritual or healing ceremonies.",
-      "context": "A plant of local significance in Southern African traditional practices."
-    },
-    "legality": "Legal in most of its native range; status varies by jurisdiction; check local law.",
-    "safety": "Contains beta-carbolines which can have significant pharmacological effects; consult a qualified professional before use."
+  "legality": "Status varies by jurisdiction; check local law regarding the possession of MAOIs and psychoactive plant materials.",
+  "safety": "Contains MAOIs; consult a qualified professional before use, especially if taking other medications or psychoactive substances, as interactions can be severe."
+ },
+ {
+  "id": "hippophae_rhamnoides",
+  "name": "Sea Buckthorn",
+  "sci": "Hippophae rhamnoides",
+  "family": "Elaeagnaceae",
+  "form": "Thorny shrub with silvery leaves and bright orange berries",
+  "continent": "Asia",
+  "regions": [
+   "Russia",
+   "Mongolia",
+   "China",
+   "Scandinavia",
+   "Central Asia"
+  ],
+  "coords": [
+   52.0,
+   90.0
+  ],
+  "habitat": "Cold-hardy, riparian zones, riverbanks, and coastal dunes",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/2020_year._Herbarium._Hippophae_rhamnoides._img-015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Hippophae rhamnoides (Sea Buckthorn) shrub with orange berries",
+  "parts": "Berries, leaves, and bark",
+  "compounds": [
+   "Harman",
+   "etc"
+  ],
+  "pharmacology": "Sea buckthorn is traditionally valued for its high content of vitamins and antioxidants, particularly in the berries. While the provided compound list includes harman, a beta-carboline alkaloid, the primary pharmacological interest in this species is usually directed toward its lipid profile and vitamin content rather than psychoactive alkaloids.",
+  "id_features": [
+   "Dense, thorny shrub with silvery-green, narrow leaves.",
+   "Clusters of small, bright orange to red berries.",
+   "Bark is typically reddish-brown and often peeling.",
+   "Leaves are covered in fine, silvery scales."
+  ],
+  "lookalikes": [
+   "Distinctive due to the combination of thorns, silvery leaves, and orange berries.",
+   "Can be confused with other Elaeagnaceae members like Olea europaea (Olive) in leaf shape, but the berries and thorns differ significantly."
+  ],
+  "prep": {
+   "summary": "Berries are typically processed into juice, oil, or dried for tea.",
+   "steps": [
+    "Berries are harvested and washed.",
+    "They are often frozen to make processing easier.",
+    "Juice is extracted or berries are dried for infusion.",
+    "Oil can be pressed from the seeds or pulp."
+   ],
+   "note": "The berries are very astringent and tart, often requiring sweetening or blending with other fruits."
   },
-  {
-    "id": "desmodium_gangeticum",
-    "name": "Sarpagandha",
-    "sci": "Desmodium gangeticum",
-    "family": "Fabaceae (Legume family)",
-    "form": "Perennial herbaceous vine",
-    "continent": "Asia",
-    "regions": [
-      "India",
-      "Sri Lanka",
-      "Myanmar",
-      "Thailand",
-      "Indonesia"
-    ],
-    "coords": [
-      20.5937,
-      78.9629
-    ],
-    "habitat": "Moist, shaded areas in tropical forests and scrublands",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Pleurolobus_gangeticus_2.jpg/1280px-Pleurolobus_gangeticus_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Desmodium gangeticum (Sarpagandha) vine with leaves and flowers",
-    "parts": "Roots and rhizomes",
-    "compounds": [
-      "beta-carbolines"
-    ],
-    "pharmacology": "The plant contains beta-carbolines, a class of alkaloids that can act on the central nervous system, though the specific psychoactive potency and clinical evidence for Desmodium gangeticum are limited compared to other beta-carboline sources.",
-    "id_features": [
-      "A climbing or trailing vine with trifoliate leaves.",
-      "Small, white or pale pink flowers arranged in racemes.",
-      "Fruits are small, winged pods (siliques) that are often sticky.",
-      "The roots are fibrous and have a distinct, somewhat bitter taste."
-    ],
-    "lookalikes": [
-      "Distinguish from other Desmodium species by the specific wing structure of the pods.",
-      "Can be confused with other leguminous vines in the wild, but the root profile is unique to this species.",
-      "Often identified in traditional medicine by its specific habitat and leaf shape."
-    ],
-    "prep": {
-      "summary": "The roots are typically dried and prepared as a decoction or powder for traditional use.",
-      "steps": [
-        "Harvest the roots and rhizomes from mature plants.",
-        "Wash and dry the roots thoroughly.",
-        "Grind the dried roots into a fine powder or slice them for decoction.",
-        "Prepare a tea by steeping the powder or slices in hot water."
-      ],
-      "note": "Traditional preparation often involves specific dosages and combinations with other herbs."
-    },
-    "culture": {
-      "cultures": [
-        "Ayurvedic tradition (Sarpagandha)",
-        "Traditional Indian medicine",
-        "Folk medicine in Southeast Asia"
-      ],
-      "ritual": "Used in Ayurvedic and folk traditions for its purported calming and sedative properties, often in the context of treating anxiety or insomnia.",
-      "context": "A significant herb in traditional Indian pharmacopoeia, valued for its medicinal properties."
-    },
-    "legality": "Legal as a traditional herb in most jurisdictions, but status varies by jurisdiction; check local law regarding the sale and use of beta-carboline containing plants.",
-    "safety": "Contains beta-carbolines which can have psychoactive effects; consult a qualified professional before use, especially if taking other medications or if pregnant/nursing."
+  "culture": {
+   "cultures": [
+    "Mongolian",
+    "Russian",
+    "Scandinavian",
+    "Chinese"
+   ],
+   "ritual": "Used in traditional medicine and as a food source in harsh climates; not typically a ceremonial psychoactive substance.",
+   "context": "A vital 'superfood' and ecological stabilizer in arid and cold regions."
   },
-  {
-    "id": "desmodium_gyrans",
-    "name": "Mimosa",
-    "sci": "Desmodium gyrans",
-    "family": "Fabaceae (Legume family)",
-    "form": "Herbaceous shrub with sensitive leaves",
-    "continent": "Asia",
-    "regions": [
-      "India",
-      "Sri Lanka",
-      "Myanmar",
-      "Thailand",
-      "Indonesia"
-    ],
-    "coords": [
-      20.5937,
-      78.9629
-    ],
-    "habitat": "Moist, shaded forest floors and scrublands",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Codariocalyx_motorius_Taub39.png/1280px-Codariocalyx_motorius_Taub39.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Desmodium gyrans (Mimosa) plant",
-    "parts": "Whole plant, seeds, and leaves",
-    "compounds": [
-      "beta-carbolines"
-    ],
-    "pharmacology": "The plant is traditionally used in Ayurveda for its calming and sedative properties, though modern pharmacological evidence for specific psychoactive or therapeutic mechanisms is limited and largely anecdotal.",
-    "id_features": [
-      "A low-growing, sprawling herb or small shrub.",
-      "Bipinnate leaves that fold or droop when touched (thigmonasty).",
-      "Small, yellowish-green flowers.",
-      "Distinctive, curved seed pods."
-    ],
-    "lookalikes": [
-      "Mimosa pudica (Sensitive Plant), which has similar moving leaves but is a different species.",
-      "Other Desmodium species, which share the general leaf structure but lack the pronounced thigmonastic response."
-    ],
-    "prep": {
-      "summary": "The plant is typically prepared as a fresh juice or dried powder for traditional use.",
-      "steps": [
-        "Fresh leaves and stems are harvested.",
-        "The plant material is washed and dried in the shade.",
-        "The dried parts are ground into a fine powder.",
-        "The powder is mixed with water or milk to form a drink."
-      ],
-      "note": "Preparation is often done for personal use or as part of traditional Ayurvedic remedies."
-    },
-    "culture": {
-      "cultures": [
-        "Ayurvedic tradition (India)",
-        "Traditional medicine (Sri Lanka)",
-        "Folk medicine (Southeast Asia)"
-      ],
-      "ritual": "Used in traditional healing practices to promote calmness and rest, often as part of broader herbal regimens.",
-      "context": "A well-known plant in South and Southeast Asian traditional medicine for its soothing properties."
-    },
-    "legality": "Legal as a traditional herb in most jurisdictions; status varies by jurisdiction; check local law.",
-    "safety": "Generally considered safe in traditional doses, but consult a qualified professional before use, especially if pregnant, nursing, or taking other medications."
+  "legality": "Legal as a food and traditional medicine in most jurisdictions; status varies by jurisdiction; check local law.",
+  "safety": "Generally safe in food amounts; consult a qualified professional for medicinal use, especially regarding potential interactions with medications."
+ },
+ {
+  "id": "shepherdia_argentea",
+  "name": "Gooseberry",
+  "sci": "Shepherdia argentea",
+  "family": "Elaeagnaceae",
+  "form": "Thorny shrub with silvery leaves",
+  "continent": "North America",
+  "regions": [
+   "Alaska",
+   "British Columbia",
+   "Montana",
+   "Wyoming",
+   "Colorado"
+  ],
+  "coords": [
+   64.8,
+   -147.7
+  ],
+  "habitat": "Cold, dry, sandy or gravelly soils in tundra and subalpine zones",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/SilverBuffaloberry-SK..jpg",
+  "alt": "Shepherdia argentea (gooseberry) shrub",
+  "parts": "Fruit (berries)",
+  "compounds": [
+   "tetrahydroharmol"
+  ],
+  "pharmacology": "Tetrahydroharmol is a psychoactive alkaloid found in the fruit, though its potency and specific effects in humans are not well-documented in modern clinical literature.",
+  "id_features": [
+   "A dense, thorny shrub reaching 1-3 meters in height.",
+   "Leaves are lance-shaped, green above, and silvery-white below.",
+   "Produces small, yellow, bell-shaped flowers in early spring.",
+   "Bears orange to yellow, oval berries that are highly acidic."
+  ],
+  "lookalikes": [
+   "Distinctive silvery underside of leaves distinguishes it from other shrubs.",
+   "Often confused with hawthorn or other thorny shrubs, but the silver leaves are unique.",
+   "The fruit is distinctively orange-yellow and oval, unlike the red berries of many other shrubs."
+  ],
+  "prep": {
+   "summary": "The fruit is typically dried or processed into a fermented beverage.",
+   "steps": [
+    "Harvest the ripe orange-yellow berries from the shrub.",
+    "Dry the berries in the sun or a low-heat oven to concentrate flavors.",
+    "Crush or grind the dried berries to release the juice and pulp.",
+    "Ferment the mixture with water and a small amount of sugar to create a traditional wine or mead."
+   ],
+   "note": "Traditional preparation often involves fermentation to reduce the extreme acidity of the raw fruit."
   },
-  {
-    "id": "petalostylis_labicheoides",
-    "name": "Australian Kava",
-    "sci": "Petalostylis labicheoides",
-    "family": "Rubiaceae (Madder family)",
-    "form": "Woody shrub",
-    "continent": "Oceania",
-    "regions": [
-      "Queensland, Australia",
-      "New Guinea"
-    ],
-    "coords": [
-      -16.92,
-      145.77
-    ],
-    "habitat": "Tropical rainforest understory and wet sclerophyll forests",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Petalostylis_labicheoides_canberra.jpg/1280px-Petalostylis_labicheoides_canberra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Petalostylis labicheoides (Australian Kava) shrub",
-    "parts": "Bark and leaves",
-    "compounds": [
-      "tetrahydroharman",
-      "MAOs up to 0.5%"
-    ],
-    "pharmacology": "Contains tetrahydroharman, a beta-carboline alkaloid that acts as a monoamine oxidase inhibitor (MAO-A), which can increase the levels of serotonin, dopamine, and norepinephrine in the brain. The evidence for its psychoactive effects is limited to traditional use and chemical analysis, with no modern clinical trials establishing its safety or efficacy.",
-    "id_features": [
-      "A multi-stemmed shrub reaching 1\u20133 meters in height.",
-      "Leaves are opposite, elliptic to obovate, with entire margins.",
-      "Bark is smooth and greyish-brown.",
-      "Flowers are small, white, and tubular, appearing in the leaf axils."
-    ],
-    "lookalikes": [
-      "Often confused with Piper methysticum (Kava) due to similar traditional uses, but they are in different families (Rubiaceae vs. Piperaceae).",
-      "Distinguishable from Piper methysticum by its opposite leaves and white tubular flowers, whereas Kava has alternate leaves and greenish flower clusters.",
-      "Distinctive to the Australian and New Guinean rainforests."
-    ],
-    "prep": {
-      "summary": "The bark or leaves are typically chewed or brewed into a tea.",
-      "steps": [
-        "Bark is stripped from the stems or leaves are harvested.",
-        "The material is dried or used fresh.",
-        "It is chewed directly or steeped in hot water to make a tea.",
-        "The resulting infusion is consumed for its psychoactive effects."
-      ],
-      "note": "Traditional preparation methods vary, but the goal is to extract the beta-carboline alkaloids."
-    },
-    "culture": {
-      "cultures": [
-        "Indigenous Australian peoples",
-        "New Guinean tribes"
-      ],
-      "ritual": "Used in traditional ceremonies and for social relaxation, similar to the use of Kava in the Pacific.",
-      "context": "A culturally significant plant in the tropical regions of Australia and New Guinea."
-    },
-    "legality": "Status varies by jurisdiction; check local law regarding the possession and use of psychoactive plants.",
-    "safety": "Contains MAO inhibitors, which can cause dangerous interactions with certain foods (tyramine) and medications (antidepressants, stimulants); consult a qualified professional before use."
+  "culture": {
+   "cultures": [
+    "Indigenous peoples of the Pacific Northwest",
+    "Alaska Natives",
+    "Montana and Wyoming tribes"
+   ],
+   "ritual": "Used in traditional ceremonies and as a source of food and medicine; the fermented beverage was shared in social and ritual contexts.",
+   "context": "A vital food source in harsh northern environments, valued for its high vitamin C content and unique flavor."
   },
-  {
-    "id": "prosopis_nigra",
-    "name": "Black Mesquite",
-    "sci": "Prosopis nigra",
-    "family": "Fabaceae (Legume family)",
-    "form": "Thorny tree",
-    "continent": "Global",
-    "regions": [
-      "Mexico",
-      "United States (Texas)",
-      "Central America"
-    ],
-    "coords": [
-      29.76,
-      -98.49
-    ],
-    "habitat": "Arid and semi-arid scrublands, riverbanks, and dry forests",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Prosopis_nigra_1b.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Prosopis nigra (Black Mesquite) tree",
-    "parts": "Bark, leaves, and pods",
-    "compounds": [
-      "harmalicin",
-      "harman",
-      "etc"
-    ],
-    "pharmacology": "Contains beta-carboline alkaloids such as harman and harmine, which are MAO inhibitors (MAOIs) and can act as psychoactive agents, though the plant is primarily known for its nutritional and ecological value rather than recreational use.",
-    "id_features": [
-      "A medium-sized tree with a dense, spreading crown.",
-      "Bipinnate leaves with small, oval leaflets.",
-      "Long, curved, sharp thorns on the branches.",
-      "Produces long, dark brown, edible pods (mesquite beans).",
-      "Flowers are small, yellowish, and clustered."
-    ],
-    "lookalikes": [
-      "Similar to other Prosopis species (e.g., P. glandulosa), but P. nigra is distinguished by its darker pods and specific leaflet shape.",
-      "Can be confused with Acacia species, but Prosopis has distinct bipinnate leaves and long, curved thorns.",
-      "Distinctive in its native range due to the combination of thorns, leaf structure, and pod shape."
-    ],
-    "prep": {
-      "summary": "The bark and leaves are traditionally prepared as a tea or decoction, while the pods are dried and ground into flour.",
-      "steps": [
-        "Bark or leaves are collected and dried.",
-        "The material is boiled in water to create a decoction.",
-        "Pods are harvested, dried, and shelled.",
-        "The seeds are ground into a fine powder for flour or syrup."
-      ],
-      "note": "While the pods are a common food source, the bark and leaves contain psychoactive alkaloids and should be used with caution and knowledge of local traditions."
-    },
-    "culture": {
-      "cultures": [
-        "Native American (e.g., Comanche, Apache)",
-        "Mexican traditional medicine"
-      ],
-      "ritual": "Historically used in various Native American traditions for medicinal purposes and as a food source; the pods were a staple food, and the bark was used for teas.",
-      "context": "A vital resource in arid regions, providing food, fuel, and traditional medicine, deeply integrated into the survival and cultural practices of desert-dwelling peoples."
-    },
-    "legality": "Legal as a plant and food source in most jurisdictions; however, the psychoactive alkaloids in the bark may be regulated in some areas; check local law.",
-    "safety": "Contains MAO-inhibiting alkaloids; consult a qualified professional before use, especially if taking other medications, as interactions can be significant."
+  "legality": "Legal as a wild plant and food source; status varies by jurisdiction regarding specific psychoactive preparations; check local law.",
+  "safety": "Raw fruit is extremely acidic and can cause digestive upset; consult a qualified professional before consuming for medicinal or psychoactive purposes."
+ },
+ {
+  "id": "shepherdia_canadensis",
+  "name": "Silver Buffalo Berry",
+  "sci": "Shepherdia canadensis",
+  "family": "Elaeagnaceae (Oleaster family)",
+  "form": "Deciduous shrub with silvery foliage and yellow berries",
+  "continent": "North America",
+  "regions": [
+   "Alaska",
+   "Yukon",
+   "Northwest Territories",
+   "British Columbia",
+   "Alberta"
+  ],
+  "coords": [
+   64.2,
+   -149.5
+  ],
+  "habitat": "Cold, dry, rocky slopes and open tundra or boreal forest edges",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/SilverBuffaloberry-SK..jpg/1280px-SilverBuffaloberry-SK..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Silver Buffalo Berry shrub with yellow fruit",
+  "parts": "Fruit (berries)",
+  "compounds": [
+   "tetrahydroharmol"
+  ],
+  "pharmacology": "The fruit contains tetrahydroharmol, a compound that can induce a mild, short-lived euphoric state and altered perception when consumed in large quantities, though the evidence for its specific pharmacological profile is limited to traditional use and basic chemical analysis.",
+  "id_features": [
+   "A dense, multi-stemmed shrub reaching 1-2 meters in height.",
+   "Leaves are lance-shaped, dark green above, and distinctly silvery-white below.",
+   "Produces small, round, yellow to orange-yellow berries in late summer.",
+   "Bark is often reddish-brown and may have thorns or sharp spines."
+  ],
+  "lookalikes": [
+   "Distinguish from other Elaeagnaceae by the specific silver underside of the leaves and the yellow fruit color.",
+   "Often confused with other berry-producing shrubs in the boreal region, but the silvery foliage is a key identifier.",
+   "Few direct lookalikes in its specific habitat, but caution is advised with unknown berries."
+  ],
+  "prep": {
+   "summary": "The berries are typically eaten fresh or dried for later consumption.",
+   "steps": [
+    "Harvest the ripe yellow berries from the shrub.",
+    "Wash the berries to remove any debris.",
+    "Consume fresh for immediate effect or dry them in the sun or a low-heat oven.",
+    "Dried berries can be stored in a cool, dry place for long-term use."
+   ],
+   "note": "Consumption is traditionally done in moderation due to the psychoactive effects of tetrahydroharmol."
   },
-  {
-    "id": "shepherdia_pulchellum",
-    "name": "American Shephard",
-    "sci": "Shepherdia pulchellum",
-    "family": "Elaeagnaceae",
-    "form": "Thorny shrub with silvery leaves",
-    "continent": "North America",
-    "regions": [
-      "Alaska",
-      "British Columbia",
-      "Washington",
-      "Oregon",
-      "California"
-    ],
-    "coords": [
-      58.3,
-      -134.4
-    ],
-    "habitat": "Coastal scrub, dunes, and rocky slopes",
-    "image": "",
-    "alt": "Shepherdia pulchellum (American Shephard) shrub",
-    "parts": "Bark and leaves",
-    "compounds": [
-      "beta-carbolines"
-    ],
-    "pharmacology": "Contains beta-carbolines, a class of alkaloids that can act on GABA-A receptors and other targets, but specific pharmacological effects and safety profiles for this species are not well-documented in modern clinical literature.",
-    "id_features": [
-      "A dense, thorny shrub reaching up to 3 meters in height.",
-      "Leaves are silvery-white on the underside and green on top.",
-      "Produces small, yellow, cup-shaped flowers in spring.",
-      "Bears small, orange-yellow, edible berries in late summer."
-    ],
-    "lookalikes": [
-      "Distinctive silvery leaf undersides distinguish it from many other coastal shrubs.",
-      "Confusable with other Elaeagnaceae species, but the specific thorny habit and berry color are key identifiers."
-    ],
-    "prep": {
-      "summary": "Traditionally, the bark or leaves may be prepared as a tea or chewed, though specific traditional protocols vary by region.",
-      "steps": [
-        "Harvest bark or leaves from the shrub.",
-        "Dry the material thoroughly.",
-        "Prepare as a decoction or infusion in water.",
-        "Consume the liquid or chew the dried plant material."
-      ],
-      "note": "Use is traditional and limited; modern safety data is sparse."
-    },
-    "culture": {
-      "cultures": [
-        "Indigenous peoples of the Pacific Northwest",
-        "Alaska Native peoples"
-      ],
-      "ritual": "Used in traditional medicine for various ailments, including respiratory issues and as a general tonic.",
-      "context": "A valued plant in coastal ecosystems, providing food for wildlife and traditional uses for human communities."
-    },
-    "legality": "Legal to harvest in most jurisdictions, but status varies by jurisdiction; check local law regarding protected species or land use.",
-    "safety": "Limited modern safety data; consult a qualified professional before use, especially given the presence of beta-carbolines."
+  "culture": {
+   "cultures": [
+    "Dene (Tlingit)",
+    "Gwich'in",
+    "Yukon First Nations"
+   ],
+   "ritual": "Used in traditional ceremonies and as a food source, with the psychoactive effects sometimes sought for spiritual or recreational purposes.",
+   "context": "A significant part of the traditional diet and cultural practices of Indigenous peoples in the Yukon and northern Canada."
   },
-  {
-    "id": "strychnos_melinoniana",
-    "name": "Melinoniana",
-    "sci": "Strychnos melinoniana",
-    "family": "Strychnaceae",
-    "form": "Woody vine or small tree",
-    "continent": "Africa",
-    "regions": [
-      "Cameroon",
-      "Gabon",
-      "Congo",
-      "Angola"
-    ],
-    "coords": [
-      0.0,
-      12.0
-    ],
-    "habitat": "Tropical rainforests and gallery forests",
-    "image": "",
-    "alt": "Strychnos melinoniana vine",
-    "parts": "Bark and leaves",
-    "compounds": [
-      "beta-carbolines"
-    ],
-    "pharmacology": "Contains beta-carbolines, a class of alkaloids that can act on GABA-A receptors and monoamine oxidase (MAO), though specific pharmacological data for this species is limited compared to other Strychnos.",
-    "id_features": [
-      "Woody vine or small tree with opposite, simple leaves.",
-      "Bark is often used in traditional preparations.",
-      "Flowers are small and inconspicuous.",
-      "Fruits are drupes, typically red or orange when ripe."
-    ],
-    "lookalikes": [
-      "Distinguish from other Strychnos species by leaf shape and fruit color.",
-      "Care must be taken to avoid confusion with toxic Strychnos species containing strychnine.",
-      "Local knowledge is essential for correct identification."
-    ],
-    "prep": {
-      "summary": "Bark or leaves are typically dried and prepared as a decoction or infusion.",
-      "steps": [
-        "Collect bark or leaves from the plant.",
-        "Dry the material thoroughly.",
-        "Grind or chop the dried material.",
-        "Boil or steep in water to create a tea or decoction."
-      ],
-      "note": "Preparation methods vary by local tradition; dosage and safety are not well-established."
-    },
-    "culture": {
-      "cultures": [
-        "Local Bantu-speaking peoples of Central Africa"
-      ],
-      "ritual": "Used in traditional medicine and possibly in ritual contexts, though specific ceremonial details are less documented than for other psychoactive plants.",
-      "context": "Part of the traditional pharmacopoeia of Central African rainforest communities."
-    },
-    "legality": "Status varies by jurisdiction; check local law regarding the possession and use of Strychnos species.",
-    "safety": "Strychnos species can contain toxic alkaloids; consult a qualified professional before use. Do not confuse with Strychnos nux-vomica (strychnine)."
+  "legality": "Legal in most jurisdictions as a wild plant, but status varies by jurisdiction; check local law regarding foraging and possession.",
+  "safety": "Can cause mild euphoria and altered perception; consult a qualified professional before consumption, especially if taking other medications or if pregnant/nursing."
+ },
+ {
+  "id": "festuca_arundinacea",
+  "name": "Tall Fescue",
+  "sci": "Festuca arundinacea",
+  "family": "Poaceae (Grass family)",
+  "form": "Perennial bunchgrass with dense, upright clumps",
+  "continent": "Global",
+  "regions": [
+   "Europe",
+   "North America",
+   "South America",
+   "Australia",
+   "New Zealand"
+  ],
+  "coords": [
+   48.8566,
+   2.3522
+  ],
+  "habitat": "Moist meadows, pastures, and roadsides; widely cultivated for turf and forage",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Illustration_Festuca_ovina0.jpg/1280px-Illustration_Festuca_ovina0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Illustration of Festuca ovina (a related fescue species)",
+  "parts": "Whole plant (leaves and seed heads)",
+  "compounds": [
+   "Harman",
+   "etc"
+  ],
+  "pharmacology": "Certain endophyte-infected fescues contain ergot alkaloids (such as harman) that can cause vasoconstriction and neurotoxicity in livestock; human ingestion is not a traditional or recommended practice and can lead to poisoning.",
+  "id_features": [
+   "Forms dense, upright clumps (bunchgrass habit) rather than spreading via rhizomes.",
+   "Leaves are long, narrow, and often have a prominent white midrib.",
+   "Flower heads (panicles) are open and airy with small spikelets.",
+   "Grows in large, uniform stands in pastures and lawns."
+  ],
+  "lookalikes": [
+   "Distinguish from smooth brome (Bromus inermis) by its clumping growth habit and leaf texture.",
+   "Distinguish from other fescues (e.g., fine fescue) by its larger size and coarser leaves.",
+   "Often confused with various meadow grasses, but the dense bunching is a key identifier."
+  ],
+  "prep": {
+   "summary": "There is no standard preparation for human consumption; it is primarily used as animal forage or turf.",
+   "steps": [
+    "Harvested as hay or silage for livestock (with caution regarding endophyte levels).",
+    "Sown as seed for establishing permanent pastures or high-quality turf.",
+    "Maintained through mowing and fertilization in agricultural settings."
+   ],
+   "note": "Consumption by humans is not advised due to potential ergot alkaloid toxicity."
   },
-  {
-    "id": "strychnos_usambarensis",
-    "name": "Kambamba",
-    "sci": "Strychnos usambarensis",
-    "family": "Strychnaceae",
-    "form": "Small tree or large shrub",
-    "continent": "Africa",
-    "regions": [
-      "Tanzania",
-      "Kenya",
-      "Uganda",
-      "Rwanda",
-      "Burundi"
-    ],
-    "coords": [
-      -6.0,
-      37.0
-    ],
-    "habitat": "Tropical forests and forest edges",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Strychnos_usambarensis00.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Strychnos usambarensis (Kambamba) tree",
-    "parts": "Seeds",
-    "compounds": [
-      "harman"
-    ],
-    "pharmacology": "Contains beta-carbolines such as harman, which act as monoamine oxidase inhibitors (MAOIs) and may have psychoactive effects, though specific clinical data for this species is limited.",
-    "id_features": [
-      "Small tree or shrub with glossy, dark green leaves.",
-      "Produces small, round, red or orange berries.",
-      "Native to East African forests.",
-      "Bark and wood are hard and dense."
-    ],
-    "lookalikes": [
-      "Other Strychnos species in East Africa, such as Strychnos spinosa.",
-      "Distinguish by specific leaf shape and berry color/size.",
-      "Consult local experts for precise identification."
-    ],
-    "prep": {
-      "summary": "Seeds are typically chewed or prepared into a decoction.",
-      "steps": [
-        "Seeds are harvested from ripe berries.",
-        "They may be dried and then chewed directly.",
-        "Alternatively, seeds are boiled in water to create a bitter tea.",
-        "The liquid is consumed in small quantities."
-      ],
-      "note": "Preparation is often ritualistic and varies by local tradition."
-    },
-    "culture": {
-      "cultures": [
-        "Tanzanian",
-        "Kenyan",
-        "Ugandan"
-      ],
-      "ritual": "Used in traditional ceremonies and for medicinal purposes, often to treat ailments or for spiritual insight.",
-      "context": "A traditional plant with cultural significance in East African communities."
-    },
-    "legality": "Status varies by jurisdiction; check local law.",
-    "safety": "Contains MAOIs; consult a qualified professional before use due to potential interactions and toxicity."
+  "culture": {
+   "cultures": [
+    "Agricultural communities worldwide",
+    "Landscape design professionals"
+   ],
+   "ritual": "Not used in ritual or ceremonial contexts; its role is strictly utilitarian in agriculture and horticulture.",
+   "context": "A cornerstone of modern pasture management and turfgrass industry, valued for its drought tolerance and wear resistance."
   },
-  {
-    "id": "banisteriopsis_argentia",
-    "name": "Banisteriopsis argentia",
-    "sci": "Banisteriopsis argentia",
-    "family": "Malpighiaceae",
-    "form": "Woody vine",
-    "continent": "South America",
-    "regions": [
-      "Brazil",
-      "Peru",
-      "Bolivia",
-      "Colombia"
-    ],
-    "coords": [
-      -10.0,
-      -55.0
-    ],
-    "habitat": "Tropical rainforest understory",
-    "image": "",
-    "alt": "Banisteriopsis argentia vine",
-    "parts": "Bark and leaves",
-    "compounds": [
-      "5-methoxytetrahydroharman",
-      "(-)-N(6)-methoxytetrahydroharman",
-      "dimethyltryptamine-N(6)-oxide"
-    ],
-    "pharmacology": "Contains beta-carbolines such as 5-methoxytetrahydroharman, which are known to inhibit monoamine oxidase A (MAO-A), and trace amounts of dimethyltryptamine-N(6)-oxide.",
-    "id_features": [
-      "Woody vine with silvery or greyish-green leaves.",
-      "Leaves are typically elliptic to obovate.",
-      "Often found climbing trees in dense forest.",
-      "Bark is used for traditional preparations."
-    ],
-    "lookalikes": [
-      "Other species in the genus Banisteriopsis, such as B. caapi, which is more widely known.",
-      "Distinguished by the specific silver-grey coloration of the foliage.",
-      "Few common lookalikes outside the Malpighiaceae family."
-    ],
-    "prep": {
-      "summary": "The bark or leaves are typically boiled to create a decoction.",
-      "steps": [
-        "Collect bark or leaves from the vine.",
-        "Chop or crush the plant material.",
-        "Boil in water for an extended period to extract compounds.",
-        "Strain the liquid for consumption."
-      ],
-      "note": "Preparation is often part of traditional shamanic or medicinal practices."
-    },
-    "culture": {
-      "cultures": [
-        "Indigenous peoples of the Amazon",
-        "Traditional healers in Brazil and Peru"
-      ],
-      "ritual": "Used in traditional ceremonies and for medicinal purposes by indigenous communities.",
-      "context": "Part of the rich ethnobotanical heritage of the Amazon rainforest."
-    },
-    "legality": "Status varies by jurisdiction; check local law regarding the possession and use of MAO-inhibiting plants.",
-    "safety": "Contains MAO inhibitors; consult a qualified professional before use, especially if taking other medications."
+  "legality": "Legal as a forage crop and turfgrass; regulated as a plant species in some contexts due to its invasive potential in certain ecosystems.",
+  "safety": "Toxic to livestock if infected with toxic endophytes (ergotism); humans should avoid ingestion due to potential neurotoxicity and vasoconstriction."
+ },
+ {
+  "id": "lolium_perenne",
+  "name": "Perennial Ryegrass",
+  "sci": "Lolium perenne",
+  "family": "Poaceae (Grass family)",
+  "form": "Clumping perennial grass",
+  "continent": "Global",
+  "regions": [
+   "Europe",
+   "North America",
+   "Australia",
+   "New Zealand",
+   "South America"
+  ],
+  "coords": [
+   51.5,
+   -0.1
+  ],
+  "habitat": "Moist meadows, pastures, and lawns in temperate regions",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Starr_001026-9002_Lolium_perenne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Lolium perenne (perennial ryegrass) growing in a field",
+  "parts": "Whole plant (grass)",
+  "compounds": [
+   "(perennial ryegrass)",
+   "harman",
+   "etc"
+  ],
+  "pharmacology": "Perennial ryegrass is a common forage crop and lawn grass; while it contains trace alkaloids like harman, it is not a primary source for psychoactive use and has no established clinical pharmacological profile.",
+  "id_features": [
+   "Clumping perennial grass with a dense root system.",
+   "Blades are long, flat, and bright green.",
+   "Produces a dense, cylindrical spike of flowers.",
+   "Often found in mixed pastures or maintained lawns."
+  ],
+  "lookalikes": [
+   "Distinguish from annual ryegrass (Lolium multiflorum) by its perennial growth habit and clumping nature.",
+   "Similar to other cool-season grasses like fescue or bluegrass, but ryegrass has a distinct spike structure.",
+   "Often confused with various weeds in lawns, but it is a cultivated forage species."
+  ],
+  "prep": {
+   "summary": "Primarily used as animal feed or for turf maintenance rather than human preparation.",
+   "steps": [
+    "Grown in fields for hay or silage.",
+    "Sown as seed for establishing pastures or lawns.",
+    "Harvested as dried hay for livestock."
+   ],
+   "note": "It is a staple agricultural crop, not a traditional medicinal or ritual plant."
   },
-  {
-    "id": "banisteriopsis_inebrians",
-    "name": "Banisteriopsis inebrians",
-    "sci": "Banisteriopsis inebrians",
-    "family": "Malpighiaceae",
-    "form": "Woody vine",
-    "continent": "Asia",
-    "regions": [
-      "India",
-      "Nepal",
-      "Myanmar",
-      "Thailand"
-    ],
-    "coords": [
-      26.8,
-      80.9
-    ],
-    "habitat": "Tropical and subtropical moist broadleaf forests",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Banisteriopsis-caapi-cooking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Banisteriopsis inebrians vine",
-    "parts": "Bark",
-    "compounds": [
-      "beta-carbolines"
-    ],
-    "pharmacology": "The bark contains beta-carbolines, which are known to inhibit monoamine oxidase (MAO) enzymes, potentially altering the metabolism of other substances, though specific clinical evidence for its traditional use is limited.",
-    "id_features": [
-      "A woody climbing vine with smooth, greyish bark.",
-      "Leaves are opposite, elliptic, and glossy green.",
-      "Flowers are small, yellowish, and borne in clusters.",
-      "Fruits are small, round, and turn from green to red or purple."
-    ],
-    "lookalikes": [
-      "Distinguish from other Malpighiaceae vines by the specific bark texture and leaf arrangement.",
-      "Often confused with other local vines used in traditional preparations, but the bark is the primary part used here.",
-      "Few common lookalikes in its native range that share the same traditional use."
-    ],
-    "prep": {
-      "summary": "The bark is typically dried and prepared as a decoction or infusion.",
-      "steps": [
-        "The bark is stripped from the vine and dried in the shade.",
-        "The dried bark is chopped or powdered.",
-        "A portion is boiled in water to create a decoction.",
-        "The liquid is strained and consumed."
-      ],
-      "note": "Preparation is often part of traditional or ritualistic practices in its native regions."
-    },
-    "culture": {
-      "cultures": [
-        "Tribal communities in Northeast India",
-        "Nepalese traditional practitioners"
-      ],
-      "ritual": "Used in traditional ceremonies and as a medicinal preparation for various ailments.",
-      "context": "Holds cultural significance in local traditional medicine and spiritual practices."
-    },
-    "legality": "Status varies by jurisdiction; check local law.",
-    "safety": "Consult a qualified professional; potential for interactions with other substances due to MAO inhibition."
+  "culture": {
+   "cultures": [
+    "European agricultural traditions",
+    "North American ranching",
+    "Global turf management"
+   ],
+   "ritual": "No specific ritual use; it is a fundamental component of modern agriculture and landscape design.",
+   "context": "A critical food source for livestock and a standard component of recreational and sports turf."
   },
-  {
-    "id": "banisteriopsis_lutea",
-    "name": "Chacruna",
-    "sci": "Banisteriopsis lutea",
-    "family": "Malpighiaceae",
-    "form": "Woody shrub or small tree",
-    "continent": "South America",
-    "regions": [
-      "Brazil",
-      "Peru",
-      "Bolivia",
-      "Colombia",
-      "Venezuela"
-    ],
-    "coords": [
-      -3.4653,
-      -62.2159
-    ],
-    "habitat": "Tropical rainforests and gallery forests",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flickr_-_Jo%C3%A3o_de_Deus_Medeiros_-_Banisteriopsis_campestris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Banisteriopsis lutea (Chacruna) shrub",
-    "parts": "Leaves",
-    "compounds": [
-      "harmine",
-      "telepathine"
-    ],
-    "pharmacology": "Contains beta-carboline alkaloids like harmine and telepathine, which act as reversible inhibitors of monoamine oxidase A (MAO-A). This mechanism is traditionally used to facilitate the metabolism of tryptamines found in other plants, though its standalone psychoactive effects are mild and primarily sedative or anxiolytic.",
-    "id_features": [
-      "Small tree or shrub with smooth, greyish bark.",
-      "Leaves are opposite, elliptic, and have a distinct yellowish-green underside.",
-      "Flowers are small, yellow, and star-shaped.",
-      "Often found in the understory of tropical forests."
-    ],
-    "lookalikes": [
-      "Distinguish from other Malpighiaceae by the specific leaf shape and yellow flowers.",
-      "Often confused with Banisteriopsis campestris, which is also used in similar preparations.",
-      "Distinctive yellow flowers help separate it from many other forest understory shrubs."
-    ],
-    "prep": {
-      "summary": "Leaves are dried and brewed into a tea or decoction.",
-      "steps": [
-        "Fresh or dried leaves are collected and cleaned.",
-        "The leaves are steeped in hot water to create a tea.",
-        "The liquid is strained and consumed as a beverage.",
-        "In traditional contexts, it is often combined with other plants."
-      ],
-      "note": "The preparation is often part of a larger ritual involving multiple plant species."
-    },
-    "culture": {
-      "cultures": [
-        "Shuar",
-        "Achuar",
-        "Kichwa",
-        "Various Amazonian peoples"
-      ],
-      "ritual": "Used in shamanic ceremonies and healing rituals, often as a component of ayahuasca or similar brews.",
-      "context": "A key botanical ingredient in the spiritual and medicinal traditions of the Amazon basin."
-    },
-    "legality": "Status varies by jurisdiction; check local law regarding the possession and use of psychoactive plant materials.",
-    "safety": "Consult a qualified professional; MAO inhibitors can interact with certain medications and foods, and individual sensitivity varies."
+  "legality": "Legal and widely cultivated as a forage and turf grass in most jurisdictions.",
+  "safety": "Generally safe for human contact and consumption in small amounts, but not intended for human dietary use; consult a professional for agricultural or veterinary advice."
+ },
+ {
+  "id": "burkea_africana",
+  "name": "Burkea",
+  "sci": "Burkea africana",
+  "family": "Bignoniaceae",
+  "form": "Small deciduous tree",
+  "continent": "Africa",
+  "regions": [
+   "South Africa",
+   "Zimbabwe",
+   "Mozambique",
+   "Botswana",
+   "Namibia"
+  ],
+  "coords": [
+   -25.0,
+   30.0
+  ],
+  "habitat": "Dry savanna and bushveld",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Burkea_africana00.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Burkea africana tree",
+  "parts": "Bark",
+  "compounds": [
+   "harman"
+  ],
+  "pharmacology": "The bark contains beta-carboline alkaloids such as harman, which are structurally related to MAO inhibitors, though the specific pharmacological profile and potency of the bark extract remain poorly characterized in modern clinical literature.",
+  "id_features": [
+   "A small, often multi-stemmed tree with a dense, rounded crown.",
+   "Leaves are pinnate with 3\u20135 leaflets.",
+   "Flowers are large, yellow, and trumpet-shaped.",
+   "Bark is greyish-brown and relatively smooth."
+  ],
+  "lookalikes": [
+   "Distinguish from other Bignoniaceae by the specific leaflet arrangement and flower color.",
+   "Often found in similar habitats to other savanna trees, but the bark is the primary identifier for traditional use."
+  ],
+  "prep": {
+   "summary": "The bark is stripped, dried, and boiled to create a decoction.",
+   "steps": [
+    "Bark is stripped from the tree and allowed to dry.",
+    "The dried bark is chopped or crushed.",
+    "It is boiled in water to extract the alkaloids.",
+    "The resulting liquid is consumed as a tea or decoction."
+   ],
+   "note": "Preparation is often part of traditional healing or ritual practices in Southern Africa."
   },
-  {
-    "id": "banisteriopsis_metallicolor",
-    "name": "Banisteriopsis metallicolor",
-    "sci": "Banisteriopsis metallicolor",
-    "family": "Malpighiaceae",
-    "form": "Woody vine",
-    "continent": "South America",
-    "regions": [
-      "Brazil",
-      "Bolivia",
-      "Paraguay",
-      "Argentina"
-    ],
-    "coords": [
-      -20.0,
-      -58.0
-    ],
-    "habitat": "Tropical and subtropical moist broadleaf forests",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flickr_-_Jo%C3%A3o_de_Deus_Medeiros_-_Banisteriopsis_campestris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Banisteriopsis vine with glossy leaves",
-    "parts": "Leaves and bark",
-    "compounds": [
-      "harmine",
-      "telepathine"
-    ],
-    "pharmacology": "Contains beta-carboline alkaloids like harmine and telepathine, which act as reversible inhibitors of monoamine oxidase A (MAO-A). This mechanism is traditionally used to prolong the effects of tryptamines, though the plant itself has mild psychoactive properties.",
-    "id_features": [
-      "A woody climbing vine with opposite, simple leaves.",
-      "Leaves are glossy, dark green, and often have a metallic sheen.",
-      "Flowers are small, yellow, and arranged in racemes.",
-      "Bark is smooth and light brown to gray."
-    ],
-    "lookalikes": [
-      "Distinguish from other Malpighiaceae vines by the specific leaf shape and metallic luster.",
-      "Often confused with Banisteriopsis campestris, which is morphologically very similar.",
-      "Requires botanical expertise to distinguish from non-psychoactive Malpighiaceae species."
-    ],
-    "prep": {
-      "summary": "The leaves or bark are typically dried and brewed into a tea or decoction.",
-      "steps": [
-        "Harvest leaves or bark from the vine.",
-        "Dry the material in a shaded, well-ventilated area.",
-        "Crush or chop the dried material.",
-        "Steep in hot water to create a tea, or boil for a stronger decoction."
-      ],
-      "note": "Traditionally used as a 'chacruna' or 'ayahuasca' component, often combined with DMT-containing plants."
-    },
-    "culture": {
-      "cultures": [
-        "Indigenous peoples of the Amazon",
-        "Shamanic traditions"
-      ],
-      "ritual": "Used in shamanic ceremonies as a MAO inhibitor to facilitate the psychoactive effects of other plants, often in the context of healing or spiritual exploration.",
-      "context": "A key component in the preparation of ayahuasca and other traditional Amazonian brews."
-    },
-    "legality": "Status varies by jurisdiction; check local law regarding the possession and use of MAO inhibitor plants.",
-    "safety": "MAO inhibitors can interact dangerously with certain foods (tyramine) and medications; consult a qualified professional before use."
+  "culture": {
+   "cultures": [
+    "Zulu",
+    "Xhosa",
+    "Shona"
+   ],
+   "ritual": "Used in traditional medicine and sometimes in spiritual or healing ceremonies.",
+   "context": "A plant of local significance in Southern African traditional practices."
   },
-  {
-    "id": "banisteriopsis_muricata",
-    "name": "Chacruna",
-    "sci": "Banisteriopsis muricata",
-    "family": "Malpighiaceae",
-    "form": "Woody vine or small tree",
-    "continent": "South America",
-    "regions": [
-      "Brazil",
-      "Peru",
-      "Bolivia",
-      "Colombia",
-      "Venezuela"
-    ],
-    "coords": [
-      -3.4653,
-      -62.2159
-    ],
-    "habitat": "Tropical rainforests and riverbanks",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flickr_-_Jo%C3%A3o_de_Deus_Medeiros_-_Banisteriopsis_muricata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "alt": "Banisteriopsis muricata (Chacruna) vine",
-    "parts": "Leaves and bark",
-    "compounds": [
-      "harmine up to 6%",
-      "harmaline up to 4%",
-      "plus DMT"
-    ],
-    "pharmacology": "Contains beta-carboline alkaloids (harmine and harmaline) which act as reversible monoamine oxidase inhibitors (MAOIs). These compounds inhibit the breakdown of DMT, allowing it to remain active in the central nervous system when combined with a DMT source.",
-    "id_features": [
-      "Woody vine or small tree with rough, textured bark.",
-      "Leaves are often hairy (muricata) and have a distinct venation pattern.",
-      "Flowers are typically yellow with five petals.",
-      "Grows in tropical lowland forests."
-    ],
-    "lookalikes": [
-      "Distinguish from other Malpighiaceae by the specific leaf hairiness and bark texture.",
-      "Often confused with other Banisteriopsis species, but identification is critical for safety and efficacy.",
-      "Requires expert botanical identification to distinguish from toxic lookalikes."
-    ],
-    "prep": {
-      "summary": "Leaves or bark are boiled to extract beta-carbolines, which are then combined with a DMT source.",
-      "steps": [
-        "Harvest leaves or bark from identified plants.",
-        "Boil the plant material in water to extract the alkaloids.",
-        "Strain the liquid to remove plant matter.",
-        "Combine the decoction with a DMT-containing plant (e.g., Psychotria viridis) to form ayahuasca."
-      ],
-      "note": "The MAOI properties require strict dietary restrictions (avoiding tyramine-rich foods) to prevent hypertensive crises."
-    },
-    "culture": {
-      "cultures": [
-        "Shuar",
-        "Achuar",
-        "Kichwa",
-        "Yagua"
-      ],
-      "ritual": "Used in shamanic ceremonies for healing, divination, and spiritual guidance. The brew is consumed in a controlled setting under the guidance of a shaman.",
-      "context": "A sacred plant in Amazonian indigenous traditions, central to spiritual and medicinal practices."
-    },
-    "legality": "Status varies by jurisdiction; check local law. Often regulated as a controlled substance due to its MAOI properties and association with ayahuasca.",
-    "safety": "Contains potent MAOIs; dangerous interactions with many medications (antidepressants, stimulants) and foods. Consult a qualified professional before use."
+  "legality": "Legal in most of its native range; status varies by jurisdiction; check local law.",
+  "safety": "Contains beta-carbolines which can have significant pharmacological effects; consult a qualified professional before use."
+ },
+ {
+  "id": "desmodium_gangeticum",
+  "name": "Sarpagandha",
+  "sci": "Desmodium gangeticum",
+  "family": "Fabaceae (Legume family)",
+  "form": "Perennial herbaceous vine",
+  "continent": "Asia",
+  "regions": [
+   "India",
+   "Sri Lanka",
+   "Myanmar",
+   "Thailand",
+   "Indonesia"
+  ],
+  "coords": [
+   20.5937,
+   78.9629
+  ],
+  "habitat": "Moist, shaded areas in tropical forests and scrublands",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Pleurolobus_gangeticus_2.jpg/1280px-Pleurolobus_gangeticus_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Desmodium gangeticum (Sarpagandha) vine with leaves and flowers",
+  "parts": "Roots and rhizomes",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "The plant contains beta-carbolines, a class of alkaloids that can act on the central nervous system, though the specific psychoactive potency and clinical evidence for Desmodium gangeticum are limited compared to other beta-carboline sources.",
+  "id_features": [
+   "A climbing or trailing vine with trifoliate leaves.",
+   "Small, white or pale pink flowers arranged in racemes.",
+   "Fruits are small, winged pods (siliques) that are often sticky.",
+   "The roots are fibrous and have a distinct, somewhat bitter taste."
+  ],
+  "lookalikes": [
+   "Distinguish from other Desmodium species by the specific wing structure of the pods.",
+   "Can be confused with other leguminous vines in the wild, but the root profile is unique to this species.",
+   "Often identified in traditional medicine by its specific habitat and leaf shape."
+  ],
+  "prep": {
+   "summary": "The roots are typically dried and prepared as a decoction or powder for traditional use.",
+   "steps": [
+    "Harvest the roots and rhizomes from mature plants.",
+    "Wash and dry the roots thoroughly.",
+    "Grind the dried roots into a fine powder or slice them for decoction.",
+    "Prepare a tea by steeping the powder or slices in hot water."
+   ],
+   "note": "Traditional preparation often involves specific dosages and combinations with other herbs."
   },
-  {
-    "id": "cabi_pratensis",
-    "name": "Cabi",
-    "sci": "Cabi pratensis",
-    "family": "Rubiaceae (Madder family)",
-    "form": "Perennial herb",
-    "continent": "Africa",
-    "regions": [
-      "Kenya",
-      "Tanzania",
-      "Uganda",
-      "Ethiopia"
-    ],
-    "coords": [
-      -1.29,
-      36.82
-    ],
-    "habitat": "Highland grasslands and savannas",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daniel_Elger%2C_CEO_of_CABI_speaking_during_Session_2-_Harnessing_science_and_technology_for_food_security_at_the_Global_Food_Security_Summit_in_London_on_20_November_2023_-_%28cropped%29.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "alt": "Daniel Elger, CEO of CABI, speaking at the Global Food Security Summit",
-    "parts": "Whole plant (leaves and stems)",
-    "compounds": [
-      "beta-carbolines"
-    ],
-    "pharmacology": "Beta-carbolines are a class of alkaloids that can act as monoamine oxidase inhibitors (MAOIs), which may influence the metabolism of other psychoactive compounds, though specific pharmacological data for Cabi pratensis is limited.",
-    "id_features": [
-      "Grows as a low-lying perennial herb in high-altitude grasslands.",
-      "Leaves are typically opposite and simple.",
-      "Often found in association with other highland flora in East Africa.",
-      "Used traditionally in specific cultural contexts."
-    ],
-    "lookalikes": [
-      "Distinguish from other Rubiaceae herbs by its specific highland habitat and traditional use.",
-      "Few common lookalikes in its specific ecological niche.",
-      "Identification often relies on local knowledge and habitat."
-    ],
-    "prep": {
-      "summary": "The plant is traditionally prepared as a tea or infusion.",
-      "steps": [
-        "Fresh or dried leaves and stems are collected.",
-        "The plant material is placed in a pot of water.",
-        "The mixture is boiled or steeped to extract the compounds.",
-        "The liquid is strained and consumed."
-      ],
-      "note": "Preparation is often part of a social or ritual gathering."
-    },
-    "culture": {
-      "cultures": [
-        "Kikuyu",
-        "Kamba",
-        "Other East African highland communities"
-      ],
-      "ritual": "Used in traditional ceremonies, social gatherings, and sometimes for spiritual or medicinal purposes.",
-      "context": "A culturally significant plant in East African highland societies."
-    },
-    "legality": "Status varies by jurisdiction; check local law.",
-    "safety": "Consult a qualified professional; beta-carbolines can interact with other substances and may have side effects."
-  }
+  "culture": {
+   "cultures": [
+    "Ayurvedic tradition (Sarpagandha)",
+    "Traditional Indian medicine",
+    "Folk medicine in Southeast Asia"
+   ],
+   "ritual": "Used in Ayurvedic and folk traditions for its purported calming and sedative properties, often in the context of treating anxiety or insomnia.",
+   "context": "A significant herb in traditional Indian pharmacopoeia, valued for its medicinal properties."
+  },
+  "legality": "Legal as a traditional herb in most jurisdictions, but status varies by jurisdiction; check local law regarding the sale and use of beta-carboline containing plants.",
+  "safety": "Contains beta-carbolines which can have psychoactive effects; consult a qualified professional before use, especially if taking other medications or if pregnant/nursing."
+ },
+ {
+  "id": "desmodium_gyrans",
+  "name": "Mimosa",
+  "sci": "Desmodium gyrans",
+  "family": "Fabaceae (Legume family)",
+  "form": "Herbaceous shrub with sensitive leaves",
+  "continent": "Asia",
+  "regions": [
+   "India",
+   "Sri Lanka",
+   "Myanmar",
+   "Thailand",
+   "Indonesia"
+  ],
+  "coords": [
+   20.5937,
+   78.9629
+  ],
+  "habitat": "Moist, shaded forest floors and scrublands",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Codariocalyx_motorius_Taub39.png/1280px-Codariocalyx_motorius_Taub39.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Desmodium gyrans (Mimosa) plant",
+  "parts": "Whole plant, seeds, and leaves",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "The plant is traditionally used in Ayurveda for its calming and sedative properties, though modern pharmacological evidence for specific psychoactive or therapeutic mechanisms is limited and largely anecdotal.",
+  "id_features": [
+   "A low-growing, sprawling herb or small shrub.",
+   "Bipinnate leaves that fold or droop when touched (thigmonasty).",
+   "Small, yellowish-green flowers.",
+   "Distinctive, curved seed pods."
+  ],
+  "lookalikes": [
+   "Mimosa pudica (Sensitive Plant), which has similar moving leaves but is a different species.",
+   "Other Desmodium species, which share the general leaf structure but lack the pronounced thigmonastic response."
+  ],
+  "prep": {
+   "summary": "The plant is typically prepared as a fresh juice or dried powder for traditional use.",
+   "steps": [
+    "Fresh leaves and stems are harvested.",
+    "The plant material is washed and dried in the shade.",
+    "The dried parts are ground into a fine powder.",
+    "The powder is mixed with water or milk to form a drink."
+   ],
+   "note": "Preparation is often done for personal use or as part of traditional Ayurvedic remedies."
+  },
+  "culture": {
+   "cultures": [
+    "Ayurvedic tradition (India)",
+    "Traditional medicine (Sri Lanka)",
+    "Folk medicine (Southeast Asia)"
+   ],
+   "ritual": "Used in traditional healing practices to promote calmness and rest, often as part of broader herbal regimens.",
+   "context": "A well-known plant in South and Southeast Asian traditional medicine for its soothing properties."
+  },
+  "legality": "Legal as a traditional herb in most jurisdictions; status varies by jurisdiction; check local law.",
+  "safety": "Generally considered safe in traditional doses, but consult a qualified professional before use, especially if pregnant, nursing, or taking other medications."
+ },
+ {
+  "id": "petalostylis_labicheoides",
+  "name": "Australian Kava",
+  "sci": "Petalostylis labicheoides",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Woody shrub",
+  "continent": "Oceania",
+  "regions": [
+   "Queensland, Australia",
+   "New Guinea"
+  ],
+  "coords": [
+   -16.92,
+   145.77
+  ],
+  "habitat": "Tropical rainforest understory and wet sclerophyll forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Petalostylis_labicheoides_canberra.jpg/1280px-Petalostylis_labicheoides_canberra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Petalostylis labicheoides (Australian Kava) shrub",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "tetrahydroharman",
+   "MAOs up to 0.5%"
+  ],
+  "pharmacology": "Contains tetrahydroharman, a beta-carboline alkaloid that acts as a monoamine oxidase inhibitor (MAO-A), which can increase the levels of serotonin, dopamine, and norepinephrine in the brain. The evidence for its psychoactive effects is limited to traditional use and chemical analysis, with no modern clinical trials establishing its safety or efficacy.",
+  "id_features": [
+   "A multi-stemmed shrub reaching 1\u20133 meters in height.",
+   "Leaves are opposite, elliptic to obovate, with entire margins.",
+   "Bark is smooth and greyish-brown.",
+   "Flowers are small, white, and tubular, appearing in the leaf axils."
+  ],
+  "lookalikes": [
+   "Often confused with Piper methysticum (Kava) due to similar traditional uses, but they are in different families (Rubiaceae vs. Piperaceae).",
+   "Distinguishable from Piper methysticum by its opposite leaves and white tubular flowers, whereas Kava has alternate leaves and greenish flower clusters.",
+   "Distinctive to the Australian and New Guinean rainforests."
+  ],
+  "prep": {
+   "summary": "The bark or leaves are typically chewed or brewed into a tea.",
+   "steps": [
+    "Bark is stripped from the stems or leaves are harvested.",
+    "The material is dried or used fresh.",
+    "It is chewed directly or steeped in hot water to make a tea.",
+    "The resulting infusion is consumed for its psychoactive effects."
+   ],
+   "note": "Traditional preparation methods vary, but the goal is to extract the beta-carboline alkaloids."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous Australian peoples",
+    "New Guinean tribes"
+   ],
+   "ritual": "Used in traditional ceremonies and for social relaxation, similar to the use of Kava in the Pacific.",
+   "context": "A culturally significant plant in the tropical regions of Australia and New Guinea."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of psychoactive plants.",
+  "safety": "Contains MAO inhibitors, which can cause dangerous interactions with certain foods (tyramine) and medications (antidepressants, stimulants); consult a qualified professional before use."
+ },
+ {
+  "id": "prosopis_nigra",
+  "name": "Black Mesquite",
+  "sci": "Prosopis nigra",
+  "family": "Fabaceae (Legume family)",
+  "form": "Thorny tree",
+  "continent": "Global",
+  "regions": [
+   "Mexico",
+   "United States (Texas)",
+   "Central America"
+  ],
+  "coords": [
+   29.76,
+   -98.49
+  ],
+  "habitat": "Arid and semi-arid scrublands, riverbanks, and dry forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Prosopis_nigra_1b.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Prosopis nigra (Black Mesquite) tree",
+  "parts": "Bark, leaves, and pods",
+  "compounds": [
+   "harmalicin",
+   "harman",
+   "etc"
+  ],
+  "pharmacology": "Contains beta-carboline alkaloids such as harman and harmine, which are MAO inhibitors (MAOIs) and can act as psychoactive agents, though the plant is primarily known for its nutritional and ecological value rather than recreational use.",
+  "id_features": [
+   "A medium-sized tree with a dense, spreading crown.",
+   "Bipinnate leaves with small, oval leaflets.",
+   "Long, curved, sharp thorns on the branches.",
+   "Produces long, dark brown, edible pods (mesquite beans).",
+   "Flowers are small, yellowish, and clustered."
+  ],
+  "lookalikes": [
+   "Similar to other Prosopis species (e.g., P. glandulosa), but P. nigra is distinguished by its darker pods and specific leaflet shape.",
+   "Can be confused with Acacia species, but Prosopis has distinct bipinnate leaves and long, curved thorns.",
+   "Distinctive in its native range due to the combination of thorns, leaf structure, and pod shape."
+  ],
+  "prep": {
+   "summary": "The bark and leaves are traditionally prepared as a tea or decoction, while the pods are dried and ground into flour.",
+   "steps": [
+    "Bark or leaves are collected and dried.",
+    "The material is boiled in water to create a decoction.",
+    "Pods are harvested, dried, and shelled.",
+    "The seeds are ground into a fine powder for flour or syrup."
+   ],
+   "note": "While the pods are a common food source, the bark and leaves contain psychoactive alkaloids and should be used with caution and knowledge of local traditions."
+  },
+  "culture": {
+   "cultures": [
+    "Native American (e.g., Comanche, Apache)",
+    "Mexican traditional medicine"
+   ],
+   "ritual": "Historically used in various Native American traditions for medicinal purposes and as a food source; the pods were a staple food, and the bark was used for teas.",
+   "context": "A vital resource in arid regions, providing food, fuel, and traditional medicine, deeply integrated into the survival and cultural practices of desert-dwelling peoples."
+  },
+  "legality": "Legal as a plant and food source in most jurisdictions; however, the psychoactive alkaloids in the bark may be regulated in some areas; check local law.",
+  "safety": "Contains MAO-inhibiting alkaloids; consult a qualified professional before use, especially if taking other medications, as interactions can be significant."
+ },
+ {
+  "id": "shepherdia_pulchellum",
+  "name": "American Shephard",
+  "sci": "Shepherdia pulchellum",
+  "family": "Elaeagnaceae",
+  "form": "Thorny shrub with silvery leaves",
+  "continent": "North America",
+  "regions": [
+   "Alaska",
+   "British Columbia",
+   "Washington",
+   "Oregon",
+   "California"
+  ],
+  "coords": [
+   58.3,
+   -134.4
+  ],
+  "habitat": "Coastal scrub, dunes, and rocky slopes",
+  "image": "",
+  "alt": "Shepherdia pulchellum (American Shephard) shrub",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids that can act on GABA-A receptors and other targets, but specific pharmacological effects and safety profiles for this species are not well-documented in modern clinical literature.",
+  "id_features": [
+   "A dense, thorny shrub reaching up to 3 meters in height.",
+   "Leaves are silvery-white on the underside and green on top.",
+   "Produces small, yellow, cup-shaped flowers in spring.",
+   "Bears small, orange-yellow, edible berries in late summer."
+  ],
+  "lookalikes": [
+   "Distinctive silvery leaf undersides distinguish it from many other coastal shrubs.",
+   "Confusable with other Elaeagnaceae species, but the specific thorny habit and berry color are key identifiers."
+  ],
+  "prep": {
+   "summary": "Traditionally, the bark or leaves may be prepared as a tea or chewed, though specific traditional protocols vary by region.",
+   "steps": [
+    "Harvest bark or leaves from the shrub.",
+    "Dry the material thoroughly.",
+    "Prepare as a decoction or infusion in water.",
+    "Consume the liquid or chew the dried plant material."
+   ],
+   "note": "Use is traditional and limited; modern safety data is sparse."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous peoples of the Pacific Northwest",
+    "Alaska Native peoples"
+   ],
+   "ritual": "Used in traditional medicine for various ailments, including respiratory issues and as a general tonic.",
+   "context": "A valued plant in coastal ecosystems, providing food for wildlife and traditional uses for human communities."
+  },
+  "legality": "Legal to harvest in most jurisdictions, but status varies by jurisdiction; check local law regarding protected species or land use.",
+  "safety": "Limited modern safety data; consult a qualified professional before use, especially given the presence of beta-carbolines."
+ },
+ {
+  "id": "strychnos_melinoniana",
+  "name": "Melinoniana",
+  "sci": "Strychnos melinoniana",
+  "family": "Strychnaceae",
+  "form": "Woody vine or small tree",
+  "continent": "Africa",
+  "regions": [
+   "Cameroon",
+   "Gabon",
+   "Congo",
+   "Angola"
+  ],
+  "coords": [
+   0.0,
+   12.0
+  ],
+  "habitat": "Tropical rainforests and gallery forests",
+  "image": "https://ids.si.edu/ids/deliveryService/id/ark:/65665/m35e2a292e3d2e4a659195d3ce3ea5af7d",
+  "alt": "Strychnos melinoniana vine",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Contains beta-carbolines, a class of alkaloids that can act on GABA-A receptors and monoamine oxidase (MAO), though specific pharmacological data for this species is limited compared to other Strychnos.",
+  "id_features": [
+   "Woody vine or small tree with opposite, simple leaves.",
+   "Bark is often used in traditional preparations.",
+   "Flowers are small and inconspicuous.",
+   "Fruits are drupes, typically red or orange when ripe."
+  ],
+  "lookalikes": [
+   "Distinguish from other Strychnos species by leaf shape and fruit color.",
+   "Care must be taken to avoid confusion with toxic Strychnos species containing strychnine.",
+   "Local knowledge is essential for correct identification."
+  ],
+  "prep": {
+   "summary": "Bark or leaves are typically dried and prepared as a decoction or infusion.",
+   "steps": [
+    "Collect bark or leaves from the plant.",
+    "Dry the material thoroughly.",
+    "Grind or chop the dried material.",
+    "Boil or steep in water to create a tea or decoction."
+   ],
+   "note": "Preparation methods vary by local tradition; dosage and safety are not well-established."
+  },
+  "culture": {
+   "cultures": [
+    "Local Bantu-speaking peoples of Central Africa"
+   ],
+   "ritual": "Used in traditional medicine and possibly in ritual contexts, though specific ceremonial details are less documented than for other psychoactive plants.",
+   "context": "Part of the traditional pharmacopoeia of Central African rainforest communities."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of Strychnos species.",
+  "safety": "Strychnos species can contain toxic alkaloids; consult a qualified professional before use. Do not confuse with Strychnos nux-vomica (strychnine)."
+ },
+ {
+  "id": "strychnos_usambarensis",
+  "name": "Kambamba",
+  "sci": "Strychnos usambarensis",
+  "family": "Strychnaceae",
+  "form": "Small tree or large shrub",
+  "continent": "Africa",
+  "regions": [
+   "Tanzania",
+   "Kenya",
+   "Uganda",
+   "Rwanda",
+   "Burundi"
+  ],
+  "coords": [
+   -6.0,
+   37.0
+  ],
+  "habitat": "Tropical forests and forest edges",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Strychnos_usambarensis00.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Strychnos usambarensis (Kambamba) tree",
+  "parts": "Seeds",
+  "compounds": [
+   "harman"
+  ],
+  "pharmacology": "Contains beta-carbolines such as harman, which act as monoamine oxidase inhibitors (MAOIs) and may have psychoactive effects, though specific clinical data for this species is limited.",
+  "id_features": [
+   "Small tree or shrub with glossy, dark green leaves.",
+   "Produces small, round, red or orange berries.",
+   "Native to East African forests.",
+   "Bark and wood are hard and dense."
+  ],
+  "lookalikes": [
+   "Other Strychnos species in East Africa, such as Strychnos spinosa.",
+   "Distinguish by specific leaf shape and berry color/size.",
+   "Consult local experts for precise identification."
+  ],
+  "prep": {
+   "summary": "Seeds are typically chewed or prepared into a decoction.",
+   "steps": [
+    "Seeds are harvested from ripe berries.",
+    "They may be dried and then chewed directly.",
+    "Alternatively, seeds are boiled in water to create a bitter tea.",
+    "The liquid is consumed in small quantities."
+   ],
+   "note": "Preparation is often ritualistic and varies by local tradition."
+  },
+  "culture": {
+   "cultures": [
+    "Tanzanian",
+    "Kenyan",
+    "Ugandan"
+   ],
+   "ritual": "Used in traditional ceremonies and for medicinal purposes, often to treat ailments or for spiritual insight.",
+   "context": "A traditional plant with cultural significance in East African communities."
+  },
+  "legality": "Status varies by jurisdiction; check local law.",
+  "safety": "Contains MAOIs; consult a qualified professional before use due to potential interactions and toxicity."
+ },
+ {
+  "id": "banisteriopsis_argentia",
+  "name": "Banisteriopsis argentia",
+  "sci": "Banisteriopsis argentia",
+  "family": "Malpighiaceae",
+  "form": "Woody vine",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Peru",
+   "Bolivia",
+   "Colombia"
+  ],
+  "coords": [
+   -10.0,
+   -55.0
+  ],
+  "habitat": "Tropical rainforest understory",
+  "image": "",
+  "alt": "Banisteriopsis argentia vine",
+  "parts": "Bark and leaves",
+  "compounds": [
+   "5-methoxytetrahydroharman",
+   "(-)-N(6)-methoxytetrahydroharman",
+   "dimethyltryptamine-N(6)-oxide"
+  ],
+  "pharmacology": "Contains beta-carbolines such as 5-methoxytetrahydroharman, which are known to inhibit monoamine oxidase A (MAO-A), and trace amounts of dimethyltryptamine-N(6)-oxide.",
+  "id_features": [
+   "Woody vine with silvery or greyish-green leaves.",
+   "Leaves are typically elliptic to obovate.",
+   "Often found climbing trees in dense forest.",
+   "Bark is used for traditional preparations."
+  ],
+  "lookalikes": [
+   "Other species in the genus Banisteriopsis, such as B. caapi, which is more widely known.",
+   "Distinguished by the specific silver-grey coloration of the foliage.",
+   "Few common lookalikes outside the Malpighiaceae family."
+  ],
+  "prep": {
+   "summary": "The bark or leaves are typically boiled to create a decoction.",
+   "steps": [
+    "Collect bark or leaves from the vine.",
+    "Chop or crush the plant material.",
+    "Boil in water for an extended period to extract compounds.",
+    "Strain the liquid for consumption."
+   ],
+   "note": "Preparation is often part of traditional shamanic or medicinal practices."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous peoples of the Amazon",
+    "Traditional healers in Brazil and Peru"
+   ],
+   "ritual": "Used in traditional ceremonies and for medicinal purposes by indigenous communities.",
+   "context": "Part of the rich ethnobotanical heritage of the Amazon rainforest."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of MAO-inhibiting plants.",
+  "safety": "Contains MAO inhibitors; consult a qualified professional before use, especially if taking other medications."
+ },
+ {
+  "id": "banisteriopsis_inebrians",
+  "name": "Banisteriopsis inebrians",
+  "sci": "Banisteriopsis inebrians",
+  "family": "Malpighiaceae",
+  "form": "Woody vine",
+  "continent": "Asia",
+  "regions": [
+   "India",
+   "Nepal",
+   "Myanmar",
+   "Thailand"
+  ],
+  "coords": [
+   26.8,
+   80.9
+  ],
+  "habitat": "Tropical and subtropical moist broadleaf forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Banisteriopsis-caapi-cooking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Banisteriopsis inebrians vine",
+  "parts": "Bark",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "The bark contains beta-carbolines, which are known to inhibit monoamine oxidase (MAO) enzymes, potentially altering the metabolism of other substances, though specific clinical evidence for its traditional use is limited.",
+  "id_features": [
+   "A woody climbing vine with smooth, greyish bark.",
+   "Leaves are opposite, elliptic, and glossy green.",
+   "Flowers are small, yellowish, and borne in clusters.",
+   "Fruits are small, round, and turn from green to red or purple."
+  ],
+  "lookalikes": [
+   "Distinguish from other Malpighiaceae vines by the specific bark texture and leaf arrangement.",
+   "Often confused with other local vines used in traditional preparations, but the bark is the primary part used here.",
+   "Few common lookalikes in its native range that share the same traditional use."
+  ],
+  "prep": {
+   "summary": "The bark is typically dried and prepared as a decoction or infusion.",
+   "steps": [
+    "The bark is stripped from the vine and dried in the shade.",
+    "The dried bark is chopped or powdered.",
+    "A portion is boiled in water to create a decoction.",
+    "The liquid is strained and consumed."
+   ],
+   "note": "Preparation is often part of traditional or ritualistic practices in its native regions."
+  },
+  "culture": {
+   "cultures": [
+    "Tribal communities in Northeast India",
+    "Nepalese traditional practitioners"
+   ],
+   "ritual": "Used in traditional ceremonies and as a medicinal preparation for various ailments.",
+   "context": "Holds cultural significance in local traditional medicine and spiritual practices."
+  },
+  "legality": "Status varies by jurisdiction; check local law.",
+  "safety": "Consult a qualified professional; potential for interactions with other substances due to MAO inhibition."
+ },
+ {
+  "id": "banisteriopsis_lutea",
+  "name": "Chacruna",
+  "sci": "Banisteriopsis lutea",
+  "family": "Malpighiaceae",
+  "form": "Woody shrub or small tree",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Peru",
+   "Bolivia",
+   "Colombia",
+   "Venezuela"
+  ],
+  "coords": [
+   -3.4653,
+   -62.2159
+  ],
+  "habitat": "Tropical rainforests and gallery forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flickr_-_Jo%C3%A3o_de_Deus_Medeiros_-_Banisteriopsis_campestris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Banisteriopsis lutea (Chacruna) shrub",
+  "parts": "Leaves",
+  "compounds": [
+   "harmine",
+   "telepathine"
+  ],
+  "pharmacology": "Contains beta-carboline alkaloids like harmine and telepathine, which act as reversible inhibitors of monoamine oxidase A (MAO-A). This mechanism is traditionally used to facilitate the metabolism of tryptamines found in other plants, though its standalone psychoactive effects are mild and primarily sedative or anxiolytic.",
+  "id_features": [
+   "Small tree or shrub with smooth, greyish bark.",
+   "Leaves are opposite, elliptic, and have a distinct yellowish-green underside.",
+   "Flowers are small, yellow, and star-shaped.",
+   "Often found in the understory of tropical forests."
+  ],
+  "lookalikes": [
+   "Distinguish from other Malpighiaceae by the specific leaf shape and yellow flowers.",
+   "Often confused with Banisteriopsis campestris, which is also used in similar preparations.",
+   "Distinctive yellow flowers help separate it from many other forest understory shrubs."
+  ],
+  "prep": {
+   "summary": "Leaves are dried and brewed into a tea or decoction.",
+   "steps": [
+    "Fresh or dried leaves are collected and cleaned.",
+    "The leaves are steeped in hot water to create a tea.",
+    "The liquid is strained and consumed as a beverage.",
+    "In traditional contexts, it is often combined with other plants."
+   ],
+   "note": "The preparation is often part of a larger ritual involving multiple plant species."
+  },
+  "culture": {
+   "cultures": [
+    "Shuar",
+    "Achuar",
+    "Kichwa",
+    "Various Amazonian peoples"
+   ],
+   "ritual": "Used in shamanic ceremonies and healing rituals, often as a component of ayahuasca or similar brews.",
+   "context": "A key botanical ingredient in the spiritual and medicinal traditions of the Amazon basin."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of psychoactive plant materials.",
+  "safety": "Consult a qualified professional; MAO inhibitors can interact with certain medications and foods, and individual sensitivity varies."
+ },
+ {
+  "id": "banisteriopsis_metallicolor",
+  "name": "Banisteriopsis metallicolor",
+  "sci": "Banisteriopsis metallicolor",
+  "family": "Malpighiaceae",
+  "form": "Woody vine",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Bolivia",
+   "Paraguay",
+   "Argentina"
+  ],
+  "coords": [
+   -20.0,
+   -58.0
+  ],
+  "habitat": "Tropical and subtropical moist broadleaf forests",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flickr_-_Jo%C3%A3o_de_Deus_Medeiros_-_Banisteriopsis_campestris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Banisteriopsis vine with glossy leaves",
+  "parts": "Leaves and bark",
+  "compounds": [
+   "harmine",
+   "telepathine"
+  ],
+  "pharmacology": "Contains beta-carboline alkaloids like harmine and telepathine, which act as reversible inhibitors of monoamine oxidase A (MAO-A). This mechanism is traditionally used to prolong the effects of tryptamines, though the plant itself has mild psychoactive properties.",
+  "id_features": [
+   "A woody climbing vine with opposite, simple leaves.",
+   "Leaves are glossy, dark green, and often have a metallic sheen.",
+   "Flowers are small, yellow, and arranged in racemes.",
+   "Bark is smooth and light brown to gray."
+  ],
+  "lookalikes": [
+   "Distinguish from other Malpighiaceae vines by the specific leaf shape and metallic luster.",
+   "Often confused with Banisteriopsis campestris, which is morphologically very similar.",
+   "Requires botanical expertise to distinguish from non-psychoactive Malpighiaceae species."
+  ],
+  "prep": {
+   "summary": "The leaves or bark are typically dried and brewed into a tea or decoction.",
+   "steps": [
+    "Harvest leaves or bark from the vine.",
+    "Dry the material in a shaded, well-ventilated area.",
+    "Crush or chop the dried material.",
+    "Steep in hot water to create a tea, or boil for a stronger decoction."
+   ],
+   "note": "Traditionally used as a 'chacruna' or 'ayahuasca' component, often combined with DMT-containing plants."
+  },
+  "culture": {
+   "cultures": [
+    "Indigenous peoples of the Amazon",
+    "Shamanic traditions"
+   ],
+   "ritual": "Used in shamanic ceremonies as a MAO inhibitor to facilitate the psychoactive effects of other plants, often in the context of healing or spiritual exploration.",
+   "context": "A key component in the preparation of ayahuasca and other traditional Amazonian brews."
+  },
+  "legality": "Status varies by jurisdiction; check local law regarding the possession and use of MAO inhibitor plants.",
+  "safety": "MAO inhibitors can interact dangerously with certain foods (tyramine) and medications; consult a qualified professional before use."
+ },
+ {
+  "id": "banisteriopsis_muricata",
+  "name": "Chacruna",
+  "sci": "Banisteriopsis muricata",
+  "family": "Malpighiaceae",
+  "form": "Woody vine or small tree",
+  "continent": "South America",
+  "regions": [
+   "Brazil",
+   "Peru",
+   "Bolivia",
+   "Colombia",
+   "Venezuela"
+  ],
+  "coords": [
+   -3.4653,
+   -62.2159
+  ],
+  "habitat": "Tropical rainforests and riverbanks",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flickr_-_Jo%C3%A3o_de_Deus_Medeiros_-_Banisteriopsis_muricata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "alt": "Banisteriopsis muricata (Chacruna) vine",
+  "parts": "Leaves and bark",
+  "compounds": [
+   "harmine up to 6%",
+   "harmaline up to 4%",
+   "plus DMT"
+  ],
+  "pharmacology": "Contains beta-carboline alkaloids (harmine and harmaline) which act as reversible monoamine oxidase inhibitors (MAOIs). These compounds inhibit the breakdown of DMT, allowing it to remain active in the central nervous system when combined with a DMT source.",
+  "id_features": [
+   "Woody vine or small tree with rough, textured bark.",
+   "Leaves are often hairy (muricata) and have a distinct venation pattern.",
+   "Flowers are typically yellow with five petals.",
+   "Grows in tropical lowland forests."
+  ],
+  "lookalikes": [
+   "Distinguish from other Malpighiaceae by the specific leaf hairiness and bark texture.",
+   "Often confused with other Banisteriopsis species, but identification is critical for safety and efficacy.",
+   "Requires expert botanical identification to distinguish from toxic lookalikes."
+  ],
+  "prep": {
+   "summary": "Leaves or bark are boiled to extract beta-carbolines, which are then combined with a DMT source.",
+   "steps": [
+    "Harvest leaves or bark from identified plants.",
+    "Boil the plant material in water to extract the alkaloids.",
+    "Strain the liquid to remove plant matter.",
+    "Combine the decoction with a DMT-containing plant (e.g., Psychotria viridis) to form ayahuasca."
+   ],
+   "note": "The MAOI properties require strict dietary restrictions (avoiding tyramine-rich foods) to prevent hypertensive crises."
+  },
+  "culture": {
+   "cultures": [
+    "Shuar",
+    "Achuar",
+    "Kichwa",
+    "Yagua"
+   ],
+   "ritual": "Used in shamanic ceremonies for healing, divination, and spiritual guidance. The brew is consumed in a controlled setting under the guidance of a shaman.",
+   "context": "A sacred plant in Amazonian indigenous traditions, central to spiritual and medicinal practices."
+  },
+  "legality": "Status varies by jurisdiction; check local law. Often regulated as a controlled substance due to its MAOI properties and association with ayahuasca.",
+  "safety": "Contains potent MAOIs; dangerous interactions with many medications (antidepressants, stimulants) and foods. Consult a qualified professional before use."
+ },
+ {
+  "id": "cabi_pratensis",
+  "name": "Cabi",
+  "sci": "Cabi pratensis",
+  "family": "Rubiaceae (Madder family)",
+  "form": "Perennial herb",
+  "continent": "Africa",
+  "regions": [
+   "Kenya",
+   "Tanzania",
+   "Uganda",
+   "Ethiopia"
+  ],
+  "coords": [
+   -1.29,
+   36.82
+  ],
+  "habitat": "Highland grasslands and savannas",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daniel_Elger%2C_CEO_of_CABI_speaking_during_Session_2-_Harnessing_science_and_technology_for_food_security_at_the_Global_Food_Security_Summit_in_London_on_20_November_2023_-_%28cropped%29.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "alt": "Daniel Elger, CEO of CABI, speaking at the Global Food Security Summit",
+  "parts": "Whole plant (leaves and stems)",
+  "compounds": [
+   "beta-carbolines"
+  ],
+  "pharmacology": "Beta-carbolines are a class of alkaloids that can act as monoamine oxidase inhibitors (MAOIs), which may influence the metabolism of other psychoactive compounds, though specific pharmacological data for Cabi pratensis is limited.",
+  "id_features": [
+   "Grows as a low-lying perennial herb in high-altitude grasslands.",
+   "Leaves are typically opposite and simple.",
+   "Often found in association with other highland flora in East Africa.",
+   "Used traditionally in specific cultural contexts."
+  ],
+  "lookalikes": [
+   "Distinguish from other Rubiaceae herbs by its specific highland habitat and traditional use.",
+   "Few common lookalikes in its specific ecological niche.",
+   "Identification often relies on local knowledge and habitat."
+  ],
+  "prep": {
+   "summary": "The plant is traditionally prepared as a tea or infusion.",
+   "steps": [
+    "Fresh or dried leaves and stems are collected.",
+    "The plant material is placed in a pot of water.",
+    "The mixture is boiled or steeped to extract the compounds.",
+    "The liquid is strained and consumed."
+   ],
+   "note": "Preparation is often part of a social or ritual gathering."
+  },
+  "culture": {
+   "cultures": [
+    "Kikuyu",
+    "Kamba",
+    "Other East African highland communities"
+   ],
+   "ritual": "Used in traditional ceremonies, social gatherings, and sometimes for spiritual or medicinal purposes.",
+   "context": "A culturally significant plant in East African highland societies."
+  },
+  "legality": "Status varies by jurisdiction; check local law.",
+  "safety": "Consult a qualified professional; beta-carbolines can interact with other substances and may have side effects."
+ }
 ]
