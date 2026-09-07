@@ -949,7 +949,7 @@
    -106.5
   ],
   "habitat": "Arid scrublands, rocky slopes, and desert washes",
-  "image": "",
+  "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/726738141/original.jpg",
   "alt": "Passiflora bryonoides vine",
   "parts": "Dried leaves and stems",
   "compounds": [
