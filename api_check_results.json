@@ -1,0 +1,541 @@
+{
+ "acacia_confusa": {
+  "ok": true,
+  "file": "File:Starr_040812-0030_Acacia_confusa.jpg",
+  "mime": "image/jpeg",
+  "width": 1632,
+  "height": 1224
+ },
+ "acacia_cuthbertsonii": {
+  "ok": true,
+  "file": "File:088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+  "mime": "image/jpeg",
+  "width": 4477,
+  "height": 2985
+ },
+ "acacia_dealbata": {
+  "ok": true,
+  "file": "File:Acacia_dealbata_(37540484220).jpg",
+  "mime": "image/jpeg",
+  "width": 4608,
+  "height": 3456
+ },
+ "acacia_decurrens": {
+  "ok": true,
+  "file": "File:Acacia-decurrens-catalina.jpg",
+  "mime": "image/jpeg",
+  "width": 2592,
+  "height": 1944
+ },
+ "acacia_drummondii": {
+  "ok": true,
+  "file": "File:088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+  "mime": "image/jpeg",
+  "width": 4477,
+  "height": 2985
+ },
+ "acacia_elata": {
+  "ok": true,
+  "file": "File:088_Angolan_giraffe_eating_eating_from_an_acacia_tree_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+  "mime": "image/jpeg",
+  "width": 4477,
+  "height": 2985
+ },
+ "acacia_georginae": {
+  "ok": true,
+  "file": "File:Acacia_georginae.jpg",
+  "mime": "image/jpeg",
+  "width": 2541,
+  "height": 1893
+ },
+ "acacia_linearis": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:5f"
+ },
+ "acacia_maidenii": {
+  "ok": true,
+  "file": "File:Acacia_maidenii_F.Muell._(AM_AK342784).jpg",
+  "mime": "image/jpeg",
+  "width": 4664,
+  "height": 7408
+ },
+ "acacia_melanoxylon": {
+  "ok": true,
+  "file": "File:Acacia_melanoxylon_branch.jpg",
+  "mime": "image/jpeg",
+  "width": 1984,
+  "height": 1488
+ },
+ "acacia_obtusifolia": {
+  "ok": false,
+  "err": "429-exhausted",
+  "file": "File:Acacia_obtusifolia_1.jpg"
+ },
+ "acacia_phlebophylla": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:fc"
+ },
+ "acacia_pycnantha": {
+  "ok": true,
+  "file": "File:Acacia_pycnantha_Golden_Wattle.jpg",
+  "mime": "image/jpeg",
+  "width": 1333,
+  "height": 1000
+ },
+ "acacia_retinodes": {
+  "ok": true,
+  "file": "File:Acacia_retinodes_(Fabaceae),_acacia_plateada_I.jpg",
+  "mime": "image/jpeg",
+  "width": 2048,
+  "height": 1536
+ },
+ "acacia_saligna": {
+  "ok": true,
+  "file": "File:Acacia_April_2015-3.jpg",
+  "mime": "image/jpeg",
+  "width": 7141,
+  "height": 4244
+ },
+ "acacia_sassa": {
+  "ok": true,
+  "file": "File:Albizia_adianthifolia_1DS-II_1042.jpg",
+  "mime": "image/jpeg",
+  "width": 3328,
+  "height": 4992
+ },
+ "acacia_simplex": {
+  "ok": true,
+  "file": "File:Acacia_simplex,_leaves.jpg",
+  "mime": "image/jpeg",
+  "width": 1600,
+  "height": 1200
+ },
+ "acacia_verticillata": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:52"
+ },
+ "acacia_victoriae": {
+  "ok": true,
+  "file": "File:Acacia_victoriae_habit.jpg",
+  "mime": "image/jpeg",
+  "width": 2304,
+  "height": 2162
+ },
+ "ailanthus_malabarica": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:e2"
+ },
+ "amsonia_tabernaemontana": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:f1"
+ },
+ "anadenanthera_colubrina": {
+  "ok": false,
+  "err": "429-exhausted",
+  "file": "File:be"
+ },
+ "aspidosperma_exalatum": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:8b"
+ },
+ "aspidosperma_polyneuron": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:07"
+ },
+ "banisteriopsis_inebrians": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:a7"
+ },
+ "banisteriopsis_muricata": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:66"
+ },
+ "borreria_verticillata": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:ea"
+ },
+ "burkea_africana": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:b7"
+ },
+ "calligonum_minimum": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:a8"
+ },
+ "carex_parva": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:c3"
+ },
+ "citrus_bergamia": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:f2"
+ },
+ "cylindropuntia_spinosior": {
+  "ok": true,
+  "file": "File:Cylindropuntia_spinosior,_with_flower,_Albuquerque.jpg",
+  "mime": "image/jpeg",
+  "width": 3008,
+  "height": 2000
+ },
+ "delosperma_cooperi": {
+  "ok": false,
+  "err": "429-exhausted",
+  "file": "File:Delosperma_cooperi_(D\u00e9losperma_rose)_-_97.jpg"
+ },
+ "delosperma_esterhuyseniae": {
+  "ok": true,
+  "file": "File:(MHNT)_Delosperma_cooperi_-_Flower.jpg",
+  "mime": "image/jpeg",
+  "width": 6259,
+  "height": 5227
+ },
+ "delosperma_harazianum": {
+  "ok": true,
+  "file": "File:Delosperma_harazianum-IMG_1611.jpg",
+  "mime": "image/jpeg",
+  "width": 3456,
+  "height": 3456
+ },
+ "delosperma_lydenbergense": {
+  "ok": true,
+  "file": "File:M._Delosperma_lydenbergense_plant.JPG",
+  "mime": "image/jpeg",
+  "width": 2816,
+  "height": 2112
+ },
+ "delosperma_pageanum": {
+  "ok": true,
+  "file": "File:(MHNT)_Delosperma_cooperi_-_Flower.jpg",
+  "mime": "image/jpeg",
+  "width": 6259,
+  "height": 5227
+ },
+ "delosperma_tradescantioides": {
+  "ok": true,
+  "file": "File:Delosperma_tradescantioides_kz03.jpg",
+  "mime": "image/jpeg",
+  "width": 4608,
+  "height": 3072
+ },
+ "desmodium_caudatum": {
+  "ok": true,
+  "file": "File:Desmodium_sp.jpg",
+  "mime": "image/jpeg",
+  "width": 3060,
+  "height": 4080
+ },
+ "desmodium_gyrans": {
+  "ok": true,
+  "file": "File:Codariocalyx_motorius_Taub39.png",
+  "mime": "image/png",
+  "width": 1455,
+  "height": 972
+ },
+ "desmodium_triflorum": {
+  "ok": true,
+  "file": "File:Desmodium_triflorum_0430.jpg",
+  "mime": "image/jpeg",
+  "width": 3008,
+  "height": 2000
+ },
+ "diplopterys_cabrerana": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:30"
+ },
+ "echinopsis_pachanoi": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:15"
+ },
+ "echinopsis_tacaquirensis": {
+  "ok": false,
+  "err": "429-exhausted",
+  "file": "File:3a"
+ },
+ "elaeagnus_commutata": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:23"
+ },
+ "festuca_arundinacea": {
+  "ok": true,
+  "file": "File:Illustration_Festuca_ovina0.jpg",
+  "mime": "image/jpeg",
+  "width": 1407,
+  "height": 2298
+ },
+ "flindersia_laevicarpa": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:af"
+ },
+ "hammada_leptoclada": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:27"
+ },
+ "hippophae_rhamnoides": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:a8"
+ },
+ "iryanthera_macrophylla": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:d8"
+ },
+ "iryanthera_ulei": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:d8"
+ },
+ "lespedeza_bicolor": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:cf"
+ },
+ "lolium_perenne": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:32"
+ },
+ "meconopsis_robusta": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:0e"
+ },
+ "mimosa_scabrella": {
+  "ok": false,
+  "err": "429-exhausted",
+  "file": "File:e8"
+ },
+ "mimosa_verrucosa": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:54"
+ },
+ "nauclea_diderrichii": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:56"
+ },
+ "newbouldia_laevis": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:e4"
+ },
+ "opuntia_acanthocarpa": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:e1"
+ },
+ "passiflora_actinia": {
+  "ok": true,
+  "file": "File:Passiflora_actinia_flower_09.jpg",
+  "mime": "image/jpeg",
+  "width": 3264,
+  "height": 1836
+ },
+ "passiflora_alata": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:a7"
+ },
+ "passiflora_alba": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:bc"
+ },
+ "passiflora_quadrangularis": {
+  "ok": true,
+  "file": "File:Passiflora_\u00d7_decaisneana_2.JPG",
+  "mime": "image/jpeg",
+  "width": 2592,
+  "height": 1944
+ },
+ "pelecyphora_aselliformis": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:1e"
+ },
+ "perriera_madagascariensis": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:f5"
+ },
+ "phalaris_arundinacea": {
+  "ok": false,
+  "err": "429-exhausted",
+  "file": "File:Phalaris_arundinacea_3_RF.jpg"
+ },
+ "phalaris_brachystachys": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:d0"
+ },
+ "phyllodium_pulchellum": {
+  "ok": true,
+  "file": "File:Phyllodium_pulchellum_Dadu.jpg",
+  "mime": "image/jpeg",
+  "width": 2048,
+  "height": 1536
+ },
+ "picrasma_excelsa": {
+  "ok": true,
+  "file": "File:Picrasma_javanica.jpg",
+  "mime": "image/jpeg",
+  "width": 1840,
+  "height": 3264
+ },
+ "picrasma_javanica": {
+  "ok": true,
+  "file": "File:Picrasma_javanica.jpg",
+  "mime": "image/jpeg",
+  "width": 1840,
+  "height": 3264
+ },
+ "prestonia_amazonica": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:26"
+ },
+ "prosopis_nigra": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:38"
+ },
+ "psychotria_carthagenensis": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:3e"
+ },
+ "psychotria_colorata": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:18"
+ },
+ "senegalia_berlandieri": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:0b"
+ },
+ "senegalia_laeta": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:e7"
+ },
+ "senegalia_rigidula": {
+  "ok": false,
+  "err": "429-exhausted",
+  "file": "File:Senegalia_sp_3.jpg"
+ },
+ "shepherdia_argentea": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:83"
+ },
+ "simira_klugei": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:10"
+ },
+ "simira_rubra": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:10"
+ },
+ "strychnos_usambarensis": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:c6"
+ },
+ "tribulus_terrestris": {
+  "ok": true,
+  "file": "File:Tribulus_terrestris_-_Dghoumes_National_Park.jpg",
+  "mime": "image/jpeg",
+  "width": 5205,
+  "height": 3470
+ },
+ "vachellia_caven": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:e0"
+ },
+ "vachellia_horrida": {
+  "ok": true,
+  "file": "File:Acacia_horrida_(L.f.)_Willd..jpg",
+  "mime": "image/jpeg",
+  "width": 2288,
+  "height": 1712
+ },
+ "vachellia_nilotica": {
+  "ok": true,
+  "file": "File:Seedpods_on_Vachellia_nilotica,_Jhunir.jpg",
+  "mime": "image/jpeg",
+  "width": 2448,
+  "height": 3264
+ },
+ "vachellia_schaffneri": {
+  "ok": true,
+  "file": "File:Acacia-schaffneri-seed-pods.jpg",
+  "mime": "image/jpeg",
+  "width": 2048,
+  "height": 1536
+ },
+ "vachellia_sieberiana": {
+  "ok": true,
+  "file": "File:Pretoria_Voortrekker_Monument_Vachellia_sieberiana_next_to_the_chapel.jpg",
+  "mime": "image/jpeg",
+  "width": 5700,
+  "height": 3736
+ },
+ "vestia_foetida": {
+  "ok": false,
+  "err": "429-exhausted",
+  "file": "File:Vestia_foetida_(14096215513).jpg"
+ },
+ "virola_calophylla": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:fa"
+ },
+ "virola_peruviana": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:71"
+ },
+ "virola_sebifera": {
+  "ok": false,
+  "err": "not-found",
+  "file": "File:54"
+ },
+ "xanthoxylum_rhetsa": {
+  "ok": true,
+  "file": "File:Starr_060325-6755_Zanthoxylum_kauaense.jpg",
+  "mime": "image/jpeg",
+  "width": 1944,
+  "height": 2592
+ },
+ "zornia_latifolia": {
+  "ok": true,
+  "file": "File:Zornia_latifolia_Sm.jpg",
+  "mime": "image/jpeg",
+  "width": 1600,
+  "height": 899
+ }
+}

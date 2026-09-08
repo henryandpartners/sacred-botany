@@ -92,6 +92,10 @@
   .card .body{padding:18px 18px 20px}
   .card h3{font-size:22px; margin-bottom:3px}
   .card .sci{color:var(--green2); font-style:italic; font-size:13.5px; margin-bottom:12px}
+  .card .psycho-card{display:inline-flex; align-items:center; gap:7px; font-size:11.5px; font-weight:600; letter-spacing:.02em;
+    color:var(--gold2); border:1px solid rgba(212,169,78,.35); background:rgba(212,169,78,.08); padding:3px 10px; border-radius:20px; margin-bottom:12px}
+  .dots{letter-spacing:1.5px; font-size:11px; line-height:1}
+  .card .psycho-card .dots{font-size:11px}
   .card .desc{color:var(--muted); font-size:14px}
   .card .foot{display:flex; justify-content:space-between; align-items:center; margin-top:16px; padding-top:14px; border-top:1px solid var(--line)}
   .card .regions{color:var(--faint); font-size:12.5px}
@@ -15979,6 +15983,1968 @@ const PLANTS = [
 
 ];
 
+
+/* ============================== ENRICHMENT (eng/thai/zh/psychoactive) ============================== */
+/* eng: preferred English common name · thai: Thai · zh: Chinese · psycho: 0-4 level · note: psychoactivity note */
+const ENRICH = {
+ "acacia_auriculiformis": {
+  "eng": "Ear-leaf wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_baileyana": {
+  "eng": "Silver Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_beauverdiana": {
+  "eng": "Beauverd's Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_colei": {
+  "eng": "Cole's Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_complanata": {
+  "eng": "Acacia complanata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_confusa": {
+  "eng": "Kudzu (acacia)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_cultriformis": {
+  "eng": "Kanna (acacia)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "called 'kanna' locally but NOT Sceletium; no confirmed DMT"
+ },
+ "acacia_cuthbertsonii": {
+  "eng": "Acacia cuthbertsonii",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_dealbata": {
+  "eng": "Silver Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_decurrens": {
+  "eng": "Catalina Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_delibrata": {
+  "eng": "Acacia delibrata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_drummondii": {
+  "eng": "Drummond's Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_elata": {
+  "eng": "Acacia elata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_falcata": {
+  "eng": "Acacia falcata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_floribunda": {
+  "eng": "Acacia floribunda",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_georginae": {
+  "eng": "Acacia georginae",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_implexa": {
+  "eng": "Witchetty Bush",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "seed food; non-psychoactive"
+ },
+ "acacia_leprosa": {
+  "eng": "Leprous Acacia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_linearis": {
+  "eng": "Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_longifolia": {
+  "eng": "Coastal Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_macradenia": {
+  "eng": "Acacia macradenia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_maidenii": {
+  "eng": "Maiden's Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_mangium": {
+  "eng": "Mangium",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_mearnsii": {
+  "eng": "Black Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_melanoxylon": {
+  "eng": "Blackwood",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_neurophylla": {
+  "eng": "Neurophylla Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_obtusifolia": {
+  "eng": "Acacia obtusifolia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_penninervis": {
+  "eng": "Acacia penninervis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_phlebophylla": {
+  "eng": "Acacia phlebophylla",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_podalyriifolia": {
+  "eng": "DMT Acacia",
+  "thai": "",
+  "zh": "DMT相思树",
+  "psycho": 2,
+  "note": "genuine beta-carbolines; used in ayahuasca substitutes"
+ },
+ "acacia_pycnantha": {
+  "eng": "Golden Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_retinodes": {
+  "eng": "Silver Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_saligna": {
+  "eng": "Golden Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_sassa": {
+  "eng": "Sassa",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_simplex": {
+  "eng": "Acacia simplex",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_sophorae": {
+  "eng": "Coastal Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_stricta": {
+  "eng": "Acacia stricta",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_verticillata": {
+  "eng": "Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_vestita": {
+  "eng": "Acacia vestita",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acacia_victoriae": {
+  "eng": "Victorian Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "acaciella_angustissima": {
+  "eng": "Acaciella angustissima",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "ailanthus_malabarica": {
+  "eng": "Nag Champa",
+  "thai": "นากจามปา",
+  "zh": "依兰香",
+  "psycho": 1,
+  "note": "incense (smoked); mild, ritual"
+ },
+ "amsonia_tabernaemontana": {
+  "eng": "Blue Star",
+  "thai": "",
+  "zh": "",
+  "psycho": 1,
+  "note": "mild hallucinogen claims; low potency"
+ },
+ "anadenanthera_colubrina": {
+  "eng": "Jurema",
+  "thai": "",
+  "zh": "朱雷马",
+  "psycho": 3,
+  "note": "beta-carbolines; genuine Amazonian entheogen"
+ },
+ "apocynum_cannabinum": {
+  "eng": "Dogbane",
+  "thai": "",
+  "zh": "",
+  "psycho": 1,
+  "note": "apocynine; mild hallucinogen, unconfirmed potency"
+ },
+ "araliopsis_tabouensis": {
+  "eng": "Tabou",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "bitter; non-psychoactive"
+ },
+ "arundo_donax": {
+  "eng": "Giant Reed",
+  "thai": "",
+  "zh": "芦竹",
+  "psycho": 0,
+  "note": "fiber/craft; non-psychoactive"
+ },
+ "aspidosperma_exalatum": {
+  "eng": "Quebracho Blanco",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "bitter/quinic; non-psychoactive"
+ },
+ "aspidosperma_polyneuron": {
+  "eng": "Palo Rosa",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "ayahuasca": {
+  "eng": "Ayahuasca",
+  "thai": "",
+  "zh": "死藤水",
+  "psycho": 4,
+  "note": "DMT + MAOI brew; potent classic psychedelic"
+ },
+ "banisteriopsis_argentia": {
+  "eng": "Banisteriopsis argentia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed MAOI/DMT use"
+ },
+ "banisteriopsis_inebrians": {
+  "eng": "Banisteriopsis inebrians",
+  "thai": "",
+  "zh": "醉巴拿纳",
+  "psycho": 3,
+  "note": "genuine DMT + MAOI (ayahuasca-type)"
+ },
+ "banisteriopsis_lutea": {
+  "eng": "Chacruna (banisteriopsis)",
+  "thai": "",
+  "zh": "",
+  "psycho": 2,
+  "note": "genuine MAOI; ayahuasca-type partner"
+ },
+ "banisteriopsis_metallicolor": {
+  "eng": "Banisteriopsis metallicolor",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed MAOI/DMT use"
+ },
+ "banisteriopsis_muricata": {
+  "eng": "Chacruna (banisteriopsis)",
+  "thai": "",
+  "zh": "",
+  "psycho": 2,
+  "note": "genuine MAOI; ayahuasca-type partner"
+ },
+ "betel_nut": {
+  "eng": "Betel Nut",
+  "thai": "หมาก",
+  "zh": "槟榔",
+  "psycho": 1,
+  "note": "arecoline; mild stimulant"
+ },
+ "bissap": {
+  "eng": "Bissap (Roselle)",
+  "thai": "กระเจี๊ยบ",
+  "zh": "洛神花",
+  "psycho": 0,
+  "note": "non-psychoactive; culinary/tea"
+ },
+ "blue_lotus": {
+  "eng": "Blue Lotus",
+  "thai": "บัวสีน้ำเงิน",
+  "zh": "蓝莲花",
+  "psycho": 1,
+  "note": "apomorphine-like; mild entheogen, low potency"
+ },
+ "borreria_verticillata": {
+  "eng": "Borreria verticillata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "burkea_africana": {
+  "eng": "Burkea",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "cabi_pratensis": {
+  "eng": "Cabi",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "callaeum_antifebrile": {
+  "eng": "Sillinto",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "calligonum_minimum": {
+  "eng": "Calligonum minimum",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "calycanthus_occidentalis": {
+  "eng": "Western Sweetshrub",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "aromatic; non-psychoactive"
+ },
+ "cannabis": {
+  "eng": "Cannabis",
+  "thai": "กัญชา",
+  "zh": "大麻",
+  "psycho": 3,
+  "note": "THC/CBD; classic psychedelic/cannabinoid"
+ },
+ "carex_brevicollis": {
+  "eng": "Bristly Sedge",
+  "thai": "",
+  "zh": "薹草",
+  "psycho": 0,
+  "note": "non-psychoactive"
+ },
+ "carex_parva": {
+  "eng": "Small Sedge",
+  "thai": "",
+  "zh": "薹草",
+  "psycho": 0,
+  "note": "non-psychoactive"
+ },
+ "chrysophyllum_lacourtianum": {
+  "eng": "Gambeya",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "citrus_bergamia": {
+  "eng": "Bergamot",
+  "thai": "",
+  "zh": "佛手柑",
+  "psycho": 0,
+  "note": "flavor/oil; non-psychoactive"
+ },
+ "citrus_limon": {
+  "eng": "Lemon",
+  "thai": "มะนาว",
+  "zh": "柠檬",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "citrus_medica": {
+  "eng": "Buddha's Hand",
+  "thai": "มือพระพุทธเจ้า",
+  "zh": "佛手",
+  "psycho": 0,
+  "note": "ornamental/ritual citrus; non-psychoactive"
+ },
+ "citrus_sinesis": {
+  "eng": "Citrus sinesis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "coca": {
+  "eng": "Coca",
+  "thai": "",
+  "zh": "古柯",
+  "psycho": 3,
+  "note": "cocaine; strong stimulant, high dependence"
+ },
+ "cylindropuntia_echinocarpa": {
+  "eng": "Cholla Cactus",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 0,
+  "note": "no confirmed mescaline"
+ },
+ "cylindropuntia_spinosior": {
+  "eng": "Cholla Cactus",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 0,
+  "note": "no confirmed mescaline"
+ },
+ "damiana": {
+  "eng": "Damiana",
+  "thai": "",
+  "zh": "达米亚娜",
+  "psycho": 1,
+  "note": "mild aphrodisiac/anxiolytic, low potency"
+ },
+ "delosperma_cooperi": {
+  "eng": "Cooper's ice plant",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_ecklonis": {
+  "eng": "Ecklon's Delosperma",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_esterhuyseniae": {
+  "eng": "Delosperma esterhuyseniae",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_hallii": {
+  "eng": "Hall's Delosperma",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_harazianum": {
+  "eng": "Delosperma harazianum",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_hirtum": {
+  "eng": "Hairy Delosperma",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_lydenbergense": {
+  "eng": "Delosperma lydenbergense",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_nubigenum": {
+  "eng": "Cloud Delosperma",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_pageanum": {
+  "eng": "Page's Delosperma",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_pergamentaceum": {
+  "eng": "Pergament Delosperma",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "delosperma_tradescantioides": {
+  "eng": "Delosperma tradescantioides",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "ornamental; no psychoactive use"
+ },
+ "desmanthus_illinoensis": {
+  "eng": "Illinois Bundleflower",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "forage; non-psychoactive"
+ },
+ "desmanthus_leptolobus": {
+  "eng": "Leptolobus Desmanthus",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "forage; non-psychoactive"
+ },
+ "desmodium_caudatum": {
+  "eng": "Chiric San",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed psychoactive use"
+ },
+ "desmodium_gangeticum": {
+  "eng": "Sarpagandha",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "Ayurvedic tonic; non-psychoactive"
+ },
+ "desmodium_gyrans": {
+  "eng": "Mimosa (desmodium)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed psychoactive use"
+ },
+ "desmodium_racemosum": {
+  "eng": "Mescalito",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "DMT claim unconfirmed; not a known source"
+ },
+ "desmodium_triflorum": {
+  "eng": "Desmodium triflorum",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "dictyoloma_incanescens": {
+  "eng": "Dictyoloma incanescens",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "diplopterys_cabrerana": {
+  "eng": "Chacruna (diplopterys)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "called 'chacruna' but NOT a Psychotria DMT source"
+ },
+ "dream_herb": {
+  "eng": "Dream Herb",
+  "thai": "",
+  "zh": "梦草",
+  "psycho": 2,
+  "note": "Calea zacatechichi; dream-clarity herb, mild psychoactive"
+ },
+ "dream_root": {
+  "eng": "African Dream Root",
+  "thai": "",
+  "zh": "非洲梦根",
+  "psycho": 2,
+  "note": "Silene capensis; Xhosa divination root, mild hallucinogen"
+ },
+ "dutaillyea_drupacea": {
+  "eng": "Dutaillyea drupacea",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "dutaillyea_oreophila": {
+  "eng": "Dutaillyea oreophila",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "echinopsis_lageniformis": {
+  "eng": "Echinopsis lageniformis",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 1,
+  "note": "variable mescaline; low-moderate"
+ },
+ "echinopsis_macrogona": {
+  "eng": "Macrogona Cactus",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 1,
+  "note": "variable mescaline; low-moderate"
+ },
+ "echinopsis_pachanoi": {
+  "eng": "San Pedro",
+  "thai": "",
+  "zh": "圣佩德罗仙人掌",
+  "psycho": 3,
+  "note": "mescaline; classic cactus psychedelic"
+ },
+ "echinopsis_spachiana": {
+  "eng": "Echinopsis spachiana",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 1,
+  "note": "variable mescaline; low-moderate"
+ },
+ "echinopsis_tacaquirensis": {
+  "eng": "Echinopsis tacaquirensis",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 1,
+  "note": "variable mescaline; low-moderate"
+ },
+ "echinopsis_terscheckii": {
+  "eng": "Terscheckii Cactus",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 1,
+  "note": "variable mescaline; low-moderate"
+ },
+ "echinopsis_valida": {
+  "eng": "Echinopsis valida",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 1,
+  "note": "variable mescaline; low-moderate"
+ },
+ "elaeagnus_commutata": {
+  "eng": "American Silverberry",
+  "thai": "",
+  "zh": "美洲沙枣",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "elaegnus_angustifolia": {
+  "eng": "Russian Olive",
+  "thai": "",
+  "zh": "沙枣",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "elaegnus_hortensis": {
+  "eng": "Japanese Silverberry",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "elaegnus_orientalis": {
+  "eng": "Oriental Elaeagnus",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "elaegnus_spinosa": {
+  "eng": "Spiny Elaeagnus",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "ephedra": {
+  "eng": "Ephedra",
+  "thai": "",
+  "zh": "麻黄",
+  "psycho": 1,
+  "note": "ephedrine; strong stimulant, cardiovascular risk"
+ },
+ "erythroxylum_pungens": {
+  "eng": "Erythroxylum pungens",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "Erythroxylum but NOT a cocaine source"
+ },
+ "euodia_leptococca": {
+  "eng": "Euodia leptococca",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "fagonia_cretica": {
+  "eng": "Cretan Fagonia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "festuca_arundinacea": {
+  "eng": "Tall Fescue",
+  "thai": "",
+  "zh": "羊茅",
+  "psycho": 0,
+  "note": "grass; non-psychoactive"
+ },
+ "flindersia_laevicarpa": {
+  "eng": "Smooth-fruited Flindersia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "fly_agaric": {
+  "eng": "Fly Agaric",
+  "thai": "",
+  "zh": "毒蝇伞",
+  "psycho": 3,
+  "note": "muscimol/ibotenic acid; deliriant, not a classic psychedelic"
+ },
+ "grewia_mollis": {
+  "eng": "Dargaza",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "guiera_senegalensis": {
+  "eng": "Guiera",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "gymnacranthera_paniculata": {
+  "eng": "Gymnacranthera paniculata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "Myrtaceae; NOT a cocaine source"
+ },
+ "hammada_leptoclada": {
+  "eng": "Leptoclada Hammada",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "harmala": {
+  "eng": "Syrian Rue",
+  "thai": "",
+  "zh": "刺芸香",
+  "psycho": 3,
+  "note": "harmine/harmaline MAOIs; potent monoamine effects"
+ },
+ "hippophae_rhamnoides": {
+  "eng": "Sea Buckthorn",
+  "thai": "",
+  "zh": "沙棘",
+  "psycho": 0,
+  "note": "food/superfood; non-psychoactive"
+ },
+ "horsfieldia_superba": {
+  "eng": "Horsfieldia superba",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "iboga": {
+  "eng": "Iboga",
+  "thai": "",
+  "zh": "伊博加",
+  "psycho": 4,
+  "note": "ibogaine; very potent, cardiotoxic, used for opioid withdrawal"
+ },
+ "iryanthera_macrophylla": {
+  "eng": "Iryanthera macrophylla",
+  "thai": "",
+  "zh": "",
+  "psycho": 3,
+  "note": "genuine ayahuasca substitute (DMT + beta-carbolines)"
+ },
+ "iryanthera_ulei": {
+  "eng": "Iryanthera ulei",
+  "thai": "",
+  "zh": "",
+  "psycho": 3,
+  "note": "genuine ayahuasca substitute (DMT + beta-carbolines)"
+ },
+ "jujube": {
+  "eng": "Indian Jujube",
+  "thai": "ขี้เหล็ก",
+  "zh": "枣",
+  "psycho": 0,
+  "note": "non-psychoactive; traditional tonic"
+ },
+ "jurema": {
+  "eng": "Jurema (Santa Maria)",
+  "thai": "",
+  "zh": "朱雷马",
+  "psycho": 3,
+  "note": "beta-carbolines; Amazonian entheogen brew"
+ },
+ "kanna": {
+  "eng": "Kanna",
+  "thai": "",
+  "zh": "卡纳",
+  "psycho": 2,
+  "note": "harmine/harmaline; anxiolytic, mild entheogen"
+ },
+ "kava": {
+  "eng": "Kava",
+  "thai": "",
+  "zh": "卡瓦",
+  "psycho": 2,
+  "note": "kavalactones; sedative/anxiolytic, not hallucinogenic"
+ },
+ "khat": {
+  "eng": "Khat",
+  "thai": "",
+  "zh": "卡替",
+  "psycho": 2,
+  "note": "cathinone/cathine; stimulant, dependence potential"
+ },
+ "kochia_scoparia": {
+  "eng": "Kochia",
+  "thai": "",
+  "zh": "地肤",
+  "psycho": 0,
+  "note": "ritual burning; non-psychoactive"
+ },
+ "kratom": {
+  "eng": "Kratom",
+  "thai": "กระโปก",
+  "zh": "卡芬那",
+  "psycho": 2,
+  "note": "mitragynine; stimulant/analgesic, moderate dependence potential"
+ },
+ "leptactinia_densiflora": {
+  "eng": "Leptactinia densiflora",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "lespedeza_bicolor": {
+  "eng": "Japanese Lespedeza",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "forage; non-psychoactive"
+ },
+ "lespedeza_capitata": {
+  "eng": "Buckhorn Clover",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "forage; non-psychoactive"
+ },
+ "limonia_acidissima": {
+  "eng": "Kadamba",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "fruit/wood; non-psychoactive"
+ },
+ "lolium_perenne": {
+  "eng": "Perennial Ryegrass",
+  "thai": "",
+  "zh": "黑麦草",
+  "psycho": 1,
+  "note": "ergot host only if infected; grass itself inert"
+ },
+ "mandarin_orange": {
+  "eng": "Mandarin orange",
+  "thai": "ส้ม",
+  "zh": "柑橘",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "mandrake": {
+  "eng": "Mandrake",
+  "thai": "",
+  "zh": "曼德拉草",
+  "psycho": 3,
+  "note": "tropane alkaloids; deliriant/toxic, hallucinogenic"
+ },
+ "meconopsis_horridula": {
+  "eng": "Himalayan Blue Poppy",
+  "thai": "",
+  "zh": "绿绒蒿",
+  "psycho": 1,
+  "note": "low opiate alkaloids; mild"
+ },
+ "meconopsis_napaulensis": {
+  "eng": "Nepalese Blue Poppy",
+  "thai": "",
+  "zh": "绿绒蒿",
+  "psycho": 1,
+  "note": "low opiate alkaloids; mild"
+ },
+ "meconopsis_paniculata": {
+  "eng": "Himalayan Blue Poppy",
+  "thai": "",
+  "zh": "绿绒蒿",
+  "psycho": 1,
+  "note": "low opiate alkaloids; mild"
+ },
+ "meconopsis_robusta": {
+  "eng": "Robust Meconopsis",
+  "thai": "",
+  "zh": "绿绒蒿",
+  "psycho": 1,
+  "note": "low opiate alkaloids; mild"
+ },
+ "meconopsis_rudis": {
+  "eng": "Rudis Blue Poppy",
+  "thai": "",
+  "zh": "绿绒蒿",
+  "psycho": 1,
+  "note": "low opiate alkaloids; mild"
+ },
+ "mimosa_jurema": {
+  "eng": "Jurema",
+  "thai": "",
+  "zh": "朱雷马",
+  "psycho": 2,
+  "note": "beta-carbolines; jurema spirit, mild-moderate entheogen"
+ },
+ "mimosa_ophthalmocentra": {
+  "eng": "Mimosa ophthalmocentra",
+  "thai": "",
+  "zh": "",
+  "psycho": 1,
+  "note": "beta-carbolines reported; mild, variable"
+ },
+ "mimosa_scabrella": {
+  "eng": "Jurema Preta",
+  "thai": "",
+  "zh": "黑朱雷马",
+  "psycho": 2,
+  "note": "beta-carbolines; jurema spirit, mild-moderate entheogen"
+ },
+ "mimosa_tenuiflora": {
+  "eng": "Jurema",
+  "thai": "",
+  "zh": "朱雷马",
+  "psycho": 2,
+  "note": "beta-carbolines; mild-moderate entheogen"
+ },
+ "mimosa_verrucosa": {
+  "eng": "Mimosa verrucosa",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "mucuna_pruriens": {
+  "eng": "Velvet Bean",
+  "thai": "",
+  "zh": "黧豆",
+  "psycho": 1,
+  "note": "L-DOPA (dopaminergic); not a classic psychedelic"
+ },
+ "mugwort": {
+  "eng": "Mugwort",
+  "thai": "",
+  "zh": "艾草",
+  "psycho": 1,
+  "note": "thujone; mild, used in dream/sacred smoke"
+ },
+ "nauclea_diderrichii": {
+  "eng": "Gangamamba",
+  "thai": "",
+  "zh": "甘甘巴",
+  "psycho": 3,
+  "note": "genuine tryptamine psychoactive (Congo)"
+ },
+ "nectandra_megapotamica": {
+  "eng": "Guaraná",
+  "thai": "",
+  "zh": "瓜拿纳",
+  "psycho": 1,
+  "note": "caffeine; mild stimulant"
+ },
+ "newbouldia_laevis": {
+  "eng": "Newbouldia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "nitraria_schoberi": {
+  "eng": "Nitraria",
+  "thai": "",
+  "zh": "",
+  "psycho": 1,
+  "note": "'mescal' claims in Central Asia; unconfirmed, low"
+ },
+ "ochrosia_nakaiana": {
+  "eng": "Nakaiana",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "ololiuqui": {
+  "eng": "Ololiuqui",
+  "thai": "",
+  "zh": "奥洛利奇",
+  "psycho": 3,
+  "note": "DMT in seeds; hallucinogenic"
+ },
+ "ophiorrhiza_japonica": {
+  "eng": "Japanese Ophiorrhiza",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "opium_poppy": {
+  "eng": "Opium Poppy",
+  "thai": "ฝิ่น",
+  "zh": "罂粟",
+  "psycho": 4,
+  "note": "morphine/codeine; powerful opioid, high dependence risk"
+ },
+ "opuntia_acanthocarpa": {
+  "eng": "Pei Cactus",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 1,
+  "note": "low mescaline reported; mild"
+ },
+ "opuntia_basilaris": {
+  "eng": "Beavertail Cactus",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 0,
+  "note": "no confirmed mescaline"
+ },
+ "osteophloem_platyspermum": {
+  "eng": "Osteophloem platyspermum",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "papaver_paeoniflorum": {
+  "eng": "Opium Poppy",
+  "thai": "ฝิ่น",
+  "zh": "罂粟",
+  "psycho": 4,
+  "note": "morphine/codeine; powerful opioid"
+ },
+ "papaver_rhoeas": {
+  "eng": "Common Poppy",
+  "thai": "พอปก",
+  "zh": "虞美人",
+  "psycho": 1,
+  "note": "low opiate alkaloids; mild sedative"
+ },
+ "papaver_setigerum": {
+  "eng": "Alpine Poppy",
+  "thai": "",
+  "zh": "高山罂粟",
+  "psycho": 1,
+  "note": "some morphine; mild"
+ },
+ "passiflora_actinia": {
+  "eng": "Passion Vine",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_alata": {
+  "eng": "Silvervine",
+  "thai": "",
+  "zh": "银西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_alba": {
+  "eng": "White Passionflower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_bryonoides": {
+  "eng": "Passion Vine",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_caerulea": {
+  "eng": "Blue Passionflower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_capsularis": {
+  "eng": "Passion Vine",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_decaisneana": {
+  "eng": "Passion Flower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_edulis": {
+  "eng": "Purple Passion Fruit",
+  "thai": "",
+  "zh": "百香果",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "passiflora_eichleriana": {
+  "eng": "Eichler's Passionflower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_foetida": {
+  "eng": "Fetid passionflower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "mild sedative claims; low"
+ },
+ "passiflora_incarnata": {
+  "eng": "Passionflower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 1,
+  "note": "mild sedative/anxiolytic (genuine)"
+ },
+ "passiflora_quadrangularis": {
+  "eng": "Maracujá",
+  "thai": "",
+  "zh": "鸡蛋果",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "passiflora_ruberosa": {
+  "eng": "Passion Flower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_subpeltata": {
+  "eng": "Passionflower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "passiflora_warmingii": {
+  "eng": "Passionflower",
+  "thai": "",
+  "zh": "西番莲",
+  "psycho": 0,
+  "note": "ornamental; non-psychoactive"
+ },
+ "pauridiantha_callicarpoides": {
+  "eng": "Pauridiantha callicarpoides",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "pauridiantha_dewevrei": {
+  "eng": "Pauridiantha dewevrei",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "pauridiantha_lyalli": {
+  "eng": "Lyall's Pauridiantha",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "pauridiantha_viridiflora": {
+  "eng": "Pauridiantha viridiflora",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "pauridiantha_yalli": {
+  "eng": "Yagé (mislabeled)",
+  "thai": "",
+  "zh": "",
+  "psycho": 1,
+  "note": "'Yagé' = ayahuasca; this genus not a known source; mild at best"
+ },
+ "pavetta_lanceolata": {
+  "eng": "Pavetta lanceolata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "peganum_nigellastrum": {
+  "eng": "Black Seed",
+  "thai": "",
+  "zh": "黑种草",
+  "psycho": 1,
+  "note": "nigella-type; mild traditional use"
+ },
+ "pelecyphora_aselliformis": {
+  "eng": "Donkey's Ear Cactus",
+  "thai": "",
+  "zh": "仙人掌",
+  "psycho": 0,
+  "note": "no confirmed mescaline"
+ },
+ "perriera_madagascariensis": {
+  "eng": "Perriera madagascariensis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "petalostylis_casseoides": {
+  "eng": "Petalostylis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "petalostylis_labicheoides_var": {
+  "eng": "Petalostylis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "peyote": {
+  "eng": "Peyote",
+  "thai": "",
+  "zh": "佩奥特仙人掌",
+  "psycho": 3,
+  "note": "mescaline; classic cactus psychedelic"
+ },
+ "phalaris_aquatica": {
+  "eng": "Bulbous Canary-grass",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "forage; non-psychoactive"
+ },
+ "phalaris_arundinacea": {
+  "eng": "Reed Canary Grass",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "forage; non-psychoactive"
+ },
+ "phalaris_brachystachys": {
+  "eng": "Australian Native Phalaris",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "forage; non-psychoactive"
+ },
+ "phalaris_coerulescens": {
+  "eng": "Bluegrass",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "forage; non-psychoactive"
+ },
+ "phragmites_australis": {
+  "eng": "Common Reed",
+  "thai": "",
+  "zh": "芦苇",
+  "psycho": 0,
+  "note": "craft; non-psychoactive"
+ },
+ "phyllodium_pulchellum": {
+  "eng": "Phyllodium pulchellum",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "picrasma_ailanthoides": {
+  "eng": "Picrasma",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "bitter; non-psychoactive"
+ },
+ "picrasma_crenata": {
+  "eng": "Picrasma crenata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "bitter; non-psychoactive"
+ },
+ "picrasma_excelsa": {
+  "eng": "Picrasma excelsa",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "bitter; non-psychoactive"
+ },
+ "picrasma_javanica": {
+  "eng": "Kambang",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "bitter; non-psychoactive"
+ },
+ "pilocarpus_organensis": {
+  "eng": "Pilocarpus organensis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "pilocarpine (cholinergic); not psychoactive"
+ },
+ "plectocomiopsis_geminiflora": {
+  "eng": "Geminiflora Plectocomiopsis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "palm; non-psychoactive"
+ },
+ "pleiocarpa_mutica": {
+  "eng": "Pleiocarpa mutica",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "prestonia_amazonica": {
+  "eng": "Prestonia amazonica",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "prosopis_nigra": {
+  "eng": "Black Mesquite",
+  "thai": "",
+  "zh": "牧豆树",
+  "psycho": 1,
+  "note": "beta-carbolines reported; mild entheogen use"
+ },
+ "pseudalbizzia_inundata": {
+  "eng": "Timbó Blanco",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "bitter; no established psychoactive use"
+ },
+ "psilocybe": {
+  "eng": "Psilocybin Mushroom",
+  "thai": "",
+  "zh": "迷幻蘑菇",
+  "psycho": 3,
+  "note": "psilocybin/psilocin; classic psychedelic"
+ },
+ "psychotria_carthagenensis": {
+  "eng": "Chacruna",
+  "thai": "",
+  "zh": "查克鲁纳",
+  "psycho": 3,
+  "note": "genuine DMT source (ayahuasca partner)"
+ },
+ "psychotria_colorata": {
+  "eng": "Psychotria colorata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "psychotria_expansa": {
+  "eng": "Psychotria expansa",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "psychotria_forsteriana": {
+  "eng": "Psychotria forsteriana",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "psychotria_insularum": {
+  "eng": "Mescalito",
+  "thai": "",
+  "zh": "",
+  "psycho": 3,
+  "note": "genuine DMT source (chacruna relative)"
+ },
+ "psychotria_poeppigiana": {
+  "eng": "Chacruna",
+  "thai": "",
+  "zh": "查克鲁纳",
+  "psycho": 3,
+  "note": "genuine DMT source (ayahuasca partner)"
+ },
+ "psychotria_rostrata": {
+  "eng": "Psychotria rostrata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "psychotria_rufipilis": {
+  "eng": "Psychotria rufipilis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "salvia_divinorum": {
+  "eng": "Salvia Divinorum",
+  "thai": "",
+  "zh": "神圣鼠尾草",
+  "psycho": 4,
+  "note": "salvinorin A; extremely potent, short, non-serotonergic"
+ },
+ "san_pedro": {
+  "eng": "San Pedro",
+  "thai": "",
+  "zh": "圣佩德罗仙人掌",
+  "psycho": 3,
+  "note": "mescaline; cactus psychedelic"
+ },
+ "senegalia_berlandieri": {
+  "eng": "Berlandier's acacia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "senegalia_laeta": {
+  "eng": "Kambala",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "senegalia_mellifera": {
+  "eng": "Acacia (gum)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "senegalia_polyacantha": {
+  "eng": "Acacia polyacantha",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "senegalia_rigidula": {
+  "eng": "Rigid Acacia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "senegalia_senegal": {
+  "eng": "Gum Acacia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "shepherdia_argentea": {
+  "eng": "Gooseberry (silverberry)",
+  "thai": "",
+  "zh": "鹅莓",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "shepherdia_canadensis": {
+  "eng": "Silver Buffalo Berry",
+  "thai": "",
+  "zh": "加拿大鹅莓",
+  "psycho": 0,
+  "note": "food; non-psychoactive"
+ },
+ "shepherdia_pulchellum": {
+  "eng": "American Shephard",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "simira_klugei": {
+  "eng": "Simira klugei",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "simira_rubra": {
+  "eng": "Simira rubra",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "strychnos_melinoniana": {
+  "eng": "Strychnos melinoniana",
+  "thai": "",
+  "zh": "",
+  "psycho": 2,
+  "note": "beta-carbolines (harmaline-type); genuine"
+ },
+ "strychnos_usambarensis": {
+  "eng": "Kambamba",
+  "thai": "",
+  "zh": "坎班巴",
+  "psycho": 4,
+  "note": "genuine hallucinogen; toxic (strychnos alkaloids), high risk"
+ },
+ "symplocos_racemosa": {
+  "eng": "Kambó (mislabeled)",
+  "thai": "",
+  "zh": "",
+  "psycho": 1,
+  "note": "tea (mild stimulant); 'Kambó' is a frog secretion"
+ },
+ "testulea_gabonensis": {
+  "eng": "Izombé",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed psychoactive use"
+ },
+ "tetradium_ruticarpum": {
+  "eng": "Ruticarpum",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "pepper (numbing); not psychoactive"
+ },
+ "tetrapterys_methystica": {
+  "eng": "Kava",
+  "thai": "",
+  "zh": "卡瓦",
+  "psycho": 2,
+  "note": "kavalactones; genuine sedative (kava relative)"
+ },
+ "tetrapterys_mucronata": {
+  "eng": "Tetrapterys mucronata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed kavalactone use"
+ },
+ "tobacco": {
+  "eng": "Tobacco",
+  "thai": "ยาสูบ",
+  "zh": "烟草",
+  "psycho": 1,
+  "note": "nicotine; mild stimulant, high dependence"
+ },
+ "tribulus_terrestris": {
+  "eng": "Puncture Vine",
+  "thai": "",
+  "zh": "蒺藜",
+  "psycho": 0,
+  "note": "non-psychoactive (adaptogen claims)"
+ },
+ "uncaria_attenuata": {
+  "eng": "Ayahuasca Vine",
+  "thai": "",
+  "zh": "亚亚瓦斯卡藤",
+  "psycho": 3,
+  "note": "genuine MAOI/beta-carbolines; ayahuasca substitute"
+ },
+ "uncaria_canescens": {
+  "eng": "Chacruna (uncaria)",
+  "thai": "",
+  "zh": "",
+  "psycho": 1,
+  "note": "beta-carbolines reported; mild"
+ },
+ "uncaria_orientalis": {
+  "eng": "Uncaria orientalis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed MAOI/DMT use"
+ },
+ "vachellia_aroma": {
+  "eng": "Acacia aroma",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_caven": {
+  "eng": "Cañadilla (blackthorn)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_cornigera": {
+  "eng": "Acacia cornigera",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_farnesiana": {
+  "eng": "Acacia Farnesiana",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_horrida": {
+  "eng": "Vachellia horrida",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_nilotica": {
+  "eng": "Acacia (gum arabic)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_oerfota": {
+  "eng": "Oerfota",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_schaffneri": {
+  "eng": "Schaffner's Acacia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_seyal": {
+  "eng": "Syal",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_sieberiana": {
+  "eng": "Black Wattle",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vachellia_tortilis": {
+  "eng": "Umbrella Thorn Acacia",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vepris_ampody": {
+  "eng": "Vepris ampody",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "vestia_foetida": {
+  "eng": "Vestia foetida",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "virola_calophylla": {
+  "eng": "Virola",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_calophylloidea": {
+  "eng": "Virola calophylloidea",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_carinata": {
+  "eng": "Virola",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_cuspidata": {
+  "eng": "Virola cuspidata",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_divergens": {
+  "eng": "Virola",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_melinonii": {
+  "eng": "Virola melinonii",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_multinervia": {
+  "eng": "Virola",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_pavonis": {
+  "eng": "Virola pavonis",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_peruviana": {
+  "eng": "Chacruna (virola)",
+  "thai": "",
+  "zh": "",
+  "psycho": 1,
+  "note": "some beta-carbolines reported; mild"
+ },
+ "virola_rufula": {
+  "eng": "Virola",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_sebifera": {
+  "eng": "Virola",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "virola_theiodora": {
+  "eng": "Virola",
+  "thai": "",
+  "zh": "",
+  "psycho": 2,
+  "note": "Kichwa shamanic use (betzy); genuine entheogen"
+ },
+ "virola_venosa": {
+  "eng": "Virola",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no confirmed entheogen use"
+ },
+ "voacanga_africana": {
+  "eng": "African iboga",
+  "thai": "",
+  "zh": "非洲伊博加",
+  "psycho": 3,
+  "note": "genuine beta-carboline/ibogaine source; potent"
+ },
+ "wormwood": {
+  "eng": "Wormwood",
+  "thai": "",
+  "zh": "苦艾",
+  "psycho": 1,
+  "note": "thujone; mild hallucinogen in large doses"
+ },
+ "xanthoxylum_rhetsa": {
+  "eng": "Kava (mislabeled)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "pepper; NOT a kava (kavalactone) source"
+ },
+ "zanthoxylum_arborescens": {
+  "eng": "Kambó (mislabeled)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "pepper; 'Kambó' is a frog secretion, not this plant"
+ },
+ "zanthoxylum_procerum": {
+  "eng": "Chiricahua Pepper",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "pepper (numbing); not psychoactive"
+ },
+ "zornia_latifolia": {
+  "eng": "Copaiba (zornia)",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "no established psychoactive use"
+ },
+ "zygophyllum_fabago": {
+  "eng": "Mescal Bean",
+  "thai": "",
+  "zh": "",
+  "psycho": 0,
+  "note": "'mescal' claims unconfirmed; not a known source"
+ }
+};
+const PSYCHO_LABEL = {0:"Non-psychoactive",1:"Mild",2:"Moderate",3:"Strong",4:"Potent"};
+const E = id => ENRICH[id] || {eng:"",thai:"",zh:"",psycho:0,note:""};
+const psychoDots = n => "\u25CF".repeat(n)+"\u25CB".repeat(4-n);
+
 /* ============================== HELPERS ============================== */
 const $ = (s,el=document)=>el.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -15996,8 +17962,9 @@ function renderGrid(list){
         <span class="tag">${esc(cardTag(p))}</span>
       </div>
       <div class="body">
-        <h3>${esc(p.name)}</h3>
+        <h3>${esc(E(p.id).eng || p.name)}</h3>
         <div class="sci">${esc(p.sci)}</div>
+        ${E(p.id).psycho>0?`<div class="psycho-card"><span class="dots">${psychoDots(E(p.id).psycho)}</span> ${PSYCHO_LABEL[E(p.id).psycho]}</div>`:""}
         <p class="desc">${esc(p.prep.summary)}</p>
         <div class="foot">
           <span class="regions">${esc(p.regions[0])}${p.regions.length>1?` +${p.regions.length-1}`:""}</span>
@@ -16046,7 +18013,7 @@ function openDetail(id, fromMap){
       <button class="close" id="close" aria-label="Close">&times;</button>
       <div class="txt">
         <span class="tag">${esc(cardTag(p))} · ${esc(p.continent)}</span>
-        <h2>${esc(p.name)}</h2>
+        <h2>${esc(E(p.id).eng || p.name)}</h2>
         <div class="sci">${esc(p.sci)} · ${esc(p.family)}</div>
       </div>
     </div>
@@ -16058,6 +18025,13 @@ function openDetail(id, fromMap){
         <div><div class="k">Parts used</div><div class="v">${esc(p.parts)}</div></div>
         <div><div class="k">Active compounds</div><div class="v">${esc(p.compounds.join(", "))}</div></div>
       </div>
+      <div class="facts" style="margin-top:1px">
+        <div><div class="k">English name</div><div class="v">${esc(E(p.id).eng || "—")}</div></div>
+        <div><div class="k">Thai · ไทย</div><div class="v">${esc(E(p.id).thai || "—")}</div></div>
+        <div><div class="k">Chinese · 中文</div><div class="v">${esc(E(p.id).zh || "—")}</div></div>
+        <div><div class="k">Psychoactivity</div><div class="v">${E(p.id).psycho>0?`<span class="dots">${psychoDots(E(p.id).psycho)}</span> ${PSYCHO_LABEL[E(p.id).psycho]}`:"None"}</div></div>
+      </div>
+      ${E(p.id).note?`<div class="note" style="margin-top:10px">${esc(E(p.id).note)}</div>`:""}
 
       <div class="block">
         <h4><span class="n">1</span> How to Identify</h4>
