@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sacred Garden — Sacred Botany</title>
+<meta name="description" content="An interactive 3D garden of twenty ritual plants of the Sacred Botany atlas — walk the moonlit path, meet each plant where it grows, and learn the ceremonies that surround it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c100e; --bg2:#10160f; --panel:#141b15; --panel2:#182219;
+    --line:#243024; --line2:#2e3d2f;
+    --text:#e9ede8; --muted:#9fb0a2; --faint:#6f8072;
+    --gold:#d4a94e; --gold2:#e8c877; --green:#4f9d6f; --green2:#6fc393;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0; height:100%; overflow:hidden; background:var(--bg);
+    color:var(--text); font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;}
+  #stage{position:fixed; inset:0}
+  #stage canvas{display:block}
+
+  .kicker{display:inline-flex; align-items:center; gap:8px; font-size:11px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--green2); font-weight:600}
+  .kicker::before{content:""; width:22px; height:1px; background:var(--green2); display:inline-block}
+
+  /* top overlay */
+  .top{position:fixed; top:0; left:0; right:0; z-index:20; display:flex; align-items:flex-start;
+    justify-content:space-between; gap:14px; padding:22px 26px;
+    background:linear-gradient(180deg, rgba(12,16,14,.82), transparent)}
+  .top h1{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:clamp(22px,3vw,34px);
+    margin:6px 0 0; letter-spacing:-.01em}
+  .top h1 em{font-style:italic; color:var(--gold2)}
+  .top .sub{color:var(--muted); font-size:13px; margin-top:4px; max-width:420px}
+  .top .back{display:inline-flex; align-items:center; gap:8px; color:var(--muted); font-size:13px;
+    border:1px solid var(--line2); background:rgba(20,27,21,.7); backdrop-filter:blur(8px);
+    padding:9px 14px; border-radius:999px; text-decoration:none; transition:.2s; white-space:nowrap}
+  .top .back:hover{color:var(--text); border-color:var(--faint)}
+
+  /* plant info card */
+  .card-panel{position:fixed; top:0; right:0; bottom:0; z-index:30; width:min(400px, 92vw);
+    background:linear-gradient(180deg, rgba(16,22,15,.96), rgba(12,16,14,.97));
+    border-left:1px solid var(--line2); backdrop-filter:blur(14px);
+    transform:translateX(105%); transition:transform .45s cubic-bezier(.22,1,.3,1);
+    display:flex; flex-direction:column; padding:26px 26px 22px; overflow-y:auto}
+  .card-panel.open{transform:translateX(0)}
+  .card-panel .tag{display:inline-flex; align-self:flex-start; font-size:11px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--gold2); border:1px solid var(--line2); background:var(--panel);
+    padding:5px 11px; border-radius:999px; font-weight:600; margin-bottom:14px}
+  .card-panel h2{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:clamp(28px,4vw,40px); margin:0}
+  .card-panel .sci{color:var(--green2); font-style:italic; font-size:14.5px; margin:6px 0 18px}
+  .card-panel .row{display:flex; gap:10px; padding:11px 0; border-top:1px solid var(--line); font-size:13.5px}
+  .card-panel .row .k{color:var(--faint); width:86px; flex-shrink:0}
+  .card-panel .row .v{color:var(--muted)}
+  .card-panel .note{font-family:'Fraunces',Georgia,serif; font-size:16.5px; line-height:1.65; color:var(--text);
+    margin:18px 0; padding:16px 18px; border-left:2px solid var(--gold); background:var(--panel); border-radius:0 10px 10px 0}
+  .card-panel .actions{margin-top:auto; padding-top:18px; display:flex; gap:10px; flex-wrap:wrap}
+  .btn{display:inline-flex; align-items:center; gap:8px; font-family:inherit; font-size:13.5px; font-weight:600;
+    padding:11px 16px; border-radius:10px; cursor:pointer; transition:.2s; border:1px solid var(--line2);
+    background:var(--panel); color:var(--text)}
+  .btn:hover{border-color:var(--faint)}
+  .btn.primary{background:var(--gold); border-color:var(--gold); color:#1a1305; text-decoration:none}
+  .btn.primary:hover{background:var(--gold2)}
+  .btn.icon{padding:11px 13px; font-size:16px; line-height:1}
+  .card-nav{position:fixed; top:50%; z-index:31; transform:translateY(-50%); right:min(400px,92vw);
+    transition:right .45s cubic-bezier(.22,1,.3,1); display:flex; flex-direction:column; gap:8px; margin-right:10px}
+  .card-nav button{width:38px; height:38px; border-radius:50%; border:1px solid var(--line2);
+    background:rgba(20,27,21,.85); color:var(--text); font-size:15px; cursor:pointer; backdrop-filter:blur(6px)}
+  .card-nav button:hover{border-color:var(--gold); color:var(--gold2)}
+
+  /* hover tooltip */
+  .tip{position:fixed; z-index:40; pointer-events:none; background:rgba(10,14,12,.88); border:1px solid var(--line2);
+    backdrop-filter:blur(8px); border-radius:10px; padding:9px 13px; opacity:0; transition:opacity .15s; max-width:260px}
+  .tip .n{font-family:'Fraunces',Georgia,serif; font-size:17px}
+  .tip .s{color:var(--green2); font-style:italic; font-size:12px; margin-top:1px}
+  .tip .c{color:var(--faint); font-size:11px; margin-top:4px}
+
+  /* bottom bar */
+  .bottom{position:fixed; left:0; right:0; bottom:0; z-index:20; display:flex; justify-content:center;
+    pointer-events:none; padding:18px}
+  .bottom .hint{pointer-events:auto; display:inline-flex; gap:16px; align-items:center; color:var(--faint);
+    font-size:12.5px; background:rgba(10,14,12,.72); border:1px solid var(--line); backdrop-filter:blur(10px);
+    padding:10px 18px; border-radius:999px}
+  .bottom .hint b{color:var(--muted); font-weight:600}
+
+  /* loading */
+  #loading{position:fixed; inset:0; z-index:100; background:var(--bg); display:flex; flex-direction:column;
+    gap:18px; align-items:center; justify-content:center; transition:opacity .8s}
+  #loading.done{opacity:0; pointer-events:none}
+  #loading .ring{width:44px; height:44px; border-radius:50%; border:2px solid var(--line2);
+    border-top-color:var(--gold); animation:spin 1s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  #loading .t{color:var(--muted); font-size:13px; letter-spacing:.14em; text-transform:uppercase}
+
+  @media (max-width:640px){
+    .top .sub{display:none}
+    .card-nav{display:none}
+    .bottom .hint span.hide-sm{display:none}
+  }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+
+<div class="top">
+  <div>
+    <span class="kicker">Sacred Botany · Living Atlas</span>
+    <h1>The <em>Sacred Garden</em></h1>
+    <div class="sub">Twenty ritual plants under one moon — walk the path, touch a plant, and hear its story.</div>
+  </div>
+  <a class="back" href="index.html">← Back to the Atlas</a>
+</div>
+
+<aside class="card-panel" id="panel">
+  <span class="tag" id="p-tag">Ritual plant</span>
+  <h2 id="p-name"></h2>
+  <div class="sci" id="p-sci"></div>
+  <div class="row"><div class="k">Family</div><div class="v" id="p-family"></div></div>
+  <div class="row"><div class="k">Native to</div><div class="v" id="p-land"></div></div>
+  <div class="row"><div class="k">Growth form</div><div class="v" id="p-form"></div></div>
+  <div class="note" id="p-note"></div>
+  <div class="actions">
+    <a class="btn primary" id="p-link" href="index.html">Open full entry →</a>
+    <button class="btn" id="p-reset">← Resume the garden</button>
+  </div>
+</aside>
+
+<div class="card-nav" id="cardNav">
+  <button id="navPrev" title="Previous plant">↑</button>
+  <button id="navNext" title="Next plant">↓</button>
+</div>
+
+<div class="tip" id="tip"><div class="n" id="tip-n"></div><div class="s" id="tip-s"></div><div class="c">click to meet this plant</div></div>
+
+<div class="bottom">
+  <div class="hint">
+    <span><b>drag</b> to walk around</span>
+    <span><b>scroll</b> to draw near</span>
+    <span class="hide-sm"><b>click a plant</b> to hear its story</span>
+  </div>
+</div>
+
+<div id="loading"><div class="ring"></div><div class="t">Growing the garden…</div></div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+/* ------------------------------------------------------------------ */
+/* The twenty plants — data mirrored from the atlas (index.html)       */
+/* ------------------------------------------------------------------ */
+const GARDEN = [
+  { id:"blue_lotus", name:"Blue Lotus", sci:"Nymphaea caerulea", form:"Aquatic water lily",
+    family:"Nymphaeaceae", land:"Nile valley, Egypt", ring:0,
+    note:"Sacred lily of the Nile — offered to Ra, worn by pharaohs, and steeped in Egyptian wine for ceremonies of rebirth." },
+  { id:"peyote", name:"Peyote", sci:"Lophophora williamsii", form:"Spineless button cactus",
+    family:"Cactaceae", land:"Chihuahuan desert — Mexico, Texas", ring:1,
+    note:"Grandfather cactus of the Wixárika pilgrimage and the Native American Church, guarded as a sacrament for millennia." },
+  { id:"kanna", name:"Kanna", sci:"Sceletium tortuosum", form:"Low succulent",
+    family:"Aizoaceae", land:"Karoo, South Africa", ring:1,
+    note:"Chewed and sniffed by Khoisan herders as a plant of the heart — easing hunger, grief and hardship on long treks." },
+  { id:"salvia", name:"Salvia Divinorum", sci:"Salvia divinorum", form:"Leafy herb",
+    family:"Lamiaceae", land:"Mazatec cloud forests, Oaxaca", ring:1,
+    note:"María Pastora, the sage of the Mazatec shamans — chewed in quiet darkness for healing and divination." },
+  { id:"dream_herb", name:"Dream Herb", sci:"Calea zacatechichi", form:"Shrub",
+    family:"Asteraceae", land:"Oaxaca, Mexico", ring:1,
+    note:"Zacatechichi, the bitter herb of Chontal Maya dream-readers — drunk as tea so the dreams speak clearly." },
+  { id:"dream_root", name:"African Dream Root", sci:"Silene capensis", form:"Rosette herb",
+    family:"Caryophyllaceae", land:"Eastern Cape, South Africa", ring:1,
+    note:"Undela Ziimhela of the Xhosa — the white-ways root that calls the ancestors into vivid dreaming." },
+  { id:"opium_poppy", name:"Opium Poppy", sci:"Papaver somniferum", form:"Flowering herb",
+    family:"Papaveraceae", land:"Mediterranean basin", ring:1,
+    note:"Poppy of sleep and dreams — companion of Demeter and Morpheus in the oldest agrarian mysteries." },
+  { id:"psilocybe", name:"Psilocybe Mushroom", sci:"Psilocybe cubensis & kin", form:"Fungus",
+    family:"Hymenogastraceae", land:"Mesoamerica & worldwide", ring:1,
+    note:"Teonanácatl, 'flesh of the gods' — the sacred mushrooms of Aztec ritual and Mazatec velada ceremony." },
+  { id:"fly_agaric", name:"Fly Agaric", sci:"Amanita muscaria", form:"Fungus",
+    family:"Amanitaceae", land:"Boreal forests, Siberia", ring:1,
+    note:"The shaman's mushroom of the far north — red-capped emblem of ecstatic trance and winter solstice." },
+  { id:"ololiuqui", name:"Ololiuqui", sci:"Rivea corymbosa", form:"Climbing vine",
+    family:"Convolvulaceae", land:"Mexico & Central America", ring:1,
+    note:"Morning-glory of the Aztecs — its seeds ground for divination, recorded by Hernández in the 1570s." },
+  { id:"ayahuasca", name:"Ayahuasca", sci:"Banisteriopsis caapi + Psychotria viridis", form:"Liana vine",
+    family:"Malpighiaceae", land:"Amazon basin", ring:2,
+    note:"The great vine of the spirits — brewed by curanderos and sung to with icaros in all-night ceremonies." },
+  { id:"iboga", name:"Iboga", sci:"Tabernanthe iboga", form:"Rainforest shrub",
+    family:"Apocynaceae", land:"Gabon, Central Africa", ring:2,
+    note:"Root bark of Bwiti initiation in Gabon — one long night in which the initiate meets the ancestors." },
+  { id:"kava", name:"Kava", sci:"Piper methysticum", form:"Shrub",
+    family:"Piperaceae", land:"Pacific islands", ring:2,
+    note:"The peaceful root of Oceania — 'awa pounded and shared in circles of welcome, treaty and calm." },
+  { id:"jurema", name:"Jurema", sci:"Anadenanthera colubrina", form:"Tree",
+    family:"Fabaceae", land:"Brazil — Caatinga & Mata Atlântica", ring:2,
+    note:"The visionary tree of Catimbó and Jurema cults — root and bark brewed as vinho de Jurema." },
+  { id:"betel_nut", name:"Betel Nut", sci:"Areca catechu", form:"Slender palm",
+    family:"Arecaceae", land:"South & Southeast Asia", ring:2,
+    note:"Offered from household shrines and temple altars across Asia — a token of honour and devotion." },
+  { id:"kratom", name:"Kratom", sci:"Mitragyna speciosa", form:"Tall tree",
+    family:"Rubiaceae", land:"Thailand, Malaysia", ring:2,
+    note:"Leaves of the forest laborer — brewed by farmers and fishers of the Malay peninsula as strength for the day." },
+  { id:"cannabis", name:"Cannabis", sci:"Cannabis sativa", form:"Herb",
+    family:"Cannabaceae", land:"Central Asia", ring:2,
+    note:"Bhang of Holi, ganja of the sadhus — a plant of Shiva, of joy and of letting go." },
+  { id:"coca", name:"Coca", sci:"Erythroxylum coca", form:"Shrub",
+    family:"Erythroxylaceae", land:"Andean slopes", ring:2,
+    note:"Sacred leaf of the Andes — offered to Pachamama and the apus, chewed in reciprocity with the earth." },
+  { id:"khat", name:"Khat", sci:"Catha edulis", form:"Tree",
+    family:"Celastraceae", land:"Yemen & Horn of Africa", ring:2,
+    note:"The gathering leaf — afternoons of poetry, debate and prayer around the sharing of fresh twigs." },
+  { id:"san_pedro", name:"San Pedro", sci:"Echinopsis pachanoi", form:"Columnar cactus",
+    family:"Cactaceae", land:"Andes — Peru, Ecuador", ring:2,
+    note:"Huachuma of Andean ceremony — a cactus of continuous ritual use for over three thousand years." },
+];
+/* ------------------------------------------------------------------ */
+/* Renderer / scene                                                    */
+/* ------------------------------------------------------------------ */
+const stage = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({ antialias:true, preserveDrawingBuffer:true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+stage.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0a0f12);
+scene.fog = new THREE.FogExp2(0x0a0f12, 0.021);
+
+const camera = new THREE.PerspectiveCamera(46, innerWidth/innerHeight, 0.1, 300);
+camera.position.set(14, 12, 26);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 2.2, 0);
+controls.enableDamping = true;
+controls.dampingFactor = 0.06;
+controls.minDistance = 6;
+controls.maxDistance = 55;
+controls.maxPolarAngle = Math.PI * 0.49;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 0.45;
+
+/* post-processing: gentle bloom for the moon + emissive spirits */
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.55, 0.85, 0.82);
+composer.addPass(bloom);
+composer.addPass(new OutputPass());
+
+/* lights: moonlit night garden */
+scene.add(new THREE.HemisphereLight(0x8fb4d8, 0x12180f, 0.55));
+const moonLight = new THREE.DirectionalLight(0xcfe0ff, 1.1);
+moonLight.position.set(18, 30, 10);
+moonLight.castShadow = true;
+moonLight.shadow.mapSize.set(2048, 2048);
+moonLight.shadow.camera.left = -45; moonLight.shadow.camera.right = 45;
+moonLight.shadow.camera.top = 45;   moonLight.shadow.camera.bottom = -45;
+moonLight.shadow.camera.far = 120;
+scene.add(moonLight);
+const goldFill = new THREE.PointLight(0xd4a94e, 60, 60, 2);
+goldFill.position.set(0, 3.5, 0);
+scene.add(goldFill);
+
+/* ------------------------------------------------------------------ */
+/* Ground: dark meadow disc with a subtle radial gradient              */
+/* ------------------------------------------------------------------ */
+function groundTexture(){
+  const c = document.createElement('canvas'); c.width = c.height = 1024;
+  const g = c.getContext('2d');
+  const rad = g.createRadialGradient(512,512,60, 512,512,512);
+  rad.addColorStop(0, '#22301f');
+  rad.addColorStop(0.55, '#18231a');
+  rad.addColorStop(1, '#0d130e');
+  g.fillStyle = rad; g.fillRect(0,0,1024,1024);
+  // speckle moss/soil
+  for (let i=0;i<9000;i++){
+    const x=Math.random()*1024, y=Math.random()*1024, r=Math.random()*2.2;
+    const d=Math.hypot(x-512,y-512)/512;
+    g.fillStyle = d<0.75 ? `rgba(${60+Math.random()*40|0},${90+Math.random()*50|0},${50+Math.random()*30|0},${0.12+Math.random()*0.12})`
+                         : `rgba(${40+Math.random()*20|0},${45+Math.random()*25|0},${35+Math.random()*15|0},${0.15+Math.random()*0.1})`;
+    g.beginPath(); g.arc(x,y,r,0,7); g.fill();
+  }
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+const ground = new THREE.Mesh(
+  new THREE.CircleGeometry(46, 72).rotateX(-Math.PI/2),
+  new THREE.MeshStandardMaterial({ map: groundTexture(), roughness:1, metalness:0 })
+);
+ground.receiveShadow = true;
+scene.add(ground);
+
+/* distant tree-line silhouettes (dark cones) */
+{
+  const mat = new THREE.MeshStandardMaterial({ color:0x0d1410, roughness:1 });
+  const geoC = new THREE.ConeGeometry(1,1,6);
+  for (let i=0;i<120;i++){
+    const a = Math.random()*Math.PI*2;
+    const r = 38 + Math.random()*8;
+    const h = 4 + Math.random()*7;
+    const m = new THREE.Mesh(geoC, mat);
+    m.position.set(Math.cos(a)*r, h/2, Math.sin(a)*r);
+    m.scale.set(1.6+Math.random()*1.4, h, 1.6+Math.random()*1.4);
+    m.rotation.y = Math.random()*Math.PI;
+    scene.add(m);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Sky: moon, stars, drifting mist planes                              */
+/* ------------------------------------------------------------------ */
+const moon = new THREE.Mesh(
+  new THREE.SphereGeometry(3.2, 32, 32),
+  new THREE.MeshBasicMaterial({ color:0xf5f2e4 })
+);
+moon.position.set(-34, 34, -46);
+scene.add(moon);
+{ // soft halo via additive sprite-like plane
+  const halo = new THREE.Mesh(
+    new THREE.CircleGeometry(9, 48),
+    new THREE.MeshBasicMaterial({ color:0xdfe8f5, transparent:true, opacity:0.16,
+      blending:THREE.AdditiveBlending, depthWrite:false })
+  );
+  halo.position.copy(moon.position).add(new THREE.Vector3(6,-4,7));
+  halo.lookAt(camera.position);
+  moon.userData.halo = halo; scene.add(halo);
+}
+
+{ // stars
+  const n = 900, pos = new Float32Array(n*3);
+  for (let i=0;i<n;i++){
+    const a = Math.random()*Math.PI*2, ph = Math.acos(1 - Math.random()*0.95);
+    const r = 150;
+    pos[i*3]   = r*Math.sin(ph)*Math.cos(a);
+    pos[i*3+1] = Math.abs(r*Math.cos(ph))*0.7 + 8;
+    pos[i*3+2] = r*Math.sin(ph)*Math.sin(a);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(pos,3));
+  scene.add(new THREE.Points(g, new THREE.PointsMaterial({
+    color:0xdfe6ef, size:0.55, sizeAttenuation:true, transparent:true, opacity:0.8 })));
+}
+
+/* fireflies */
+const FIREFLY_N = 90;
+const fireflyGeo = new THREE.BufferGeometry();
+const fireflyPos = new Float32Array(FIREFLY_N*3);
+const fireflySeed = [];
+for (let i=0;i<FIREFLY_N;i++){
+  const a=Math.random()*Math.PI*2, r=3+Math.random()*22;
+  fireflyPos[i*3]=Math.cos(a)*r; fireflyPos[i*3+1]=0.5+Math.random()*3.5; fireflyPos[i*3+2]=Math.sin(a)*r;
+  fireflySeed.push({ a, r, h:0.5+Math.random()*3.5, s:0.3+Math.random()*0.8, p:Math.random()*Math.PI*2 });
+}
+fireflyGeo.setAttribute('position', new THREE.BufferAttribute(fireflyPos,3));
+const fireflies = new THREE.Points(fireflyGeo, new THREE.PointsMaterial({
+  color:0xd9c76a, size:0.22, transparent:true, opacity:0.9,
+  blending:THREE.AdditiveBlending, depthWrite:false }));
+scene.add(fireflies);
+
+/* ------------------------------------------------------------------ */
+/* Shared materials                                                    */
+/* ------------------------------------------------------------------ */
+const M = {
+  stem:  new THREE.MeshStandardMaterial({ color:0x3e6644, roughness:0.85 }),
+  stemD: new THREE.MeshStandardMaterial({ color:0x2d4a33, roughness:0.9 }),
+  leafA: new THREE.MeshStandardMaterial({ color:0x4d8558, roughness:0.75, side:THREE.DoubleSide }),
+  leafB: new THREE.MeshStandardMaterial({ color:0x39663f, roughness:0.8,  side:THREE.DoubleSide }),
+  leafC: new THREE.MeshStandardMaterial({ color:0x6f9e4e, roughness:0.75, side:THREE.DoubleSide }),
+  vine:  new THREE.MeshStandardMaterial({ color:0x54682f, roughness:0.9 }),
+  cactus:new THREE.MeshStandardMaterial({ color:0x4a7a58, roughness:0.65 }),
+  cactusL:new THREE.MeshStandardMaterial({ color:0x5d9468, roughness:0.6 }),
+  bark:  new THREE.MeshStandardMaterial({ color:0x4d4030, roughness:0.95 }),
+  petalW:new THREE.MeshStandardMaterial({ color:0xdde8ea, roughness:0.55, side:THREE.DoubleSide }),
+  petalP:new THREE.MeshStandardMaterial({ color:0x8a5f9e, roughness:0.55, side:THREE.DoubleSide }),
+  petalR:new THREE.MeshStandardMaterial({ color:0xa3413a, roughness:0.55, side:THREE.DoubleSide }),
+  petalY:new THREE.MeshStandardMaterial({ color:0xc9a23c, roughness:0.55, side:THREE.DoubleSide }),
+  petalB:new THREE.MeshStandardMaterial({ color:0x5f7fc9, roughness:0.55, side:THREE.DoubleSide }),
+  capR:  new THREE.MeshStandardMaterial({ color:0xa83226, roughness:0.5 }),
+  capO:  new THREE.MeshStandardMaterial({ color:0xc78f3a, roughness:0.6 }),
+  gillW: new THREE.MeshStandardMaterial({ color:0xd8cfc0, roughness:0.85 }),
+  water: new THREE.MeshPhysicalMaterial({ color:0x1a3a4a, roughness:0.15, metalness:0.1,
+          transparent:true, opacity:0.9 }),
+  water2:new THREE.MeshPhysicalMaterial({ color:0x1d4256, roughness:0.2, metalness:0.15 }),
+  stone: new THREE.MeshStandardMaterial({ color:0x55584e, roughness:0.95 }),
+  stoneD:new THREE.MeshStandardMaterial({ color:0x3d4038, roughness:0.98 }),
+  soil:  new THREE.MeshStandardMaterial({ color:0x2c231a, roughness:1 }),
+};
+/* ------------------------------------------------------------------ */
+/* Parametric plant builders — one function per growth form            */
+/* Each returns a THREE.Group centered at origin, ~1–3 m tall.         */
+/* ------------------------------------------------------------------ */
+function grp(){ return new THREE.Group(); }
+function mesh(geo, mat, x=0,y=0,z=0, cast=true){
+  const m = new THREE.Mesh(geo, mat);
+  m.position.set(x,y,z); m.castShadow = cast; m.receiveShadow = false;
+  return m;
+}
+const CYL = (rt,rb,h,s=7)=> new THREE.CylinderGeometry(rt,rb,h,s);
+const SPH = (r,s=10)=> new THREE.SphereGeometry(r,s,Math.max(6,s-2));
+const CON = (r,h,s=7)=> new THREE.ConeGeometry(r,h,s);
+/* leaf: flattened cone — reads as blade at distance */
+function leaf(mat, len=0.5, wid=0.16){
+  const g = new THREE.ConeGeometry(wid, len, 4);
+  g.scale(1, 1, 0.25);
+  const m = new THREE.Mesh(g, mat);
+  m.geometry.translate(0, len/2, 0);
+  m.castShadow = true;
+  return m;
+}
+/* radial fan of leaves from a point */
+function leafFan(mat, n, len, wid, tilt=0.5, ya=null){
+  const g = grp();
+  for (let i=0;i<n;i++){
+    const l = leaf(mat, len*(0.75+Math.random()*0.5), wid);
+    l.rotation.x = tilt*(0.7+Math.random()*0.5);
+    l.rotation.y = (i/n)*Math.PI*2 + Math.random()*0.4;
+    g.add(l);
+  }
+  return g;
+}
+/* flower head: petal ring + center */
+function flower(petalMat, r=0.12, petals=6, centerMat=M.capO){
+  const g = grp();
+  for (let i=0;i<petals;i++){
+    const p = new THREE.Mesh(new THREE.CircleGeometry(r,5), petalMat);
+    const a = (i/petals)*Math.PI*2;
+    p.position.set(Math.cos(a)*r*0.9, 0, Math.sin(a)*r*0.9);
+    p.rotation.x = -Math.PI/2; p.rotation.z = a;
+    g.add(p);
+  }
+  g.add(mesh(SPH(r*0.45,8), centerMat, 0, 0.01, 0));
+  return g;
+}
+
+/* --- AQUATIC (Blue Lotus) --- */
+function buildAquatic(){
+  const g = grp();
+  // pond
+  const pond = mesh(new THREE.CylinderGeometry(2.1,2.1,0.22,28), M.water2, 0,0.11,0, false);
+  pond.receiveShadow = true; g.add(pond);
+  const rim = mesh(new THREE.TorusGeometry(2.1,0.14,8,28), M.stone, 0,0.22,0);
+  rim.rotation.x = Math.PI/2; g.add(rim);
+  // floating lily pads
+  for (let i=0;i<7;i++){
+    const a=Math.random()*Math.PI*2, r=0.4+Math.random()*1.3;
+    const pad = mesh(new THREE.CircleGeometry(0.28+Math.random()*0.18, 12), Math.random()<0.5?M.leafA:M.leafC,
+      Math.cos(a)*r, 0.235, Math.sin(a)*r, false);
+    pad.rotation.x = -Math.PI/2 + (Math.random()-0.5)*0.15;
+    pad.rotation.z = Math.random()*Math.PI;
+    g.add(pad);
+  }
+  // lotus blossoms
+  [[0,0,'B'],[0.9,0.7,'W'],[-0.8,0.6,'P'],[0.2,-1.0,'B']].forEach(([x,z,c])=>{
+    const mat = c==='B'?M.petalB : c==='W'?M.petalW : M.petalP;
+    const f = grp();
+    for (let ring=0; ring<3; ring++){
+      const n = 5+ring*2, rr = 0.08+ring*0.05;
+      for (let i=0;i<n;i++){
+        const p = new THREE.Mesh(new THREE.CircleGeometry(rr*0.75,5), mat);
+        const a=(i/n)*Math.PI*2;
+        p.position.set(Math.cos(a)*rr*0.85, 0.05+ring*0.05, Math.sin(a)*rr*0.85);
+        p.rotation.x = -Math.PI/2 + 0.35; p.rotation.z = a;
+        f.add(p);
+      }
+    }
+    f.add(mesh(SPH(0.07,8), M.capO, 0,0.2,0));
+    f.position.set(x,0.24,z);
+    f.userData.bob = { base:0.24, phase:Math.random()*6 };
+    g.add(f);
+  });
+  return g;
+}
+
+/* --- BUTTON CACTUS (Peyote) --- */
+function buildButtonCactus(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(1.1,1.3,0.18,16), M.soil, 0,0.09,0,false);
+  soil.receiveShadow = true; g.add(soil);
+  // gravel
+  for (let i=0;i<10;i++){
+    const a=Math.random()*Math.PI*2, r=Math.random()*1.05;
+    g.add(mesh(SPH(0.05+Math.random()*0.05,5), M.stone, Math.cos(a)*r, 0.2, Math.sin(a)*r, false));
+  }
+  // main button + pups
+  [[0,0,0.42,0.30],[0.5,0.35,0.24,0.18],[-0.45,0.3,0.2,0.15],[0.2,-0.5,0.18,0.13]].forEach(([x,z,r,h])=>{
+    const b = mesh(new THREE.SphereGeometry(r,14,10), M.cactusL, x, h*0.9, z);
+    b.scale.y = h/r;
+    g.add(b);
+    // rib lines: thin darker meridians
+    for (let i=0;i<8;i++){
+      const a=(i/8)*Math.PI*2;
+      const rib = mesh(CYL(0.012,0.012,h*1.6,4), M.cactus, x+Math.cos(a)*r*0.98, h*0.9, z+Math.sin(a)*r*0.98, false);
+      g.add(rib);
+    }
+    // crown tuft
+    g.add(mesh(SPH(r*0.22,6), M.stemD, x, h*1.75, z, false));
+  });
+  // one pale pink flower on the main button
+  const fl = flower(M.petalP, 0.09, 8, M.petalW);
+  fl.position.set(0,0.62,0); g.add(fl);
+  return g;
+}
+
+/* --- SUCCULENT (Kanna) --- */
+function buildSucculent(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.9,1.05,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  // central cluster of thick trailing leaves
+  const clump = grp();
+  for (let i=0;i<22;i++){
+    const l = leaf(i%2?M.leafA:M.leafC, 0.5+Math.random()*0.35, 0.10);
+    l.rotation.x = 1.0 + Math.random()*0.7;       // sprawling
+    l.rotation.y = (i/22)*Math.PI*2 + Math.random()*0.3;
+    clump.add(l);
+  }
+  clump.position.y = 0.18; g.add(clump);
+  // a few upright flowering stems with yellow blooms
+  for (let i=0;i<4;i++){
+    const a=Math.random()*Math.PI*2, r=0.15+Math.random()*0.3;
+    const st = mesh(CYL(0.015,0.02,0.5+Math.random()*0.25,5), M.stem, Math.cos(a)*r, 0.45, Math.sin(a)*r);
+    st.rotation.z=(Math.random()-0.5)*0.25; g.add(st);
+    const fl = flower(M.petalY, 0.07, 6);
+    fl.position.set(Math.cos(a)*r, 0.72, Math.sin(a)*r); g.add(fl);
+  }
+  return g;
+}
+
+/* --- LEAFY HERB (Salvia) --- */
+function buildHerb(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.8,0.95,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  // 5 square stems
+  for (let i=0;i<5;i++){
+    const a=(i/5)*Math.PI*2+0.3, r=0.12+Math.random()*0.2, h=0.9+Math.random()*0.5;
+    const x=Math.cos(a)*r, z=Math.sin(a)*r;
+    const st = mesh(CYL(0.02,0.028,h,5), M.stem, x, h/2+0.16, z);
+    st.rotation.z=(Math.random()-0.5)*0.18; g.add(st);
+    // paired leaves up the stem
+    for (let j=0;j<4;j++){
+      const yy = 0.3 + j*(h-0.35)/4;
+      const l = leaf(j%2?M.leafA:M.leafB, 0.3+Math.random()*0.14, 0.14);
+      l.position.set(x, yy, z);
+      l.rotation.x = 1.25; l.rotation.y = a + (j%2)*Math.PI + 0.5;
+      g.add(l);
+    }
+    // white flower spike tip
+    g.add(mesh(SPH(0.045,6), M.petalW, x, h+0.18, z, false));
+  }
+  return g;
+}
+
+/* --- ROSETTE (African Dream Root) --- */
+function buildRosette(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.85,1.0,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  // tight ground rosette
+  for (let i=0;i<28;i++){
+    const l = leaf(i%3===0?M.leafC:M.leafA, 0.42+Math.random()*0.25, 0.12);
+    l.rotation.x = 0.28 + Math.random()*0.22;   // near-flat spread
+    l.rotation.y = (i/28)*Math.PI*2 + Math.random()*0.25;
+    l.position.y = 0.18 + Math.random()*0.05;
+    g.add(l);
+  }
+  // a few tall white flower stalks
+  for (let i=0;i<3;i++){
+    const a=Math.random()*Math.PI*2;
+    const st = mesh(CYL(0.012,0.016,0.85+Math.random()*0.3,5), M.stem, Math.cos(a)*0.25, 0.6, Math.sin(a)*0.25);
+    g.add(st);
+    const fl = flower(M.petalW, 0.06, 6);
+    fl.position.set(Math.cos(a)*0.25, 1.05, Math.sin(a)*0.25); g.add(fl);
+  }
+  return g;
+}
+
+/* --- FLOWERING POPPY --- */
+function buildPoppy(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(1.0,1.15,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  [[0,0,1.25],[0.45,0.3,1.05],[-0.4,0.25,1.1],[0.15,-0.45,0.9],[-0.2,-0.3,0.8]].forEach(([x,z,h],i)=>{
+    const st = mesh(CYL(0.014,0.022,h,5), M.stem, x, h/2+0.16, z);
+    st.rotation.z=(Math.random()-0.5)*0.15; g.add(st);
+    // jagged basal leaves
+    for (let j=0;j<3;j++){
+      const l = leaf(M.leafB, 0.3, 0.13);
+      l.position.set(x,0.24,z); l.rotation.x=1.15; l.rotation.y=j*2.1;
+      g.add(l);
+    }
+    // nodding bud or open bloom
+    if (i%2){
+      const fl = flower(M.petalR, 0.14, 7, M.stoneD);
+      fl.position.set(x, h+0.24, z); g.add(fl);
+    } else {
+      const bud = mesh(SPH(0.08,8), M.stemD, x, h+0.22, z);
+      bud.scale.y=1.4; g.add(bud);
+    }
+  });
+  return g;
+}
+
+/* --- MUSHROOMS (Psilocybe / Amanita) --- */
+function buildMushrooms(capMat, capScale, clusterN){
+  return function(){
+    const g = grp();
+    const log = mesh(CYL(0.32,0.36,1.5,9), M.bark, 0,0.3,0);
+    log.rotation.z = Math.PI/2; log.receiveShadow=true; g.add(log);
+    const moss = mesh(new THREE.SphereGeometry(0.45,10,8), M.leafB, 0.35,0.34,0.05, false);
+    moss.scale.set(1.6,0.35,1); g.add(moss);
+    for (let i=0;i<clusterN;i++){
+      const x=(Math.random()-0.5)*1.25, z=(Math.random()-0.5)*0.55;
+      const h=0.16+Math.random()*0.22, r=(0.07+Math.random()*0.06)*capScale;
+      const st = mesh(CYL(r*0.35,r*0.5,h,6), capMat===M.capR?M.petalW:M.gillW, x, 0.34+h/2, z, false);
+      g.add(st);
+      const cap = mesh(new THREE.SphereGeometry(r,10,8), capMat, x, 0.34+h, z);
+      cap.scale.y = 0.62; g.add(cap);
+      if (capMat===M.capR){ // warts
+        for (let w=0;w<5;w++){
+          const a=Math.random()*Math.PI*2, rr=Math.random()*r*0.7;
+          g.add(mesh(SPH(r*0.14,4), M.petalW, x+Math.cos(a)*rr, 0.34+h+r*0.4, z+Math.sin(a)*rr, false));
+        }
+      }
+    }
+    return g;
+  };
+}
+
+/* --- MORNING-GLORY VINE (Ololiuqui) --- */
+function buildVine(){
+  const g = grp();
+  // rustic trellis
+  const post = (x,z)=>{ const p=mesh(CYL(0.05,0.06,1.9,6), M.bark, x,0.95,z); g.add(p); };
+  post(-0.7,-0.25); post(0.7,-0.25); post(-0.7,0.25); post(0.7,0.25);
+  const bar1 = mesh(CYL(0.04,0.04,1.5,6), M.bark, 0,1.75,0); bar1.rotation.z=Math.PI/2; g.add(bar1);
+  const bar2 = mesh(CYL(0.04,0.04,1.5,6), M.bark, 0,1.0,0);  bar2.rotation.z=Math.PI/2; g.add(bar2);
+  // twining stems (curved tube via small segments)
+  const vineMat = M.vine;
+  for (let v=0; v<3; v++){
+    let x=-0.7+(v-1)*0.5, z=0, y=0.05, ang=(Math.random()-0.5)*0.6;
+    for (let s=0;s<14;s++){
+      const seg = mesh(CYL(0.016,0.02,0.16,5), vineMat, x, y+0.07, z, false);
+      seg.rotation.z = ang*0.7; seg.rotation.x = (Math.random()-0.5)*0.4;
+      g.add(seg);
+      y += 0.135; x += 0.075 + Math.sin(s+v)*0.045; z += Math.cos(s*0.9+v)*0.05;
+      // heart-shaped leaves
+      if (s%2){
+        const l = leaf(s%4?M.leafA:M.leafC, 0.2, 0.12);
+        l.position.set(x, y, z); l.rotation.x=1.3; l.rotation.y=s*1.7;
+        g.add(l);
+      }
+    }
+    // trumpet flower at the top
+    const bell = mesh(CON(0.075,0.14,8), v===1?M.petalW:M.petalB, x, y+0.05, z);
+    bell.rotation.x = Math.PI; g.add(bell);
+  }
+  return g;
+}
+
+/* --- LIANA (Ayahuasca) --- */
+function buildLiana(){
+  const g = grp();
+  // dead host tree
+  const trunk = mesh(CYL(0.13,0.2,2.9,8), M.bark, 0,1.45,0);
+  trunk.receiveShadow=true; g.add(trunk);
+  for (let i=0;i<4;i++){
+    const br = mesh(CYL(0.04,0.06,0.9,6), M.bark, 0.1,1.4+i*0.4, 0);
+    br.rotation.z = 0.8+Math.random()*0.5; br.rotation.y = i*1.6; g.add(br);
+  }
+  // twin spiraling lianas (heart-leaf vine + chacruna shrub below)
+  for (let v=0; v<2; v++){
+    const mat = v? M.vine : M.stemD;
+    const turn = v? 1 : -1;
+    let y=0.1, ang=0;
+    const pts=[];
+    while (y<2.8){
+      const r = 0.26+v*0.09;
+      pts.push([Math.cos(ang)*r, y, Math.sin(ang)*r]);
+      y += 0.13; ang += 0.55*turn;
+    }
+    for (let i=0;i<pts.length-1;i++){
+      const [x1,y1,z1]=pts[i], [x2,y2,z2]=pts[i+1];
+      const seg = mesh(CYL(0.02,0.022,0.16,5), mat, (x1+x2)/2,(y1+y2)/2,(z1+z2)/2, false);
+      seg.lookAt(new THREE.Vector3(x2,y2,z2).add(seg.position));
+      seg.rotateX(Math.PI/2);
+      g.add(seg);
+      if (i%2){
+        const l = leaf(v?M.leafC:M.leafA, 0.22, 0.13);
+        l.position.set(x1,y1,z1); l.rotation.x=1.2; l.rotation.y=i*1.3;
+        g.add(l);
+      }
+    }
+  }
+  // chacruna shrub at the base
+  const shrub = leafFan(M.leafA, 10, 0.5, 0.15, 0.35);
+  shrub.position.set(0.6,0.2,0.4); g.add(shrub);
+  for (let i=0;i<4;i++)
+    g.add(mesh(SPH(0.035,5), M.capR, 0.6+(Math.random()-0.5)*0.3, 0.28, 0.4+(Math.random()-0.5)*0.3, false));
+  return g;
+}
+
+/* --- SHRUB (Kava / Coca / Iboga) --- */
+function buildShrub(scale=1, berryMat=null, flowerMat=null){
+  return function(){
+    const g = grp();
+    const soil = mesh(new THREE.CylinderGeometry(1.05,1.2,0.16,14), M.soil, 0,0.08,0,false);
+    soil.receiveShadow=true; g.add(soil);
+    // branching stems
+    for (let s=0;s<5;s++){
+      const a=(s/5)*Math.PI*2, r=0.12;
+      const h=(0.7+Math.random()*0.35)*scale;
+      const st = mesh(CYL(0.022*scale,0.032*scale,h,6), M.stem, Math.cos(a)*r, h/2+0.16, Math.sin(a)*r);
+      st.rotation.z=(Math.random()-0.5)*0.3; g.add(st);
+      // canopy: leaf clusters at tips
+      const tip = leafFan(s%2?M.leafA:M.leafB, 8, 0.34*scale, 0.15*scale, 0.9);
+      tip.position.set(Math.cos(a)*r*1.8, h+0.12, Math.sin(a)*r*1.8);
+      g.add(tip);
+      if (berryMat) for (let b=0;b<3;b++)
+        g.add(mesh(SPH(0.035,5), berryMat,
+          Math.cos(a)*r*1.8+(Math.random()-0.5)*0.2, h*0.75, Math.sin(a)*r*1.8+(Math.random()-0.5)*0.2, false));
+      if (flowerMat && s<2){
+        const fl = flower(flowerMat, 0.07, 5);
+        fl.position.set(Math.cos(a)*r*1.8, h+0.05, Math.sin(a)*r*1.8); g.add(fl);
+      }
+    }
+    return g;
+  };
+}
+
+/* --- TREE (Betel / Kratom / Jurema / Khat) --- */
+function buildTree(scale=1, canopyMat=null, canopyColorful=false){
+  return function(){
+    const g = grp();
+    const H = 2.6*scale;
+    const trunk = mesh(CYL(0.09*scale,0.15*scale,H,8), M.bark, 0,H/2+0.14,0);
+    trunk.receiveShadow=true; g.add(trunk);
+    // branches
+    for (let i=0;i<3;i++){
+      const br = mesh(CYL(0.03*scale,0.05*scale,0.7*scale,6), M.bark, 0, H*0.82, 0);
+      br.rotation.z = 0.9+Math.random()*0.4; br.rotation.y = i*2.1; g.add(br);
+    }
+    // layered canopy blobs
+    const mats = canopyColorful ? [M.leafA,M.leafC,M.leafB] : [canopyMat||M.leafA,M.leafB];
+    const blobs = [[0,H+0.55*scale,0,0.75],[0.45,H+0.3,0.2,0.5],[-0.45,H+0.35,-0.15,0.55],[0.15,H+0.85,0.3,0.45]];
+    blobs.forEach(([x,y,z,r],i)=>{
+      const b = mesh(SPH(r*scale,9,7), mats[i%mats.length], x*scale, y, z*scale);
+      b.scale.y = 0.8; g.add(b);
+    });
+    return g;
+  };
+}
+
+/* --- SLENDER PALM (Betel) --- */
+function buildPalm(){
+  const g = grp();
+  const H = 2.7;
+  const trunk = mesh(CYL(0.055,0.085,H,8), M.bark, 0,H/2+0.14,0);
+  trunk.receiveShadow=true; g.add(trunk);
+  // ring scars
+  for (let i=0;i<8;i++){
+    const ring = mesh(new THREE.TorusGeometry(0.075-(i*0.003),0.012,5,10), M.stoneD, 0, 0.35+i*0.3, 0, false);
+    ring.rotation.x = Math.PI/2; g.add(ring);
+  }
+  // crown of fronds (arched leaves)
+  for (let i=0;i<10;i++){
+    const a=(i/10)*Math.PI*2;
+    const fr = grp();
+    for (let s=0;s<3;s++){
+      const lf = leaf(s%2?M.leafA:M.leafC, 0.85, 0.16);
+      lf.rotation.x = 0.5+s*0.3;
+      fr.add(lf);
+    }
+    fr.rotation.z = 0.55;
+    fr.rotation.y = -a;
+    fr.position.y = H+0.12;
+    g.add(fr);
+  }
+  // orange nut cluster
+  for (let i=0;i<5;i++)
+    g.add(mesh(SPH(0.055,6), M.capO, Math.cos(i*1.3)*0.12, H-0.12, Math.sin(i*1.3)*0.12));
+  return g;
+}
+
+/* --- HERB STAND (Cannabis) --- */
+function buildHerbTall(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.95,1.1,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  // 3 plants, palmate look via layered leaf fans
+  for (let p=0;p<3;p++){
+    const a=p*2.1+0.4, r=0.28, h=1.2+p*0.28;
+    const x=Math.cos(a)*r, z=Math.sin(a)*r;
+    const st = mesh(CYL(0.024,0.034,h,6), M.stem, x, h/2+0.16, z);
+    st.rotation.z=(Math.random()-0.5)*0.12; g.add(st);
+    // whorls of 7-part leaves
+    for (let w=0; w<3; w++){
+      const fan = leafFan(w%2?M.leafA:M.leafC, 7, 0.42-w*0.07, 0.11, 1.15-w*0.15);
+      fan.position.set(x, 0.45+w*(h-0.6)/3, z);
+      fan.rotation.y = w*0.9;
+      g.add(fan);
+    }
+    //顶端 cola
+    g.add(mesh(SPH(0.06,7), M.leafC, x, h+0.2, z, false));
+  }
+  return g;
+}
+
+/* --- COLUMNAR CACTUS (San Pedro) --- */
+function buildColumnarCactus(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(1.15,1.3,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  // gravel
+  for (let i=0;i<8;i++){
+    const a=Math.random()*Math.PI*2;
+    g.add(mesh(SPH(0.05,5), M.stone, Math.cos(a)*1.0, 0.19, Math.sin(a)*1.0, false));
+  }
+  const cols = [[0,0,2.4,0.17],[0.4,0.3,1.6,0.12],[-0.35,0.28,1.9,0.13],[0.15,-0.4,1.3,0.10],[-0.2,-0.35,1.1,0.09]];
+  cols.forEach(([x,z,h,r],ci)=>{
+    const c = mesh(CYL(r,r*1.06,h,9), M.cactusL, x, h/2+0.16, z);
+    c.receiveShadow=true; g.add(c);
+    // rounded top
+    g.add(mesh(SPH(r,9,7), M.cactusL, x, h+0.15, z));
+    // ribs
+    const n = 7;
+    for (let i=0;i<n;i++){
+      const a=(i/n)*Math.PI*2;
+      const rib = mesh(CYL(0.012,0.012,h,4), M.cactus, x+Math.cos(a)*r*1.0, h/2+0.16, z+Math.sin(a)*r*1.0, false);
+      rib.scale.x = 0.7;
+      g.add(rib);
+    }
+    // white night-bloom on tallest
+    if (ci===0){
+      const fl = flower(M.petalW, 0.12, 8, M.capO);
+      fl.position.set(x+0.05, h+0.24, z); g.add(fl);
+    }
+  });
+  return g;
+}
+
+/* ------------------------------------------------------------------ */
+/* Plant id → builder                                                  */
+/* ------------------------------------------------------------------ */
+const BUILDERS = {
+  blue_lotus: buildAquatic,
+  peyote: buildButtonCactus,
+  kanna: buildSucculent,
+  salvia: buildHerb,
+  dream_herb: ()=>{ const g=buildShrub(0.8)(); // smaller resinous shrub + white blooms
+    g.add(flower(M.petalW,0.08,6)); return g; },
+  dream_root: buildRosette,
+  opium_poppy: buildPoppy,
+  psilocybe: buildMushrooms(M.capO, 1, 9),
+  fly_agaric: buildMushrooms(M.capR, 1.5, 6),
+  ololiuqui: buildVine,
+  ayahuasca: buildLiana,
+  iboga: ()=> buildShrub(0.95, M.capO)(),       // orange berries
+  kava: ()=> buildShrub(1.05)(),                // dense heart-leaf shrub
+  jurema: ()=> buildTree(1.05, M.leafB, true)(),
+  betel_nut: buildPalm,
+  kratom: ()=> buildTree(1.15, M.leafC)(),
+  cannabis: buildHerbTall,
+  coca: ()=> buildShrub(0.9, null, M.petalW)(), // white flowers
+  khat: ()=> buildTree(0.95, M.leafC, true)(),
+  san_pedro: buildColumnarCactus,
+};
+/* ------------------------------------------------------------------ */
+/* Garden layout: 3 concentric habitat rings + stone paths             */
+/* ------------------------------------------------------------------ */
+const RING_R = [0, 8.5, 16];       // radius of each ring's band center
+const gardenGroup = new THREE.Group();
+scene.add(gardenGroup);
+
+/* stone ring paths */
+function stoneRing(radius, count, w=0.55){
+  for (let i=0;i<count;i++){
+    const a = (i/count)*Math.PI*2 + (radius? Math.random()*0.02 : 0);
+    const s = mesh(new THREE.CylinderGeometry(w*(0.6+Math.random()*0.5), w*(0.7+Math.random()*0.5), 0.07, 7),
+      i%3?M.stone:M.stoneD, Math.cos(a)*radius, 0.035, Math.sin(a)*radius, false);
+    s.receiveShadow = true;
+    s.scale.y = 0.6;
+    s.rotation.y = Math.random()*Math.PI;
+    gardenGroup.add(s);
+  }
+}
+stoneRing(4.6, 26);
+stoneRing(12.4, 44);
+stoneRing(20.2, 60);
+/* radial spoke paths */
+for (let k=0;k<3;k++){
+  const a = (k/3)*Math.PI*2 + 0.5;
+  for (let i=0;i<16;i++){
+    const r = 5.2 + i*0.95;
+    const s = mesh(new THREE.CylinderGeometry(0.3,0.34,0.07,6), M.stone,
+      Math.cos(a)*r + (Math.random()-0.5)*0.25, 0.035, Math.sin(a)*r + (Math.random()-0.5)*0.25, false);
+    s.receiveShadow = true; gardenGroup.add(s);
+  }
+}
+
+/* wild grass tufts scattered between rings */
+{
+  const gGeo = CON(0.05,0.5,4); gGeo.translate(0,0.25,0);
+  const gMats = [M.leafB, M.stemD, new THREE.MeshStandardMaterial({color:0x59744a, roughness:0.9})];
+  for (let i=0;i<260;i++){
+    const a=Math.random()*Math.PI*2;
+    const r = 1 + Math.random()*25;
+    if (Math.min(Math.abs(r-4.6), Math.abs(r-12.4), Math.abs(r-20.2)) < 0.8) continue; // keep paths clear
+    const t = mesh(gGeo, gMats[i%3], Math.cos(a)*r, 0.05, Math.sin(a)*r, false);
+    t.scale.set(1+Math.random(), 0.6+Math.random()*0.9, 1+Math.random());
+    t.rotation.y = Math.random()*Math.PI;
+    gardenGroup.add(t);
+  }
+}
+
+/* place the 20 plants */
+const plantMeshes = [];   // pickable groups
+GARDEN.forEach((p, idx)=>{
+  const builder = BUILDERS[p.id];
+  const plant = builder();
+  const ring = p.ring;
+  const inRing = GARDEN.filter(q=>q.ring===ring);
+  const posInRing = inRing.indexOf(p);
+  const count = inRing.length;
+  const baseA = ring===0 ? 0 : -Math.PI/2 + ring*0.35;
+  const a = baseA + (posInRing/count)*Math.PI*2;
+  const r = ring===0 ? 0 : RING_R[ring];
+  plant.position.set(Math.cos(a)*r, 0, Math.sin(a)*r);
+  plant.rotation.y = -a + Math.PI/2 + (Math.random()-0.5)*0.3;
+  plant.userData = { plant:p, idx };
+  plant.traverse(o=>{ o.userData.plantRoot = plant; });
+  gardenGroup.add(plant);
+  plantMeshes.push(plant);
+
+  /* plant marker: floating golden mote above each plant */
+  const mote = new THREE.Mesh(SPH(0.09,10),
+    new THREE.MeshBasicMaterial({ color:0xd4a94e, transparent:true, opacity:0.85,
+      blending:THREE.AdditiveBlending, depthWrite:false }));
+  const lift = 1.6;
+  mote.position.set(plant.position.x, lift, plant.position.z);
+  mote.userData.mote = { baseY:lift, phase:idx*1.7, plant };
+  gardenGroup.add(mote);
+  const plant_ = plant; // closure
+});
+
+/* ------------------------------------------------------------------ */
+/* Floating name labels (canvas sprites)                               */
+/* ------------------------------------------------------------------ */
+function makeLabel(text, sub){
+  const c = document.createElement('canvas');
+  c.width = 512; c.height = 128;
+  const g = c.getContext('2d');
+  g.textAlign = 'center';
+  g.font = '600 44px Georgia, serif';
+  g.shadowColor = 'rgba(0,0,0,0.9)'; g.shadowBlur = 12;
+  g.fillStyle = '#f2ecd8';
+  g.fillText(text, 256, 56);
+  g.font = 'italic 26px Georgia, serif';
+  g.fillStyle = 'rgba(180,205,160,0.95)';
+  g.fillText(sub, 256, 94);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+const labelGroup = new THREE.Group(); scene.add(labelGroup);
+const labels = [];
+plantMeshes.forEach(plant=>{
+  const p = plant.userData.plant;
+  const spr = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: makeLabel(p.name, p.sci.split(' +')[0]), transparent:true, opacity:0.85, depthWrite:false }));
+  spr.scale.set(2.6, 0.65, 1);
+  const h = 2.2 + (p.ring===0?0.4:p.ring===1?0.7:1.0);
+  spr.position.set(plant.position.x, h, plant.position.z);
+  labelGroup.add(spr);
+  labels.push(spr);
+});
+
+/* ------------------------------------------------------------------ */
+/* Interaction: hover tooltip + click focus                            */
+/* ------------------------------------------------------------------ */
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
+let hovered = null, focused = null;
+
+const tip = document.getElementById('tip');
+const panel = document.getElementById('panel');
+const cardNav = document.getElementById('cardNav');
+
+renderer.domElement.addEventListener('pointermove', (e)=>{
+  pointer.x = (e.clientX/innerWidth)*2 - 1;
+  pointer.y = -(e.clientY/innerHeight)*2 + 1;
+  raycaster.setFromCamera(pointer, camera);
+  const hits = raycaster.intersectObjects(plantMeshes, true);
+  const root = hits.length ? hits[0].object.userData.plantRoot : null;
+  if (root !== hovered){
+    hovered = root;
+    renderer.domElement.style.cursor = root ? 'pointer' : 'grab';
+    if (root){
+      const p = root.userData.plant;
+      document.getElementById('tip-n').textContent = p.name;
+      document.getElementById('tip-s').textContent = p.sci;
+      tip.style.opacity = 1;
+    } else tip.style.opacity = 0;
+  }
+  if (hovered){
+    tip.style.left = Math.min(e.clientX + 16, innerWidth - 280) + 'px';
+    tip.style.top  = Math.max(e.clientY - 56, 12) + 'px';
+  }
+});
+renderer.domElement.addEventListener('pointerleave', ()=>{ tip.style.opacity = 0; hovered = null; });
+
+renderer.domElement.addEventListener('click', ()=>{
+  if (hovered) openPlant(hovered.userData.idx, true);
+});
+
+function openPlant(idx, fly=true){
+  const plant = plantMeshes[idx];
+  const p = plant.userData.plant;
+  focused = idx;
+  document.getElementById('p-tag').textContent = 'No. ' + (idx+1) + ' of 20 · Ring ' + (p.ring+1) + ' — ' + ['The Pond','Desert & Meadow','Forest Shrines'][p.ring];
+  document.getElementById('p-name').textContent = p.name;
+  document.getElementById('p-sci').textContent = p.sci;
+  document.getElementById('p-family').textContent = p.family;
+  document.getElementById('p-land').textContent = p.land;
+  document.getElementById('p-form').textContent = p.form;
+  document.getElementById('p-note').textContent = p.note;
+  document.getElementById('p-link').href = 'index.html#plant-' + p.id;
+  panel.classList.add('open');
+  cardNav.style.right = 'min(400px, 92vw)';
+  controls.autoRotate = false;
+  if (fly) flyTo(plant.position);
+}
+function closePanel(){
+  panel.classList.remove('open');
+  cardNav.style.right = 'min(400px, 92vw)'; // stays near panel edge; harmless when closed
+  cardNav.style.right = '0px';
+  focused = null;
+  controls.autoRotate = true;
+}
+document.getElementById('p-reset').addEventListener('click', closePanel);
+document.getElementById('navPrev').addEventListener('click', ()=> openPlant(((focused??0)-1+20)%20));
+document.getElementById('navNext').addEventListener('click', ()=> openPlant(((focused??0)+1)%20));
+addEventListener('keydown', (e)=>{
+  if (e.key==='Escape') closePanel();
+  if (focused!=null && e.key==='ArrowDown') openPlant((focused+1)%20);
+  if (focused!=null && e.key==='ArrowUp')   openPlant((focused+19)%20);
+});
+
+/* smooth camera flight to a plant */
+const flyState = { active:false, t:0, fromPos:new THREE.Vector3(), fromTgt:new THREE.Vector3(),
+                   toPos:new THREE.Vector3(), toTgt:new THREE.Vector3(), dur:1.4 };
+function flyTo(target){
+  const d = new THREE.Vector3().subVectors(camera.position, controls.target).setLength(7);
+  d.y = Math.max(d.y, 4.5);
+  flyState.fromPos.copy(camera.position);
+  flyState.fromTgt.copy(controls.target);
+  flyState.toPos.copy(target).add(d).add(new THREE.Vector3(1.5,1.2,1.5));
+  flyState.toTgt.set(target.x, 1.1, target.z);
+  flyState.t = 0; flyState.active = true;
+}
+function stepFly(dt){
+  if (!flyState.active) return;
+  flyState.t += dt / flyState.dur;
+  const k = flyState.t >= 1 ? 1 : (1 - Math.pow(1 - flyState.t, 3)); // easeOutCubic
+  camera.position.lerpVectors(flyState.fromPos, flyState.toPos, k);
+  controls.target.lerpVectors(flyState.fromTgt, flyState.toTgt, k);
+  if (flyState.t >= 1) flyState.active = false;
+}
+
+/* ------------------------------------------------------------------ */
+/* Animate                                                             */
+/* ------------------------------------------------------------------ */
+const clock = new THREE.Clock();
+const bobbers = [];
+gardenGroup.traverse(o=>{ if (o.userData.bob) bobbers.push(o); });
+const motes = [];
+gardenGroup.traverse(o=>{ if (o.userData.mote) motes.push(o); });
+
+function animate(){
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), 0.05);
+  const t = clock.elapsedTime;
+
+  stepFly(dt);
+  controls.update();
+
+  // fireflies drift
+  const pa = fireflyGeo.attributes.position;
+  for (let i=0;i<FIREFLY_N;i++){
+    const f = fireflySeed[i];
+    f.p += dt*f.s;
+    pa.array[i*3]   = Math.cos(f.p*0.7 + f.a) * f.r;
+    pa.array[i*3+1] = f.h + Math.sin(f.p*1.3)*0.35;
+    pa.array[i*3+2] = Math.sin(f.p*0.7 + f.a) * f.r;
+  }
+  pa.needsUpdate = true;
+
+  // lotus bob
+  bobbers.forEach(b=>{ b.position.y = b.userData.bob.base + Math.sin(t*0.8 + b.userData.bob.phase)*0.03; });
+
+  // motes pulse + highlight when focused
+  motes.forEach((m,i)=>{
+    const s = 1 + Math.sin(t*1.6 + m.userData.mote.phase)*0.25;
+    m.scale.setScalar(s);
+    m.material.opacity = (focused!=null && plantMeshes[focused].userData.plant === m.userData.mote.plant) ? 1 : 0.55 + Math.sin(t*1.6+i)*0.15;
+  });
+
+  // moon halo faces camera
+  moon.userData.halo.lookAt(camera.position);
+
+  // labels fade by distance & always face camera (sprites do automatically)
+  labels.forEach((l,i)=>{
+    const d = camera.position.distanceTo(l.position);
+    l.material.opacity = THREE.MathUtils.clamp(1.35 - d/34, 0.12, 0.9);
+  });
+
+  // gold center light gently breathes
+  goldFill.intensity = 55 + Math.sin(t*0.5)*12;
+
+  composer.render();
+}
+animate();
+
+/* resize */
+addEventListener('resize', ()=>{
+  camera.aspect = innerWidth/innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+  composer.setSize(innerWidth, innerHeight);
+});
+
+/* loaded */
+setTimeout(()=> document.getElementById('loading').classList.add('done'), 400);
+
+/* debug / test hook */
+window.__garden = { openPlant, plantMeshes, camera, controls };
+</script>
+</body>
+</html>
