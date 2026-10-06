@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Sacred Garden — Sacred Botany</title>
-<meta name="description" content="An interactive 3D garden of twenty ritual plants of the Sacred Botany atlas — walk the moonlit path, meet each plant where it grows, and learn the ceremonies that surround it.">
+<meta name="description" content="An interactive 3D garden of twenty-nine ritual plants of the Sacred Botany atlas — walk the moonlit path, meet each plant where it grows, and learn the ceremonies that surround it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -107,7 +107,7 @@
   <div>
     <span class="kicker">Sacred Botany · Living Atlas</span>
     <h1>The <em>Sacred Garden</em></h1>
-    <div class="sub">Twenty ritual plants under one moon — walk the path, touch a plant, and hear its story.</div>
+    <div class="sub">Twenty-nine ritual plants under one moon — walk the path, touch a plant, and hear its story.</div>
   </div>
   <a class="back" href="index.html">← Back to the Atlas</a>
 </div>
@@ -223,6 +223,35 @@ const GARDEN = [
   { id:"san_pedro", name:"San Pedro", sci:"Echinopsis pachanoi", form:"Columnar cactus",
     family:"Cactaceae", land:"Andes — Peru, Ecuador", ring:2,
     note:"Huachuma of Andean ceremony — a cactus of continuous ritual use for over three thousand years." },
+
+  /* ── nine new species, drawn from the 279-plant atlas ── */
+  { id:"tobacco", name:"Tobacco", sci:"Nicotiana tabacum", form:"Tall flowering herb",
+    family:"Solanaceae", land:"The Americas — now worldwide", ring:1,
+    note:"The sacred herb of the Americas — a pinch offered in prayer to the four directions, the pipe carrier's messenger between worlds." },
+  { id:"mandrake", name:"Mandrake", sci:"Mandragora officinarum", form:"Rosette herb, forked root",
+    family:"Solanaceae", land:"Mediterranean basin", ring:1,
+    note:"Root of fertility and protection in the oldest grimoires — the screaming mandrake pulled by dog and moonlight." },
+  { id:"mugwort", name:"Mugwort", sci:"Artemisia vulgaris", form:"Tall silvery herb",
+    family:"Asteraceae", land:"Eurasia — now worldwide", ring:1,
+    note:"Moxa of the acupuncturist and dream-herb of European scryers — tucked under the pillow to sharpen the dreaming eye." },
+  { id:"wormwood", name:"Wormwood", sci:"Artemisia absinthium", form:"Silver-grey shrublet",
+    family:"Asteraceae", land:"Europe & Siberia", ring:1,
+    note:"The green fairy of absinthe — bitter wormwood of Artemis, burned as moxa and hung as a ward against misfortune." },
+  { id:"damiana", name:"Damiana", sci:"Turnera diffusa", form:"Aromatic shrublet",
+    family:"Passifloraceae", land:"Mexico & Texas", ring:1,
+    note:"Leaf of pleasure in Mexican folk practice — a cordial herb of love, danced with and drunk as sweet liqueur." },
+  { id:"harmala", name:"Syrian Rue", sci:"Peganum harmala", form:"Sprawling desert herb",
+    family:"Zygophyllaceae", land:"Central Asia & Middle East", ring:1,
+    note:"Esphand of the Persian dūd — the red seeds scattered on coals to cast the smoke that wards off the evil eye." },
+  { id:"ephedra", name:"Ephedra", sci:"Ephedra sinica", form:"Jointed green broom",
+    family:"Ephedraceae", land:"China & Mongolian steppe", ring:1,
+    note:"Ma huang of Chinese medicine — and many scholars' candidate for soma, the ancient Indo-Iranian elixir of immortality." },
+  { id:"voacanga", name:"African Iboga", sci:"Voacanga africana", form:"Rainforest shrub",
+    family:"Apocynaceae", land:"West & Central Africa", ring:2,
+    note:"Cousin of iboga — its milky bark tended by West African healers for sight and ceremony in the forest societies." },
+  { id:"bissap", name:"Bissap", sci:"Hibiscus sabdariffa", form:"Bushy herb, red calyxes",
+    family:"Malvaceae", land:"West Africa — Sahel", ring:0,
+    note:"Hibiscus of the Sahel — the crimson 'wine' of hospitality, poured at naming days and shared as a toast to the ancestors." },
 ];
 /* ------------------------------------------------------------------ */
 /* Renderer / scene                                                    */
@@ -231,6 +260,10 @@ const stage = document.getElementById('stage');
 const renderer = new THREE.WebGLRenderer({ antialias:true, preserveDrawingBuffer:true });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.22;
 stage.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
@@ -266,7 +299,14 @@ moonLight.shadow.mapSize.set(2048, 2048);
 moonLight.shadow.camera.left = -45; moonLight.shadow.camera.right = 45;
 moonLight.shadow.camera.top = 45;   moonLight.shadow.camera.bottom = -45;
 moonLight.shadow.camera.far = 120;
+moonLight.shadow.bias = -0.0015;
+moonLight.shadow.normalBias = 0.02;
+moonLight.shadow.radius = 4;
 scene.add(moonLight);
+/* faint moonglow bounce from the opposite side, keeps shadow sides readable */
+const moonBounce = new THREE.DirectionalLight(0x6f86b8, 0.22);
+moonBounce.position.set(-22, 16, -14);
+scene.add(moonBounce);
 const goldFill = new THREE.PointLight(0xd4a94e, 60, 60, 2);
 goldFill.position.set(0, 3.5, 0);
 scene.add(goldFill);
@@ -282,6 +322,14 @@ function groundTexture(){
   rad.addColorStop(0.55, '#18231a');
   rad.addColorStop(1, '#0d130e');
   g.fillStyle = rad; g.fillRect(0,0,1024,1024);
+  // clover / moss patches
+  for (let i=0;i<50;i++){
+    const x=Math.random()*1024, y=Math.random()*1024, r=14+Math.random()*46;
+    const gr = g.createRadialGradient(x,y,1, x,y,r);
+    gr.addColorStop(0, `rgba(${46+Math.random()*24|0},${74+Math.random()*36|0},${44+Math.random()*22|0},0.28)`);
+    gr.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = gr; g.beginPath(); g.arc(x,y,r,0,7); g.fill();
+  }
   // speckle moss/soil
   for (let i=0;i<9000;i++){
     const x=Math.random()*1024, y=Math.random()*1024, r=Math.random()*2.2;
@@ -290,16 +338,51 @@ function groundTexture(){
                          : `rgba(${40+Math.random()*20|0},${45+Math.random()*25|0},${35+Math.random()*15|0},${0.15+Math.random()*0.1})`;
     g.beginPath(); g.arc(x,y,r,0,7); g.fill();
   }
+  // grass blade strokes for directional texture
+  for (let i=0;i<5200;i++){
+    const x=Math.random()*1024, y=Math.random()*1024;
+    const len=3+Math.random()*7, a=-Math.PI/2+(Math.random()-0.5)*1.2;
+    const d=Math.hypot(x-512,y-512)/512;
+    g.strokeStyle = d<0.75 ? `rgba(${52+Math.random()*38|0},${86+Math.random()*48|0},${48+Math.random()*26|0},${0.10+Math.random()*0.15})`
+                           : `rgba(${34+Math.random()*18|0},${42+Math.random()*20|0},${32+Math.random()*14|0},${0.12+Math.random()*0.12})`;
+    g.lineWidth = 1+Math.random();
+    g.beginPath(); g.moveTo(x,y);
+    g.lineTo(x+Math.cos(a)*len, y+Math.sin(a)*len); g.stroke();
+  }
+  // bare-earth patches near the outer edge
+  for (let i=0;i<26;i++){
+    const a=Math.random()*Math.PI*2, rr=(0.72+Math.random()*0.26)*512;
+    const x=512+Math.cos(a)*rr, y=512+Math.sin(a)*rr;
+    const gr = g.createRadialGradient(x,y,1, x,y,20+Math.random()*34);
+    gr.addColorStop(0, 'rgba(52,42,30,0.22)');
+    gr.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = gr; g.beginPath(); g.arc(x,y,54,0,7); g.fill();
+  }
   const t = new THREE.CanvasTexture(c);
   t.colorSpace = THREE.SRGBColorSpace;
   return t;
 }
 const ground = new THREE.Mesh(
-  new THREE.CircleGeometry(46, 72).rotateX(-Math.PI/2),
+  new THREE.CircleGeometry(46, 96, ).rotateX(-Math.PI/2),
   new THREE.MeshStandardMaterial({ map: groundTexture(), roughness:1, metalness:0 })
 );
 ground.receiveShadow = true;
 scene.add(ground);
+
+/* gently undulating terrain: subtle vertex noise, plants sit on it */
+{
+  const pos = ground.geometry.attributes.position;
+  // geometry is a rotated disc: x stays x, old y becomes world z
+  for (let i=0;i<pos.count;i++){
+    const x=pos.getX(i), z=pos.getZ(i);
+    const bump = Math.sin(x*0.35+1.7)*Math.cos(z*0.42)*0.055
+               + Math.sin(x*0.9+z*0.7)*0.03 + Math.sin(z*1.6)*0.015;
+    const r = Math.hypot(x,z);
+    pos.setZ(i, bump * Math.min(1, r/6) * (r>40 ? Math.max(0,(46-r)/6) : 1));
+  }
+  pos.needsUpdate = true;
+  ground.geometry.computeVertexNormals();
+}
 
 /* distant tree-line silhouettes (dark cones) */
 {
@@ -318,12 +401,82 @@ scene.add(ground);
 }
 
 /* ------------------------------------------------------------------ */
+/* Instanced swaying grass field (per-instance sway via onBeforeCompile)*/
+/* ------------------------------------------------------------------ */
+let grassUniformTime = { value: 0 };
+{
+  const N = 2600;
+  const bladeGeo = new THREE.ConeGeometry(0.028, 0.5, 3, 2, true);
+  bladeGeo.translate(0, 0.25, 0);
+  const bladeMat = new THREE.MeshStandardMaterial({ color:0xffffff, roughness:0.9, side:THREE.DoubleSide });
+  bladeMat.onBeforeCompile = (shader)=>{
+    shader.uniforms.uTime = grassUniformTime;
+    shader.vertexShader = shader.vertexShader
+      .replace('#include <common>', '#include <common>\nuniform float uTime;\nattribute float aPhase;\nattribute float aLean;')
+      .replace('#include <begin_vertex>', `#include <begin_vertex>
+        float sway = sin(uTime*1.4 + aPhase) * 0.06 + sin(uTime*2.3 + aPhase*1.7) * 0.02;
+        transformed.x += sway * pow(position.y*2.0, 1.5);
+        transformed.z += aLean * pow(position.y*2.0, 1.5) * 0.5;`);
+  };
+  const grass = new THREE.InstancedMesh(bladeGeo, bladeMat, N);
+  grass.receiveShadow = true;
+  const phases = new Float32Array(N), leans = new Float32Array(N);
+  const dummy = new THREE.Object3D();
+  const col = new THREE.Color();
+  let placed = 0, guard = 0;
+  while (placed < N && guard++ < N*6){
+    const a = Math.random()*Math.PI*2;
+    const r = 1.2 + Math.random()*24.5;
+    // keep the stone paths and the pond clear
+    if (Math.min(Math.abs(r-4.6), Math.abs(r-12.4), Math.abs(r-20.2)) < 0.9) continue;
+    dummy.position.set(Math.cos(a)*r, 0, Math.sin(a)*r);
+    dummy.rotation.y = Math.random()*Math.PI;
+    dummy.scale.set(1, 0.5+Math.random()*1.1, 1);
+    dummy.updateMatrix();
+    grass.setMatrixAt(placed, dummy.matrix);
+    phases[placed] = Math.random()*Math.PI*2;
+    leans[placed] = (Math.random()-0.5)*0.4;
+    col.setHSL(0.28+Math.random()*0.06, 0.32+Math.random()*0.2, 0.16+Math.random()*0.12);
+    grass.setColorAt(placed, col);
+    placed++;
+  }
+  grass.count = placed;
+  grass.geometry.setAttribute('aPhase', new THREE.InstancedBufferAttribute(phases,1));
+  grass.geometry.setAttribute('aLean', new THREE.InstancedBufferAttribute(leans,1));
+  grass.instanceMatrix.needsUpdate = true;
+  if (grass.instanceColor) grass.instanceColor.needsUpdate = true;
+  scene.add(grass);
+}
+
+/* ------------------------------------------------------------------ */
 /* Sky: moon, stars, drifting mist planes                              */
 /* ------------------------------------------------------------------ */
-const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(3.2, 32, 32),
-  new THREE.MeshBasicMaterial({ color:0xf5f2e4 })
-);
+const moon = (()=>{
+  const c = document.createElement('canvas'); c.width=c.height=256;
+  const g = c.getContext('2d');
+  g.fillStyle = '#f5f2e4'; g.fillRect(0,0,256,256);
+  // subtle maria blotches
+  for (let i=0;i<14;i++){
+    const x=40+Math.random()*176, y=40+Math.random()*176, r=10+Math.random()*26;
+    const gr = g.createRadialGradient(x,y,1,x,y,r);
+    gr.addColorStop(0,`rgba(196,192,176,${0.25+Math.random()*0.2})`);
+    gr.addColorStop(1,'rgba(0,0,0,0)');
+    g.fillStyle=gr; g.beginPath(); g.arc(x,y,r,0,7); g.fill();
+  }
+  // craters
+  for (let i=0;i<40;i++){
+    const x=Math.random()*256, y=Math.random()*256, r=1.5+Math.random()*4.5;
+    g.fillStyle=`rgba(150,146,132,${0.18+Math.random()*0.25})`;
+    g.beginPath(); g.arc(x,y,r,0,7); g.fill();
+    g.fillStyle=`rgba(255,252,240,${0.12+Math.random()*0.12})`;
+    g.beginPath(); g.arc(x-r*0.25,y-r*0.25,r*0.6,0,7); g.fill();
+  }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace;
+  return new THREE.Mesh(
+    new THREE.SphereGeometry(3.2, 32, 32),
+    new THREE.MeshStandardMaterial({ map:t, roughness:1, emissive:0xf5f2e4, emissiveIntensity:0.42, emissiveMap:t })
+  );
+})();
 moon.position.set(-34, 34, -46);
 scene.add(moon);
 { // soft halo via additive sprite-like plane
@@ -367,6 +520,32 @@ const fireflies = new THREE.Points(fireflyGeo, new THREE.PointsMaterial({
   color:0xd9c76a, size:0.22, transparent:true, opacity:0.9,
   blending:THREE.AdditiveBlending, depthWrite:false }));
 scene.add(fireflies);
+
+/* drifting ground mist: three soft noisy planes, slowly revolving */
+const mists = [];
+{
+  const c = document.createElement('canvas'); c.width=c.height=256;
+  const g = c.getContext('2d');
+  g.clearRect(0,0,256,256);
+  for (let i=0;i<26;i++){
+    const x=Math.random()*256, y=Math.random()*256, r=18+Math.random()*40;
+    const gr = g.createRadialGradient(x,y,1,x,y,r);
+    gr.addColorStop(0,`rgba(190,208,200,${0.05+Math.random()*0.07})`);
+    gr.addColorStop(1,'rgba(0,0,0,0)');
+    g.fillStyle=gr; g.beginPath(); g.arc(x,y,r,0,7); g.fill();
+  }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace;
+  const mistMat = new THREE.MeshBasicMaterial({ map:t, transparent:true, opacity:0.5,
+    depthWrite:false, side:THREE.DoubleSide });
+  for (let i=0;i<3;i++){
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(64, 64), mistMat.clone());
+    p.rotation.x = -Math.PI/2 + 0.06;
+    p.position.set(0, 0.35+i*0.3, 0);
+    p.material.opacity = 0.28 - i*0.06;
+    mists.push({ mesh:p, speed:0.014+i*0.007, phase:Math.random()*6 });
+    scene.add(p);
+  }
+}
 
 /* ------------------------------------------------------------------ */
 /* Shared materials                                                    */
@@ -850,6 +1029,235 @@ function buildColumnarCactus(){
   return g;
 }
 
+/* --- TALL NIGHTSHADE (Tobacco) --- */
+function buildTobacco(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.95,1.1,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  for (let i=0;i<5;i++){
+    const a=(i/5)*Math.PI*2+0.5, r=0.18+Math.random()*0.16;
+    const x=Math.cos(a)*r, z=Math.sin(a)*r, h=1.3+Math.random()*0.55;
+    const st = mesh(CYL(0.02,0.032,h,6), M.stem, x, h/2+0.16, z);
+    st.rotation.z=(Math.random()-0.5)*0.14; g.add(st);
+    // big lanceolate leaves clasping the stem
+    for (let j=0;j<5;j++){
+      const l = leaf(j%2?M.leafA:M.leafC, 0.5-j*0.06, 0.26);
+      l.position.set(x, 0.38+j*(h-0.5)/5, z);
+      l.rotation.x = 1.35; l.rotation.y = a + (j%2)*Math.PI + 0.4;
+      g.add(l);
+    }
+    // pink tubular flowers
+    if (i%2){
+      const fl = mesh(CON(0.045,0.17,6), M.petalP, x, h+0.22, z);
+      fl.rotation.z=(Math.random()-0.5)*0.5; g.add(fl);
+    }
+  }
+  return g;
+}
+
+/* --- FORKED-ROOT ROSETTE (Mandrake) --- */
+function buildMandrake(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.85,1.0,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  // exposed forked taproot (two thick arms rising from the earth)
+  const rootMat = new THREE.MeshStandardMaterial({ color:0x6b5640, roughness:0.95 });
+  [[-0.14,0.34],[0.16,0.28]].forEach(([x,h],i)=>{
+    const arm = mesh(CYL(0.07,0.11,h,7), rootMat, x, h/2+0.14, 0.02*i);
+    arm.rotation.z = i? -0.42 : 0.38; g.add(arm);
+  });
+  // dark crinkled rosette
+  const manLeaf = new THREE.MeshStandardMaterial({ color:0x3d5c3a, roughness:0.7, side:THREE.DoubleSide });
+  for (let i=0;i<16;i++){
+    const l = leaf(manLeaf, 0.4+Math.random()*0.2, 0.2);
+    l.rotation.x = 0.5+Math.random()*0.3;
+    l.rotation.y = (i/16)*Math.PI*2 + Math.random()*0.3;
+    l.position.set((Math.random()-0.5)*0.2, 0.44+Math.random()*0.08, (Math.random()-0.5)*0.2);
+    g.add(l);
+  }
+  // pendant violet bells
+  for (let i=0;i<3;i++){
+    const a=Math.random()*Math.PI*2;
+    const bell = mesh(CON(0.05,0.11,6), M.petalP, Math.cos(a)*0.3, 0.5, Math.sin(a)*0.3);
+    bell.rotation.x = Math.PI; g.add(bell);
+  }
+  // orange seed orbs
+  [[0.25,0.55],[-0.2,0.5]].forEach(([x,z])=> g.add(mesh(SPH(0.045,6), M.capO, x, 0.6, z, false)));
+  return g;
+}
+
+/* --- SILVERY ARTEMISIA HERB (Mugwort / Wormwood) --- */
+function buildArtemisia(small){
+  return function(){
+    const g = grp();
+    const soil = mesh(new THREE.CylinderGeometry(0.8,0.95,0.16,14), M.soil, 0,0.08,0,false);
+    soil.receiveShadow=true; g.add(soil);
+    const silver = new THREE.MeshStandardMaterial({ color:0x8fa384, roughness:0.85, side:THREE.DoubleSide });
+    const silverD = new THREE.MeshStandardMaterial({ color:0x74896f, roughness:0.85, side:THREE.DoubleSide });
+    const n = small? 5 : 6;
+    for (let i=0;i<n;i++){
+      const a=(i/n)*Math.PI*2+0.9, r=0.1+Math.random()*0.18;
+      const x=Math.cos(a)*r, z=Math.sin(a)*r;
+      const h=(small?0.5:0.95)+Math.random()*(small?0.3:0.55);
+      const st = mesh(CYL(0.015,0.024,h,5), M.stemD, x, h/2+0.16, z);
+      st.rotation.z=(Math.random()-0.5)*0.2; g.add(st);
+      // feathery pinnate look: many small dissected leaves
+      for (let j=0;j<(small?5:7);j++){
+        const l = leaf(j%2?silver:silverD, 0.14+Math.random()*0.08*(small?0.8:1), 0.07);
+        l.position.set(x, 0.28+j*(h-0.3)/((small?5:7)), z);
+        l.rotation.x = 1.2+Math.random()*0.3;
+        l.rotation.y = a + (j%2)*Math.PI + 0.6+Math.random()*0.4;
+        g.add(l);
+      }
+    }
+    // wormwood: tiny nodding mustard-yellow flower heads
+    if (small){
+      for (let i=0;i<4;i++){
+        const a=Math.random()*Math.PI*2;
+        g.add(mesh(SPH(0.03,5), M.petalY, Math.cos(a)*0.3, 0.75+Math.random()*0.15, Math.sin(a)*0.3, false));
+      }
+    }
+    return g;
+  };
+}
+
+/* --- AROMATIC SHRUBLET (Damiana) --- */
+function buildDamiana(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.75,0.9,0.16,12), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  const sageMat = new THREE.MeshStandardMaterial({ color:0x5f8a5c, roughness:0.8, side:THREE.DoubleSide });
+  for (let s=0;s<4;s++){
+    const a=(s/4)*Math.PI*2+0.2;
+    const h=0.45+Math.random()*0.25;
+    const st = mesh(CYL(0.016,0.024,h,5), M.stemD, Math.cos(a)*0.12, h/2+0.16, Math.sin(a)*0.12);
+    st.rotation.z=(Math.random()-0.5)*0.3; g.add(st);
+    const tip = leafFan(sageMat, 6, 0.24, 0.09, 1.0);
+    tip.position.set(Math.cos(a)*0.16, h+0.12, Math.sin(a)*0.16); g.add(tip);
+  }
+  // small yellow five-petal blossoms
+  for (let i=0;i<5;i++){
+    const a=Math.random()*Math.PI*2;
+    const fl = flower(M.petalY, 0.055, 5);
+    fl.position.set(Math.cos(a)*(0.2+Math.random()*0.15), 0.55+Math.random()*0.2, Math.sin(a)*(0.2+Math.random()*0.15));
+    g.add(fl);
+  }
+  return g;
+}
+
+/* --- SPRAWLING DESERT HERB (Syrian Rue) --- */
+function buildHarmala(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.95,1.1,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  // stony ground
+  for (let i=0;i<8;i++){
+    const a=Math.random()*Math.PI*2;
+    g.add(mesh(SPH(0.045+Math.random()*0.04,5), M.stone, Math.cos(a)*0.9, 0.19, Math.sin(a)*0.9, false));
+  }
+  // many procumbent white-green branches from a crown
+  const rueMat = new THREE.MeshStandardMaterial({ color:0x76936f, roughness:0.8, side:THREE.DoubleSide });
+  for (let i=0;i<10;i++){
+    const a=(i/10)*Math.PI*2+Math.random()*0.3;
+    const len=0.55+Math.random()*0.35;
+    const br = mesh(CYL(0.012,0.018,len,5), M.stem, Math.cos(a)*len*0.28, 0.22, Math.sin(a)*len*0.28);
+    br.rotation.z = 1.25+Math.random()*0.25; br.rotation.y = -a; g.add(br);
+    // small narrow leaflets along the branch
+    for (let j=0;j<4;j++){
+      const l = leaf(rueMat, 0.1+Math.random()*0.05, 0.035);
+      l.position.set(Math.cos(a)*(0.15+j*0.13), 0.24+Math.sin(j*1.7+i)*0.05, Math.sin(a)*(0.15+j*0.13));
+      l.rotation.x = 1.1+Math.random()*0.4; l.rotation.y = a+0.9;
+      g.add(l);
+    }
+  }
+  // the red seed capsules — the esphand of Persian ritual
+  for (let i=0;i<6;i++){
+    const a=Math.random()*Math.PI*2, r=0.3+Math.random()*0.35;
+    g.add(mesh(SPH(0.035,5), M.capR, Math.cos(a)*r, 0.28, Math.sin(a)*r, false));
+  }
+  // white blossom
+  g.add((()=>{const f=flower(M.petalW,0.06,5); f.position.set(0.32,0.34,0.3); return f;})());
+  return g;
+}
+
+/* --- JOINTED BROOM (Ephedra) --- */
+function buildEphedra(){
+  const g = grp();
+  const soil = mesh(new THREE.CylinderGeometry(0.85,1.0,0.16,14), M.soil, 0,0.08,0,false);
+  soil.receiveShadow=true; g.add(soil);
+  const eph = new THREE.MeshStandardMaterial({ color:0x5d7a4a, roughness:0.85 });
+  // broom of jointed, leafless pencil stems
+  for (let i=0;i<12;i++){
+    const a=(i/12)*Math.PI*2, h=0.5+Math.random()*0.5;
+    let x=Math.cos(a)*0.08, z=Math.sin(a)*0.08, y=0.16;
+    const lean=(Math.random()-0.5)*0.5;
+    for (let s=0;s<3;s++){
+      const seg = mesh(CYL(0.017,0.02,0.22,5), eph, x, y+0.11, z);
+      seg.rotation.z = lean*(s+1)*0.35; seg.rotation.y = a; g.add(seg);
+      y += 0.2; x += Math.sin(lean*(s+1)*0.35)*0.1*Math.cos(a); z += Math.sin(lean*(s+1)*0.35)*0.1*Math.sin(a);
+    }
+    // tiny paired scale-leaves + red berry-seeds on female plants
+    if (i%3===0){
+      const a2=Math.random()*Math.PI*2;
+      g.add(mesh(SPH(0.032,5), M.capR, x, y+0.05, z, false));
+    }
+  }
+  return g;
+}
+
+/* --- LATEX SHRUB (African Iboga — Voacanga) --- */
+function buildVoacanga(){
+  const g = buildShrub(1.0, M.capY)();   // dark glossy shrub with pale berries
+  // add paired large glossy leaves + a white pinwheel flower
+  const gloss = new THREE.MeshStandardMaterial({ color:0x2f5c3d, roughness:0.45, side:THREE.DoubleSide });
+  for (let i=0;i<6;i++){
+    const a=(i/6)*Math.PI*2;
+    const l = leaf(gloss, 0.4, 0.17);
+    l.position.set(Math.cos(a)*0.4, 0.7+Math.random()*0.3, Math.sin(a)*0.4);
+    l.rotation.x=1.15; l.rotation.y=a;
+    g.add(l);
+  }
+  const fl = flower(M.petalW, 0.08, 5, M.capY);
+  fl.position.set(0.15, 1.1, 0.2); g.add(fl);
+  return g;
+}
+
+/* --- HIBISCUS STAND (Bissap) --- */
+function buildBissap(){
+  const g = grp();
+  const pond = mesh(new THREE.CylinderGeometry(2.1,2.1,0.22,28), M.water2, 0,0.11,0, false);
+  pond.receiveShadow = true; g.add(pond);
+  // inner bank
+  const bank = mesh(new THREE.RingGeometry(1.55,2.1,24).rotateX(-Math.PI/2), M.soil, 0,0.225,0, false);
+  bank.receiveShadow=true; g.add(bank);
+  // 3 bushy hibiscus on the bank
+  for (let p=0;p<3;p++){
+    const a=p*2.1+0.6, x=Math.cos(a)*1.8, z=Math.sin(a)*1.8;
+    for (let s=0;s<3;s++){
+      const h=0.6+Math.random()*0.4;
+      const st = mesh(CYL(0.016,0.024,h,5), M.stemD, x+(Math.random()-0.5)*0.2, h/2+0.2, z+(Math.random()-0.5)*0.2);
+      st.rotation.z=(Math.random()-0.5)*0.3; g.add(st);
+      const tip = leafFan(M.leafA, 5, 0.24, 0.13, 0.95);
+      tip.position.set(x, h+0.25, z); g.add(tip);
+    }
+    // crimson hibiscus blooms
+    for (let f=0;f<3;f++){
+      const fl = flower(M.petalR, 0.09, 5, M.capR);
+      fl.position.set(x+(Math.random()-0.5)*0.4, 0.75+Math.random()*0.35, z+(Math.random()-0.5)*0.4);
+      fl.userData.bob = { base:fl.position.y, phase:Math.random()*6 };
+      g.add(fl);
+    }
+  }
+  // fallen crimson calyx cups floating on the water
+  for (let i=0;i<6;i++){
+    const a=Math.random()*Math.PI*2, r=Math.random()*1.3;
+    const cup = mesh(CON(0.05,0.08,6), M.capR, Math.cos(a)*r, 0.245, Math.sin(a)*r, false);
+    cup.userData.bob = { base:0.245, phase:Math.random()*6 };
+    g.add(cup);
+  }
+  return g;
+}
+
 /* ------------------------------------------------------------------ */
 /* Plant id → builder                                                  */
 /* ------------------------------------------------------------------ */
@@ -875,6 +1283,15 @@ const BUILDERS = {
   coca: ()=> buildShrub(0.9, null, M.petalW)(), // white flowers
   khat: ()=> buildTree(0.95, M.leafC, true)(),
   san_pedro: buildColumnarCactus,
+  tobacco: buildTobacco,
+  mandrake: buildMandrake,
+  mugwort: buildArtemisia(false),
+  wormwood: buildArtemisia(true),
+  damiana: buildDamiana,
+  harmala: buildHarmala,
+  ephedra: buildEphedra,
+  voacanga: buildVoacanga,
+  bissap: buildBissap,
 };
 /* ------------------------------------------------------------------ */
 /* Garden layout: 3 concentric habitat rings + stone paths             */
@@ -943,6 +1360,22 @@ GARDEN.forEach((p, idx)=>{
   gardenGroup.add(plant);
   plantMeshes.push(plant);
 
+  /* soft contact shadow disc under each specimen */
+  {
+    const c = document.createElement('canvas'); c.width=c.height=128;
+    const g2 = c.getContext('2d');
+    const rg = g2.createRadialGradient(64,64,4, 64,64,62);
+    rg.addColorStop(0,'rgba(0,0,0,0.5)'); rg.addColorStop(0.6,'rgba(0,0,0,0.25)'); rg.addColorStop(1,'rgba(0,0,0,0)');
+    g2.fillStyle = rg; g2.fillRect(0,0,128,128);
+    const t = new THREE.CanvasTexture(c);
+    const disc = new THREE.Mesh(
+      new THREE.PlaneGeometry(p.ring===0?4.6:2.6, p.ring===0?4.6:2.6),
+      new THREE.MeshBasicMaterial({ map:t, transparent:true, depthWrite:false, opacity:0.85 }));
+    disc.rotation.x = -Math.PI/2;
+    disc.position.set(plant.position.x+0.7, 0.015, plant.position.z-0.4);
+    gardenGroup.add(disc);
+  }
+
   /* plant marker: floating golden mote above each plant */
   const mote = new THREE.Mesh(SPH(0.09,10),
     new THREE.MeshBasicMaterial({ color:0xd4a94e, transparent:true, opacity:0.85,
@@ -989,6 +1422,7 @@ plantMeshes.forEach(plant=>{
 /* ------------------------------------------------------------------ */
 /* Interaction: hover tooltip + click focus                            */
 /* ------------------------------------------------------------------ */
+const PLANT_N = GARDEN.length;
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
 let hovered = null, focused = null;
@@ -1028,7 +1462,7 @@ function openPlant(idx, fly=true){
   const plant = plantMeshes[idx];
   const p = plant.userData.plant;
   focused = idx;
-  document.getElementById('p-tag').textContent = 'No. ' + (idx+1) + ' of 20 · Ring ' + (p.ring+1) + ' — ' + ['The Pond','Desert & Meadow','Forest Shrines'][p.ring];
+  document.getElementById('p-tag').textContent = 'No. ' + (idx+1) + ' of ' + PLANT_N + ' · Ring ' + (p.ring+1) + ' — ' + ['The Pond','Desert & Meadow','Forest Shrines'][p.ring];
   document.getElementById('p-name').textContent = p.name;
   document.getElementById('p-sci').textContent = p.sci;
   document.getElementById('p-family').textContent = p.family;
@@ -1049,12 +1483,12 @@ function closePanel(){
   controls.autoRotate = true;
 }
 document.getElementById('p-reset').addEventListener('click', closePanel);
-document.getElementById('navPrev').addEventListener('click', ()=> openPlant(((focused??0)-1+20)%20));
-document.getElementById('navNext').addEventListener('click', ()=> openPlant(((focused??0)+1)%20));
+document.getElementById('navPrev').addEventListener('click', ()=> openPlant(((focused??0)-1+PLANT_N)%PLANT_N));
+document.getElementById('navNext').addEventListener('click', ()=> openPlant(((focused??0)+1)%PLANT_N));
 addEventListener('keydown', (e)=>{
   if (e.key==='Escape') closePanel();
-  if (focused!=null && e.key==='ArrowDown') openPlant((focused+1)%20);
-  if (focused!=null && e.key==='ArrowUp')   openPlant((focused+19)%20);
+  if (focused!=null && e.key==='ArrowDown') openPlant((focused+1)%PLANT_N);
+  if (focused!=null && e.key==='ArrowUp')   openPlant((focused+PLANT_N-1)%PLANT_N);
 });
 
 /* smooth camera flight to a plant */
@@ -1094,6 +1528,21 @@ function animate(){
 
   stepFly(dt);
   controls.update();
+
+  // grass sway clock
+  grassUniformTime.value = t;
+
+  // mist drifts slowly around the garden
+  mists.forEach((m,i)=>{
+    m.mesh.rotation.z = t*m.speed + m.phase;
+    m.mesh.position.y = 0.35+i*0.3 + Math.sin(t*0.2+m.phase)*0.08;
+  });
+
+  // whole plants breathe very slightly in the night wind
+  plantMeshes.forEach((pl,i)=>{
+    pl.rotation.z = Math.sin(t*0.7+i*1.3)*0.012;
+    pl.rotation.x = Math.cos(t*0.55+i*0.9)*0.008;
+  });
 
   // fireflies drift
   const pa = fireflyGeo.attributes.position;
