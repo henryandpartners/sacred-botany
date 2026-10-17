@@ -158,6 +158,7 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 
 /* ------------------------------------------------------------------ */
 /* The twenty plants — data mirrored from the atlas (index.html)       */
@@ -289,16 +290,33 @@ composer.addPass(new RenderPass(scene, camera));
 const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.55, 0.85, 0.82);
 composer.addPass(bloom);
 composer.addPass(new OutputPass());
+/* cinematic vignette + fine grain on the final tonemapped frame */
+const gradePass = new ShaderPass({
+  uniforms: { tDiffuse: { value: null }, uAspect: { value: innerWidth/innerHeight } },
+  vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }`,
+  fragmentShader: `uniform sampler2D tDiffuse; uniform float uAspect; varying vec2 vUv;
+    float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1,311.7))) * 43758.5453123); }
+    void main(){
+      vec4 col = texture2D(tDiffuse, vUv);
+      vec2 q = vUv - 0.5; q.x *= uAspect;
+      float vig = 1.0 - smoothstep(0.55, 1.35, length(q)) * 0.34;
+      float grain = (hash(vUv * 800.0) - 0.5) * 0.020;
+      col.rgb = col.rgb * vig + grain;
+      gl_FragColor = col;
+    }`
+});
+composer.addPass(gradePass);
 
 /* lights: moonlit night garden */
 scene.add(new THREE.HemisphereLight(0x8fb4d8, 0x12180f, 0.55));
 const moonLight = new THREE.DirectionalLight(0xcfe0ff, 1.1);
 moonLight.position.set(18, 30, 10);
 moonLight.castShadow = true;
-moonLight.shadow.mapSize.set(2048, 2048);
-moonLight.shadow.camera.left = -45; moonLight.shadow.camera.right = 45;
-moonLight.shadow.camera.top = 45;   moonLight.shadow.camera.bottom = -45;
-moonLight.shadow.camera.far = 120;
+moonLight.shadow.mapSize.set(4096, 4096);
+moonLight.shadow.camera.left = -30; moonLight.shadow.camera.right = 30;
+moonLight.shadow.camera.top = 30;   moonLight.shadow.camera.bottom = -30;
+moonLight.shadow.camera.near = 5;
+moonLight.shadow.camera.far = 90;
 moonLight.shadow.bias = -0.0015;
 moonLight.shadow.normalBias = 0.02;
 moonLight.shadow.radius = 4;
@@ -310,6 +328,47 @@ scene.add(moonBounce);
 const goldFill = new THREE.PointLight(0xd4a94e, 60, 60, 2);
 goldFill.position.set(0, 3.5, 0);
 scene.add(goldFill);
+
+/* ------------------------------------------------------------------ */
+/* Image-based lighting: procedural night-sky environment map          */
+/* Gives every standard material soft moonlit ambient + subtle spec,   */
+/* so water, leaves and petals read as lit surfaces, not flat paint.   */
+/* ------------------------------------------------------------------ */
+function nightEnvTexture(){
+  const c = document.createElement('canvas'); c.width = 512; c.height = 256;
+  const g = c.getContext('2d');
+  // vertical gradient: deep indigo zenith -> dusky horizon -> dark earth
+  const grad = g.createLinearGradient(0, 0, 0, 256);
+  grad.addColorStop(0.00, '#0b1020');
+  grad.addColorStop(0.42, '#131c30');
+  grad.addColorStop(0.58, '#1b2433');   // horizon line
+  grad.addColorStop(0.62, '#0c1216');
+  grad.addColorStop(1.00, '#080b0e');   // below horizon
+  g.fillStyle = grad; g.fillRect(0,0,512,256);
+  // bright moon disk near the horizon-left (matches the scene moon)
+  const mx = 512*0.16, my = 256*0.38, mr = 26;
+  const halo = g.createRadialGradient(mx,my,1, mx,my,mr*4.2);
+  halo.addColorStop(0.00,'rgba(235,242,255,0.95)');
+  halo.addColorStop(0.22,'rgba(190,210,240,0.42)');
+  halo.addColorStop(0.60,'rgba(120,150,200,0.10)');
+  halo.addColorStop(1.00,'rgba(0,0,0,0)');
+  g.fillStyle = halo; g.beginPath(); g.arc(mx,my,mr*4.2,0,7); g.fill();
+  g.fillStyle = '#eef4ff'; g.beginPath(); g.arc(mx,my,mr,0,7); g.fill();
+  // faint scattered starlight speckle in the sky band
+  for (let i=0;i<220;i++){
+    const x = Math.random()*512, y = Math.random()*120;
+    const b = 30+Math.random()*90;
+    g.fillStyle = `rgba(${b},${b+20},${b+40},${0.25+Math.random()*0.5})`;
+    g.fillRect(x, y, 1.2, 1.2);
+  }
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.mapping = THREE.EquirectangularReflectionMapping;
+  return t;
+}
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromEquirectangular(nightEnvTexture()).texture;
+pmrem.dispose();
 
 /* ------------------------------------------------------------------ */
 /* Ground: dark meadow disc with a subtle radial gradient              */
@@ -570,10 +629,33 @@ const M = {
   gillW: new THREE.MeshStandardMaterial({ color:0xd8cfc0, roughness:0.85 }),
   water: new THREE.MeshPhysicalMaterial({ color:0x1a3a4a, roughness:0.15, metalness:0.1,
           transparent:true, opacity:0.9 }),
-  water2:new THREE.MeshPhysicalMaterial({ color:0x1d4256, roughness:0.2, metalness:0.15 }),
+  water2:new THREE.MeshPhysicalMaterial({ color:0x1d4256, roughness:0.12, metalness:0.05, envMapIntensity:1.4 }),
   stone: new THREE.MeshStandardMaterial({ color:0x55584e, roughness:0.95 }),
   stoneD:new THREE.MeshStandardMaterial({ color:0x3d4038, roughness:0.98 }),
   soil:  new THREE.MeshStandardMaterial({ color:0x2c231a, roughness:1 }),
+};
+
+/* ------------------------------------------------------------------ */
+/* Water ripple: perturb the pond surface + normals each frame         */
+/* ------------------------------------------------------------------ */
+const waterTime = { value: 0 };
+M.water2.onBeforeCompile = (shader)=>{
+  shader.uniforms.uWaterTime = waterTime;
+  shader.vertexShader = shader.vertexShader
+    .replace('#include <common>', '#include <common>\nuniform float uWaterTime;')
+    .replace('#include <begin_vertex>', `#include <begin_vertex>
+      vec3 p = position;
+      float r = length(p.xz);
+      float ring = sin(r*4.0 - uWaterTime*1.6);
+      float crossW = sin(p.x*3.1 + uWaterTime*1.1) * cos(p.z*2.7 - uWaterTime*0.9);
+      p.y += (ring*0.5 + crossW*0.5) * 0.06 * smoothstep(2.0, 0.3, r);
+      transformed = p;`);
+  shader.fragmentShader = shader.fragmentShader
+    .replace('#include <common>', '#include <common>\nuniform float uWaterTime;')
+    .replace('#include <normal_fragment_begin>', `#include <normal_fragment_begin>
+      { float r = length(vViewPosition.xz);
+        float n = sin(r*4.0 - uWaterTime*1.6)*0.5 + sin(vViewPosition.x*3.1 + uWaterTime*1.1)*0.25;
+        normal = normalize(normal + vec3(n*0.06, 0.0, n*0.06)); }`);
 };
 /* ------------------------------------------------------------------ */
 /* Parametric plant builders — one function per growth form            */
@@ -1531,6 +1613,7 @@ function animate(){
 
   // grass sway clock
   grassUniformTime.value = t;
+  waterTime.value = t;
 
   // mist drifts slowly around the garden
   mists.forEach((m,i)=>{
@@ -1587,6 +1670,7 @@ addEventListener('resize', ()=>{
   camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
   composer.setSize(innerWidth, innerHeight);
+  gradePass.uniforms.uAspect.value = innerWidth/innerHeight;
 });
 
 /* loaded */
